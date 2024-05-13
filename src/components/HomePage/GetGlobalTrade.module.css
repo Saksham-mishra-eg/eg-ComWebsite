@@ -1,0 +1,36 @@
+.GetGlobalTradeOnline {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    padding: 60px;
+    height: auto;
+    background-image: url(/public/get-global.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.GeGlobl{
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+}
+.GeGlobl h2{
+    font-size: 40px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.scheDemoBtn{
+    background: #66B167;
+    padding: 10px 30px;
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin-right: 20px;
+}
+.LogonDemoBtn{
+    background: #3884C7;
+    padding: 10px 30px;
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}

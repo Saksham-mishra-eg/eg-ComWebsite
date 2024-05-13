@@ -1,0 +1,9 @@
+.OurjourneyBg{
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    height: auto;
+    padding: 60px 0;
+    background-image: radial-gradient(#3884C7 10%, #1D70B9 50%, #005CAD 100%);
+    background-repeat: no-repeat;
+    background-position: top center;
+}

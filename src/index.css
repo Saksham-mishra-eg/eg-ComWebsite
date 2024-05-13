@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.form-switch .form-check-input{
+  height: 2.2em!important;
+  width: 5em!important;
+}
+.Acroheader .accordion-button:not(.collapsed){
+  color: #2D2D2D;
+  background-color: transparent;
+  box-shadow: none;
+}
+.Acroheader .accordion-button:focus{
+  box-shadow: none;
+  outline: 0;
+}
+.accordion-button:not(.collapsed){
+  color: #2D2D2D;
+  background-color: transparent;
+  box-shadow: none;
+}
+.accordion-button:focus{
+  box-shadow: none;
+  outline: 0;
+}

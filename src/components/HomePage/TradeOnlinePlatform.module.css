@@ -1,0 +1,61 @@
+.TradeOnlinePlatformOnline {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    padding: 40px 0 60px;
+    height: auto;
+}
+
+.TrdetamOnline {text-align: left;}
+
+.TrdetamOnline h2 {
+    color: #171A31;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.TrdetamOnline h2 span {
+    color: #66B167;
+}
+
+.TrdetamOnline p {
+    font-size: 16px;
+    color: #848484;
+}
+.TrdetamOnlineIMg{
+    text-align: left;
+    padding: 20px 0;
+}
+.TrdetamOnlineIMg img{
+    /* width: 100%; */
+}
+.NavTabsFlex{
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    text-align: left;
+    width: 86%;
+    gap: 1rem;
+}
+.finGobaTxt{
+    color: #737373;
+    font-size: 16px;
+    font-weight: 500;
+    border-top: 1px solid #000;
+    border-radius: 0 !important;
+    padding-left: 0;
+}
+.finGobaTxt.nav-link.active{
+    color: #79BB7A!important;
+    background-color: transparent!important;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    color: #79BB7A!important;
+    background-color: transparent!important;
+}
+.nav-link{
+    color: #79BB7A!important;
+}
+.finGobaTxt.active{
+    color: #79BB7A!important;
+    background-color: transparent!important;
+}
+

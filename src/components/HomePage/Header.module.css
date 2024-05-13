@@ -1,0 +1,33 @@
+.headerImageIcon {
+    display: inline;
+}
+
+.navLinsk {
+    color: #000;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.loingBtn {
+    background-color: #3884C7;
+    color: #fff;
+    border-radius: 40px;
+    padding: 9px 40px !important;
+}
+
+.TrlBtn {
+    background-color: #478E48;
+    color: #fff;
+    border-radius: 40px;
+    padding: 9px 40px !important;
+}
+
+.navBrnNab {
+    gap: 1rem;
+}
+
+.navBrndBg {
+    background-color: #fff !important;
+}

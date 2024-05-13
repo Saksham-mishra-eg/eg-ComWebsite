@@ -1,0 +1,54 @@
+.ScheduleboxOnline {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    padding: 40px 0 60px;
+    height: auto;
+}
+
+.ScheDmeo {
+    font-family: "Roboto", sans-serif;
+    background: #C1C1C1;
+    border: 1px solid #B0B0B0;
+    padding: 80px;
+    width: 90%;
+    margin: auto;
+}
+
+.wantSee {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.wantSee img{
+    width: 68px;
+    height: 68px;
+}
+.dSdhdemo {text-align: left;}
+.dSdhdemo h5{
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+}
+.dSdhdemo h5 span{
+color: #66B167;
+}
+.dSdhdemo h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 0;
+}
+
+.SchenNow {
+    background-color: #3884C7;
+    color: #fff;
+    padding: 11px 40px !important;
+    text-decoration: none;
+    border: 0;
+    box-shadow: none;
+    outline: 0;
+    border-radius: 40px;
+    margin-top: 20px;
+}
