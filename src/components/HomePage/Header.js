@@ -30,7 +30,6 @@ function Header() {
                                 Another action
                             </NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-
                         </NavDropdown>
                         <Nav.Link className={styles.navLinsk} href="#features">How We Help</Nav.Link>
                         <Nav.Link className={styles.navLinsk} href="#pricing">Pricing</Nav.Link>

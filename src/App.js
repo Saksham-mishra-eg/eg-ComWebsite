@@ -6,6 +6,7 @@ import DataFlow from "./pages/DataFlow";
 import AboutUs from "./pages/AboutUs"
 import HowWeHelp from "./pages/HowWeHelpPage"
 import Faq from "./pages/Faq";
+import Platform from "./pages/Platform";
 
 function App() {
   return (
@@ -51,11 +52,13 @@ function AppContent() {
   return (
     <Routes>
       <Route path="/" exact element={<Home />} />
+      <Route path="/home" exact element={<Home />} />
       <Route path="/pricing" exact element={<Pricing />} />
       <Route path="/data-flow" exact element={<DataFlow />} />
       <Route path="/about-us" exact element={<AboutUs />} />
       <Route path="/how-we-help" exact element={<HowWeHelp />} />
       <Route path="/faq" exact element={ <Faq /> } />
+      <Route path="/platform" exact element={ <Platform /> } />
     </Routes>
   );
 }

@@ -30,3 +30,6 @@
     color: #848484;
     font-weight: 400;
 }
+.slick-prev, .slick-next{
+    background-color: #000!important;
+}

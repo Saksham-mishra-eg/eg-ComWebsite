@@ -1,0 +1,63 @@
+.MangeEndtoend {
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+    padding: 60px;
+    font-family: "Roboto", sans-serif;
+}
+
+
+.pltrtradeText {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    text-align: left;
+    padding: 20px 0;
+}
+
+.pltrtradeText h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #000;
+}
+
+.tabofMatrial {
+    color: #4F4F4F;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+.comprHendTbs {
+    padding: 20px 0;
+}
+
+.inetleInstigh {
+    font-family: "Roboto", sans-serif;
+}
+
+.inetleInstigh h6 {
+    font-size: 14px;
+    color: #3884C7;
+    font-weight: 400;
+    margin-bottom: 15px;
+    display: inline-block;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+}
+
+.inetleInstigh h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #4F4F4F;
+    margin-bottom: 15px;
+}
+
+.inetleInstigh p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #848484;
+    line-height: 179%;
+    width: 73%;
+    text-align: left;
+
+}

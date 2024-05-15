@@ -14,8 +14,10 @@ function BusinessEdge() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    arrows: false,
+    // nextArrow: false,
+    // prevArrow: false,
   };
-
 
 
   return (
@@ -28,12 +30,8 @@ function BusinessEdge() {
             </div>
           </Col>
           <Col md={12}>
-
-          </Col>
-          <Col md={12}>
             <div className={styles.BusinEdgeBoxes}>
               <Slider {...settings}>
-
                 <div>
                   <div className={styles.BusinessEdgeText}>
                     <img src="historical.png" alt="Data Update" />

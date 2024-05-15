@@ -6,6 +6,8 @@ import Footer from "../components/HomePage/Footer";
 import FooterPrivacy from "../components/HomePage/FooterPrivacy";
 import FaqHeader from "../components/Faqs/FaqHeader";
 import FaQuestions from "../components/Faqs/FaQuestions";
+import FaqPlanPricing from "../components/Faqs/FaqPlanPricing";
+import GetGlobalTrade from "../components/Faqs/GetGlobalTrade";
 
 
 const DataFlow = () => {
@@ -14,6 +16,8 @@ const DataFlow = () => {
       <Header />
       <FaqHeader />
       <FaQuestions />
+      <FaqPlanPricing />
+      <GetGlobalTrade />
 
       <Footer />
       <FooterPrivacy />

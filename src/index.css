@@ -11,25 +11,48 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.form-switch .form-check-input{
-  height: 2.2em!important;
-  width: 5em!important;
+
+.form-switch .form-check-input {
+  height: 2.2em !important;
+  width: 5em !important;
 }
-.Acroheader .accordion-button:not(.collapsed){
+
+.Acroheader .accordion-button:not(.collapsed) {
   color: #2D2D2D;
   background-color: transparent;
   box-shadow: none;
 }
-.Acroheader .accordion-button:focus{
+
+.Acroheader .accordion-button:focus {
   box-shadow: none;
   outline: 0;
 }
-.accordion-button:not(.collapsed){
+
+.accordion-button:not(.collapsed) {
   color: #2D2D2D;
   background-color: transparent;
   box-shadow: none;
 }
-.accordion-button:focus{
+
+.accordion-button:focus {
   box-shadow: none;
   outline: 0;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #000 !important;
+}
+
+.slick-prev,
+.slick-next {
+  top: 105% !important;
+}
+
+.slick-next {
+  right: 80% !important;
+}
+
+.slick-prev {
+  left: 15% !important;
 }

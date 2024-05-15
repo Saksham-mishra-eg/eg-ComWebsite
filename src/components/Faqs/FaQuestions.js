@@ -163,7 +163,7 @@ function FaQuestions() {
                                     aria-controls="example-collapse-text-7"
                                     aria-expanded={open7}
                                 >
-                                   What is the source of data, its authenticity and accuracy?
+                                    What is the source of data, its authenticity and accuracy?
                                     {open7 ? <BsChevronUp /> : <BsChevronDown />}
                                 </Button>
                                 <Collapse in={open7}>
