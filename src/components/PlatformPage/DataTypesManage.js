@@ -42,7 +42,6 @@ function a11yProps(index) {
     };
 }
 
-
 function DataTypesManage() {
     const [value, setValue] = React.useState(0);
 

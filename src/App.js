@@ -7,6 +7,9 @@ import AboutUs from "./pages/AboutUs"
 import HowWeHelp from "./pages/HowWeHelpPage"
 import Faq from "./pages/Faq";
 import Platform from "./pages/Platform";
+import Testimonial from "./pages/Testimonial";
+import Career from "./pages/Career";
+import ContactUs from "./pages/ContactUs";
 
 function App() {
   return (
@@ -57,8 +60,11 @@ function AppContent() {
       <Route path="/data-flow" exact element={<DataFlow />} />
       <Route path="/about-us" exact element={<AboutUs />} />
       <Route path="/how-we-help" exact element={<HowWeHelp />} />
-      <Route path="/faq" exact element={ <Faq /> } />
-      <Route path="/platform" exact element={ <Platform /> } />
+      <Route path="/faq" exact element={<Faq />} />
+      <Route path="/platform" exact element={<Platform />} />
+      <Route path="/career-page" exact element={<Career />} />
+      <Route path="/contact-us" exact element={<ContactUs />} />
+      <Route path="/client-testimonials" exact element={<Testimonial />} />
     </Routes>
   );
 }

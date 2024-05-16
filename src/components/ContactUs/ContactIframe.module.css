@@ -1,0 +1,69 @@
+.ContactIframeBg {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    padding: 40px 0 60px;
+    height: auto;
+    background-color: #ffffff;
+}
+.CntsctBgColr{
+    width: 100%;
+    padding: 40px;
+    height: auto;
+    background-color: #F4F4F4;
+    margin: 30px;
+}
+
+.ContactAreas {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.ContactAreas h3 {
+    color: #3884C7;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.ContactAreas h1 {
+    color: #000000;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.wantSee {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.wantSee img {
+    width: 68px;
+    height: 68px;
+}
+
+.dSdhdemo {
+    text-align: left;
+}
+
+.dSdhdemo h5 {
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+}
+
+.dSdhdemo h5 span {
+    color: #66B167;
+}
+
+.dSdhdemo h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #66B167;
+    margin-bottom: 0;
+}
+.IframeAreassectn{
+    width: 100%;
+    padding: 30px 0;
+}
