@@ -15,6 +15,7 @@ import FounderDirecter from "../components/AboutUS/FounderDirecter";
 import GetGlobalTrade from "../components/HomePage/GetGlobalTrade";
 
 
+
 const DataFlow = () => {
   return (
     <div className={styles.DataFlowPage}>
@@ -25,9 +26,11 @@ const DataFlow = () => {
       <AboutFeatures />
       <FocusOn />
       <Becomebetter />
+      <br /><br /><br /><br /><br />
       <OurJourney />
       <FounderDirecter />
       <GetGlobalTrade />
+      {/* <HorizontalTimelines /> */}
 
       <Footer />
       <FooterPrivacy />

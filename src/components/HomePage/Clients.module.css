@@ -40,9 +40,13 @@
     font-size: 14px;
     color: #fff;
     margin-bottom: 0;
+    padding: 0;
 }
 
 .selitxtImngf {
     width: 90%;
     margin: 0 auto;
+}
+.selitxt{
+    text-align: center;
 }

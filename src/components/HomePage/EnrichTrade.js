@@ -4,18 +4,17 @@ import { Col, Container, Row } from "react-bootstrap";
 
 
 function EnrichTrade() {
-    
 
     return (
         <div className={styles.EnrichSection}>
             <Container>
                 <Row>
-                   <Col>
-                    <div className={styles.TextEnrichtrd}>
-                        <h2>Enrich Trade Data from Export Genius</h2>
-                        <p>Export Genius is Not Just Your Import-Export Data Partner But a Companion for Long-Run</p>
-                    </div>
-                   </Col>
+                    <Col>
+                        <div className={styles.TextEnrichtrd}>
+                            <h2>Enrich Trade Data from Export Genius</h2>
+                            <p>Export Genius is Not Just Your Import-Export Data Partner But a Companion for Long-Run</p>
+                        </div>
+                    </Col>
                 </Row>
                 <Row>
                     <Col md={3}>
