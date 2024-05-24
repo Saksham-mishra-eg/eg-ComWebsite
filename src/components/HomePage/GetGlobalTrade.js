@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./GetGlobalTrade.module.css";
 import Container from 'react-bootstrap/Container';
-import { Col, Row} from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 
 
@@ -11,16 +11,17 @@ function GetGlobalTrade() {
         <div className={styles.GetGlobalTradeOnline}>
             <Container>
                 <Row>
-                    <Col md={6}>
+                    <Col md={12}>
                         <div className={styles.GeGlobl}>
-                            <h2>GET GLOBAL TRADE DATA ONLINE AT YOUR FINGERTIPS </h2>
-                          
+                            <h2>See what Export Genius has Access to</h2>
+                            <h3>Take a test drive to our dashboard. Schedule a demo now!</h3>
+
                             <Button className={styles.scheDemoBtn} variant="success">Schedule a Demo</Button>{' '}
-                            <Button className={styles.LogonDemoBtn}  variant="primary">Login</Button>{' '}
+                            <Button className={styles.LogonDemoBtn} variant="primary">Login</Button>{' '}
                         </div>
                     </Col>
                 </Row>
-               
+
             </Container>
         </div>
     );

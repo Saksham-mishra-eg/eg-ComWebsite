@@ -11,8 +11,8 @@ function EnrichTrade() {
                 <Row>
                     <Col>
                         <div className={styles.TextEnrichtrd}>
-                            <h2>Enrich Trade Data from Export Genius</h2>
-                            <p>Export Genius is Not Just Your Import-Export Data Partner But a Companion for Long-Run</p>
+                            <h2>Leverage Power of Trade Data</h2>
+                            <p>We’re your companions for the long run!</p>
                         </div>
                     </Col>
                 </Row>
@@ -22,7 +22,7 @@ function EnrichTrade() {
                             <div className={styles.BoxesOFDta}>
                                 <img src="visualization.png" alt="Enrich Trade Data" />
                                 <h3>Visually-Appealing Data </h3>
-                                <p>Ditch the long trial of complex trade data. Export Genius offers easy-to-explore and visually attractive import/export data</p>
+                                <p>All the complex trail of data is showcased in easy-to-understand format. This is one amazing feature of EG’s OG Dashboard. Sneak into International market dynamics and get complete visibility across imports and exports within the global supply chain network. </p>
                                 <a href="#">Learn more ?</a>
                             </div>
                         </div>
@@ -31,8 +31,8 @@ function EnrichTrade() {
                         <div className={styles.EnrchDtaBox}>
                             <div className={styles.BoxesOFDta}>
                                 <img src="comptitors.png" alt="Enrich Trade Data" />
-                                <h3>Visually-Appealing Data </h3>
-                                <p>Ditch the long trial of complex trade data. Export Genius offers easy-to-explore and visually attractive import/export data</p>
+                                <h3>Competition Analysis </h3>
+                                <p>Keep a close look at your competitor’s activities. Monitor their total shipments made, traded products, HS Code, quantity, price, and much more.</p>
                                 <a href="#">Learn more ?</a>
                             </div>
                         </div>
@@ -41,8 +41,8 @@ function EnrichTrade() {
                         <div className={styles.EnrchDtaBox}>
                             <div className={styles.BoxesOFDta}>
                                 <img src="futures.png" alt="Enrich Trade Data" />
-                                <h3>Visually-Appealing Data </h3>
-                                <p>Ditch the long trial of complex trade data. Export Genius offers easy-to-explore and visually attractive import/export data</p>
+                                <h3>Future-Driven Analytics </h3>
+                                <p>Dive into global data analytics at your fingertips. Access to trade analysis utilized by top industry leaders.  </p>
                                 <a href="#">Learn more ?</a>
                             </div>
                         </div>
@@ -51,8 +51,8 @@ function EnrichTrade() {
                         <div className={styles.EnrchDtaBox}>
                             <div className={styles.BoxesOFDta}>
                                 <img src="trend.png" alt="Enrich Trade Data" />
-                                <h3>Visually-Appealing Data </h3>
-                                <p>Ditch the long trial of complex trade data. Export Genius offers easy-to-explore and visually attractive import/export data</p>
+                                <h3>Be a Trend-Savvy </h3>
+                                <p>Stay tuned with the market’s latest trends. Get enriched data insights that will help you get a better idea of what’s happening in almost every industry. </p>
                                 <a href="#">Learn more ?</a>
                             </div>
                         </div>

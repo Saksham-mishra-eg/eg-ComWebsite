@@ -53,9 +53,9 @@ function FocusOn() {
             <Row>
                 <Col>
                   <div className={styles.FocuOnd}>
-                    <h6>Our core values</h6>
-                    <h2>Focus on impact.</h2>
-                    <p>Solve the most important problems and identify them through data.</p>
+                    <h6>Our Core Values</h6>
+                    <h2>Accountability</h2>
+                    <p>We take responsibility for our actions and commitments, ensuring transparency and reliability in everything we do.</p>
                   </div>
                 </Col>
                 <Col>
@@ -66,13 +66,44 @@ function FocusOn() {
               </Row>
             </div>
             <div>
-              
+            <Row>
+                <Col>
+                  <div className={styles.FocuOnd}>
+                    <h6>Our Core Values</h6>
+                    <h2>Excellence</h2>
+                    <p>We strive for excellence in every aspect of our business, delivering superior quality and outstanding results.</p>
+                  </div>
+                </Col>
+                <Col>
+                  <div className={styles.foncImg}>
+                    <img src="focuson.png" alt="focuson" />
+                  </div>
+                </Col>
+              </Row>
+            </div>
+            <div>
               <Row>
                 <Col>
                   <div className={styles.FocuOnd}>
-                    <h6>Our core values</h6>
-                    <h2>Focus on impact.</h2>
-                    <p>Solve the most important problems and identify them through data.</p>
+                    <h6>Our Core Values</h6>
+                    <h2>Agility</h2>
+                    <p>EG ensures to remain agile and adaptable, ready to respond to the evolving needs of clients and dynamic global market.</p>
+                  </div>
+                </Col>
+                <Col>
+                  <div className={styles.foncImg}>
+                    <img src="focuson.png" alt="focuson" />
+                  </div>
+                </Col>
+              </Row>
+            </div>
+            <div>
+              <Row>
+                <Col>
+                  <div className={styles.FocuOnd}>
+                    <h6>Our Core Values</h6>
+                    <h2>Innovation</h2>
+                    <p>We embrace innovation, continuously seeking new and better ways to serve our clients and improve our services.</p>
                   </div>
                 </Col>
                 <Col>

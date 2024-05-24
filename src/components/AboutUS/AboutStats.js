@@ -13,7 +13,7 @@ function AboutStats() {
                         <div className={styles.StatsOFabout}>
                             <div className={styles.lsitofststs}>
                                 <div className={styles.yerinDustb}>
-                                    <h2>10+</h2>
+                                    <h2>12+</h2>
                                     <p>Years Industry
                                         Experience</p>
                                 </div>
@@ -62,10 +62,8 @@ function AboutStats() {
                                 </Col>
                                 <Col md={6}>
                                     <div className={styles.abouEgGns}>
-                                        <h2>What is Export Genius?</h2>
-                                        <p>Export Genius is an intelligence platform, providing industry-standard import-export data online through powerful AI-based technologies and dynamic data visualizations. For over 10 years, we have served over 20,000 clients with quality global trade data and in-depth market research reports.
-                                        </p>
-                                        <p>Our mission is to provide the widest data coverage of international trade developments with meaningful insights that help companies to make more informed decisions and put moon-shot goals within reach.</p>
+                                        <h2>An Insider View of EG!</h2>
+                                        <p>Imagine having all the import and export data from the world on one dashboard. Impossible, right? We made this possible. Export Genius was made with an approach to collect raw data, store it in one place, and make it accessible to the world. The idea that started in 2012 has been continuously advancing and now boasts serving 20 K+ + clients across the world. We offer “in-depth” market analysis, insights, and trends that could help you stay ahead in the competitive global market.</p>
                                     </div>
                                 </Col>
                             </Row>

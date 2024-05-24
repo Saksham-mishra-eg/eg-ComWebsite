@@ -13,12 +13,12 @@ function TradedataMap() {
                 <Row>
                     <Col md={5}>
                         <div className={styles.WrlLrgTxt}>
-                            <h2>World's Largest <span>Import & Export Trade Data</span> Online <img src="arow.png" /> </h2>
+                            <h2>Prime Center for  <span>Import & Export</span> Data  <img src="arow.png" /> </h2>
                         </div>
                     </Col>
                     <Col md={7}>
                         <div className={styles.WrlLrgBox}>
-                            <p>Explore detailed Customs Data, Statistical Data, Mirror Data, Bill of Lading Data, Suez Canal Bill of Lading Data,</p>
+                            <p>The all-in-one platform allows you to access detailed Customs Data,  Statistical Data, Mirror Data, Bill of Lading Data, Suez Canal Bill of Lading Data, Transit Data, and Cargo BL Data for your desired country. Gain strategic insights from the world’s most trusted trade intelligence platform. </p>
                         </div>
                     </Col>
                 </Row>

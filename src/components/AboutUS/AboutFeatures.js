@@ -13,7 +13,7 @@ function AboutFeatures() {
                     <Col>
                         <div className={styles.feactuRabit}>
                             <h2>Features of Export Genius Trade Intelligence Platform</h2>
-                            <p>Export Genius is Not Just Your Import-Export Data Partner But a Companion for Long-Run</p>
+                            {/* <p>Export Genius is Not Just Your Import-Export Data Partner But a Companion for Long-Run</p> */}
                         </div>
                     </Col>
                 </Row>

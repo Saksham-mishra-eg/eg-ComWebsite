@@ -4,6 +4,7 @@
     height: auto;
     background-color: #ffffff;
     padding: 60px 0;
+    margin-bottom: 60px;
 }
 
 .feactuRabit {
@@ -17,7 +18,7 @@
     font-size: 40px;
     color: #000;
     font-weight: 600;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 
 .feactuRabit p {

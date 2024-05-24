@@ -11,7 +11,7 @@ function VisionMission() {
                 <Row>
                     <Col>
                         <div className={styles.vsnmsn}>
-                            <h2>Vision & Mission</h2>
+                            <h2>Our Vision & Mission</h2>
                         </div>
                     </Col>
                 </Row>
@@ -21,12 +21,12 @@ function VisionMission() {
                             <div className={styles.visonbx}>
                                 <img src="vision.png" alt="vision" />
                                 <h3>Vision</h3>
-                                <p>To be the global leader in empowering businesses with unparalleled insights and intelligence for international trade through innovative AI-based technologies and dynamic data visualizations, fostering growth and prosperity across industries and continents.</p>
+                                <p>EG aims to become the next-gen, futuristic data provider for every corporation and enterprise across the globe by embracing the latest AI technology, and dynamic data visualization and promoting growth & prosperity across industries and continents. </p>
                             </div>
                             <div className={styles.visonbx}>
                                 <img src="mission.png" alt="mission" />
                                 <h3>Mission</h3>
-                                <p>To be the global leader in empowering businesses with unparalleled insights and intelligence for international trade through innovative AI-based technologies and dynamic data visualizations, fostering growth and prosperity across industries and continents.</p>
+                                <p>To be the global leader for being the trade data provider. We aim to offer data coverage of international trade developments with meaningful insights that help companies make more informed decisions and put moon-shot goals within reach.</p>
                             </div>
                         </div>
                     </Col>

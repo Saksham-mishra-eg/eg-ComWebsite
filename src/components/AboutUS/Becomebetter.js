@@ -13,8 +13,8 @@ function Becomebetter() {
         <Row>
           <Col md={12}>
             <div className={styles.FocuOnFeaturs}>
-              <h2>Become a Better Team, Together.</h2>
-              <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+              <h2>Together We Are Better</h2>
+              <p>We have a close knit family of professionals who work on the collective effort of supporting our clients and helping them in informed decisions that drive success in the global market. Our experts hail from diverse backgrounds attributing to the company's endeavors. </p>
               <button className={styles.aPllyNowbtn}>Apply Now</button>
               <br />
               <br />

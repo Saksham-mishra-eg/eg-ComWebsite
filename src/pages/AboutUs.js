@@ -12,7 +12,7 @@ import FocusOn from "../components/AboutUS/FocusOn";
 import Becomebetter from "../components/AboutUS/Becomebetter";
 import OurJourney from "../components/AboutUS/OurJourney";
 import FounderDirecter from "../components/AboutUS/FounderDirecter";
-import GetGlobalTrade from "../components/HomePage/GetGlobalTrade";
+import GetGlobalTrade from "../components/AboutUS/GetGlobalTrade";
 
 
 

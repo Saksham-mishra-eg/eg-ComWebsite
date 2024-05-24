@@ -1,4 +1,4 @@
-.FaqHeaderBg{
+.FaqHeaderBg {
     background-color: #ffffff;
     width: 100%;
     height: auto;
@@ -7,7 +7,8 @@
     margin: 40px 0;
     box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
-.FaqHeaderText{
+
+.FaqHeaderText {
     display: flex;
     text-align: center;
     align-items: center;
@@ -15,13 +16,32 @@
     gap: 2rem;
     font-family: "Roboto", sans-serif;
 }
-.FaqHeaderText img{
-height: 56px;
+
+.FaqHeaderText img {
+    height: 56px;
 }
-.FaqHeaderText h1{
+
+.FaqHeaderText h1 {
     font-size: 55px;
     font-weight: 700;
     background: -webkit-linear-gradient(#66B167, #3884C7);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 580px) {
+    .FaqHeaderText {
+        display: flex;
+        text-align: left;
+        justify-content: left;
+        gap: 2rem;
+        flex-direction: column;
+        font-family: "Roboto", sans-serif;
+    }
+    .FaqHeaderText img{
+        display: none;
+    }
+    .FaqHeaderText h1 {
+        font-size: 45px;
+    }
 }

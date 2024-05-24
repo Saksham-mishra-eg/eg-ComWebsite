@@ -11,10 +11,11 @@ function GetGlobalTrade() {
         <div className={styles.GetGlobalTradeOnline}>
             <Container>
                 <Row>
-                    <Col md={12}>
+                    <Col md={8}>
                         <div className={styles.GeGlobl}>
-                            <h2>Don’t Wait, Get a Drill of OUR OGDASHBOARD.  </h2>
-                            <h3>Take the first move and reach out to us now!</h3>
+                            <h2>Want to know more about the Unique World of Export Genius? </h2>
+                            <h3>Get on Touch with Export Genius now!</h3>
+
                             <Button className={styles.scheDemoBtn} variant="success">Schedule a Demo</Button>{' '}
                             <Button className={styles.LogonDemoBtn} variant="primary">Login</Button>{' '}
                         </div>

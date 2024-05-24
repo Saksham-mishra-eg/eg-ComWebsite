@@ -67,3 +67,21 @@
     line-height: 28px;
     padding: 0.75rem;
 }
+
+@media screen and (max-width: 768px){
+    .FaQuestionsText h2{
+       font-size: 36px;
+       text-align: left;
+    }
+    .FaQuestionsText{
+       display: block;
+    }
+    .btnshowall{
+       float: right;
+           margin-top: 18px;
+           margin-bottom: 18px;
+    }
+    .FaQuestionsBg{
+       padding: 30px 0;
+    }
+   }

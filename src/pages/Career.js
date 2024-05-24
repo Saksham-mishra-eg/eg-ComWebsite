@@ -8,7 +8,7 @@ import WhyWork from "../components/Careers/WhyWork";
 import OurCulture from "../components/Careers/OurCulture";
 import WeAreeg from "../components/Careers/WeAreeg";
 import CurrentOpening from "../components/Careers/CurrentOpening";
-import Possitions from "../components/Careers/Possitions";
+// import Possitions from "../components/Careers/Possitions";
 import GetGlobalTrade from "../components/Faqs/GetGlobalTrade";
 
 
@@ -21,7 +21,7 @@ const Career = () => {
       <OurCulture />
       <WeAreeg />
       <CurrentOpening />
-      <Possitions />
+      {/* <Possitions /> */}
       <GetGlobalTrade />
 
       <Footer />

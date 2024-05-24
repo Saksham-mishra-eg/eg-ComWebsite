@@ -11,8 +11,8 @@ function SearchList() {
                 <Row>
                     <Col md={12}>
                         <div className={styles.SrchListTxt}>
-                            <h2>Search Import Export Data of Global Countries</h2>
-                            <p>Search for Import and Export Data from 195+ Countries that will facilitate your decision-making</p>
+                            <h2>Search from World's Largest Import & Export Trade Data Dashboard</h2>
+                            <p>Delve into extensive detail of Import and Export Data from 195+ countries for smart decisions.</p>
                         </div>
 
                         <div className={styles.SrchListForm}>

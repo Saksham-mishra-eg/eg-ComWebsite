@@ -44,9 +44,9 @@ function FaQuestions() {
                 <Row>
                     <Col md={12}>
                         <div className={styles.FaQuestionsText}>
-                            <h2>About Our Ploatform and Data</h2>
+                            <h2>Data and Platform FAQs</h2>
                             {/* <a href="#showall">Show All</a> */}
-                            <Button onClick={toggleAll} variant="secondary">
+                            <Button onClick={toggleAll} variant="secondary" className={styles.btnshowall} >
                                 {open1 || open2 || open3 || open4 || open5 || open6 || open7 || open8 || open9 || open10 || open11 || open12 ? 'Close All' : 'Open All'}
                             </Button>
                         </div>
@@ -66,7 +66,7 @@ function FaQuestions() {
                                 </Button>
                                 <Collapse in={open1}>
                                     <div id="example-collapse-text-1" className={styles.bodytextColssp}>
-                                        Export Genius is a leading market research company, providing import-export trade data online of 190+ Countries around the globe. We have 10 years of experience in the industry and the trust that clients have shown in us is commendable. We provide an online platform to access global trade data by Importers, Exporters, Products, and Markets and so on that is presented in neat, meaningful and relevant charts for having quick analysis.
+                                    Export Genius is a leading trade intelligence online platform that offers import-export trade data of global businesses. We have data of 190+ countries including detailed customs data of 55+ countries and exclusive data of 30+ countries. Export Genius dashboard gives you access to the most relevant trade data of companies along with complete shipment details.
                                     </div>
                                 </Collapse>
                             </Card.Body>
@@ -78,12 +78,12 @@ function FaQuestions() {
                                     aria-controls="example-collapse-text-2"
                                     aria-expanded={open2}
                                 >
-                                    How many countries’ data can I access on Export Genius?
+                                    What is Export Genius used for?
                                     {open2 ? <BsChevronUp /> : <BsChevronDown />}
                                 </Button>
                                 <Collapse in={open2}>
                                     <div id="example-collapse-text-2" className={styles.bodytextColssp}>
-                                        Another collapse item. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Export Genius is used by importers, exporters, and logistics to get essential data that helps them to find and connect with the right business partners. Our dashboard is also used by market research firms, banking & financial institutions, sales & marketing teams, corporations, law firms, insurance companies, academic institutions, and government bodies for decision-making. The Export Genius platform can help companies understand the international market, find buyers & suppliers, analyze the flow of commodities, and target ideal prospects.
                                     </div>
                                 </Collapse>
                             </Card.Body>
@@ -95,12 +95,12 @@ function FaQuestions() {
                                     aria-controls="example-collapse-text-3"
                                     aria-expanded={open3}
                                 >
-                                    How many countries’ exclusive data is available in your database?
+                                    What is the total number of countries covered in your database?
                                     {open3 ? <BsChevronUp /> : <BsChevronDown />}
                                 </Button>
                                 <Collapse in={open3}>
                                     <div id="example-collapse-text-3" className={styles.bodytextColssp}>
-                                        Another collapse item. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Our database covers 190+ countries, including detailed data of 55+ countries. So, with our dashboard, never miss out any update on trade developments in the international market.
                                     </div>
                                 </Collapse>
                             </Card.Body>
@@ -112,12 +112,12 @@ function FaQuestions() {
                                     aria-controls="example-collapse-text-4"
                                     aria-expanded={open4}
                                 >
-                                    How many types of data do you provide?
+                                    For how many countries, do you provide exclusive data?
                                     {open4 ? <BsChevronUp /> : <BsChevronDown />}
                                 </Button>
                                 <Collapse in={open4}>
                                     <div id="example-collapse-text-4" className={styles.bodytextColssp}>
-                                        Another collapse item. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    We provide exclusive data of 30+ countries. Check data availability to get the list of countries. So, be the first to know about the import and export activities of these countries.
                                     </div>
                                 </Collapse>
                             </Card.Body>
@@ -129,12 +129,21 @@ function FaQuestions() {
                                     aria-controls="example-collapse-text-5"
                                     aria-expanded={open5}
                                 >
-                                    Can I access the contact information of companies and their employees?
+                                   How many types of data are covered in your database?
                                     {open5 ? <BsChevronUp /> : <BsChevronDown />}
                                 </Button>
                                 <Collapse in={open5}>
                                     <div id="example-collapse-text-5" className={styles.bodytextColssp}>
-                                        Another collapse item. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Our database covers 7 types of import export data, namely Detailed Data, Statistical Data, Transit Data, Bill of Lading Data, Cargo BL Data, Suez Canal BL Data, and Mirror Data. Find more about these data types below:
+                                    <ul>
+                                        <li> <b>Detailed Data</b> covers customs-based details such as importer name, exporter name, HS Code, product description, value, quantity, origin country, destination country, port, and so on.</li>
+                                        <li> <b>Statistical Data</b> is used for primary research of the market, covering date, quantity, price, trade country, etc.</li>
+                                        <li> <b>Transit Data</b> covers import and export data of shipments that pass through different customs territories.</li>
+                                        <li> <b>Bill of Lading Data</b> is based on shipping documents and covers details of consignments including company information, but pricing information is not covered.</li>
+                                        <li> <b>Cargo BL Data</b>  is a type of data that is collected from various shipping companies.</li>
+                                        <li> <b>Suez Canal BL Data</b> includes information on shipments that pass through Suez Canal.</li>
+                                        <li> <b>Mirror Data</b> is data from countries that do not report their trade information. This type of data is restructured based on data reported by their partner countries.</li>
+                                    </ul>
                                     </div>
                                 </Collapse>
                             </Card.Body>
@@ -146,12 +155,12 @@ function FaQuestions() {
                                     aria-controls="example-collapse-text-6"
                                     aria-expanded={open6}
                                 >
-                                    Can I search data online?
+                                    Is the contact information of importers and exporters covered in the data?
                                     {open6 ? <BsChevronUp /> : <BsChevronDown />}
                                 </Button>
                                 <Collapse in={open6}>
                                     <div id="example-collapse-text-6" className={styles.bodytextColssp}>
-                                        Another collapse item. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Yes, our database covers the contact data of importers and exporters.
                                     </div>
                                 </Collapse>
                             </Card.Body>
@@ -163,12 +172,12 @@ function FaQuestions() {
                                     aria-controls="example-collapse-text-7"
                                     aria-expanded={open7}
                                 >
-                                    What is the source of data, its authenticity and accuracy?
+                                    Can I search global trade data online?
                                     {open7 ? <BsChevronUp /> : <BsChevronDown />}
                                 </Button>
                                 <Collapse in={open7}>
                                     <div id="example-collapse-text-7" className={styles.bodytextColssp}>
-                                        Another collapse item. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    You can search data online by clicking on the <b>“Search Data”</b> page and using the keywords – HS Code, Product Description, Importer, and Exporter.
                                     </div>
                                 </Collapse>
                             </Card.Body>
@@ -180,12 +189,12 @@ function FaQuestions() {
                                     aria-controls="example-collapse-text-8"
                                     aria-expanded={open8}
                                 >
-                                    How many countries’ exclusive data is available in your database?
+                                    Is import export data you provide authentic? What is the source of data?
                                     {open8 ? <BsChevronUp /> : <BsChevronDown />}
                                 </Button>
                                 <Collapse in={open8}>
                                     <div id="example-collapse-text-8" className={styles.bodytextColssp}>
-                                        Another collapse item. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    We provide authentic and quality data that meets the requirements of clients as we collect data from verified sources. These sources include Custom Departments, Government Bodies, and others.
                                     </div>
                                 </Collapse>
                             </Card.Body>
@@ -197,12 +206,12 @@ function FaQuestions() {
                                     aria-controls="example-collapse-text-9"
                                     aria-expanded={open9}
                                 >
-                                    How many types of data do you provide?
+                                    How frequently the database is updated?
                                     {open9 ? <BsChevronUp /> : <BsChevronDown />}
                                 </Button>
                                 <Collapse in={open9}>
                                     <div id="example-collapse-text-9" className={styles.bodytextColssp}>
-                                        Another collapse item. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Our standard time to update our database is 30 days, however, this time varies from country to country.
                                     </div>
                                 </Collapse>
                             </Card.Body>
@@ -214,12 +223,21 @@ function FaQuestions() {
                                     aria-controls="example-collapse-text-10"
                                     aria-expanded={open10}
                                 >
-                                    Can I access the contact information of companies and their employees?
+                                    How is Export Genius different from other market intelligence online platforms?
                                     {open10 ? <BsChevronUp /> : <BsChevronDown />}
                                 </Button>
                                 <Collapse in={open10}>
                                     <div id="example-collapse-text-10" className={styles.bodytextColssp}>
-                                        Another collapse item. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Export Genius is different from other market intelligence online platforms as the database covers data of the highest numbers of countries, exclusive information, user-friendly dashboard, and other features.
+                                    <ul>
+                                        <li>  190+ Countries’ Import-Export Trade Data Coverage</li>
+                                        <li>  55+ Countries’ Detailed Customs Data</li>
+                                        <li> 30+ Countries’ Exclusive Data</li>
+                                        <li> 10M+ Contacts of Companies and Employees Covered</li>
+                                        <li> Easy Data Search with Multiple Filters and Data Visualization</li>
+                                        <li> Customized Plan Based on Your Data Requirements</li>
+                                        <li> Verified and Authentic Data</li>
+                                    </ul>
                                     </div>
                                 </Collapse>
                             </Card.Body>
@@ -231,12 +249,12 @@ function FaQuestions() {
                                     aria-controls="example-collapse-text-11"
                                     aria-expanded={open11}
                                 >
-                                    How many countries’ exclusive data is available in your database?
+                                    How can Export Genius help my business?
                                     {open11 ? <BsChevronUp /> : <BsChevronDown />}
                                 </Button>
                                 <Collapse in={open11}>
                                     <div id="example-collapse-text-11" className={styles.bodytextColssp}>
-                                        Another collapse item. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Our trade intelligence online platform helps global businesses to make data-driven decisions and accomplish their goals.
                                     </div>
                                 </Collapse>
                             </Card.Body>
@@ -248,12 +266,12 @@ function FaQuestions() {
                                     aria-controls="example-collapse-text-12"
                                     aria-expanded={open12}
                                 >
-                                    What is the source of data, its authenticity and accuracy?
+                                    How can I get in touch with the Export Genius team for any assistance?
                                     {open12 ? <BsChevronUp /> : <BsChevronDown />}
                                 </Button>
                                 <Collapse in={open12}>
                                     <div id="example-collapse-text-12" className={styles.bodytextColssp}>
-                                        Another collapse item. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    For any query, you can contact us via +91 8003 8003 57 (Mobile), +91-11-47048012 (Landline), +91-11-47048013 (Landline), +91-11-47048014 (Landline), +91 8003 8003 57 (WhatsApp) and info@exportgenius.in (Email Address). You can also convey your query through ‘Chat Box’. To have a quick tour of our dashboard, <a href="#schedule">schedule a demo</a> .
                                     </div>
                                 </Collapse>
                             </Card.Body>

@@ -11,9 +11,9 @@ function TradeIntelligence() {
                 <Row>
                     <Col md={6}>
                         <div className={styles.tradeText}>
-                            <h1>Trade Intelligence Online Platform</h1>
+                            <h1>Global Trade Insights That Gives You The Edge</h1>
                             <h3>ACTIONABLE INSIGHTS & INFORMATION</h3>
-                            <p>Access global trade data online in an AI-powered market intelligence platform and grow your business.</p>
+                            <p>Discover the world of import and export data by using our AI-Powered Intelligent Trade database.</p>
                             <Row>
 
                               <Col sm="7">

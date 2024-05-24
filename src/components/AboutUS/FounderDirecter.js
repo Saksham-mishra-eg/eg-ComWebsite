@@ -12,11 +12,11 @@ function FounderDirecter() {
                     <Col md={6}>
                         <div className={styles.FondDire}>
                             <div className={styles.heaindRiectr}>
-                                <h2> Founders & Director </h2>
+                                <h2>Director and Founder Den</h2>
                                 <hr className={styles.direLne} />
                             </div>
                             <div className={styles.fornParaghr}>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                <p>The duo of director and founder are the real motivation behind the success of Export Genius. Their steer-clear vision and consistent efforts have led to the company’s success. Under the aegis of their leadership, Export Genius continues to empower businesses to thrive in the international marketplace. </p>
                                 <a href='#readmore'>Read More...</a>
                             </div>
                         </div>

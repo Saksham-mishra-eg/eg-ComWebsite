@@ -24,9 +24,10 @@
 .TrdetamOnlineIMg{
     text-align: left;
     padding: 20px 0;
+    position: relative;
 }
 .TrdetamOnlineIMg img{
-    /* width: 100%; */
+    width: 100%;
 }
 .NavTabsFlex{
     justify-content: flex-start;
@@ -59,3 +60,20 @@
     background-color: transparent!important;
 }
 
+.GlbDataImg{
+    font-family: "Roboto", sans-serif;
+    position: absolute;
+    top: 22%;
+    left: 5%;
+    width: 20%;
+}
+.GlbDataImg h3{
+    font-size: 24px;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.GlbDataImg p{
+    color: #2D2E2E;
+    font-size: 14px;
+}

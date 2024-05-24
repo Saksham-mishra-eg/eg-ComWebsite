@@ -15,6 +15,7 @@
     list-style: none;
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .SociLisstss li a img {
@@ -64,6 +65,13 @@
     text-decoration: none;
     font-family: "Poppins", sans-serif;
 }
-.ForListTags li a:hover{
+
+.ForListTags li a:hover {
     color: #000;
+}
+
+@media screen and (max-width: 768px) {
+    .FooterOnline {
+        padding: 70px 0;
+    }
 }

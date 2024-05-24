@@ -7,25 +7,29 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.GeGlobl{
+
+.GeGlobl {
     font-family: "Roboto", sans-serif;
     text-align: left;
 }
-.GeGlobl h2{
+
+.GeGlobl h2 {
     font-size: 38px;
     font-weight: 700;
     color: #fff;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
-.GeGlobl h3{
+
+.GeGlobl h3 {
     text-transform: uppercase;
-font-size: 30px;
-color: #fff;
-font-weight: 400;
-margin-bottom: 25px;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 25px;
 }
-.scheDemoBtn{
+
+.scheDemoBtn {
     background: #66B167;
     padding: 10px 30px;
     border-radius: 40px;
@@ -34,11 +38,17 @@ margin-bottom: 25px;
     letter-spacing: 0.5px;
     margin-right: 20px;
 }
-.LogonDemoBtn{
+
+.LogonDemoBtn {
     background: #3884C7;
     padding: 10px 30px;
     border-radius: 40px;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.5px;
+}
+@media screen and (max-width: 768px){
+    .GetGlobalTradeOnline{
+        background-position: top center;
+    }
 }
