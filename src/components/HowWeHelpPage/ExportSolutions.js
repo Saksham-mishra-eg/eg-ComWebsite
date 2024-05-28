@@ -11,17 +11,19 @@ function ExportSolutions() {
                 <Row>
                     <Col md={6}>
                         <div className={styles.tradeText}>
-                            <h1>Export Genius Solutions</h1>
-                            <p>Explore detailed Customs Data, Statistical Data, Mirror Data, Bill of Lading Data, Suez Canal Bill of Lading Data, </p>
-                           <br />
+                            <h1>How You Can Make the Most from our OG Dashboard?</h1>
+                            <p>Access trade insights, explore new markets, and keep a check on your competitors with Export Genius.  </p>
+                            <br />
                             <h3>ACTIONABLE INSIGHTS & INFORMATION</h3>
                             <Row>
 
-                              <Col sm="7">
-                              <Form.Control className={styles.frokDemo} column sm="2" type="text" placeholder="Enter Your Email" />
-                              </Col>
+                                <Col sm="7">
+                                    <Form.Control className={styles.frokDemo} column sm="2" type="text" placeholder="Enter Your Email" />
+                                </Col>
                                 <Col sm="4">
-                                    <a href="#freetrails" className={styles.TrlBtn} > Free Trial</a>
+                                   <div className={styles.devidt}>
+                                   <a href="#freetrails" className={styles.TrlBtn} > Free Trial</a>
+                                   </div>
                                 </Col>
 
                             </Row>

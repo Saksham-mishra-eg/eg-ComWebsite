@@ -2,10 +2,27 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./TradedataMap.module.css";
 import Container from 'react-bootstrap/Container';
 import { Col, Row, Tab, Nav } from "react-bootstrap";
-
+import React, { useState, useEffect } from 'react';
+import './customStyles.css';
 
 function TradedataMap() {
     const map = 'asia.png'
+
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+
+        window.addEventListener('resize', handleResize);
+        handleResize();  // Initial check
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
 
     return (
         <div className={styles.TradedataMapOnline}>
@@ -28,7 +45,12 @@ function TradedataMap() {
                             <Row>
                                 <Col sm={12}>
                                     <div className={styles.continentTabs}>
-                                        <Nav variant="pills" className="flex-row justify-content-evenly" direction="horizontal" gap={5} >
+                                        <Nav
+                                            variant="pills"
+                                            className={`flex-row justify-content-evenly ${isMobile ? 'nav-mobile' : ''}`}
+                                            direction="horizontal"
+                                            gap={5}
+                                        >
                                             <Nav.Item>
                                                 <Nav.Link className={styles.tabsCntnt} eventKey="Asia">Asia</Nav.Link>
                                             </Nav.Item>
@@ -53,7 +75,7 @@ function TradedataMap() {
                                             <Row>
                                                 <Col md={4}>
                                                     <div className={styles.mapImg}>
-                                                        <img src={map} alt="map" />
+                                                        <img src={map} alt="map asia" />
                                                     </div>
                                                 </Col>
                                                 <Col md={7}>
@@ -91,7 +113,7 @@ function TradedataMap() {
                                             <Row>
                                                 <Col md={4}>
                                                     <div className={styles.mapImg}>
-                                                        <img src={map} alt="map" />
+                                                        <img src={map} alt="map africa" />
                                                     </div>
                                                 </Col>
                                                 <Col md={7}>
@@ -129,7 +151,7 @@ function TradedataMap() {
                                             <Row>
                                                 <Col md={4}>
                                                     <div className={styles.mapImg}>
-                                                        <img src={map} alt="map" />
+                                                        <img src={map} alt="america map" />
                                                     </div>
                                                 </Col>
                                                 <Col md={7}>
@@ -167,7 +189,7 @@ function TradedataMap() {
                                             <Row>
                                                 <Col md={4}>
                                                     <div className={styles.mapImg}>
-                                                        <img src={map} alt="map" />
+                                                        <img src={map} alt="europe map" />
                                                     </div>
                                                 </Col>
                                                 <Col md={7}>
@@ -205,7 +227,7 @@ function TradedataMap() {
                                             <Row>
                                                 <Col md={4}>
                                                     <div className={styles.mapImg}>
-                                                        <img src={map} alt="map" />
+                                                        <img src={map} alt="oceania map" />
                                                     </div>
                                                 </Col>
                                                 <Col md={7}>

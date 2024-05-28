@@ -15,7 +15,9 @@ function ContactIframe() {
                         <Col md={12}>
                             <div className={styles.ContactAreas}>
                                 <h3>Contact us</h3>
-                                <h1>Experience the Power of Global Trade Data At Your Fingertips. Connect with us now.</h1>
+                                <h1>We're just one form away from you. Fill in your details and our experts are happy to assist!
+                                    See our dashboard in action. Book your live demo now!
+                                </h1>
                             </div>
                         </Col>
                     </Row>

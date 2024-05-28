@@ -38,14 +38,15 @@ function CurrentOpening() {
                 <Row>
                     <Col md={12}>
                         <div className={styles.CurOpenhading}>
-                            <h2>Current Openings Attracting Best Talent in Tech & Business</h2>
-                            <p>We believe every employee shines when they bring their unique selves and feel that they belong.</p>
+                            <h4>Positions</h4>
+                            <h2>Attracting Best Talent in All Heads</h2>
+                            <p>Apply for available positions at our head office. </p>
                         </div>
                     </Col>
                     <Col md={12}>
                         <Form noValidate className={styles.fonrSelectEg} >
                             <Row className="mb-3">
-                                <Form.Group as={Col} md="6" controlId="validationCustom01">
+                                <Form.Group as={Col} md="6" sm="6" controlId="validationCustom01">
                                     <Form.Select className={styles.fonrSelectEgOption} aria-label="Default select example">
                                         <option>All offices...</option>
                                         <option>One</option>
@@ -54,7 +55,7 @@ function CurrentOpening() {
                                     </Form.Select>
                                 </Form.Group>
 
-                                <Form.Group as={Col} md="6" controlId="validationCustom01">
+                                <Form.Group as={Col} md="6" sm="6" controlId="validationCustom01">
                                     <Form.Select className={styles.fonrSelectEgOption} aria-label="Default select example">
                                         <option>All departments...</option>
                                         <option>One</option>
@@ -197,7 +198,7 @@ function CurrentOpening() {
                                         </div>
                                     </Form.Group>
                                     <Button className={styles.subtmBtinFrom} type="submit">Submit</Button>
-                                   
+
                                 </Form>
                             </div>
                         </div>

@@ -47,11 +47,8 @@
     font-weight: 400;
     letter-spacing: 0.5px;
 }
-
-
-@media screen and (max-width: 768px) {
-    .GetGlobalTradeOnline {
+@media screen and (max-width: 768px){
+    .GetGlobalTradeOnline{
         background-position: top center;
     }
-
 }

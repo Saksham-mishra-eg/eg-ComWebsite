@@ -7,7 +7,7 @@ import FooterPrivacy from "../components/HomePage/FooterPrivacy";
 import ContactIframe from "../components/ContactUs/ContactIframe";
 import CustomerSupport from "../components/ContactUs/CustomerSupport";
 import TrustedClient from "../components/ContactUs/TrustedClient";
-import GetGlobalTrade from "../components/HomePage/GetGlobalTrade"
+import GetGlobalTrade from "../components/ContactUs/GetGlobalTrade"
 
 
 const ContactUs = () => {

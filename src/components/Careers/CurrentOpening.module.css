@@ -19,6 +19,12 @@
     margin-bottom: 20px;
 }
 
+.CurOpenhading h4 {
+    color: #3884C7;
+    font-weight: 500;
+    font-size: 24px;
+}
+
 .CurOpenhading p {
     color: #171a31bf;
     font-size: 16px;
@@ -125,29 +131,34 @@
     font-weight: 500;
     margin-bottom: 30px;
 }
-.formLaelCar{
+
+.formLaelCar {
     font-size: 16px;
     color: #171a31bb;
     font-family: "Roboto", sans-serif;
 }
-.formContrCaresd{
+
+.formContrCaresd {
     border-radius: 2px;
     color: #A19D9D;
     outline: none;
     box-shadow: none;
     border-color: #A19D9D;
 }
-.formContrCaresd:focus{
+
+.formContrCaresd:focus {
     outline: none;
     box-shadow: none;
     border-color: #A19D9D;
 }
-.formLaelCarresm{
+
+.formLaelCarresm {
     font-size: 16px;
     color: #292929;
     font-family: "Roboto", sans-serif;
 }
-.atacthresumeUpld{
+
+.atacthresumeUpld {
     position: absolute;
     top: 0;
     right: 0;
@@ -160,27 +171,32 @@
     width: 148px;
     height: 100%;
 }
-.inputFielAtacth{
+
+.inputFielAtacth {
     background: #fff;
-	-webkit-border-radius: 15px;
-	-moz-border-radius: 15px;
-	border-radius: 15px;
-	color: #3884C7;
-	font-size: 1em;
-	font-weight: bold;
-	margin: 0;/*20px/16px 0*/
-	overflow: hidden;
-	padding: 0;/*14px/16px*/
-	position: relative;
-	text-align: center;
-	width: 150px;
-   cursor: pointer;
-   text-align: left;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    color: #3884C7;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0;
+    /*20px/16px 0*/
+    overflow: hidden;
+    padding: 0;
+    /*14px/16px*/
+    position: relative;
+    text-align: center;
+    width: 150px;
+    cursor: pointer;
+    text-align: left;
 }
-.inputFielAtacth span{
+
+.inputFielAtacth span {
     cursor: pointer;
 }
-.subtmBtinFrom{
+
+.subtmBtinFrom {
     background-color: #3884C7;
     color: #fff;
     border-radius: 2px;
@@ -188,4 +204,30 @@
     font-family: "Roboto", sans-serif;
     width: 170px;
     font-size: 16px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .fonrSelectEg {
+        width: 100%;
+    }
+
+    .fonrSelectEgOption {
+        margin-bottom: 25px;
+    }
+
+    .acordionFormCrer {
+        width: 100%;
+        margin: 0;
+    }
+
+    .FomrDentnormCrer {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .aplythished {
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
 }

@@ -1,11 +1,12 @@
-.GlobalTradeStatsBg{
+.GlobalTradeStatsBg {
     font-family: "Roboto", sans-serif;
     width: 100%;
     height: auto;
     padding-bottom: 60px;
     background-color: #fff;
 }
-.EnrchglobData{
+
+.EnrchglobData {
     font-family: "Roboto", sans-serif;
     display: flex;
     flex-direction: row;
@@ -16,30 +17,35 @@
     gap: 4rem;
     padding: 40px 0 20px;
 }
-.hrLines{
+
+.hrLines {
     height: 3px;
     background: #AEAEAE;
     width: 22%;
     opacity: 1;
     border: 2px solid #AEAEAE;
 }
-.EnrchglobData h2{
+
+.EnrchglobData h2 {
     font-size: 40px;
     font-weight: 700;
     color: #000;
 }
-.EnrichDataGlobaltr{
+
+.EnrichDataGlobaltr {
     background: #F9F9F9;
     margin: 20px;
 }
-.lsitofTradedata{
+
+.lsitofTradedata {
     padding-left: 0;
     list-style: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.lsitofTradedata li{
+
+.lsitofTradedata li {
     display: flex;
     align-items: center;
     width: 25%;
@@ -48,23 +54,61 @@
     padding: 35px 20px;
     border-right: 0.1rem solid #3884C7;
 }
-.lsitofTradedata li:last-child{
+
+.lsitofTradedata li:last-child {
     border-right: none;
 }
 
-.listofTrade h3{
-font-size: 52px;
-color: #3884C7;
-font-weight: 900;
-margin-bottom: 0;
+.listofTrade h3 {
+    font-size: 52px;
+    color: #3884C7;
+    font-weight: 900;
+    margin-bottom: 0;
 }
-.listofTrade h4{
-font-size: 24px;
-font-weight: 500;
-color: #000;
-margin-bottom: 0;
+
+.listofTrade h4 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 0;
 }
-.listofTrade p{
-font-size: 14px;
-color: #6E6E6E;
+
+.listofTrade p {
+    font-size: 14px;
+    color: #6E6E6E;
+}
+
+@media screen and (max-width: 768px) {
+    .EnrichDataGlobaltr {
+        width: 100%;
+        margin: 0;
+    }
+
+    .lsitofTradedata {
+        width: 100%;
+    }
+
+    .lsitofTradedata li {
+        width: 50%;
+        gap: 0.8rem;
+        padding: 25px 6px;
+        justify-content: flex-start;
+    }
+
+    .lsitofTradedata li:nth-child(2) {
+        border-right: 0;
+    }
+
+    .listofTrade img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .listofTrade h3 {
+        font-size: 42px;
+    }
+
+    .listofTrade h4 {
+        font-size: 20px;
+    }
 }

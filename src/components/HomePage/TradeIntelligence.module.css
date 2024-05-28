@@ -64,3 +64,54 @@
     justify-content: space-between;
     padding: 25px 0;
 }
+
+.linanchdem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.frokDemo {
+    width: 64%;
+}
+
+@media screen and (max-width: 768px) {
+    .onlinePlatform {
+        padding: 40px 0;
+    }
+
+    .tradeText {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .tradeText h1 {
+        font-size: 45px;
+    }
+    .tradeText h3 {
+        padding: 6px 20px;
+    }
+
+    .linanchdem {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .captImg {
+        justify-content: space-around;
+    }
+
+    .captImg img {
+        width: 26%;
+    }
+
+    .frokDemo {
+        width: 64%;
+    }
+
+    .TrlBtn {
+        font-size: 14px;
+    }
+
+}

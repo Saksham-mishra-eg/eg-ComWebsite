@@ -6,8 +6,9 @@
 }
 
 .tradeBg {
-   text-align: center;
+    text-align: center;
 }
+
 /* .tradeBg {
     mix-blend-mode: multiply;
  } */
@@ -67,4 +68,37 @@
     display: flex;
     justify-content: space-between;
     padding: 25px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .tradeText {
+        width: 100%;
+        margin: 0;
+    }
+
+    .tradeText h1 {
+        font-size: 45px;
+    }
+
+    .tradeText h3 {
+        padding: 6px 20px;
+    }
+
+    .devidt {
+        text-align: center;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .captImg {
+        justify-content: space-around;
+    }
+
+    .captImg img {
+        width: 26%;
+    }
+
+    .tradeBg img {
+        width: 100%;
+    }
 }

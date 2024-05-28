@@ -48,10 +48,13 @@
     letter-spacing: 0.5px;
 }
 
-
 @media screen and (max-width: 768px) {
     .GetGlobalTradeOnline {
-        background-position: top center;
+        background-position: bottom center;
+    }
+
+    .GeGlobl h2 {
+        margin-bottom: 20px;
     }
 
 }

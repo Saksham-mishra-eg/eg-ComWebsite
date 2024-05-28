@@ -69,3 +69,10 @@
     text-transform: uppercase;
     text-decoration: none;
 }
+
+@media screen and (max-width: 768px) {
+    .EnrchDtaBox {
+        margin-bottom: 30px;
+    }
+
+}

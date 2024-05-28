@@ -50,3 +50,11 @@
 .selitxt{
     text-align: center;
 }
+@media screen and (max-width: 768px) {
+    .oveClnts{
+        width: 100%;
+    }
+    .oveClntsImng{
+        width: 100%;
+    }
+}

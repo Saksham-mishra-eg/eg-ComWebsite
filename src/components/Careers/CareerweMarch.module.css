@@ -28,7 +28,7 @@
     color: #FFFFFF;
     font-weight: 300;
     border-bottom: 4px solid;
-    width: 40%;
+    width: 60%;
     padding-bottom: 15px;
 }
 
@@ -38,4 +38,29 @@
     color: #FFFFFF;
     font-weight: 600;
     line-height: 107.1px;
+}
+
+@media screen and (max-width: 768px) {
+    .CareerweMarchOBg {
+        background-position: center top;
+        height: auto;
+    }
+
+    .carkeermarch {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    .carkeermarch h3 {
+        font-size: 35px;
+        width: 75%;
+    }
+
+    .carkeermarch h1 {
+        font-size: 60px;
+        line-height: 67.1px;
+    }
 }

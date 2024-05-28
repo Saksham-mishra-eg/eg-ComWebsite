@@ -8,9 +8,9 @@ import ExportSolutions from "../components/HowWeHelpPage/ExportSolutions";
 import Clients from "../components/HomePage/Clients";
 import AllSolutionsList from "../components/HowWeHelpPage/AllSolutionsList";
 import GlobalTradeStats from "../components/HowWeHelpPage/GlobalTradeStats";
-import BusinessEdge from "../components/HowWeHelpPage/BusinessEdge";
+// import BusinessEdge from "../components/HowWeHelpPage/BusinessEdge";
 import WhatmakesDiff from "../components/HowWeHelpPage/WhatmakesDiff";
-import GetGlobalTrade from "../components/HomePage/GetGlobalTrade";
+import GetGlobalTrade from "../components/HowWeHelpPage/GetGlobalTrade";
 
 
 const DataFlow = () => {
@@ -21,7 +21,7 @@ const DataFlow = () => {
       <Clients />
       <AllSolutionsList />
       <GlobalTradeStats />
-      <BusinessEdge />
+      {/* <BusinessEdge /> */}
       <WhatmakesDiff />
       <GetGlobalTrade />
       

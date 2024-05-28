@@ -5,7 +5,9 @@
     height: auto;
 }
 
-.TrdetamOnline {text-align: left;}
+.TrdetamOnline {
+    text-align: left;
+}
 
 .TrdetamOnline h2 {
     color: #171A31;
@@ -21,22 +23,26 @@
     font-size: 16px;
     color: #848484;
 }
-.TrdetamOnlineIMg{
+
+.TrdetamOnlineIMg {
     text-align: left;
     padding: 20px 0;
     position: relative;
 }
-.TrdetamOnlineIMg img{
+
+.TrdetamOnlineIMg img {
     width: 100%;
 }
-.NavTabsFlex{
+
+.NavTabsFlex {
     justify-content: flex-start;
     flex-wrap: nowrap;
     text-align: left;
     width: 86%;
     gap: 1rem;
 }
-.finGobaTxt{
+
+.finGobaTxt {
     color: #737373;
     font-size: 16px;
     font-weight: 500;
@@ -44,36 +50,73 @@
     border-radius: 0 !important;
     padding-left: 0;
 }
-.finGobaTxt.nav-link.active{
-    color: #79BB7A!important;
-    background-color: transparent!important;
-}
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
-    color: #79BB7A!important;
-    background-color: transparent!important;
-}
-.nav-link{
-    color: #79BB7A!important;
-}
-.finGobaTxt.active{
-    color: #79BB7A!important;
-    background-color: transparent!important;
+
+.finGobaTxt.nav-link.active {
+    color: #79BB7A !important;
+    background-color: transparent !important;
 }
 
-.GlbDataImg{
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #79BB7A !important;
+    background-color: transparent !important;
+}
+
+.nav-link {
+    color: #79BB7A !important;
+}
+
+.finGobaTxt.active {
+    color: #79BB7A !important;
+    background-color: transparent !important;
+}
+
+.GlbDataImg {
     font-family: "Roboto", sans-serif;
     position: absolute;
     top: 22%;
     left: 5%;
     width: 20%;
 }
-.GlbDataImg h3{
+
+.GlbDataImg h3 {
     font-size: 24px;
     color: #000;
     font-weight: 500;
     margin-bottom: 30px;
 }
-.GlbDataImg p{
+
+.GlbDataImg p {
     color: #2D2E2E;
     font-size: 14px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .NavTabsFlex {
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 1rem;
+        margin-top: 80px;
+    }
+
+    .GlbDataImg {
+        top: 18%;
+        left: 2%;
+        width: 29%;
+    }
+
+    .GlbDataImg h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .GlbDataImg p {
+        font-size: 13px;
+    }
+
+    .TrdetamOnlineIMg {
+        overflow: hidden;
+    }
+
 }

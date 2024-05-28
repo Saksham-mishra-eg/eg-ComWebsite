@@ -47,3 +47,25 @@
     width: 48%;
     font-family: "Roboto", sans-serif;
 }
+
+@media screen and (max-width: 768px) {
+
+    .SrchListTxt h2 {
+        font-size: 33px;
+        line-height: 46px;
+        margin-bottom: 20px;
+    }
+
+    .SrchListForm {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .SlctFormSrchBtn {
+        width: 100%;
+    }
+
+    .SlctFormSrch {
+        border-bottom: 1px solid;
+    }
+}

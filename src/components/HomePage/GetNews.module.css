@@ -47,3 +47,13 @@
     font-size: 40px;
     font-weight: 600;
 }
+
+@media screen and (max-width: 768px) {
+    .GetNewsOnline{
+        padding: 10px;
+    }
+    .redirectBg{
+        padding: 40px;
+        margin-bottom: 35px;
+    }
+}

@@ -38,3 +38,9 @@
 .imgClinEn img {
     height: 142px;
 }
+
+@media screen and (max-width: 768px) {
+    .imgClinEn {
+        padding: 0;
+    }
+}

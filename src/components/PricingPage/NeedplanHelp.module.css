@@ -42,14 +42,32 @@
     border-radius: 6px;
     align-content: center;
 }
-.choseneed p{font-size: 16px;}
-.choseneed img{
+
+.choseneed p {
+    font-size: 16px;
+}
+
+.choseneed img {
     margin-bottom: 25px;
 }
-.choseneed a{
-font-size: 16px;
-color: #3884C7;
-text-transform: uppercase;
-font-weight: 500;
-display: block;
+
+.choseneed a {
+    font-size: 16px;
+    color: #3884C7;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .ChooseplanBoxex {
+        gap: 0.5rem;
+        justify-content: flex-start;
+    }
+
+    .choseneed {
+        width: 48%;
+        height: auto;
+        padding: 25px 10px;
+    }
 }

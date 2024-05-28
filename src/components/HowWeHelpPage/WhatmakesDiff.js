@@ -13,48 +13,48 @@ function WhatmakesDiff() {
                     <Col md={12}>
                         <div className={styles.Whtmakesoems}>
                             <h2>What makes Export Genius Different from the rest?</h2>
-                            <p>
+                            {/* <p>
                                 Gain instant access to our trade intelligence online platform and get valuable import-export data to turn information into powerful insights.
-                            </p>
+                            </p> */}
                         </div>
                     </Col>
                     <Col md={12}>
                         <div className={styles.DirrderRest}>
                             <div className={styles.WhatmakesDiffText}>
                                 <img src="report.png" alt="Data report" />
-                                <h3>Customized Reports</h3>
-                                <p>Our trade data specialists combine data and their professional knowledge </p>
+                                <h3>Historical Data Available</h3>
+                                <p>Dive into the past of products. Explore the history of countries with our easy-to-use historical data dating back to 2012. Discover about economies, societies, and politics. Analyze trends and patterns to make smarter decisions. </p>
                                 <a href="#readmore">Read more...</a>
                             </div>
                             <div className={styles.WhatmakesDiffText}>
                                 <img src="verrify.png" alt="Quality Data" />
-                                <h3>Verified & Quality Data</h3>
-                                <p>We ensure that our database of over a billion records .</p>
+                                <h3>Latest Trade Insights</h3>
+                                <p>With Export Genius, stay at the edge of the world. The EG dashboard features the latest market trends, trade insights of commodities, and export-import data.</p>
                                 <a href="#readmore">Read more...</a>
                             </div>
                             <div className={styles.WhatmakesDiffText}>
                                 <img src="data-visualizatios.png" alt="visualizatios" />
-                                <h3>Visualize Data</h3>
-                                <p>Analyze global trade data by importer, exporter, HS Code, </p>
+                                <h3>Easy-On-Budget</h3>
+                                <p>With EG, Be Assured to have a one-dashboard that fits your trade data needs. What's even special? Our dashboard is relatively affordable! </p>
                                 <a href="#readmore">Read more...</a>
                             </div>
                             <div className={styles.WhatmakesDiffText}>
                                 <img src="access-control.png" alt="Data Access" />
-                                <h3>Unlimited Data Access</h3>
-                                <p>There is no limit to access global trade data,   </p>
+                                <h3>Personalized Dashboard </h3>
+                                <p>Get a customized view of the trade data. Use multiple filters like HS Code, Product Description, Buyer, Seller, Origin, Destination, etc.</p>
                                 <a href="#readmore">Read more...</a>
                             </div>
 
                             <div className={styles.WhatmakesDiffText}>
                                 <img src="compehensive.png" alt="Comprehensive" />
-                                <h3>Comprehensive Information</h3>
-                                <p>Import-export data covers precise shipment information</p>
+                                <h3> Visually-Appealing Data</h3>
+                                <p>Discover organized and visually appealing global trade data analysis. Discover insights categorized by importer, exporter, HS Code, and product description. Uncover the intricacies of global trade with ease and clarity.</p>
                                 <a href="#readmore">Read more...</a>
                             </div>
                             <div className={styles.WhatmakesDiffText}>
                                 <img src="verrify.png" alt="Quality Data" />
-                                <h3>Verified & Quality Data</h3>
-                                <p>We ensure that our database of over a billion records .</p>
+                                <h3>Add Country and Upgrade Plan</h3>
+                                <p>With Export Genius, you can effortlessly add any country to your coverage or upgrade your plan whenever you need. Whether you're seeking to explore new markets or access additional data insights, our flexible options ensure that you stay in control of your international trade journey. With Export Genius, the power to grow and adapt is always in your hands."</p>
                                 <a href="#readmore">Read more...</a>
                             </div>
                             <div className={styles.WhatmakesDiffText}>

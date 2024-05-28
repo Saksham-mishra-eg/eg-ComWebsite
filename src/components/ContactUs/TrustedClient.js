@@ -14,7 +14,7 @@ function TrustedClient() {
                 <Row>
                     <Col md={12}>
                         <div className={styles.CusomerSuproHead}>
-                            <h2>Trusted by 20K+ Clients</h2>
+                            <h2>Join the 20,000+ Clients Who Trust Us</h2>
                         </div>
                     </Col>
                 </Row>

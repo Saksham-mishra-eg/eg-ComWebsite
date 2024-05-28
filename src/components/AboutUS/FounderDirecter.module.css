@@ -79,3 +79,31 @@
 .directImge img {
     margin-bottom: 20px;
 }
+
+@media screen and (max-width: 768px) {
+    .FounderDirecterBg {
+        padding: 0;
+    }
+
+    .FondDire {
+        width: 100%;
+    }
+
+    .fornParaghr {
+        margin: 5px 5px 35px;
+    }
+
+    .directImge img {
+        width: 100%;
+    }
+
+    .directImge {
+        gap: 0.5rem;
+    }
+
+    .directImge h3 {
+        font-size: 22px;
+        margin-bottom: 0;
+    }
+
+}

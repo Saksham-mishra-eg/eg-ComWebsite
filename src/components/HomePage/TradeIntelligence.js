@@ -16,12 +16,17 @@ function TradeIntelligence() {
                             <p>Discover the world of import and export data by using our AI-Powered Intelligent Trade database.</p>
                             <Row>
 
-                              <Col sm="7">
-                              <Form.Control className={styles.frokDemo} column sm="2" type="text" placeholder="Enter Your Email" />
-                              </Col>
-                                <Col sm="4">
-                                    <a href="#" className={styles.TrlBtn} > Free Trial</a>
+                                <Col ms="12">
+                                    <div className={styles.linanchdem}>
+                                    <Form.Control className={styles.frokDemo} column sm="2" type="text" placeholder="Enter Your Email" />
+                                        <a href="#" className={styles.TrlBtn} > Free Trial</a>
+                                    </div>
                                 </Col>
+                                {/* <Col md="4">
+                                   <div className={styles.linanchdem}>
+                                   <a href="#" className={styles.TrlBtn} > Free Trial</a>
+                                   </div>
+                                </Col> */}
 
                             </Row>
                             <div className={styles.captImg}>

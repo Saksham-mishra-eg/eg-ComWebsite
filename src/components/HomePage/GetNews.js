@@ -46,7 +46,7 @@ function GetNews() {
                         </div>
                     </Col>
                 </Row>
-               
+
             </Container>
         </div>
     );

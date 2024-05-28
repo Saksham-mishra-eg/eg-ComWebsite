@@ -11,7 +11,7 @@ import CustomizedPlan from "../components/PricingPage/CustomizedPlan";
 import NeedplanHelp from "../components/PricingPage/NeedplanHelp";
 import Faqs from "../components/PricingPage/Faqs";
 import Testimonials from "../components/PricingPage/Testimonials";
-import GetGlobalTrade from "../components/HomePage/GetGlobalTrade";
+import GetGlobalTrade from "../components/PricingPage/GetGlobalTrade";
 
 const Pricing = () => {
   return (

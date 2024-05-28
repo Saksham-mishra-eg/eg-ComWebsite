@@ -58,3 +58,15 @@
     color: #848484;
     text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+    .tradeFeactu {
+        margin-bottom: 30px;
+        height: auto;
+    }
+
+    .AboutFeaturesBg {
+        margin-bottom: 0px;
+    }
+
+}

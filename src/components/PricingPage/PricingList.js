@@ -13,7 +13,7 @@ function PricingList() {
                 <Row>
                     <Col md={12}>
                         <div className={styles.PrcngEvry}>
-                            <h1>Pricing for Every Business</h1>
+                            <h1>Pricing & Plans for Enterprises</h1>
                             <div className={styles.UsdInrBtn}>
                                 <div className={styles.intToUd}>
                                     <span>INR</span>
@@ -36,6 +36,7 @@ function PricingList() {
                     </Col>
                 </Row>
                 <Row>
+                    <Col>
                     <div class={styles.OPlan}>
                         <div class={styles.OPlanPrice}>
                             <h3 class={styles.OPrice}>Starter</h3>
@@ -250,6 +251,7 @@ function PricingList() {
 
                         </div>
                     </div>
+                    </Col>
 
                 </Row>
 

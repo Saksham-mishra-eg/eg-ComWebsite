@@ -237,17 +237,41 @@
     font-weight: 500;
     margin: 20px 0;
 }
-.viewPricebn{
+
+.viewPricebn {
     color: #3884C7;
     font-size: 14px;
     font-weight: 500;
     text-decoration: none;
 }
-.coushwoTxt{
+
+.coushwoTxt {
     text-align: center;
 }
-.coushwoTxt p{
+
+.coushwoTxt p {
     color: #000;
     font-size: 12px;
     font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+    .selcBuyCntr {
+        padding: 10px;
+    }
+
+    .FormItemsBs {
+        padding: 0;
+    }
+
+    .FormCheckbx {
+        margin: 5px;
+        width: 30%;
+        padding: 5px 5px 5px 28px;
+        gap: 0.3rem;
+    }
+
+    .YourProducts {
+        margin-top: 30px;
+    }
 }

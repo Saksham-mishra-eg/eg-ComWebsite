@@ -12,13 +12,13 @@ function WhyWork() {
                     <Col md={12}>
                         <div  className={styles.WhycorkEG}>
                             <div className={styles.EgWorksnt}>
-                                <h2>Why Work at Export Genius?</h2>
+                                <h2>Why Work at EG?</h2>
                             </div>
                             <div className={styles.EgWorksnt}>
                                <div className={styles.VlLines}></div>
                             </div>
                             <div className={styles.EgWorksnt}>
-                                <p>When You run with the pack, you have the opportunity to own the out come lead the way and be part of Purpose driven community on mission to end cyber risk. we are strong together </p>
+                                <p>EG is a place for believers having the potential to become achievers. With a Carpe Diem outlook and a go-getter attitude, our experts believe in nurturing our extended family like you, who could join and add a layer of value and grace to our rich team. You win, we win, and together we strive to become better. #GetGenius with EG! </p>
                             </div>
                         </div>
                     </Col>

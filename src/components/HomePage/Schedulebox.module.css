@@ -21,20 +21,26 @@
     align-items: center;
 }
 
-.wantSee img{
+.wantSee img {
     width: 68px;
     height: 68px;
 }
-.dSdhdemo {text-align: left;}
-.dSdhdemo h5{
+
+.dSdhdemo {
+    text-align: left;
+}
+
+.dSdhdemo h5 {
     font-size: 16px;
     color: #000;
     font-weight: 400;
 }
-.dSdhdemo h5 span{
-color: #66B167;
+
+.dSdhdemo h5 span {
+    color: #66B167;
 }
-.dSdhdemo h1{
+
+.dSdhdemo h1 {
     font-size: 40px;
     font-weight: 600;
     color: #000;
@@ -51,4 +57,17 @@ color: #66B167;
     outline: 0;
     border-radius: 40px;
     margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .ScheDmeo {
+        width: 100%;
+        padding: 40px 25px;
+    }
+
+    .wantSee img {
+        width: 58px;
+        height: 58px;
+    }
+
 }

@@ -254,10 +254,10 @@ function CustomizedPlan() {
                                 <p>  <a className={styles.viewPricebn} href="#"> <img src="share.png" /> ShareThis Price</a> </p>
                             </div>
                             <div className={styles.coushwoTxt}>
-                                <p>*Cost shown also includes required, one-time 
+                                <p>*Cost shown also includes required, one-time
                                     <b> Professional Onboarding </b>
                                     for a fee of $3,000. <a href="#"> Learn More <img src="url.png" /> </a>
-                                   </p>
+                                </p>
                             </div>
 
 

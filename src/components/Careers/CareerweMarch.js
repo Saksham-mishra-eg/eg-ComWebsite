@@ -11,7 +11,7 @@ function CareerweMarch() {
                 <Row>
                     <Col md={12}>
                         <div  className={styles.carkeermarch}>
-                           <h3>Careers</h3>
+                           <h3>Careers At EG</h3>
                            <h1>WE MARCH AS ONE </h1>
                         </div>
                     </Col>

@@ -9,7 +9,7 @@ import OurCulture from "../components/Careers/OurCulture";
 import WeAreeg from "../components/Careers/WeAreeg";
 import CurrentOpening from "../components/Careers/CurrentOpening";
 // import Possitions from "../components/Careers/Possitions";
-import GetGlobalTrade from "../components/Faqs/GetGlobalTrade";
+import GetGlobalTrade from "../components/Careers/GetGlobalTrade";
 
 
 const Career = () => {
