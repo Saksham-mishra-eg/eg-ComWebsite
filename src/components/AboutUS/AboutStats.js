@@ -20,7 +20,7 @@ function AboutStats() {
                             </div>
                             <div className={styles.lsitofststs}>
                                 <div className={styles.yerinDustb}>
-                                    <h2>190+</h2>
+                                    <h2>195+</h2>
                                     <p>Countries Import
                                         Export Trade Data</p>
                                 </div>

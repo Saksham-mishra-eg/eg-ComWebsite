@@ -7,6 +7,10 @@ import './customStyles.css';
 
 function TradedataMap() {
     const map = 'asia.png'
+    const Africamap = 'africa-map.png'
+    const Americamap = 'america-map.png'
+    const Europemap = 'europe-map.png'
+    const Oceaniamap = 'oceania-map.png'
 
     const [isMobile, setIsMobile] = useState(false);
 
@@ -113,7 +117,7 @@ function TradedataMap() {
                                             <Row>
                                                 <Col md={4}>
                                                     <div className={styles.mapImg}>
-                                                        <img src={map} alt="map africa" />
+                                                        <img src={Africamap} alt="map africa" />
                                                     </div>
                                                 </Col>
                                                 <Col md={7}>
@@ -151,7 +155,7 @@ function TradedataMap() {
                                             <Row>
                                                 <Col md={4}>
                                                     <div className={styles.mapImg}>
-                                                        <img src={map} alt="america map" />
+                                                        <img src={Americamap} alt="america map" />
                                                     </div>
                                                 </Col>
                                                 <Col md={7}>
@@ -189,7 +193,7 @@ function TradedataMap() {
                                             <Row>
                                                 <Col md={4}>
                                                     <div className={styles.mapImg}>
-                                                        <img src={map} alt="europe map" />
+                                                        <img src={Europemap} alt="europe map" />
                                                     </div>
                                                 </Col>
                                                 <Col md={7}>
@@ -227,7 +231,7 @@ function TradedataMap() {
                                             <Row>
                                                 <Col md={4}>
                                                     <div className={styles.mapImg}>
-                                                        <img src={map} alt="oceania map" />
+                                                        <img src={Oceaniamap} alt="oceania map" />
                                                     </div>
                                                 </Col>
                                                 <Col md={7}>

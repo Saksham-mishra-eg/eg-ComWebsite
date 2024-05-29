@@ -9,7 +9,6 @@ function GlobalTradeStats() {
     return (
         <div className={styles.GlobalTradeStatsBg}>
             <Container>
-
                 <Row>
                     <Col md={12}>
                         <div className={styles.EnrichDataGlobaltr}>

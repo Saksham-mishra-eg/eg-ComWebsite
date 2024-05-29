@@ -10,8 +10,8 @@ function Header() {
     return (
         <Navbar className={styles.navBrndBg} bg="light" data-bs-theme="light" collapseOnSelect expand="lg" >
             <Container>
-                <Navbar.Brand href="#home" className={styles.headerImageIcon} >
-                    <img src="eg-logo.png" alt="" />
+                <Navbar.Brand href="/home" className={styles.headerImageIcon} >
+                    <img src="eg-logo.png" alt="eg logo" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">

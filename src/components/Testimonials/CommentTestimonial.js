@@ -21,7 +21,7 @@ function CommentTestimonial() {
                         <div className={styles.Writerjack}>
                             <div className={styles.TestiRechText}>
                                 <img src="quote.png" alt="quote" />
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley .</p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley .</p>
                                 <div className={styles.jaWriteImg}>
                                     <img src="jack3.png" alt="jack" />
                                     <h5>Jack Morton</h5>
@@ -31,7 +31,7 @@ function CommentTestimonial() {
 
                             <div className={styles.TestiRechText}>
                                 <img src="quote.png" alt="quote" />
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley .</p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley .</p>
                                 <div className={styles.jaWriteImg}>
                                     <img src="jack2.png" alt="jack" />
                                     <h5>Jack Morton</h5>
@@ -41,7 +41,7 @@ function CommentTestimonial() {
 
                             <div className={styles.TestiRechText}>
                                 <img src="quote.png" alt="quote" />
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley .</p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley .</p>
                                 <div className={styles.jaWriteImg}>
                                     <img src="jack1.png" alt="jack" />
                                     <h5>Jack Morton</h5>

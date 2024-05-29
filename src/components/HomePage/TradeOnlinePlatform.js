@@ -31,7 +31,7 @@ function TradeOnlinePlatform() {
 
                                 <Tab.Pane eventKey="second">
                                     <div className={styles.TrdetamOnlineIMg}>
-                                        <img src="globalimpexp.png" alt="Global Data" />
+                                        <img src="commodities.png" alt="Commodities Traded" />
                                         <div className={styles.GlbDataImg}>
                                             <h3>Check Commodities Traded Price</h3>
                                             <p>Stay up-to-date with current prices of imported & exported commodities worldwide on sourcing and selling in various markets.</p>
@@ -40,7 +40,7 @@ function TradeOnlinePlatform() {
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="third">
                                     <div className={styles.TrdetamOnlineIMg}>
-                                        <img src="globalimpexp.png" alt="Global Data" />
+                                        <img src="personalized-dashboard.png" alt="Personalized Dashboard" />
                                         <div className={styles.GlbDataImg}>
                                             <h3>Personalized Dashboard</h3>
                                             <p>Personalize your dashboard in your own way. Search for the desired data using multiple filters such as the HS Code, Product Description, Buyer, Supplier, Origin Country, Destination Country, etc. Get the latest insights at your fingertips from our intelligent online dashboard. </p>
@@ -49,7 +49,7 @@ function TradeOnlinePlatform() {
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="fourth">
                                     <div className={styles.TrdetamOnlineIMg}>
-                                        <img src="globalimpexp.png" alt="Global Data" />
+                                        <img src="markets-trends.png" alt="Market Trends" />
                                         <div className={styles.GlbDataImg}>
                                             <h3>Checkout Market Trends</h3>
                                             <p>Stay up-to-date with global trade developments by uncovering the latest market trends by product and company. Utilize export-import data online to gain valuable insights and make data-driven decisions to grow your business.</p>
@@ -58,7 +58,7 @@ function TradeOnlinePlatform() {
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="five">
                                     <div className={styles.TrdetamOnlineIMg}>
-                                        <img src="globalimpexp.png" alt="Global Data" />
+                                        <img src="companys-contacts.png" alt="ompany and Employee Contacts" />
                                         <div className={styles.GlbDataImg}>
                                             <h3>Get Company and Employee Contacts</h3>
                                             <p>Get contact information of import and export companies and their key decision makers and other employees. Our contact data covered Employee Name, Designation, Location, Email, Phone Numbers, and lots more.</p>

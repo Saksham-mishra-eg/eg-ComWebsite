@@ -60,7 +60,7 @@ function FocusOn() {
                 </Col>
                 <Col>
                   <div className={styles.foncImg}>
-                    <img src="focuson.png" alt="focuson" />
+                    <img src="accountability.png" alt="focuson" />
                   </div>
                 </Col>
               </Row>

@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./GlobalTradeStats.module.css";
 import Container from 'react-bootstrap/Container';
-import { Col, Form, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 
 
 function GlobalTradeStats() {
@@ -29,7 +29,7 @@ function GlobalTradeStats() {
                                         <img src="countries.png" alt="countries" />
                                     </div>
                                     <div className={styles.listofTrade}>
-                                        <h3>190+</h3>
+                                        <h3>195+</h3>
                                         <h4>Countries</h4>
                                         <p>Import Export Trade Data</p>
                                     </div>

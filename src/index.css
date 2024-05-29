@@ -57,6 +57,7 @@ code {
   left: 15% !important;
 }
 
+
 @media screen and (max-width: 768px) {
   .slick-next {
     right: 65% !important;

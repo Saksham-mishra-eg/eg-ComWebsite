@@ -2,15 +2,21 @@
     font-family: "Roboto", sans-serif;
     width: 100%;
     padding: 80px 0;
-    height: auto;
-    background-image: url(/public/get-global.png);
+    height: 400px;
+    /* background-image: url(/public/get-global.png); */
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    display: block;
+
 }
 
 .GeGlobl {
     font-family: "Roboto", sans-serif;
     text-align: left;
+    position: absolute;
+    left: 7%;
+    top: 28%;
 }
 
 .GeGlobl h2 {
@@ -51,5 +57,17 @@
 @media screen and (max-width: 768px) {
     .GetGlobalTradeOnline {
         background-position: bottom center;
+        background-image: url(/public/get-global.png);
+        height: auto;
+    }
+
+    .tagIDe {
+        display: none;
+    }
+
+    .GeGlobl {
+        position: relative;
+        left: 0;
+        top: 0;
     }
 }

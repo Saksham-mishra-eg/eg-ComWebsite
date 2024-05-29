@@ -8,7 +8,7 @@ import ManageEndtoEnd from "../components/PlatformPage/ManageEndtoEnd";
 import Datatypebg from "../components/PlatformPage/DatatypeBg";
 import DataTypesManage from "../components/PlatformPage/DataTypesManage";
 import SearchList from "../components/HomePage/SearchList";
-import GetGlobalTrade from "../components/Faqs/GetGlobalTrade";
+import GetGlobalTrade from "../components/PlatformPage/GetGlobalTrade";
 
 
 const Pricing = () => {

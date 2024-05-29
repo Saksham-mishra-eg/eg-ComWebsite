@@ -84,3 +84,29 @@
     color: #848484;
     font-size: 16px;
 }
+
+@media screen and (max-width: 768px) {
+    .TestiCommentBg {
+        padding: 40px 0;
+    }
+
+    .TesmTheding {
+        width: 100%;
+        margin: 0;
+    }
+
+    .Writerjack {
+        flex-wrap: wrap;
+    }
+
+    .TestiRechText {
+        width: 95%;
+        height: auto;
+        padding: 30px;
+        margin-bottom: 10em;
+    }
+
+    .TestiRechText:hover {
+        width: 100%;
+    }
+}

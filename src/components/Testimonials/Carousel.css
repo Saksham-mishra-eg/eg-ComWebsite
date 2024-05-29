@@ -70,3 +70,14 @@
   height: 2.5em;
   margin-top: 1em;
 }
+
+@media screen and (max-width: 768px) {
+  .arrow-container {
+    margin-top: -7em;
+  }
+
+  .cardd {
+    height: 170px;
+    padding: 1em;
+  }
+}
