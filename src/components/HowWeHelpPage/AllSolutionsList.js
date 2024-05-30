@@ -19,20 +19,43 @@ function AllSolutionsList() {
                                 <Col md={12}>
                                     <div className={styles.linActivetb}>
                                         <Link activeClass="active" to="firstInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
-                                        Importers
+                                            Importers
                                         </Link>
-
-                                        <Link activeClass="active" to="secondInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
-                                        Exporters
+                                        <Link  to="secondInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
+                                            Exporters
                                         </Link>
-                                        <Link activeClass="active" to="thirdInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
-                                        Logistics
+                                        <Link  to="thirdInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
+                                            Logistics
                                         </Link>
-                                        <Link activeClass="active" to="fourthInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
+                                        <Link  to="fourthInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
                                             Consulting and Research
                                         </Link>
-                                        <Link activeClass="active" to="fifthInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
-                                        Law Firms
+                                        <Link  to="fifthInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
+                                            Law Firms
+                                        </Link>
+                                        <Link  to="sixthInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
+                                            Investment Agencies
+                                        </Link>
+                                        <Link  to="seventhInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
+                                            Government Agencies
+                                        </Link>
+                                        <Link  to="eighthInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
+                                            Financial Institutions
+                                        </Link>
+                                        <Link  to="ninthInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
+                                            Media & Communications
+                                        </Link>
+                                        <Link  to="tenthInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
+                                            Manufacturing & Retail Companies
+                                        </Link>
+                                        <Link  to="eleventhInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
+                                            Sales & Marketing Teams
+                                        </Link>
+                                        <Link  to="twelfthInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
+                                            Corporation
+                                        </Link>
+                                        <Link  to="thirteenthInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
+                                            Trade Promotion Councils
                                         </Link>
                                     </div>
                                 </Col>
@@ -65,7 +88,7 @@ function AllSolutionsList() {
                                             </Col>
                                             <Col md={7}>
                                                 <div className={styles.imeImageDash}>
-                                                    <img src="imp-dashboard.png" alt="ime" />
+                                                    <img src="importer.png" alt="Importers" />
                                                 </div>
                                             </Col>
                                         </Row>
@@ -87,7 +110,7 @@ function AllSolutionsList() {
                                             </Col>
                                             <Col md={7}>
                                                 <div className={styles.imeImageDash}>
-                                                    <img src="imp-dashboard.png" alt="ime" />
+                                                    <img src="exporter.png" alt="Exporters" />
                                                 </div>
                                             </Col>
                                         </Row>
@@ -95,7 +118,7 @@ function AllSolutionsList() {
                                     <Element name="thirdInsideContainer" style={{
                                         marginBottom: '70px'
                                     }}>
-                                       <Row>
+                                        <Row>
                                             <Col md={5}>
                                                 <div className={styles.imprSecoDesti}>
                                                     <h3>Logistics</h3>
@@ -108,7 +131,7 @@ function AllSolutionsList() {
                                             </Col>
                                             <Col md={7}>
                                                 <div className={styles.imeImageDash}>
-                                                    <img src="imp-dashboard.png" alt="ime" />
+                                                    <img src="logistics.png" alt="Logistics" />
                                                 </div>
                                             </Col>
                                         </Row>
@@ -120,7 +143,7 @@ function AllSolutionsList() {
                                             <Col md={5}>
                                                 <div className={styles.imprSecoDesti}>
                                                     <h3>Consulting and Research Firms</h3>
-                                                    <p>Harness the power of Export Genius to access the world’s trade insights and data analytics. Deliver comprehensive and actionable reports to clients. </p>
+                                                    <p>Examine international trade markets by analyzing specific data parameters including HSN Code, country, port, value, and the involved importing and exporting entities.</p>
                                                     <ul className={styles.ulilistSolutin}>
                                                         <li>Make thorough research and evaluate business products and services. </li>
                                                         <li>Analyse metrics such as HSN Code, Country, Port and value, etc.</li>
@@ -129,13 +152,13 @@ function AllSolutionsList() {
                                             </Col>
                                             <Col md={7}>
                                                 <div className={styles.imeImageDash}>
-                                                    <img src="imp-dashboard.png" alt="ime" />
+                                                    <img src="consulting-research.png" alt="Consulting" />
                                                 </div>
                                             </Col>
                                         </Row>
                                     </Element>
                                     <Element name="fifthInsideContainer" style={{
-                                        marginBottom: '10px'
+                                        marginBottom: '70px'
                                     }}>
                                         <Row>
                                             <Col md={5}>
@@ -150,7 +173,175 @@ function AllSolutionsList() {
                                             </Col>
                                             <Col md={7}>
                                                 <div className={styles.imeImageDash}>
-                                                    <img src="imp-dashboard.png" alt="ime" />
+                                                    <img src="law-firms.png" alt="Law Firms" />
+                                                </div>
+                                            </Col>
+                                        </Row>
+                                    </Element>
+                                    <Element name="sixthInsideContainer" style={{
+                                        marginBottom: '70px'
+                                    }}>
+                                        <Row>
+                                            <Col md={5}>
+                                                <div className={styles.imprSecoDesti}>
+                                                    <h3>Investment Agencies</h3>
+                                                    <p>Investment agencies can see a company’s credibility, past score, fraud detections, evaluate its past performance, and detect any signs of fraud.</p>
+                                                    <ul className={styles.ulilistSolutin}>
+                                                        <li>Assess real-time market trends, emerging sectors and evaluate investment opportunities.  </li>
+                                                        <li>Monitor investment portfolios and track the impact of external factors on investment returns. </li>
+                                                    </ul>
+                                                </div>
+                                            </Col>
+                                            <Col md={7}>
+                                                <div className={styles.imeImageDash}>
+                                                    <img src="investment-agencies.png" alt="Law Firms" />
+                                                </div>
+                                            </Col>
+                                        </Row>
+                                    </Element>
+                                    <Element name="seventhInsideContainer" style={{
+                                        marginBottom: '70px'
+                                    }}>
+                                        <Row>
+                                            <Col md={5}>
+                                                <div className={styles.imprSecoDesti}>
+                                                    <h3>Government Agencies</h3>
+                                                    <p>Government agencies leverage trade data to introduce effective trade regulations, such as subsidies and taxes on foreign products. </p>
+                                                    <ul className={styles.ulilistSolutin}>
+                                                        <li>By analyzing systematic tariffs & utilizing the largest searchable trade database covering over 195 countries. </li>
+                                                        <li>Create effective regulations for subsidies, and taxes for foreign products. </li>
+                                                    </ul>
+                                                </div>
+                                            </Col>
+                                            <Col md={7}>
+                                                <div className={styles.imeImageDash}>
+                                                    <img src="government-agencies.png" alt="Government Agencies" />
+                                                </div>
+                                            </Col>
+                                        </Row>
+                                    </Element>
+                                    <Element name="eighthInsideContainer" style={{
+                                        marginBottom: '70px'
+                                    }}>
+                                        <Row>
+                                            <Col md={5}>
+                                                <div className={styles.imprSecoDesti}>
+                                                    <h3>Financial Institutions</h3>
+                                                    <p>Many financial institutions like Banks and insurance providers can utilize import & export data to analyze market trends and credit risk to offer loans and taxations.</p>
+                                                    <ul className={styles.ulilistSolutin}>
+                                                        <li>Determine the turnover of import and export businesses, services of loans, and taxation to small and medium enterprises (SMEs). </li>
+                                                        <li>Access financial aspects such as shipping volume, and value and analyze the performance of import and export companies to connect with the prospects. </li>
+                                                    </ul>
+                                                </div>
+                                            </Col>
+                                            <Col md={7}>
+                                                <div className={styles.imeImageDash}>
+                                                    <img src="financial-institutions.png" alt="financial-institutions" />
+                                                </div>
+                                            </Col>
+                                        </Row>
+                                    </Element>
+                                    <Element name="ninthInsideContainer" style={{
+                                        marginBottom: '70px'
+                                    }}>
+                                        <Row>
+                                            <Col md={5}>
+                                                <div className={styles.imprSecoDesti}>
+                                                    <h3>Media & Communications</h3>
+                                                    <p>Media houses can leverage the global trade data and analyze company trade data and curate research reports depicting the expected curve in the market.</p>
+                                                    <ul className={styles.ulilistSolutin}>
+                                                        <li>Analyze vendor’s or company trade data and show where the market is heading to. </li>
+                                                        <li>Check which commodity is getting traded from which country or port of discharge. </li>
+                                                    </ul>
+                                                </div>
+                                            </Col>
+                                            <Col md={7}>
+                                                <div className={styles.imeImageDash}>
+                                                    <img src="media-communications.png" alt="Law Firms" />
+                                                </div>
+                                            </Col>
+                                        </Row>
+                                    </Element>
+                                    <Element name="tenthInsideContainer" style={{
+                                        marginBottom: '70px'
+                                    }}>
+                                        <Row>
+                                            <Col md={5}>
+                                                <div className={styles.imprSecoDesti}>
+                                                    <h3>Manufacturing & Retail Companies</h3>
+                                                    <p>Manufacturing and retail companies can utilize import and export data to identify new opportunities for market expansion or product diversification. </p>
+                                                    <ul className={styles.ulilistSolutin}>
+                                                        <li>Companies can assess geopolitical risks such as trade disputes or regulatory changes that impact operations.</li>
+                                                        <li>Import & export data provide visibility into trade compliance requirements and regulations.</li>
+                                                    </ul>
+                                                </div>
+                                            </Col>
+                                            <Col md={7}>
+                                                <div className={styles.imeImageDash}>
+                                                    <img src="retail-company.png" alt="Law Firms" />
+                                                </div>
+                                            </Col>
+                                        </Row>
+                                    </Element>
+                                    <Element name="eleventhInsideContainer" style={{
+                                        marginBottom: '70px'
+                                    }}>
+                                        <Row>
+                                            <Col md={5}>
+                                                <div className={styles.imprSecoDesti}>
+                                                    <h3>Sales & Marketing Teams</h3>
+                                                    <p>Monitor trends within your chosen commodity, market, or geographic area, formulate pricing strategies, discover fresh markets and sales opportunities, and enhance the company’s performance through valuable data insights and analytics.</p>
+                                                    <ul className={styles.ulilistSolutin}>
+                                                        <li>Connect with businesses from different business sectors and expand opportunities.</li>
+                                                        <li>Find leads for your business through import-export customs data and check for your business requirements.</li>
+                                                    </ul>
+                                                </div>
+                                            </Col>
+                                            <Col md={7}>
+                                                <div className={styles.imeImageDash}>
+                                                    <img src="sales-marketing.png" alt="Law Firms" />
+                                                </div>
+                                            </Col>
+                                        </Row>
+                                    </Element>
+                                    <Element name="twelfthInsideContainer" style={{
+                                        marginBottom: '70px'
+                                    }}>
+                                        <Row>
+                                            <Col md={5}>
+                                                <div className={styles.imprSecoDesti}>
+                                                    <h3>Corporation</h3>
+                                                    <p>Whether your business is engaged into leather & textile, FMCG, chemicals, mineral & metal or any other sector; get industry-focused data for strategic business decisions.</p>
+                                                    {/* <ul className={styles.ulilistSolutin}>
+                                                        <li>Connect with businesses from different business sectors and expand opportunities.</li>
+                                                        <li>Find leads for your business through import-export customs data and check for your business requirements.</li>
+                                                    </ul> */}
+                                                </div>
+                                            </Col>
+                                            <Col md={7}>
+                                                <div className={styles.imeImageDash}>
+                                                    <img src="corporation.png" alt="Law Firms" />
+                                                </div>
+                                            </Col>
+                                        </Row>
+                                    </Element>
+                                    <Element name="thirteenthInsideContainer" style={{
+                                        marginBottom: '70px'
+                                    }}>
+                                        <Row>
+                                            <Col md={5}>
+                                                <div className={styles.imprSecoDesti}>
+                                                    <h3>Trade Promotion Councils</h3>
+                                                    <p>Trade promotion councils use import export data of their members and other essential data to compare industry growth. They access contacts of importers & exporters at our online platform and approach them to attend trade shows for exploring new opportunities.</p>
+                                                    <ul className={styles.ulilistSolutin}>
+                                                        <li>Ascertain the weather conditions and how it can affect the commodities.</li>
+                                                        <li>Check for data country, distributors help in decision-making.</li>
+                                                    </ul>
+                                                </div>
+                                            </Col>
+                                            <Col md={7}>
+                                                <div className={styles.imeImageDash}>
+                                                    <img src="trade-promotion.png" alt="Law Firms" />
                                                 </div>
                                             </Col>
                                         </Row>

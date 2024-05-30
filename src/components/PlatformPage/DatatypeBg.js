@@ -13,7 +13,7 @@ function Datatypebg() {
                     <Col md={7}>
                         <div className={styles.GeGlobl}>
                             <h2>Data Type</h2>
-                          <p>Access 190+ Countries’ Import-Export Data Online and analyze global market with detailed shipment information. Discover importers, exporters, markets & products and monitor competition with the help of 6 types of data we provide – Customs Data, Statistical Data, Mirror Data, Bill of Lading Data, Suez Canal Bill of Lading Data and Transit Data.</p>
+                          <p>We deliver exceptional data quality and coverage to ensure you have the most actionable business intelligence at your fingertips. Based on your need, you can choose the data type and access essential data.</p>
                         </div>
                     </Col>
                 </Row>

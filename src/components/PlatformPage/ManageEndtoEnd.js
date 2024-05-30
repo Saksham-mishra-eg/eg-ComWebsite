@@ -7,6 +7,7 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import * as React from 'react';
+import "./metrialui.css"
 
 function CustomTabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -56,7 +57,7 @@ function ManageEndtoEnd() {
                 <Row>
                     <Col md={12}>
                         <div className={styles.pltrtradeText}>
-                            <h2>Manage rev ops end-to-end from one dashboard</h2>
+                            <h2>A High-level View of the Global Import-Export Market</h2>
                         </div>
                     </Col>
                 </Row>
@@ -64,41 +65,39 @@ function ManageEndtoEnd() {
                     <Col md={12}>
                         <div className={styles.manageTwbsdshd}>
                             <Box sx={{ width: '100%' }}>
-                                <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                                    <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-                                        <Tab className={styles.tabofMatrial} label="Comprehensive Market View" {...a11yProps(0)} />
-                                        <Tab className={styles.tabofMatrial} label="Trade Relationship" {...a11yProps(1)} />
-                                        <Tab className={styles.tabofMatrial} label="Clear Trade Picture" {...a11yProps(2)} />
-                                        <Tab className={styles.tabofMatrial} label="Current Market Price" {...a11yProps(3)} />
-                                        <Tab className={styles.tabofMatrial} label="Build Your Network" {...a11yProps(4)} />
+                                <Box className={styles.boxclanameMogile} sx={{ borderBottom: 1, borderColor: 'divider' }}>
+                                    <Tabs className={styles.multitabsrootmng} value={value} onChange={handleChange} aria-label="basic tabs example">
+                                        <Tab className={styles.tabofMatrial} label="Company Data Analysis" {...a11yProps(0)} />
+                                        <Tab className={styles.tabofMatrial} label="Comprehensive Data Coverage" {...a11yProps(1)} />
+                                        <Tab className={styles.tabofMatrial} label="Global Trade Data Search" {...a11yProps(2)} />
+                                        <Tab className={styles.tabofMatrial} label="Commodity Price Analysis" {...a11yProps(3)} />
+                                        <Tab className={styles.tabofMatrial} label="Reach Targeted Companies" {...a11yProps(4)} />
                                     </Tabs>
                                 </Box>
-                                <CustomTabPanel value={value} index={0}>
+                                <CustomTabPanel className={styles.boxtalbPanetd} value={value} index={0}>
                                     <div className={styles.comprHendTbs}>
                                         <Row>
                                             <Col md={3}>
                                                 <div className={styles.inetleInstigh}>
-                                                    <h6>Intelligent Insight</h6>
-                                                    <h3>Comprehensive Market View</h3>
-                                                    <p>Search import-export data online by country, importer, exporter, HS Code, commodity, data duration, port name, transport mode etc. and get the latest data and insights at your fingertips.</p>
+                                                    <h3>Company Data Analysis</h3>
+                                                    <p>Access import export data of companies and get a detailed trade overview of importers and exporters. Find and connect with new and potential buyers and suppliers. Identify which companies are growing and which ones are shrinking. Discover your competitors by knowing their market share and business aspects. </p>
                                                 </div>
                                             </Col>
                                             <Col md={9}>
                                                 <div className={styles.inimgigh}>
-                                                    <img src="comprehensive.png" alt="comprehensive" />
+                                                    <img src="data-analysis.png" alt="comprehensive" />
                                                 </div>
                                             </Col>
                                         </Row>
                                     </div>
                                 </CustomTabPanel>
                                 <CustomTabPanel value={value} index={1}>
-                                <div className={styles.comprHendTbs}>
+                                    <div className={styles.comprHendTbs}>
                                         <Row>
                                             <Col md={3}>
                                                 <div className={styles.inetleInstigh}>
-                                                    <h6>Intelligent Insight</h6>
-                                                    <h3>Trade Relationship</h3>
-                                                    <p>Search import-export data online by country, importer, exporter, HS Code, commodity, data duration, port name, transport mode etc. and get the latest data and insights at your fingertips.</p>
+                                                    <h3>Comprehensive Data Coverage</h3>
+                                                    <p>Keep a tab on the global supply chain, and gain valuable business intelligence from import export trade data. Whatever your goals, our platform is designed to provide hassle-free data based on Importer, Exporter, HS Code, Commodity, Data Duration, Port, Transport Mode, and so on.</p>
                                                 </div>
                                             </Col>
                                             <Col md={9}>
@@ -110,13 +109,13 @@ function ManageEndtoEnd() {
                                     </div>
                                 </CustomTabPanel>
                                 <CustomTabPanel value={value} index={2}>
-                                <div className={styles.comprHendTbs}>
+                                    <div className={styles.comprHendTbs}>
                                         <Row>
                                             <Col md={3}>
                                                 <div className={styles.inetleInstigh}>
-                                                    <h6>Intelligent Insight</h6>
-                                                    <h3>Clear Trade Picture</h3>
-                                                    <p>Search import-export data online by country, importer, exporter, HS Code, commodity, data duration, port name, transport mode etc. and get the latest data and insights at your fingertips.</p>
+                                                    {/* <h6>Intelligent Insight</h6> */}
+                                                    <h3>Global Trade Data Search</h3>
+                                                    <p>Access our dashboard to get a bigger picture of global trade developments. Our global trade data search helps you find the biggest import and export countries, top trade commodities, and a lot more. Explore import export data worldwide and gain valuable market insights.</p>
                                                 </div>
                                             </Col>
                                             <Col md={9}>
@@ -128,13 +127,13 @@ function ManageEndtoEnd() {
                                     </div>
                                 </CustomTabPanel>
                                 <CustomTabPanel value={value} index={3}>
-                                <div className={styles.comprHendTbs}>
+                                    <div className={styles.comprHendTbs}>
                                         <Row>
                                             <Col md={3}>
                                                 <div className={styles.inetleInstigh}>
-                                                    <h6>Intelligent Insight</h6>
-                                                    <h3>Current Market Price</h3>
-                                                    <p>Search import-export data online by country, importer, exporter, HS Code, commodity, data duration, port name, transport mode etc. and get the latest data and insights at your fingertips.</p>
+                                                    {/* <h6>Intelligent Insight</h6> */}
+                                                    <h3>Commodity Price Analysis</h3>
+                                                    <p>Access our dashboard and view historical data and the latest information on commodities that companies import and export globally to have a better price evaluation. Compare and understand the actual market value of products to choose the companies that can provide you with the best price.</p>
                                                 </div>
                                             </Col>
                                             <Col md={9}>
@@ -146,13 +145,12 @@ function ManageEndtoEnd() {
                                     </div>
                                 </CustomTabPanel>
                                 <CustomTabPanel value={value} index={4}>
-                                <div className={styles.comprHendTbs}>
+                                    <div className={styles.comprHendTbs}>
                                         <Row>
                                             <Col md={3}>
                                                 <div className={styles.inetleInstigh}>
-                                                    <h6>Intelligent Insight</h6>
-                                                    <h3>Build Your Network</h3>
-                                                    <p>Search import-export data online by country, importer, exporter, HS Code, commodity, data duration, port name, transport mode etc. and get the latest data and insights at your fingertips.</p>
+                                                    <h3>Reach Targeted Companies</h3>
+                                                    <p>Our import export data covers verified contact details – phone numbers, email addresses, websites, etc. of importers and exporters that will help you reach the targeted companies. Access our dashboard and start exploring crucial company information along with their contacts.</p>
                                                 </div>
                                             </Col>
                                             <Col md={9}>

@@ -27,7 +27,8 @@
     line-height: 28px;
     color: #848484;
 }
-.captDemobd{
+
+.captDemobd {
     width: 100%;
     display: flex;
     justify-content: left;
@@ -35,12 +36,14 @@
     align-items: center;
     gap: 2rem;
 }
+
 .captImg {
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 25px 0;
 }
+
 .TrlBtn {
     background-color: #3884C7;
     color: #fff;
@@ -52,10 +55,48 @@
     text-align: center;
     font-size: 14px;
 }
-.getainsider{
+
+.getainsider {
     color: #3884C7;
     font-size: 16px;
     text-decoration: none;
     font-weight: 500;
     text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .PlatformHeaderine {
+        padding: 60px 0;
+    }
+
+    .pltrtradeText {
+        margin: 0;
+    }
+
+    .pltrtradeText h1 {
+        font-size: 40px;
+        line-height: normal;
+    }
+
+    .captDemobd {
+        gap: 0.5rem;
+        justify-content: space-between;
+    }
+
+    .TrlBtn {
+        font-size: 13px;
+        padding: 9px 10px !important;
+    }
+
+    .getainsider {
+        font-size: 15px;
+    }
+
+    .captImg {
+        justify-content: space-around;
+    }
+
+    .captImg img {
+        width: 26%;
+    }
 }

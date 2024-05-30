@@ -20,7 +20,7 @@ function TradeIntelligence() {
                                 <Col ms="12">
                                     <div className={styles.linanchdem}>
                                         <Form.Control className={styles.frokDemo} column sm="2" type="text" placeholder="Enter Your Email" />
-                                        <a href="#" className={styles.TrlBtn} > Free Trial</a>
+                                        <a href="#freetrails" className={styles.TrlBtn} > Free Trial</a>
                                     </div>
                                 </Col>
                                 {/* <Col md="4">
@@ -31,11 +31,10 @@ function TradeIntelligence() {
 
                             </Row>
                             <div className={styles.captImg}>
-                                <img src="capterra.png" />
-                                <img src="g2.png" />
-                                <img src="iso.png" />
+                                <img src="capterra.png" alt="captera" />
+                                <img src="g2.png" alt="g2" />
+                                <img src="iso.png" alt="iso" />
                             </div>
-
                         </div>
                     </Col>
                     <Col md={6}>
@@ -48,7 +47,6 @@ function TradeIntelligence() {
                                 style={{}}
                             >
                                 <Controls visible={true} buttons={['play', 'repeat', 'frame', 'debug']} />
-
                             </Player>
                         </div>
                     </Col>

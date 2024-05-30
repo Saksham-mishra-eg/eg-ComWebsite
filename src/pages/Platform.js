@@ -7,7 +7,7 @@ import PlatformHeader from "../components/PlatformPage/PlatformHeader";
 import ManageEndtoEnd from "../components/PlatformPage/ManageEndtoEnd";
 import Datatypebg from "../components/PlatformPage/DatatypeBg";
 import DataTypesManage from "../components/PlatformPage/DataTypesManage";
-import SearchList from "../components/HomePage/SearchList";
+import SearchList from "../components/PlatformPage/SearchList";
 import GetGlobalTrade from "../components/PlatformPage/GetGlobalTrade";
 
 

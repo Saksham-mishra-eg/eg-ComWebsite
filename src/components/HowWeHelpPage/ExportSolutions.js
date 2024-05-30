@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./ExportSolutions.module.css";
 import Container from 'react-bootstrap/Container';
 import { Col, Form, Row } from "react-bootstrap";
+import { Player, Controls } from '@lottiefiles/react-lottie-player';
 
 function ExportSolutions() {
 
@@ -37,7 +38,15 @@ function ExportSolutions() {
                     </Col>
                     <Col md={6}>
                         <div className={styles.tradeBg}>
-                            <img src="solutions.png" alt="Solutins banner" />
+                            {/* <img src="solutions.png" alt="Solutins banner" /> */}
+                            <Player
+                                autoplay
+                                loop
+                                src="https://lottie.host/48321ee3-9023-4aab-a9bf-7b9420afdb6b/p5BatflLvh.json"
+                                style={{}}
+                            >
+                                <Controls visible={true} buttons={['play', 'repeat', 'frame', 'debug']} />
+                            </Player>
                         </div>
                     </Col>
                 </Row>

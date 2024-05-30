@@ -55,7 +55,10 @@ function DataTypesManage() {
                 <Row>
                     <Col md={12}>
                         <div className={styles.pltrtradeText}>
-                            <h2>Manage rev ops end-to-end from one dashboard</h2>
+                            <h2>Choose and View Extraordinary Results</h2>
+                            <p>
+                                Select data type, and access essential data to get a bigger picture of the international market.
+                            </p>
                         </div>
                     </Col>
                 </Row>
@@ -67,44 +70,30 @@ function DataTypesManage() {
                                     <Tabs sx={{ "--Tabs-spacing": "37px", "--Tab-indicatorThickness": "3px", "--Tab-indicatorSize": "120px", "--Tab-indicatorRadius": "-15px" }} value={value} onChange={handleChange} aria-label="basic tabs example">
                                         <Tab className={styles.tabofMatrial} label="Detailed Data" {...a11yProps(0)} />
                                         <Tab className={styles.tabofMatrial} label="Statistical Data" {...a11yProps(1)} />
-                                        <Tab className={styles.tabofMatrial} label="Mirror Data" {...a11yProps(2)} />
+                                        <Tab className={styles.tabofMatrial} label="Transit Data" {...a11yProps(2)} />
                                         <Tab className={styles.tabofMatrial} label="Bill of Lading Data" {...a11yProps(3)} />
-                                        <Tab className={styles.tabofMatrial} label="Suez Canal Bill of Lading Data" {...a11yProps(4)} />
+                                        <Tab className={styles.tabofMatrial} label="Suez Canal BL Data" {...a11yProps(4)} />
+                                        <Tab className={styles.tabofMatrial} label="Mirror Data" {...a11yProps(5)} />
+                                        <Tab className={styles.tabofMatrial} label="Cargo BL Data" {...a11yProps(6)} />
                                     </Tabs>
                                 </Box>
                                 <CustomTabPanel value={value} index={0}>
                                     <div className={styles.comprHendTbs}>
                                         <Row>
-                                            <Col md={5}>
-                                                <div className={styles.borboxtabs}>
-                                                    <div className={styles.inetleInstigh}>
-                                                        <h3>Detailed Data</h3>
-                                                        <p>Detailed Customs Data contains 100% shipment information including company details. We provide detailed customs data of 55+ countries online, including Angola, Turkey, Thailand, Bangladesh, Burundi, Bolivia, DR Congo, Ethiopia, Fiji, Ghana, Guatemala, Guyana, Indonesia, Mexico, Nicaragua, Philippines, Russia, Singapore, Ukraine and many more. Customs data is useful to find importers & exporters, monitor trade activities of competitors and gain in-depth market insights.</p>
-                                                        <a href="@#earmore">Learn More <SlArrowRight /> </a>
-                                                    </div>
-                                                    <div className={styles.inimgigh}>
-                                                        <img src="image100.png" alt="comprehensive" />
-                                                    </div>
-                                                    <div className={styles.dataAvailSamle}>
-                                                        <Button className={styles.DnownSample} >Download Sample</Button>
-                                                        <Button className={styles.DnownSample} >Data Availability</Button>
-                                                    </div>
+                                            <Col md={3}>
+                                                <div className={styles.inetleInstigh}>
+                                                    <h3>Detailed Data</h3>
+                                                    <p>Detailed Data covers 100% customs-based shipment details – Importer, Exporter, HS Code, Product Description, Value, Quantity, Port, Origin Country, Destination Country, Transport Mode, and so on. We provide detailed data of 55 countries in major regions like Asia, Africa, North America, South America, and Europe.</p>
+                                                    <a href="@#earmore">Learn More <SlArrowRight /> </a>
                                                 </div>
                                             </Col>
-                                            <Col md={5}>
-                                                <div className={styles.borboxtabs}>
-                                                    <div className={styles.inetleInstigh}>
-                                                        <h3>Statistical Data</h3>
-                                                        <p>Statistical Data covers useful shipment information such as Date, Quantity, Price, Country and so on, but No Company Names. You can access statistical data of 30 European countries online and other nations. Statistical data is useful to find potential market, determine market price of every commodity which companies import & export globally and analyze market share of countries.</p>
-                                                        <a href="@#earmore">Learn More <SlArrowRight /> </a>
-                                                    </div>
-                                                    <div className={styles.inimgigh}>
-                                                        <img src="image100.png" alt="comprehensive" />
-                                                    </div>
-                                                    <div className={styles.dataAvailSamle}>
-                                                        <Button className={styles.DnownSample} >Download Sample</Button>
-                                                        <Button className={styles.DnownSample} >Data Availability</Button>
-                                                    </div>
+                                            <Col md={9}>
+                                                <div className={styles.inimgigh}>
+                                                    <img src="image100.png" alt="comprehensive" />
+                                                </div>
+                                                <div className={styles.dataAvailSamle}>
+                                                    <Button className={styles.DnownSample} >Download Sample</Button>
+                                                    <Button className={styles.DnownSample} >Data Availability</Button>
                                                 </div>
                                             </Col>
                                         </Row>
@@ -115,13 +104,18 @@ function DataTypesManage() {
                                         <Row>
                                             <Col md={3}>
                                                 <div className={styles.inetleInstigh}>
-                                                    <h3>Trade Relationship</h3>
-                                                    <p>Search import-export data online by country, importer, exporter, HS Code, commodity, data duration, port name, transport mode etc. and get the latest data and insights at your fingertips.</p>
+                                                    <h3>Statistical Data</h3>
+                                                    <p>tatistical Data is useful for primary research as it contains details like Date, Quantity, Price, Country, and so on. Our dashboard covers statistical data of 37 countries in Asia, Africa, Oceania, Central America, South America, and Europe.</p>
+                                                    <a href="@#earmore">Learn More <SlArrowRight /> </a>
                                                 </div>
                                             </Col>
                                             <Col md={9}>
                                                 <div className={styles.inimgigh}>
                                                     <img src="comprehensive.png" alt="comprehensive" />
+                                                </div>
+                                                <div className={styles.dataAvailSamle}>
+                                                    <Button className={styles.DnownSample} >Download Sample</Button>
+                                                    <Button className={styles.DnownSample} >Data Availability</Button>
                                                 </div>
                                             </Col>
                                         </Row>
@@ -130,25 +124,24 @@ function DataTypesManage() {
                                 <CustomTabPanel value={value} index={2}>
                                     <div className={styles.comprHendTbs}>
                                         <Row>
-                                            <Col md={5}>
+                                            <Col md={3}>
                                                 <div className={styles.inetleInstigh}>
-                                                    <h3>Clear Trade Picture</h3>
-                                                    <p>Search import-export data online by country, importer, exporter, HS Code, commodity, data duration, port name, transport mode etc. and get the latest data and insights at your fingertips.</p>
-                                                </div>
-                                                <div className={styles.inimgigh}>
-                                                    <img src="image100.png" alt="comprehensive" />
+                                                    <h3>Transit Data</h3>
+                                                    <p>Transit Data covers the information on import-export shipments that pass through different customs territories. We provide transit data of 190+ countries, covering Asia, Africa, North America, Europe, South America, and Oceania region.</p>
+                                                    <a href="@#earmore">Learn More <SlArrowRight /> </a>
                                                 </div>
                                             </Col>
-                                            <Col md={5}>
-                                                <div className={styles.inetleInstigh}>
-                                                    <h3>Clear Trade Picture</h3>
-                                                    <p>Search import-export data online by country, importer, exporter, HS Code, commodity, data duration, port name, transport mode etc. and get the latest data and insights at your fingertips.</p>
-                                                </div>
+                                            <Col md={9}>
                                                 <div className={styles.inimgigh}>
                                                     <img src="image100.png" alt="comprehensive" />
+                                                </div>
+                                                <div className={styles.dataAvailSamle}>
+                                                    <Button className={styles.DnownSample} >Download Sample</Button>
+                                                    <Button className={styles.DnownSample} >Data Availability</Button>
                                                 </div>
                                             </Col>
                                         </Row>
+
                                     </div>
                                 </CustomTabPanel>
                                 <CustomTabPanel value={value} index={3}>
@@ -156,8 +149,8 @@ function DataTypesManage() {
                                         <Row>
                                             <Col md={3}>
                                                 <div className={styles.inetleInstigh}>
-                                                    <h3>Current Market Price</h3>
-                                                    <p>Search import-export data online by country, importer, exporter, HS Code, commodity, data duration, port name, transport mode etc. and get the latest data and insights at your fingertips.</p>
+                                                    <h3>Bill of Lading Data</h3>
+                                                    <p>Bill of Lading Data is based on shipping documents and contains company information. We provide a bill of lading data of Brazil and the United States of America.</p>
                                                 </div>
                                             </Col>
                                             <Col md={9}>
@@ -173,8 +166,42 @@ function DataTypesManage() {
                                         <Row>
                                             <Col md={3}>
                                                 <div className={styles.inetleInstigh}>
-                                                    <h3>Build Your Network</h3>
-                                                    <p>Search import-export data online by country, importer, exporter, HS Code, commodity, data duration, port name, transport mode etc. and get the latest data and insights at your fingertips.</p>
+                                                    <h3>Suez Canal BL Data</h3>
+                                                    <p>Suez Canal BL Data is based on shipping documents and contains information on shipments, which pass through Suez Canal. Our dashboard covers Suez Canal BL data of 109 countries in Asia, Africa, Oceania, North America, South America, and Europe region.</p>
+                                                </div>
+                                            </Col>
+                                            <Col md={9}>
+                                                <div className={styles.inimgigh}>
+                                                    <img src="comprehensive.png" alt="comprehensive" />
+                                                </div>
+                                            </Col>
+                                        </Row>
+                                    </div>
+                                </CustomTabPanel>
+                                <CustomTabPanel value={value} index={5}>
+                                    <div className={styles.comprHendTbs}>
+                                        <Row>
+                                            <Col md={3}>
+                                                <div className={styles.inetleInstigh}>
+                                                    <h3>Mirror Data</h3>
+                                                    <p>Mirror Data contains information on the trade of countries that do not report their trade data. This data is reconstructed based on data reported by partner countries. Our dashboard covers mirror data of 185 countries.</p>
+                                                </div>
+                                            </Col>
+                                            <Col md={9}>
+                                                <div className={styles.inimgigh}>
+                                                    <img src="comprehensive.png" alt="comprehensive" />
+                                                </div>
+                                            </Col>
+                                        </Row>
+                                    </div>
+                                </CustomTabPanel>
+                                <CustomTabPanel value={value} index={6}>
+                                    <div className={styles.comprHendTbs}>
+                                        <Row>
+                                            <Col md={3}>
+                                                <div className={styles.inetleInstigh}>
+                                                    <h3>Cargo BL Data</h3>
+                                                    <p>Cargo BL Data is based on shipping documents and collected from various shipping companies. Our dashboard covers Cargo BL data of 190 countries in Africa, Asia, Europe, North America, Oceania, and South America region.</p>
                                                 </div>
                                             </Col>
                                             <Col md={9}>
