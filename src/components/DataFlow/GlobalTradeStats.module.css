@@ -111,4 +111,9 @@
     .listofTrade h4 {
         font-size: 20px;
     }
+
+    .EnrchglobData {
+        width: 100%;
+        gap: 1rem;
+    }
 }

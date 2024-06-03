@@ -31,3 +31,6 @@
 .navBrndBg {
     background-color: #fff !important;
 }
+.navdropItemslnk{
+    text-transform: capitalize;
+}

@@ -1,11 +1,10 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./GetNews.module.css";
 import Container from 'react-bootstrap/Container';
-import { Col, Row, Tab, Nav } from "react-bootstrap";
+import { Col, Row} from "react-bootstrap";
 
 
 function GetNews() {
-    const map = 'asia.png'
 
     return (
         <div className={styles.GetNewsOnline}>
@@ -24,7 +23,7 @@ function GetNews() {
                             <h3>Redirect</h3>
                             <h6>With Blogs</h6>
                             <p>Explore detailed Customs Data, Statistical Data,</p>
-                            <a href="#">Read More..</a>
+                            <a href="#readmore">Read More..</a>
                         </div>
                     </Col>
                     <Col md={4}>
@@ -33,7 +32,7 @@ function GetNews() {
                             <h3>Redirect</h3>
                             <h6>With Blogs</h6>
                             <p>Explore detailed Customs Data, Statistical Data,</p>
-                            <a href="#">Read More..</a>
+                            <a href="#readmore">Read More..</a>
                         </div>
                     </Col>
                     <Col md={4}>
@@ -42,7 +41,7 @@ function GetNews() {
                             <h3>Redirect</h3>
                             <h6>With Blogs</h6>
                             <p>Explore detailed Customs Data, Statistical Data,</p>
-                            <a href="#">Read More..</a>
+                            <a href="#readmore">Read More..</a>
                         </div>
                     </Col>
                 </Row>

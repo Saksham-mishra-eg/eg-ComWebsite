@@ -9,9 +9,7 @@ function GlobalTradeStats() {
     return (
         <div className={styles.GlobalTradeStatsBg}>
             <Container>
-               
-
-                <Row>
+               <Row>
                     <Col md={12}>
                         <div className={styles.EnrchglobData}>
                             <hr className={styles.hrLines} />

@@ -21,7 +21,7 @@
 .clientIcnimgTru {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
     width: 100%;
@@ -33,6 +33,8 @@
     flex-wrap: wrap;
     float: left;
     padding: 20px;
+    width: 20%;
+    justify-content: center;
 }
 
 .imgClinEn img {
@@ -42,5 +44,13 @@
 @media screen and (max-width: 768px) {
     .imgClinEn {
         padding: 0;
+    }
+}
+@media screen and (max-width: 992px){
+    .clientIcnimgTru{
+        justify-content: center;
+    }
+    .imgClinEn{
+        width: auto;
     }
 }

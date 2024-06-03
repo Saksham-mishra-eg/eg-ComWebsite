@@ -30,11 +30,11 @@ function Testimonials() {
                                 <Col md={4}>
                                     <div className={styles.gamchnr}>
                                         <img src="brackets.png" alt="brackets" />
-                                        <p>I couldn't honestly image working without Lusha. <a href="#">Game changer</a> </p>
+                                        <p>I couldn't honestly image working without Lusha. <a href="#game">Game changer</a> </p>
                                         <div className={styles.iconImage}>
                                             <div className={styles.imageI}>
                                                 <div className={styles.imgnameIcn}>
-                                                    <img src="image1.png" alt="image 1" />
+                                                    <img src="image1.png" alt="eric lindoors" />
                                                     <div className={styles.gongEric}>
                                                         <h6>Eric Lindroos</h6>
                                                         <span>Gong</span>
@@ -50,11 +50,11 @@ function Testimonials() {
                                 <Col md={4}>
                                     <div className={styles.gamchnr}>
                                         <img src="brackets.png" alt="brackets" />
-                                        <p>I couldn't honestly image working without Lusha. <a href="#">Game changer</a> </p>
+                                        <p>I couldn't honestly image working without Lusha. <a href="#game">Game changer</a> </p>
                                         <div className={styles.iconImage}>
                                             <div className={styles.imageI}>
                                                 <div className={styles.imgnameIcn}>
-                                                    <img src="image2.png" alt="image 2" />
+                                                    <img src="image2.png" alt="lindroos" />
                                                     <div className={styles.gongEric}>
                                                         <h6>Eric Lindroos</h6>
                                                         <span>Gong</span>
@@ -70,11 +70,11 @@ function Testimonials() {
                                 <Col md={4}>
                                     <div className={styles.gamchnr}>
                                         <img src="brackets.png" alt="brackets" />
-                                        <p>I couldn't honestly image working without Lusha. <a href="#">Game changer</a> </p>
+                                        <p>I couldn't honestly image working without Lusha. <a href="#game">Game changer</a> </p>
                                         <div className={styles.iconImage}>
                                             <div className={styles.imageI}>
                                                 <div className={styles.imgnameIcn}>
-                                                    <img src="image3.png" alt="image 3" />
+                                                    <img src="image3.png" alt="feic" />
                                                     <div className={styles.gongEric}>
                                                         <h6>Eric Lindroos</h6>
                                                         <span>Gong</span>
@@ -93,7 +93,7 @@ function Testimonials() {
                 </Row>
             </Container>
         </div>
-       
+
     );
 }
 

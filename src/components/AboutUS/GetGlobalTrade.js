@@ -33,7 +33,7 @@ function GetGlobalTrade() {
                     <Col md={12}>
                         <div className={styles.GeGlobl}>
                             <h2>Want to know more about the Unique World of Export Genius? </h2>
-                            <h3>Get on Touch with Export Genius now!</h3>
+                            <h3>Get In Touch Now</h3>
                             <Button className={styles.scheDemoBtn} variant="success">Schedule a Demo</Button>{' '}
                             <Button className={styles.LogonDemoBtn} variant="primary">Login</Button>{' '}
                         </div>

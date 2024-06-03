@@ -12,14 +12,13 @@ function DiscoverGlobaldata() {
                 <Row>
                     <Col>
                         <div className={styles.globDataSrch}>
-                            <h1>Discover Global Data of 190+ Countries.  Get Export-Import Insights, Buyers, Suppliers, Markets Here.</h1>
+                            <h1>Discover Global Data of 190+ Countries. Get Export-Import Insights, Buyers, Suppliers, Markets Here.</h1>
                             <p>At the helm of market research, we lead the way in deciphering industry landscapes, consumer preferences, and emerging trends.</p>
                         </div>
                     </Col>
                 </Row>
                 <Row>
                     <Col>
-
                         <div className={styles.GlbSrchListForm}>
                             <Form.Select className={styles.glbSlctFormSrch} aria-label="Default select example">
                                 <option>Product/Hs code</option>
@@ -45,64 +44,6 @@ function DiscoverGlobaldata() {
                         </div>
                     </Col>
                 </Row>
-
-                {/* <Row>
-                    <Col md={12}>
-                        <div className={styles.EnrchglobData}>
-                            <hr className={styles.hrLines} />
-                            <h2>Enriched Global Trade Data</h2>
-                            <hr className={styles.hrLines} />
-                        </div>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col md={12}>
-                        <div className={styles.EnrichDataGlobaltr}>
-                            <ul className={styles.lsitofTradedata}>
-                                <li>
-                                    <div className={styles.listofTrade}>
-                                        <img src="countries.png" alt="countries" />
-                                    </div>
-                                    <div className={styles.listofTrade}>
-                                        <h3>190+</h3>
-                                        <h4>Countries</h4>
-                                        <p>Import Export Trade Data</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div className={styles.listofTrade}>
-                                        <img src="exclusive.png" alt="exclusive" />
-                                    </div>
-                                    <div className={styles.listofTrade}>
-                                        <h3>55+</h3>
-                                        <h4>Countries</h4>
-                                        <p>Exclusive Data</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div className={styles.listofTrade}>
-                                        <img src="detailed.png" alt="detailed" />
-                                    </div>
-                                    <div className={styles.listofTrade}>
-                                        <h3>30+</h3>
-                                        <h4>Countries</h4>
-                                        <p>Detailed Custom Data</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div className={styles.listofTrade}>
-                                        <img src="company.png" alt="company" />
-                                    </div>
-                                    <div className={styles.listofTrade}>
-                                        <h3>10M+</h3>
-                                        <h4>Company’s</h4>
-                                        <p>and Employee’s Contact</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </Col>
-                </Row> */}
             </Container>
         </div>
     );

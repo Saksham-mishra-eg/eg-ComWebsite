@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./ExclusiveData.module.css";
 import Container from 'react-bootstrap/Container';
-import { Col, Row } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 
 
 function ExclusiveData() {
@@ -17,25 +17,25 @@ function ExclusiveData() {
                         <div className={styles.ExclCntrdtGR}>
                             <ul>
                                 <li>
-                                    <a href="#">Bangladesh</a>
+                                    <a href="#bangladesh">Bangladesh</a>
                                 </li>
                                 <li>
-                                    <a href="#">Bolivia</a>
+                                    <a href="#bolivia">Bolivia</a>
                                 </li>
                                 <li>
-                                    <a href="#">Burundi</a>
+                                    <a href="#burundi">Burundi</a>
                                 </li>
                                 <li>
-                                    <a href="#">Cameroon</a>
+                                    <a href="#cameroon">Cameroon</a>
                                 </li>
                                 <li>
-                                    <a href="#">Chad</a>
+                                    <a href="#chad">Chad</a>
                                 </li>
                                 <li>
-                                    <a href="#">Costa Rica</a>
+                                    <a href="#costa">Costa Rica</a>
                                 </li>
                                 <li>
-                                    <a href="#">DR Congo</a>
+                                    <a href="#drcongo">DR Congo</a>
                                 </li>
                             </ul>
                         </div>

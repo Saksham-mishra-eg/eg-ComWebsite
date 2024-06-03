@@ -5,7 +5,6 @@ import { Col, Row } from "react-bootstrap";
 
 
 function FooterPrivacy() {
-    const map = 'asia.png'
 
     return (
 

@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./CustomerSupport.module.css";
 import Container from 'react-bootstrap/Container';
 import { Col, Row, Nav, Tab } from "react-bootstrap";
-import React, { useState } from 'react';
+
 
 
 function CustomerSupport() {

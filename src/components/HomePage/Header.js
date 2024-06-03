@@ -17,41 +17,31 @@ function Header() {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="m-auto">
                         <NavDropdown className={styles.navLinsk} title="Products" id="collapsible-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">
-                                Another action
-                            </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-
+                            <NavDropdown.Item className={styles.navdropItemslnk} href="/platform">Trade Intelligence Platform</NavDropdown.Item>
+                            <NavDropdown.Item className={styles.navdropItemslnk} href="api"> Trade Inteligence API  </NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown className={styles.navLinsk} title="Data" id="collapsible-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">
-                                Another action
-                            </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                            <NavDropdown.Item className={styles.navdropItemslnk} href="/data-flow">Data Availability</NavDropdown.Item>
+                            <NavDropdown.Item className={styles.navdropItemslnk} href="/global-data">Countries Covered </NavDropdown.Item>
+                            <NavDropdown.Item className={styles.navdropItemslnk} href="/download-sample">Download Samples</NavDropdown.Item>
+                            <NavDropdown.Item className={styles.navdropItemslnk} href="/search-data">Search live Data</NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link className={styles.navLinsk} href="#features">How We Help</Nav.Link>
-                        <Nav.Link className={styles.navLinsk} href="#pricing">Pricing</Nav.Link>
-                        <Nav.Link className={styles.navLinsk} href="#features">Search Data</Nav.Link>
+                        <Nav.Link className={styles.navLinsk} href="/how-we-help">How We Help</Nav.Link>
+                        <Nav.Link className={styles.navLinsk} href="/pricing">Pricing</Nav.Link>
+                        <Nav.Link className={styles.navLinsk} href="#search-data">Search Data</Nav.Link>
 
                         <NavDropdown className={styles.navLinsk} title="Company" id="collapsible-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">
-                                Another action
-                            </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-
-                            <NavDropdown.Item href="#action/3.4">
-                                Separated link
-                            </NavDropdown.Item>
+                            <NavDropdown.Item className={styles.navdropItemslnk} href="/about-us">About US</NavDropdown.Item>
+                            <NavDropdown.Item className={styles.navdropItemslnk} href="/career-page"> Career </NavDropdown.Item>
+                            <NavDropdown.Item className={styles.navdropItemslnk} href="/client-testimonials">Clients & testimonial</NavDropdown.Item>
+                            <NavDropdown.Item className={styles.navdropItemslnk} href="/blog">Blog</NavDropdown.Item>
+                            <NavDropdown.Item className={styles.navdropItemslnk} href="/faq">Faq</NavDropdown.Item>
+                            <NavDropdown.Item className={styles.navdropItemslnk} href="/contact-us">Contact Us</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                     <Nav className={styles.navBrnNab}>
-                        <Nav.Link href="#deets" className={styles.loingBtn} >Login</Nav.Link>
-                        <Nav.Link eventKey={2} href="#memes" className={styles.TrlBtn} >
-                            Free Trial
-                        </Nav.Link>
+                        <Nav.Link href="#login" className={styles.loingBtn} >Login</Nav.Link>
+                        <Nav.Link eventKey={2} href="#freetrial" className={styles.TrlBtn} > Free Trial </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./TradeIntelligence.module.css";
 import Container from 'react-bootstrap/Container';
 import { Col, Form, Row } from "react-bootstrap";
-import { Player, Controls } from '@lottiefiles/react-lottie-player';
+import { Player } from '@lottiefiles/react-lottie-player';
 
 function TradeIntelligence() {
 
@@ -46,7 +46,7 @@ function TradeIntelligence() {
                                 src="https://lottie.host/bb35901e-bd6c-4e29-ac2e-1a7edda8c87d/3jV2jKSBag.json"
                                 style={{}}
                             >
-                                <Controls visible={true} buttons={['play', 'repeat', 'frame', 'debug']} />
+                                {/* <Controls visible={true} buttons={['play', 'repeat', 'frame', 'debug']} /> */}
                             </Player>
                         </div>
                     </Col>

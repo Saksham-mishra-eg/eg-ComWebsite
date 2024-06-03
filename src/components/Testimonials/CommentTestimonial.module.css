@@ -42,7 +42,8 @@
     transition: width 1s, height 1s;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     width: 432px;
-    height: 276px;
+    height: 375px;
+    min-height: 375px;
     font-family: "Roboto", sans-serif;
 }
 
@@ -73,6 +74,7 @@
     left: 0;
     right: 0;
     font-family: "Roboto", sans-serif;
+    bottom: -32%;
 }
 
 .jaWriteImg h5 {

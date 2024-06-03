@@ -21,10 +21,10 @@
 }
 
 .tabofMatrial {
-    color: #4F4F4F!important;
-    font-weight: 500!important;
-    font-family: "Roboto", sans-serif!important;
-    font-size: 16px!important;
+    color: #4F4F4F !important;
+    font-weight: 500 !important;
+    font-family: "Roboto", sans-serif !important;
+    font-size: 16px !important;
 }
 
 .comprHendTbs {
@@ -61,30 +61,32 @@
     text-align: left;
 }
 
-@media screen and (max-width: 768px){
-    .MangeEndtoend{
+@media screen and (max-width: 768px) {
+    .MangeEndtoend {
         padding: 60px 0;
     }
-    .boxtalbPanetd{
 
-    }
-    .inimgigh img{
+    .boxtalbPanetd {}
+
+    .inimgigh img {
         width: 100%;
     }
-.tabofMatrial{
-    display: inline-block !important;
-        min-height: auto!important;
-        font-size: 14px!important;
-        padding: 12px 9px!important;
-}
-    .boxclanameMogile{
+
+    .tabofMatrial {
+        display: inline-block !important;
+        min-height: auto !important;
+        font-size: 14px !important;
+        padding: 12px 9px !important;
+    }
+
+    .boxclanameMogile {
         display: inline-block;
         width: 100%;
     }
-    .MuiTabs-flexContainer{
-        display: block!important;
-    }
-    .pltrtraBYndemodeText{
 
+    .MuiTabs-flexContainer {
+        display: block !important;
     }
+
+
 }

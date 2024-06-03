@@ -250,13 +250,13 @@ function CustomizedPlan() {
                                 <h6>Estimated cost to get started:</h6>
                                 <h4>$3,890*</h4>
                                 <Button className={styles.TaklSelsbn}>Talk to Sales</Button>
-                                <p> <a className={styles.viewPricebn} href="#">View Price Breakdown</a> </p>
-                                <p>  <a className={styles.viewPricebn} href="#"> <img src="share.png" /> ShareThis Price</a> </p>
+                                <p> <a className={styles.viewPricebn} href="view">View Price Breakdown</a> </p>
+                                <p>  <a className={styles.viewPricebn} href="share"> <img src="share.png" alt="share this" /> ShareThis Price</a> </p>
                             </div>
                             <div className={styles.coushwoTxt}>
                                 <p>*Cost shown also includes required, one-time
                                     <b> Professional Onboarding </b>
-                                    for a fee of $3,000. <a href="#"> Learn More <img src="url.png" /> </a>
+                                    for a fee of $3,000. <a href="learnmore"> Learn More <img src="url.png" alt="learn more" /> </a>
                                 </p>
                             </div>
 

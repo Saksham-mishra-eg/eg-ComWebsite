@@ -60,3 +60,24 @@
     color: #fff;
     text-decoration: none;
 }
+
+@media screen and (max-width: 768px) {
+    .ExclCntrdtWh {
+        width: 100%;
+        text-align: left;
+        padding: 30px 0 30px 30px;
+    }
+
+    .ExclCntrdtGR ul {
+        gap: 1rem;
+        align-items: center;
+        justify-content: start;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .ExclCntrdtGR {
+        float: left;
+        height: auto;
+    }
+}

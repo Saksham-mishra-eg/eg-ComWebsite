@@ -33,7 +33,8 @@ function GetGlobalTrade() {
                     <Col md={12}>
                         <div className={styles.GeGlobl}>
                             <h2>EG Hall of Fame. Discover Yourself!</h2>
-                            <h3>Experience the EG Difference. </h3>
+                            {/* <h3>Experience the EG Difference. </h3> */}
+                            <br /> <br />
                             <Button className={styles.scheDemoBtn} variant="success">Schedule a Demo</Button>{' '}
                             <Button className={styles.LogonDemoBtn} variant="primary">Login</Button>{' '}
                         </div>

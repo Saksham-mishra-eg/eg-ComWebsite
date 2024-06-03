@@ -36,9 +36,9 @@ function DetailedPricing() {
                                 </tr>
                                 <tr>
                                     <th>Countries Covered</th>
-                                    <td>India, Mexico (Sea Mode), Argentina, Chile, Colombia, Ecuador, Paraguay, Peru, Uruguay and Venezuela... <a href="javascript:void(0)">View All</a> </td>
-                                    <td>Starter Plan All Countries + Bangladesh, Bolivia, Botswana, Cote d Ivoire, Ethiopia... <a href="javascript:void(0)">View All</a></td>
-                                    <td>Starter & Essential Plan All Countries + Angola, Cameroon, Chad, DR Congo, Ghana, <a href="javascript:void(0)">View All</a> </td>
+                                    <td>India, Mexico (Sea Mode), Argentina, Chile, Colombia, Ecuador, Paraguay, Peru, Uruguay and Venezuela... <a href="viewall">View All</a> </td>
+                                    <td>Starter Plan All Countries + Bangladesh, Bolivia, Botswana, Cote d Ivoire, Ethiopia... <a href="viewall">View All</a></td>
+                                    <td>Starter & Essential Plan All Countries + Angola, Cameroon, Chad, DR Congo, Ghana, <a href="viewall">View All</a> </td>
                                 </tr>
                                 <tr>
                                     <th>Advanced Searches</th>
