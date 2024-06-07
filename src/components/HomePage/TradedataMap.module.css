@@ -62,22 +62,39 @@
 }
 
 .UListCntnt {
-    padding-left: 0;
     list-style: circle;
     margin-top: 25px;
+    display: inline-block;
+    width: 100%;
 }
 
 .UListCntnt li {
     width: 25%;
     float: left;
     text-align: left;
-    list-style: circle;
+    list-style: disc;
     margin-bottom: 12px;
+}
+
+.CstmDatat {
+    color: #008000;
+}
+
+.StstDtDatat {
+    color: #0d6efd;
+}
+
+.CstmDatat a {
+    color: #008000;
+}
+
+.StstDtDatat a {
+    color: #0d6efd;
 }
 
 .UListCntnt li a {
     text-decoration: none;
-    color: #6C6C6C;
+    /* color: #6C6C6C; */
     font-size: 14px;
     font-weight: 500;
     font-family: "Roboto", sans-serif;
@@ -99,7 +116,6 @@
 }
 
 .DtaYpe {
-    padding-left: 0;
     display: flex;
     width: 100%;
     gap: 4rem;
@@ -107,11 +123,15 @@
 }
 
 .CstmDt {
-    list-style: url(/public/custms.png);
+    /* list-style: url(/public/custms.png); */
+    color: #008000;
+    font-weight: 500;
 }
 
 .StstDt {
-    list-style: url(/public/stats.png);
+    /* list-style: url(/public/stats.png); */
+    color: #0d6efd;
+    font-weight: 500;
 }
 
 @media screen and (max-width: 768px) {

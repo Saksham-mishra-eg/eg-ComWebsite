@@ -22,7 +22,7 @@ function EnrichTrade() {
                             <div className={styles.BoxesOFDta}>
                                 <img src="visually-appealing.png" alt="Enrich Trade Data" />
                                 <h3>Visually-Appealing Data </h3>
-                                <p>Sneak into International market dynamics and get complete visibility across imports and exports within the global supply chain network.All the complex trail of data is showcased in easy-to-understand format.</p>
+                                <p>Sneak into the latest market dynamics in a visually-appealing manner. Explore total shipments, trade data, imports and exports across the world.</p>
                                 <a href="#learnmoee">Learn more ?</a>
                             </div>
                         </div>
@@ -42,7 +42,7 @@ function EnrichTrade() {
                             <div className={styles.BoxesOFDta}>
                                 <img src="future-driven.png" alt="Enrich Trade Data" />
                                 <h3>Future-Driven Analytics </h3>
-                                <p>Dive into global data analytics at your fingertips. Access to trade analysis utilized by top industry leaders.  </p>
+                                <p>Anticipate what's going to happen in the future, dive into global data analytics at your fingertips. Access trade analysis utilized by top industry leaders.</p>
                                 <a href="#learnmoee">Learn more ?</a>
                             </div>
                         </div>
@@ -52,7 +52,7 @@ function EnrichTrade() {
                             <div className={styles.BoxesOFDta}>
                                 <img src="trend-savvy.png" alt="Enrich Trade Data" />
                                 <h3>Be a Trend-Savvy </h3>
-                                <p>Stay tuned with the market’s latest trends. Get enriched data insights that will help you get a better idea of what’s happening in almost every industry. </p>
+                                <p>Stay tuned with the market's latest trends. Get enriched data insights that will help you get a better idea of what’s happening in almost every industry.</p>
                                 <a href="#learnmoee">Learn more ?</a>
                             </div>
                         </div>

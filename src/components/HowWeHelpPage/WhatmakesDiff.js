@@ -2,9 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./WhatmakesDiff.module.css";
 import { Col, Container, Row } from "react-bootstrap";
 
-
 function WhatmakesDiff() {
-
 
     return (
         <div className={styles.WhatmakesDiffBG}>
@@ -55,18 +53,6 @@ function WhatmakesDiff() {
                                 <img src="verrify.png" alt="Quality Data" />
                                 <h3>Add Country and Upgrade Plan</h3>
                                 <p>With Export Genius, you can effortlessly add any country to your coverage or upgrade your plan whenever you need. Whether you're seeking to explore new markets or access additional data insights, our flexible options ensure that you stay in control of your international trade journey. With Export Genius, the power to grow and adapt is always in your hands."</p>
-                                <a href="#readmore">Read more...</a>
-                            </div>
-                            <div className={styles.WhatmakesDiffText}>
-                                <img src="data-visualizatios.png" alt="visualizatios" />
-                                <h3>Visualize Data</h3>
-                                <p>Analyze global trade data by importer, exporter, HS Code, </p>
-                                <a href="#readmore">Read more...</a>
-                            </div>
-                            <div className={styles.WhatmakesDiffText}>
-                                <img src="access-control.png" alt="Data Access" />
-                                <h3>Unlimited Data Access</h3>
-                                <p>There is no limit to access global trade data,   </p>
                                 <a href="#readmore">Read more...</a>
                             </div>
                         </div>

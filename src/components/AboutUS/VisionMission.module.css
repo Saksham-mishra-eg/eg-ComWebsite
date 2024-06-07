@@ -63,13 +63,14 @@
 
     .visonndmisson {
         width: 100%;
-        gap: 1rem;
-        height: 100%;
+        display: block;
+        height: auto;
     }
 
     .visonbx {
         padding: 25px 18px;
         height: 100%;
+        margin-bottom: 30px;
     }
 
 }

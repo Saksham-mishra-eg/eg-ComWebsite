@@ -88,22 +88,23 @@ function TradedataMap() {
                                                             <h3>Asia</h3>
                                                         </div>
                                                         <ul className={styles.UListCntnt}>
-                                                            <li> <a href="#">Bangladesh</a> </li>
-                                                            <li> <a href="#">Kazakhstan</a> </li>
-                                                            <li> <a href="#">Singapore</a> </li>
-                                                            <li> <a href="#">Turkey</a> </li>
-                                                            <li> <a href="#">Bangladesh</a> </li>
-                                                            <li> <a href="#">Kazakhstan</a> </li>
-                                                            <li> <a href="#">Singapore</a> </li>
-                                                            <li> <a href="#">Turkey</a> </li>
-                                                            <li> <a href="#">Bangladesh</a> </li>
-                                                            <li> <a href="#">Kazakhstan</a> </li>
-                                                            <li> <a href="#">Singapore</a> </li>
-                                                            <li> <a href="#">Turkey</a> </li>
-                                                            <li> <a href="#">Bangladesh</a> </li>
-                                                            <li> <a href="#">Kazakhstan</a> </li>
-                                                            <li> <a href="#">Singapore</a> </li>
-                                                            <li> <a href="#">Turkey</a> </li>
+                                                            <li className={styles.StstDtDatat}> <a href="#asia">Canada</a> </li>
+                                                            <li className={styles.StstDtDatat}> <a href="#asia">Hong Kong</a> </li>
+                                                            <li className={styles.CstmDatat}> <a href="#asia">Turkey</a> </li>
+                                                            <li className={styles.CstmDatat}> <a href="#asia">Indonesia</a> </li>
+                                                            <li className={styles.CstmDatat}> <a href="#asia">Singapore</a> </li>
+                                                            <li className={styles.CstmDatat}> <a href="#asia">Bangladesh</a> </li>
+                                                            <li className={styles.CstmDatat}> <a href="#asia">Vietnam</a> </li>
+                                                            <li className={styles.CstmDatat}> <a href="#asia">Philippines</a> </li>
+                                                            <li className={styles.CstmDatat}> <a href="#asia">Sri Lanka</a> </li>
+                                                            <li className={styles.CstmDatat}> <a href="#asia">Pakistan</a> </li>
+                                                            <li className={styles.CstmDatat}> <a href="#asia">Russia</a> </li>
+                                                            <li className={styles.CstmDatat}> <a href="#asia">Thailand</a> </li>
+                                                            <li className={styles.StstDtDatat}> <a href="#asia">Nepal</a> </li>
+                                                            <li className={styles.CstmDatat}> <a href="#asia">Thailand</a> </li>
+                                                            <li className={styles.CstmDatat}> <a href="#asia">Uzbekistan</a> </li>
+                                                            <li className={styles.CstmDatat}> <a href="#asia">Vietnam</a> </li>
+
                                                         </ul>
                                                         <ul className={styles.DtaYpe}>
                                                             <li className={styles.CstmDt}>Detailed Customs</li>

@@ -1,10 +1,12 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./Clients.module.css";
 import { Container, Row } from "react-bootstrap";
-
+import React from "react";
+// import Marquee from "react-fast-marquee";
+import "./customStyles.css"
 
 function Clients() {
-    
+
 
     return (
         <div className={styles.oveClntsSection}>
@@ -18,7 +20,54 @@ function Clients() {
                     </div>
                     <div className={styles.oveClntsImng}>
                         <div className={styles.selitxtImngf}>
-                            <img src="clientsImg.png" alt="clients" />
+
+                            <div className="slider">
+                                <div className="slide-track">
+                                    <img src="clients/client.jpg" alt="clients" />
+                                    <img src="clients/client1.png" alt="clients" />
+                                    <img src="clients/client2.png" alt="clients" />
+                                    <img src="clients/client3.png" alt="clients" />
+                                    <img src="clients/client4.png" alt="clients" />
+                                    <img src="clients/client5.png" alt="clients" />
+                                    <img src="clients/client6.png" alt="clients" />
+                                    <img src="clients/client7.jpg" alt="clients" />
+                                    <img src="clients/client8.png" alt="clients" />
+                                    <img src="clients/client9.png" alt="clients" />
+                                    <img src="clients/client10.png" alt="clients" />
+
+                                 
+
+                                    {/* Duplicate images for infinite scroll effect */}
+                                    <img src="clients/client.jpg" alt="clients" />
+                                    <img src="clients/client1.png" alt="clients" />
+                                    <img src="clients/client2.png" alt="clients" />
+                                    <img src="clients/client3.png" alt="clients" />
+                                    <img src="clients/client4.png" alt="clients" />
+                                    <img src="clients/client5.png" alt="clients" />
+                                    <img src="clients/client6.png" alt="clients" />
+                                    <img src="clients/client7.jpg" alt="clients" />
+                                    <img src="clients/client8.png" alt="clients" />
+                                    <img src="clients/client9.png" alt="clients" />
+                                    <img src="clients/client10.png" alt="clients" />
+                                </div>
+                            </div>
+
+                            {/* <ul className={styles.clientListImngs}>
+                            <Marquee>
+                                <li><img src="clients/client.jpg" alt="clients" /></li>
+                                <li><img src="clients/client1.png" alt="clients" /></li>
+                                <li><img src="clients/client2.png" alt="clients" /></li>
+                                <li><img src="clients/client3.png" alt="clients" /></li>
+                                <li><img src="clients/client4.png" alt="clients" /></li>
+                                <li><img src="clients/client5.png" alt="clients" /></li>
+                                <li><img src="clients/client7.jpg" alt="clients" /></li>
+                                <li><img src="clients/client6.png" alt="clients" /></li>
+                                <li><img src="clients/client8.png" alt="clients" /></li>
+                                <li><img src="clients/client9.png" alt="clients" /></li>
+                                <li><img src="clients/client10.png" alt="clients" /></li>
+                                </Marquee>
+                            </ul> */}
+
                         </div>
                     </div>
                 </Row>

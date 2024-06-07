@@ -30,7 +30,7 @@ function AboutFeatures() {
                     <Col md={3}>
                         <div className={styles.tradeFeactu}>
                             <div className={styles.feactrde}>
-                                <img src="access.png" alt="access" />
+                                <img src="real-time.png" alt="access" />
                                 <h3>Real-Time Access</h3>
                                 <p>Keep a tab on your competitor’s activities. Monitor their total shipments made, traded products, HS Code, quantity, price, and much more.</p>
                             </div>
@@ -39,7 +39,7 @@ function AboutFeatures() {
                     <Col md={3}>
                         <div className={styles.tradeFeactu}>
                             <div className={styles.feactrde}>
-                                <img src="analytics.png" alt="analytics" />
+                                <img src="advanced-analytics.png" alt="analytics" />
                                 <h3>Advanced Analytics</h3>
                                 <p>Dive into global data analytics at your fingertips. Get access to trade analysis utilized by top industry leaders.</p>
                             </div>

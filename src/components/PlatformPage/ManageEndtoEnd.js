@@ -81,11 +81,12 @@ function ManageEndtoEnd() {
                                                 <div className={styles.inetleInstigh}>
                                                     <h3>Company Data Analysis</h3>
                                                     <p>Access import export data of companies and get a detailed trade overview of importers and exporters. Find and connect with new and potential buyers and suppliers. Identify which companies are growing and which ones are shrinking. Discover your competitors by knowing their market share and business aspects. </p>
+                                                    <a className={styles.Explormorebtn} href="#explore"><span>Explore More</span> </a>
                                                 </div>
                                             </Col>
                                             <Col md={9}>
                                                 <div className={styles.inimgigh}>
-                                                    <img src="data-analysis.png" alt="comprehensive" />
+                                                    <img src="comprehensive.png" alt="comprehensive" />
                                                 </div>
                                             </Col>
                                         </Row>
@@ -98,11 +99,12 @@ function ManageEndtoEnd() {
                                                 <div className={styles.inetleInstigh}>
                                                     <h3>Comprehensive Data Coverage</h3>
                                                     <p>Keep a tab on the global supply chain, and gain valuable business intelligence from import export trade data. Whatever your goals, our platform is designed to provide hassle-free data based on Importer, Exporter, HS Code, Commodity, Data Duration, Port, Transport Mode, and so on.</p>
+                                                    <a className={styles.Explormorebtn} href="#explore"><span>Explore More</span> </a>
                                                 </div>
                                             </Col>
                                             <Col md={9}>
                                                 <div className={styles.inimgigh}>
-                                                    <img src="comprehensive.png" alt="comprehensive" />
+                                                    <img src="data-coverage.png" alt="data coverage" />
                                                 </div>
                                             </Col>
                                         </Row>
@@ -116,11 +118,12 @@ function ManageEndtoEnd() {
                                                     {/* <h6>Intelligent Insight</h6> */}
                                                     <h3>Global Trade Data Search</h3>
                                                     <p>Access our dashboard to get a bigger picture of global trade developments. Our global trade data search helps you find the biggest import and export countries, top trade commodities, and a lot more. Explore import export data worldwide and gain valuable market insights.</p>
+                                                    <a className={styles.Explormorebtn} href="#explore"><span>Explore More</span> </a>
                                                 </div>
                                             </Col>
                                             <Col md={9}>
                                                 <div className={styles.inimgigh}>
-                                                    <img src="comprehensive.png" alt="comprehensive" />
+                                                    <img src="global-trade.png" alt="Global Trade Data" />
                                                 </div>
                                             </Col>
                                         </Row>
@@ -134,11 +137,12 @@ function ManageEndtoEnd() {
                                                     {/* <h6>Intelligent Insight</h6> */}
                                                     <h3>Commodity Price Analysis</h3>
                                                     <p>Access our dashboard and view historical data and the latest information on commodities that companies import and export globally to have a better price evaluation. Compare and understand the actual market value of products to choose the companies that can provide you with the best price.</p>
+                                                    <a className={styles.Explormorebtn} href="#explore"><span>Explore More</span> </a>
                                                 </div>
                                             </Col>
                                             <Col md={9}>
                                                 <div className={styles.inimgigh}>
-                                                    <img src="comprehensive.png" alt="comprehensive" />
+                                                    <img src="price-analysis.png" alt="Price Analysis" />
                                                 </div>
                                             </Col>
                                         </Row>
@@ -151,11 +155,12 @@ function ManageEndtoEnd() {
                                                 <div className={styles.inetleInstigh}>
                                                     <h3>Reach Targeted Companies</h3>
                                                     <p>Our import export data covers verified contact details – phone numbers, email addresses, websites, etc. of importers and exporters that will help you reach the targeted companies. Access our dashboard and start exploring crucial company information along with their contacts.</p>
+                                                    <a className={styles.Explormorebtn} href="#explore"><span>Explore More</span> </a>
                                                 </div>
                                             </Col>
                                             <Col md={9}>
                                                 <div className={styles.inimgigh}>
-                                                    <img src="comprehensive.png" alt="comprehensive" />
+                                                    <img src="targeted-companies.png" alt="Targeted Companies" />
                                                 </div>
                                             </Col>
                                         </Row>

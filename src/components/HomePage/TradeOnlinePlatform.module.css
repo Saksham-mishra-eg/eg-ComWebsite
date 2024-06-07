@@ -26,7 +26,6 @@
 
 .TrdetamOnlineIMg {
     text-align: left;
-    padding: 20px 0;
     position: relative;
 }
 
@@ -46,9 +45,10 @@
     color: #737373;
     font-size: 16px;
     font-weight: 500;
-    border-top: 1px solid #000;
-    border-radius: 0 !important;
-    padding-left: 0;
+    /* border-top: 1px solid #000; */
+    border-radius: 6px !important;
+    /* padding-left: 0; */
+    border: 1px solid #000;
 }
 
 .finGobaTxt.nav-link.active {
@@ -73,22 +73,27 @@
 
 .GlbDataImg {
     font-family: "Roboto", sans-serif;
-    position: absolute;
+    /* position: absolute;
     top: 22%;
     left: 5%;
-    width: 20%;
+    width: 20%; */
 }
 
 .GlbDataImg h3 {
-    font-size: 24px;
+    font-size: 30px;
     color: #000;
     font-weight: 500;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .GlbDataImg p {
     color: #2D2E2E;
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 29px;
+}
+
+.GlbDataImg img {
+    width: 100%;
 }
 
 

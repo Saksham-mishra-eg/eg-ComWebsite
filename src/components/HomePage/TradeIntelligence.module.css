@@ -11,11 +11,28 @@
 
 .tradeText {
     text-align: left;
-    margin-left: 40px;
     margin-top: 30px;
+    font-family: "Roboto", sans-serif;
 }
 
-.tradeText h1 {
+.howYOur {
+    color: #171A31;
+    font-size: 55px;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 15px;
+}
+
+.actnIsht {
+    color: #0d6efd;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 25px;
+}
+
+
+/* .tradeText h1 {
     color: #171A31;
     font-size: 55px;
     font-weight: 600;
@@ -33,7 +50,7 @@
     font-family: "Roboto", sans-serif;
     margin-bottom: 15px;
     text-align: center;
-}
+} */
 
 .tradeText p {
     color: #171a31b0;
@@ -71,9 +88,10 @@
     gap: 0.5rem;
 }
 
+/* 
 .frokDemo {
     width: 64%;
-}
+} */
 
 @media screen and (max-width: 768px) {
     .onlinePlatform {
@@ -88,6 +106,7 @@
     .tradeText h1 {
         font-size: 45px;
     }
+
     .tradeText h3 {
         padding: 6px 20px;
     }

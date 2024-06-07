@@ -23,7 +23,7 @@
 }
 
 .selitxtImngf img {
-    width: 100%;
+    width: 20%;
     object-fit: scale-down;
     background: none;
     mix-blend-mode: darken;
@@ -47,14 +47,24 @@
     width: 90%;
     margin: 0 auto;
 }
-.selitxt{
+
+.selitxt {
     text-align: center;
 }
+
+.clientListImngs{
+    list-style: none;
+    display: inline-flex;
+    gap: 1rem;
+    margin-bottom: 0;
+}
+
 @media screen and (max-width: 768px) {
-    .oveClnts{
+    .oveClnts {
         width: 100%;
     }
-    .oveClntsImng{
+
+    .oveClntsImng {
         width: 100%;
     }
 }

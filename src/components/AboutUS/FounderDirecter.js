@@ -17,7 +17,7 @@ function FounderDirecter() {
                             </div>
                             <div className={styles.fornParaghr}>
                                 <p>The duo of director and founder are the real motivation behind the success of Export Genius. Their steer-clear vision and consistent efforts have led to the company’s success. Under the aegis of their leadership, Export Genius continues to empower businesses to thrive in the international marketplace. </p>
-                                <a href='#readmore'>Read More...</a>
+                                {/* <a href='#readmore'>Read More...</a> */}
                             </div>
                         </div>
                     </Col>

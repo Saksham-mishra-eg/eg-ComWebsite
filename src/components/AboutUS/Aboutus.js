@@ -17,8 +17,9 @@ function Aboutus() {
                                 At the helm of market research, we lead the way in deciphering industry landscapes, consumer preferences, and emerging trends.
                             </p> */}
                             <div className={styles.imgeCline}>
-                                <img src="capterra.png" alt="capterra" />
-                                <img src="g2.png" alt="g2" />
+                                {/* <img src="capterra.png" alt="capterra" />
+                                <img src="g2.png" alt="g2" /> */}
+                                <a className={styles.Explormorebtn} href="#explore"><span>Connet with us</span> </a>
                             </div>
                         </div>
                     </Col>

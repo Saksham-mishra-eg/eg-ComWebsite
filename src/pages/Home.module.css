@@ -3,3 +3,6 @@
     display: block;
     background-color: #fff;
 }
+.inline-block{
+    display: inline-block;
+}

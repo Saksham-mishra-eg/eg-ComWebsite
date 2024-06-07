@@ -16,7 +16,7 @@ function FocusOn() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-  
+
     // nextArrow: <SampleNextArrow />,
     //   prevArrow: <SamplePrevArrow />,
     // arrows: true,
@@ -32,7 +32,7 @@ function FocusOn() {
   //     />
   //   );
   // }
-  
+
   // function SamplePrevArrow(props) {
   //   const { className, style, onClick } = props;
   //   return (
@@ -50,7 +50,7 @@ function FocusOn() {
         <Row>
           <Slider {...settings}>
             <div>
-            <Row>
+              <Row>
                 <Col>
                   <div className={styles.FocuOnd}>
                     <h6>Our Core Values</h6>
@@ -66,7 +66,7 @@ function FocusOn() {
               </Row>
             </div>
             <div>
-            <Row>
+              <Row>
                 <Col>
                   <div className={styles.FocuOnd}>
                     <h6>Our Core Values</h6>
@@ -76,7 +76,7 @@ function FocusOn() {
                 </Col>
                 <Col>
                   <div className={styles.foncImg}>
-                    <img src="focuson.png" alt="focuson" />
+                    <img src="excellence.png" alt="excellence" />
                   </div>
                 </Col>
               </Row>
@@ -92,7 +92,7 @@ function FocusOn() {
                 </Col>
                 <Col>
                   <div className={styles.foncImg}>
-                    <img src="focuson.png" alt="focuson" />
+                    <img src="agility.png" alt="agility" />
                   </div>
                 </Col>
               </Row>
@@ -108,7 +108,7 @@ function FocusOn() {
                 </Col>
                 <Col>
                   <div className={styles.foncImg}>
-                    <img src="focuson.png" alt="focuson" />
+                    <img src="innovation.png" alt="innovation" />
                   </div>
                 </Col>
               </Row>

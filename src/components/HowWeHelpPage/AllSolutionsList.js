@@ -4,14 +4,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./AllSolutionsList.module.css";
 import Container from 'react-bootstrap/Container';
 import { Col, Row } from "react-bootstrap";
-import { Link, Element } from 'react-scroll'
+import {  Element } from 'react-scroll'
+
+
+import 'animate.css';
 
 
 function AllSolutionsList() {
 
     return (
         <div className={styles.AllSolutionsListBG}>
-            <Container fluid>
+            
+            {/* <Container fluid>
                 <Row>
                     <div className={styles.tabsOfSolutions}>
                         <Container>
@@ -21,40 +25,40 @@ function AllSolutionsList() {
                                         <Link activeClass="active" to="firstInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
                                             Importers
                                         </Link>
-                                        <Link  to="secondInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
+                                        <Link to="secondInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
                                             Exporters
                                         </Link>
-                                        <Link  to="thirdInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
+                                        <Link to="thirdInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
                                             Logistics
                                         </Link>
-                                        <Link  to="fourthInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
+                                        <Link to="fourthInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
                                             Consulting and Research
                                         </Link>
-                                        <Link  to="fifthInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
+                                        <Link to="fifthInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
                                             Law Firms
                                         </Link>
-                                        <Link  to="sixthInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
+                                        <Link to="sixthInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
                                             Investment Agencies
                                         </Link>
-                                        <Link  to="seventhInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
+                                        <Link to="seventhInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
                                             Government Agencies
                                         </Link>
-                                        <Link  to="eighthInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
+                                        <Link to="eighthInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
                                             Financial Institutions
                                         </Link>
-                                        <Link  to="ninthInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
+                                        <Link to="ninthInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
                                             Media & Communications
                                         </Link>
-                                        <Link  to="tenthInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
+                                        <Link to="tenthInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
                                             Manufacturing & Retail Companies
                                         </Link>
-                                        <Link  to="eleventhInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
+                                        <Link to="eleventhInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
                                             Sales & Marketing Teams
                                         </Link>
-                                        <Link  to="twelfthInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
+                                        <Link to="twelfthInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
                                             Corporation
                                         </Link>
-                                        <Link  to="thirteenthInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
+                                        <Link to="thirteenthInsideContainer" spy={true} smooth={true} duration={250} containerId="containerElement" style={{ display: 'inline-block', margin: '20px' }}>
                                             Trade Promotion Councils
                                         </Link>
                                     </div>
@@ -63,7 +67,7 @@ function AllSolutionsList() {
                         </Container>
                     </div>
                 </Row>
-            </Container>
+            </Container> */}
             <Container>
                 <Row>
                     <Col md={12}>
@@ -71,28 +75,30 @@ function AllSolutionsList() {
                             <div className={styles.ForSoltinng}>
 
                                 <Element name="test7" className={styles.elementofSlt} id="containerElement" >
-
-                                    <Element name="firstInsideContainer" style={{
-                                        marginBottom: '70px'
-                                    }}>
-                                        <Row>
-                                            <Col md={5}>
-                                                <div className={styles.imprSecoDesti}>
-                                                    <h3>Importers</h3>
-                                                    <p>Redefine your search for potential suppliers for your commodities from the world. Get extensive information by making use of filters. </p>
-                                                    <ul className={styles.ulilistSolutin}>
-                                                        <li>Monitor shipment details of your competitors and access import-export data online. </li>
-                                                        <li>Check the global inbound and outbound shipments.</li>
-                                                    </ul>
-                                                </div>
-                                            </Col>
-                                            <Col md={7}>
-                                                <div className={styles.imeImageDash}>
-                                                    <img src="importer.png" alt="Importers" />
-                                                </div>
-                                            </Col>
-                                        </Row>
-                                    </Element>
+                                   
+                                
+                                        <Element name="firstInsideContainer" style={{
+                                            marginBottom: '70px'
+                                        }}>
+                                            <Row>
+                                                <Col md={5}>
+                                                    <div className={styles.imprSecoDesti}>
+                                                        <h3>Importers</h3>
+                                                        <p>Redefine your search for potential suppliers for your commodities from the world. Get extensive information by making use of filters. </p>
+                                                        <ul className={styles.ulilistSolutin}>
+                                                            <li>Monitor shipment details of your competitors and access import-export data online. </li>
+                                                            <li>Check the global inbound and outbound shipments.</li>
+                                                        </ul>
+                                                    </div>
+                                                </Col>
+                                                <Col md={7}>
+                                                    <div className={styles.imeImageDash}>
+                                                        <img src="importer.png" alt="Importers" />
+                                                    </div>
+                                                </Col>
+                                            </Row>
+                                        </Element>
+                                   
 
                                     <Element name="secondInsideContainer" style={{
                                         marginBottom: '70px'
@@ -115,6 +121,8 @@ function AllSolutionsList() {
                                             </Col>
                                         </Row>
                                     </Element>
+                                   
+
                                     <Element name="thirdInsideContainer" style={{
                                         marginBottom: '70px'
                                     }}>
@@ -136,6 +144,8 @@ function AllSolutionsList() {
                                             </Col>
                                         </Row>
                                     </Element>
+                                   
+
                                     <Element name="fourthInsideContainer" style={{
                                         marginBottom: '70px'
                                     }}>
@@ -157,6 +167,8 @@ function AllSolutionsList() {
                                             </Col>
                                         </Row>
                                     </Element>
+                                   
+
                                     <Element name="fifthInsideContainer" style={{
                                         marginBottom: '70px'
                                     }}>
@@ -178,6 +190,8 @@ function AllSolutionsList() {
                                             </Col>
                                         </Row>
                                     </Element>
+                                   
+
                                     <Element name="sixthInsideContainer" style={{
                                         marginBottom: '70px'
                                     }}>
@@ -199,6 +213,8 @@ function AllSolutionsList() {
                                             </Col>
                                         </Row>
                                     </Element>
+                                   
+
                                     <Element name="seventhInsideContainer" style={{
                                         marginBottom: '70px'
                                     }}>
@@ -220,6 +236,8 @@ function AllSolutionsList() {
                                             </Col>
                                         </Row>
                                     </Element>
+                                   
+
                                     <Element name="eighthInsideContainer" style={{
                                         marginBottom: '70px'
                                     }}>
@@ -241,6 +259,7 @@ function AllSolutionsList() {
                                             </Col>
                                         </Row>
                                     </Element>
+                                 
                                     <Element name="ninthInsideContainer" style={{
                                         marginBottom: '70px'
                                     }}>

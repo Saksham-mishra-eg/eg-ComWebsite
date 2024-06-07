@@ -11,6 +11,8 @@ import GlobalTradeStats from "../components/HowWeHelpPage/GlobalTradeStats";
 // import BusinessEdge from "../components/HowWeHelpPage/BusinessEdge";
 import WhatmakesDiff from "../components/HowWeHelpPage/WhatmakesDiff";
 import GetGlobalTrade from "../components/HowWeHelpPage/GetGlobalTrade";
+import SlideImage from "../components/HowWeHelpPage/SlideImage";
+
 
 
 const DataFlow = () => {
@@ -18,13 +20,14 @@ const DataFlow = () => {
     <div className={styles.DataFlowPage}>
       <Header />
       <ExportSolutions />
+      <SlideImage />
       <Clients />
       <AllSolutionsList />
       <GlobalTradeStats />
       {/* <BusinessEdge /> */}
       <WhatmakesDiff />
       <GetGlobalTrade />
-      
+
       <Footer />
       <FooterPrivacy />
     </div>

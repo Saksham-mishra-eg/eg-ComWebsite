@@ -9,7 +9,7 @@ function GlobalTradeStats() {
     return (
         <div className={styles.GlobalTradeStatsBg}>
             <Container>
-               <Row>
+                <Row>
                     <Col md={12}>
                         <div className={styles.EnrchglobData}>
                             <hr className={styles.hrLines} />
@@ -24,7 +24,7 @@ function GlobalTradeStats() {
                             <ul className={styles.lsitofTradedata}>
                                 <li>
                                     <div className={styles.listofTrade}>
-                                        <img src="countries.png" alt="countries" />
+                                        <img src="trade-data.png" alt="countries" />
                                     </div>
                                     <div className={styles.listofTrade}>
                                         <h3>195+</h3>
@@ -34,7 +34,7 @@ function GlobalTradeStats() {
                                 </li>
                                 <li>
                                     <div className={styles.listofTrade}>
-                                        <img src="exclusive.png" alt="exclusive" />
+                                        <img src="exclusive-data.png" alt="exclusive" />
                                     </div>
                                     <div className={styles.listofTrade}>
                                         <h3>55+</h3>
@@ -44,7 +44,7 @@ function GlobalTradeStats() {
                                 </li>
                                 <li>
                                     <div className={styles.listofTrade}>
-                                        <img src="detailed.png" alt="detailed" />
+                                        <img src="countries-data.png" alt="detailed" />
                                     </div>
                                     <div className={styles.listofTrade}>
                                         <h3>30+</h3>
@@ -54,7 +54,7 @@ function GlobalTradeStats() {
                                 </li>
                                 <li>
                                     <div className={styles.listofTrade}>
-                                        <img src="company.png" alt="company" />
+                                        <img src="company-contacts.png" alt="company" />
                                     </div>
                                     <div className={styles.listofTrade}>
                                         <h3>10M+</h3>

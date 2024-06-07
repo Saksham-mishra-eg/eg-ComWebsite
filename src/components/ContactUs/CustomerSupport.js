@@ -2,7 +2,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./CustomerSupport.module.css";
 import Container from 'react-bootstrap/Container';
 import { Col, Row, Nav, Tab } from "react-bootstrap";
-
+import "./NavLinkd.css"
+import FaQuestions from "../ContactUs/FaQuestions";
 
 
 function CustomerSupport() {
@@ -47,22 +48,30 @@ function CustomerSupport() {
                                             <h3>Support Center</h3>
                                             <div className={styles.tabpNecenflex}>
                                                 <div className={styles.EmailImgeicn}>
+                                                    <a href="mailto:info@exportgenius.in">
                                                     <img src="email.png" alt="email" />
-                                                    <h5>support@exportgenius.in</h5>
+                                                        <h5>support@exportgenius.in</h5>
+                                                    </a>
                                                 </div>
                                                 <div className={styles.EmailImgeicn}>
+                                                    <a href="https://exportgenius.zohobookings.in/#/customer/exportgenius?Name=Jitendra+Kumar&amp;Email=jitendra.seo%40exportgenius.in&amp;Contact Number=%2b1234656875" target="_blank">
                                                     <img src="live-chat.png" alt="email" />
-                                                    <h5>Live Chat</h5>
+                                                        <h5>Live Chat</h5>
+                                                    </a>
                                                 </div>
                                                 <div className={styles.EmailImgeicn}>
+                                                    <a href="tell:+919319157357">
                                                     <img src="phone-call.png" alt="email" />
                                                     <h5>+91-9319-157-357</h5>
+                                                    </a>
                                                 </div>
                                                 <div className={styles.EmailImgeicn}>
+                                                    <a href="https://wa.me/9319157357" target="_blank">
                                                     <img src="qrscan.png" alt="email" />
                                                     <h5>+91-9319-157-357</h5>
                                                     <p>Scan QR code & get in
                                                         touch with us</p>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -71,49 +80,28 @@ function CustomerSupport() {
                                         <div className={styles.tabPaneCenter}>
                                             <h3>Ticket Mangement Center</h3>
                                             <div className={styles.tabpNecenflex}>
-                                                <div className={styles.EmailImgeicn}>
-                                                    <img src="email.png" alt="email" />
-                                                    <h5>support@exportgenius.in</h5>
+                                                <div className={styles.EmailImgTiketn}>
+                                                    <h3>No Tickets Available</h3>
+                                                    <a href="#create" className={styles.creTiclneNew} data-text="button">
+                                                        <span>Create New Ticket</span>
+                                                    </a>
                                                 </div>
-                                                <div className={styles.EmailImgeicn}>
-                                                    <img src="live-chat.png" alt="email" />
-                                                    <h5>Live Chat</h5>
-                                                </div>
-                                                <div className={styles.EmailImgeicn}>
-                                                    <img src="phone-call.png" alt="email" />
-                                                    <h5>+91-9319-157-357</h5>
-                                                </div>
-                                                <div className={styles.EmailImgeicn}>
-                                                    <img src="qrscan.png" alt="email" />
-                                                    <h5>+91-9319-157-357</h5>
-                                                    <p>Scan QR code & get in
-                                                        touch with us</p>
-                                                </div>
+
                                             </div>
                                         </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="third">
                                         <div className={styles.tabPaneCenter}>
-                                            <h3>Schedule demo Center</h3>
+                                            <h3>Schedule Demo Center</h3>
                                             <div className={styles.tabpNecenflex}>
-                                                <div className={styles.EmailImgeicn}>
-                                                    <img src="email.png" alt="email" />
-                                                    <h5>support@exportgenius.in</h5>
+
+                                                <div className={styles.EmailImgTiketn}>
+                                                    <a href="https://exportgenius.zohobookings.in/#/customer/exportgenius?Name=Jitendra+Kumar&amp;Email=jitendra.seo%40exportgenius.in&amp;Contact Number=%2b1234656875" target="_blank" className={styles.scheDemoTnt}>
+                                                        <img src="calendar-icon.png" alt="email" />
+                                                        <h5>Schedule Demo</h5>
+                                                    </a>
                                                 </div>
-                                                <div className={styles.EmailImgeicn}>
-                                                    <img src="live-chat.png" alt="email" />
-                                                    <h5>Live Chat</h5>
-                                                </div>
-                                                <div className={styles.EmailImgeicn}>
-                                                    <img src="phone-call.png" alt="email" />
-                                                    <h5>+91-9319-157-357</h5>
-                                                </div>
-                                                <div className={styles.EmailImgeicn}>
-                                                    <img src="qrscan.png" alt="email" />
-                                                    <h5>+91-9319-157-357</h5>
-                                                    <p>Scan QR code & get in
-                                                        touch with us</p>
-                                                </div>
+
                                             </div>
                                         </div>
                                     </Tab.Pane>
@@ -121,24 +109,10 @@ function CustomerSupport() {
                                         <div className={styles.tabPaneCenter}>
                                             <h3>FAQ Center</h3>
                                             <div className={styles.tabpNecenflex}>
-                                                <div className={styles.EmailImgeicn}>
-                                                    <img src="email.png" alt="email" />
-                                                    <h5>support@exportgenius.in</h5>
+                                                <div className={styles.EmailImgTiketnFaq}>
+                                                    <FaQuestions />
                                                 </div>
-                                                <div className={styles.EmailImgeicn}>
-                                                    <img src="live-chat.png" alt="email" />
-                                                    <h5>Live Chat</h5>
-                                                </div>
-                                                <div className={styles.EmailImgeicn}>
-                                                    <img src="phone-call.png" alt="email" />
-                                                    <h5>+91-9319-157-357</h5>
-                                                </div>
-                                                <div className={styles.EmailImgeicn}>
-                                                    <img src="qrscan.png" alt="email" />
-                                                    <h5>+91-9319-157-357</h5>
-                                                    <p>Scan QR code & get in
-                                                        touch with us</p>
-                                                </div>
+
                                             </div>
                                         </div>
                                     </Tab.Pane>

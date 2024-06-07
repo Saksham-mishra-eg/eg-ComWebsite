@@ -16,9 +16,10 @@
     padding: 40px 0 0;
 }
 
-.ForSoltinng{
+.ForSoltinng {
     padding: 30px;
 }
+
 .elementofSlt {
     position: relative;
     height: 480px;
@@ -26,9 +27,11 @@
     overflow-x: hidden;
     padding: 20px;
 }
-.elementofSlt::-webkit-scrollbar{
+
+.elementofSlt::-webkit-scrollbar {
     display: none;
 }
+
 .linActivetb {}
 
 .linActivetb .active {
@@ -100,6 +103,7 @@ a:active {
     margin-bottom: 25px;
     line-height: 28px;
 }
-.imeImageDash img{
+
+.imeImageDash img {
     width: 100%;
 }
