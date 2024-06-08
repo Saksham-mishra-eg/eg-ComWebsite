@@ -6,12 +6,12 @@ import Footer from "../components/HomePage/Footer";
 import FooterPrivacy from "../components/HomePage/FooterPrivacy";
 import ExportSolutions from "../components/HowWeHelpPage/ExportSolutions";
 import Clients from "../components/HomePage/Clients";
-import AllSolutionsList from "../components/HowWeHelpPage/AllSolutionsList";
+// import AllSolutionsList from "../components/HowWeHelpPage/AllSolutionsList";
 import GlobalTradeStats from "../components/HowWeHelpPage/GlobalTradeStats";
 // import BusinessEdge from "../components/HowWeHelpPage/BusinessEdge";
 import WhatmakesDiff from "../components/HowWeHelpPage/WhatmakesDiff";
 import GetGlobalTrade from "../components/HowWeHelpPage/GetGlobalTrade";
-import SlideImage from "../components/HowWeHelpPage/SlideImage";
+import SideImage from "../components/HowWeHelpPage/SlideImage"
 
 
 
@@ -20,9 +20,9 @@ const DataFlow = () => {
     <div className={styles.DataFlowPage}>
       <Header />
       <ExportSolutions />
-      <SlideImage />
       <Clients />
-      <AllSolutionsList />
+      {/* <AllSolutionsList /> */}
+      <SideImage />
       <GlobalTradeStats />
       {/* <BusinessEdge /> */}
       <WhatmakesDiff />

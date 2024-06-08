@@ -2,10 +2,64 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./PricingList.module.css";
 import Container from 'react-bootstrap/Container';
 import { Col, Row, Form } from "react-bootstrap";
+import React, { useState } from 'react';
 
 
 function PricingList() {
+    const [isUSD, setIsUSD] = useState(true);
+    const [isMonthly, setIsMonthly] = useState(true);
 
+    // const starter = {
+    //     USD: 1400,
+    //     INR: 100000,
+    // };
+
+    const essential = {
+        USD: {
+            monthly: 4000,
+            yearly: 500,
+        },
+        INR: {
+            monthly: 300000,
+            yearly: 37500,
+        },
+    };
+    const expert = {
+        USD: {
+            monthly: 9000,
+            yearly: 1200,
+        },
+        INR: {
+            monthly: 700000,
+            yearly: 95000,
+        },
+    };
+
+
+    const starter = {
+        USD: {
+            monthly: 1400,
+            yearly: 250,
+        },
+        INR: {
+            monthly: 100000,
+            yearly: 20000,
+        },
+    };
+
+    const handleCurrencyToggle = () => {
+        setIsUSD(!isUSD);
+    };
+
+    // Handler to toggle the plan type
+    const handlePlanToggle = () => {
+        setIsMonthly(!isMonthly);
+    };
+
+    // Handler to toggle the currency
+    const handleToggle = () => {
+        setIsUSD(!isUSD);
+    };
 
     return (
         <div className={styles.PricingListPg}>
@@ -18,19 +72,35 @@ function PricingList() {
                                 <div className={styles.intToUd}>
                                     <span>INR</span>
                                     <Form>
-                                        <Form.Check className={styles.radioBtnCr} type="switch" id="custom-switch" />
+                                        <Form.Check
+                                            className="radioBtnCr"
+                                            type="switch"
+                                            id="custom-switch"
+                                            // label={isUSD ? 'USD' : 'INR'}
+                                            checked={isUSD}
+                                            onChange={handleCurrencyToggle}
+                                        />
+                                        {/* <Form.Check className={styles.radioBtnCr} type="switch" id="custom-switch" /> */}
                                     </Form>
                                     <span>USD</span>
                                 </div>
                                 <div className={styles.intToUd}>
                                     <span>Monthly</span>
                                     <Form>
-                                        <Form.Check className={styles.radioBtnCr} type="switch" id="custom-switch" checked />
+                                        <Form.Check
+                                            className="radioBtnCr"
+                                            type="switch"
+                                            id="plan-switch"
+                                            checked={isMonthly}
+                                            onChange={handlePlanToggle}
+                                        />
+                                        {/* <Form.Check className={styles.radioBtnCr} type="switch" id="custom-switch" /> */}
                                     </Form>
                                     <span>Annually <br />
                                         <small className={styles.prcngOff}>(Save 20%)</small>
                                     </span>
                                 </div>
+                                {/* <p>The price is: {isUSD ? `$${starter.USD}` : `₹${starter.INR}`}</p> */}
                             </div>
                         </div>
                     </Col>
@@ -40,7 +110,12 @@ function PricingList() {
                         <div class={styles.OPlan}>
                             <div class={styles.OPlanPrice}>
                                 <h3 class={styles.OPrice}>Starter</h3>
-                                <span class={styles.OCurrency}>$1400</span>
+                                <span class={styles.OCurrency}>
+                                    {isUSD
+                                        ? `$${isMonthly ? starter.USD.monthly : starter.USD.yearly}`
+                                        : `₹${isMonthly ? starter.INR.monthly : starter.INR.yearly}`
+                                    }
+                                </span>
                                 <p class={styles.PeYers}>/Per Year</p>
                             </div>
                             <div class={styles.Aplytnttl}>
@@ -92,7 +167,12 @@ function PricingList() {
                         <div class={styles.OPlan}>
                             <div class={styles.OPlanPrice}>
                                 <h3 class={styles.OPrice}>Essential</h3>
-                                <span class={styles.OCurrency}>$4000</span>
+                                <span class={styles.OCurrency}>
+                                    {isUSD
+                                        ? `$${isMonthly ? essential.USD.monthly : essential.USD.yearly}`
+                                        : `₹${isMonthly ? essential.INR.monthly : essential.INR.yearly}`
+                                    }
+                                </span>
                                 <p class={styles.PeYers}>/Per Year</p>
                             </div>
                             <div class={styles.Aplytnttl}>
@@ -149,7 +229,12 @@ function PricingList() {
 
                             <div class={styles.OPlanPrice}>
                                 <h3 class={styles.OPrice}>Export</h3>
-                                <span class={styles.OCurrency}>$17000</span>
+                                <span class={styles.OCurrency}>
+                                    {isUSD
+                                        ? `$${isMonthly ? expert.USD.monthly : expert.USD.yearly}`
+                                        : `₹${isMonthly ? expert.INR.monthly : expert.INR.yearly}`
+                                    }
+                                </span>
                                 <p class={styles.PeYers}>/Per Year</p>
                             </div>
                             <div class={styles.Aplytnttl}>

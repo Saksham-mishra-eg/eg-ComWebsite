@@ -12,7 +12,8 @@ function CompareButton() {
                     <Col>
                         <div className={styles.notSure}>
                             <p>Not Sure Which Plan To Choose?</p>
-                            <button className={styles.CompareNtn} >COMPARE PLANS</button>
+                            {/* <button className={styles.CompareNtn} >COMPARE PLANS</button> */}
+                            <a href="#comparePlan" className={styles.CompareNtn}>COMPARE PLANS</a>
                         </div>
                     </Col>
                 </Row>

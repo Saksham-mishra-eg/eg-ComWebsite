@@ -16,7 +16,7 @@ function TradeIntelligence() {
                         <div className="h-full w-full max-w-[32rem] items-center justify-center overflow-hidden pt-8">
                             <BoxReveal boxColor={"#5046e6"} duration={0.5} >
                                 <h1 className={styles.howYOur}>
-                                    How You Can Make the Most from our OG Dashboard?<span className="text-[#5046e6]"></span>
+                                Global Trade Insights That Gives You The Edge<span className="text-[#5046e6]"></span>
                                 </h1>
                             </BoxReveal>
 
@@ -29,8 +29,7 @@ function TradeIntelligence() {
 
                             <BoxReveal boxColor={"#5046e6"} duration={0.5}>
                                 <div className="mt-[1.5rem]">
-                                    <p>Access trade insights, explore new markets, and keep a check on your competitors with Export Genius.
-                                    </p>
+                                    <p>Discover the world of import and export data by using our AI-Powered Intelligent Trade database.</p>
                                 </div>
                             </BoxReveal>
 

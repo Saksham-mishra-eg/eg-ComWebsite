@@ -25,7 +25,7 @@ function WhatmakesDiff() {
                                 <a href="#readmore">Read more...</a>
                             </div>
                             <div className={styles.WhatmakesDiffText}>
-                                <img src="verrify.png" alt="Quality Data" />
+                                <img src="trends.png" alt="Quality Data" />
                                 <h3>Latest Trade Insights</h3>
                                 <p>With Export Genius, stay at the edge of the world. The EG dashboard features the latest market trends, trade insights of commodities, and export-import data.</p>
                                 <a href="#readmore">Read more...</a>

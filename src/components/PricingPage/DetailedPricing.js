@@ -7,7 +7,7 @@ import Table from 'react-bootstrap/Table';
 function DetailedPricing() {
 
     return (
-        <div className={styles.DetailedPricingBg}>
+        <div className={styles.DetailedPricingBg} id="comparePlan">
             <Container>
                 <Row>
                     <Col>

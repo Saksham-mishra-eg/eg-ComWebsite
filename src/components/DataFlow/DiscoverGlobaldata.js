@@ -37,11 +37,11 @@ function DiscoverGlobaldata() {
                 </Row>
                 <Row>
                     <Col>
-                        <div className={styles.globDataSrch}>
+                        {/* <div className={styles.globDataSrch}>
                             <img src="capterra.png" alt="client start" />
                             <img src="g2.png" alt="client start" />
 
-                        </div>
+                        </div> */}
                     </Col>
                 </Row>
             </Container>

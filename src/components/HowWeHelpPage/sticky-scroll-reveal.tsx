@@ -3,6 +3,10 @@ import React, { useEffect, useRef, useState } from "react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { motion } from "framer-motion";
 import { cn } from "./cn.ts";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Container from 'react-bootstrap/Container';
+import { Col, Row } from "react-bootstrap";
+import "./talwind.css"
 
 export const StickyScroll = ({
   content,
@@ -11,6 +15,7 @@ export const StickyScroll = ({
   content: {
     title: string;
     description: string;
+    listItems: string[];
     content?: React.ReactNode | any;
   }[];
   contentClassName?: string;
@@ -24,7 +29,7 @@ export const StickyScroll = ({
     offset: ["start start", "end start"],
   });
   const cardLength = content.length;
-
+ 
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
     const cardsBreakpoints = content.map((_, index) => index / cardLength);
     const closestBreakpointIndex = cardsBreakpoints.reduce(
@@ -39,7 +44,7 @@ export const StickyScroll = ({
     );
     setActiveCard(closestBreakpointIndex);
   });
-
+ 
   const backgroundColors = [
     "var(--slate-900)",
     "var(--black)",
@@ -50,21 +55,26 @@ export const StickyScroll = ({
     "linear-gradient(to bottom right, var(--pink-500), var(--indigo-500))",
     "linear-gradient(to bottom right, var(--orange-500), var(--yellow-500))",
   ];
-
+ 
   const [backgroundGradient, setBackgroundGradient] = useState(
     linearGradients[0]
   );
-
+ 
   useEffect(() => {
     setBackgroundGradient(linearGradients[activeCard % linearGradients.length]);
   }, [activeCard]);
+ 
 
   return (
-    <motion.div
+    <div className="">
+      <Container>
+        <Row>
+          <Col>
+          <motion.div
       animate={{
         backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       }}
-      className="h-[30rem] overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10"
+      className="h-[30rem] overflow-y-auto flex justify-center relative space-x-10 rounded-md"
       ref={ref}
     >
       <div className="div relative flex items-start px-4">
@@ -78,10 +88,11 @@ export const StickyScroll = ({
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                className="text-2xl font-bold text-slate-100"
+                className="tielTextls font-bold text-slate-100"
               >
                 {item.title}
               </motion.h2>
+             
               <motion.p
                 initial={{
                   opacity: 0,
@@ -89,10 +100,23 @@ export const StickyScroll = ({
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                className="text-kg text-slate-300 max-w-sm mt-10"
+                className="text-kg teseDescTlare max-w-sm mt-10"
               >
                 {item.description}
               </motion.p>
+              <motion.ul
+                initial={{
+                  opacity: 0,
+                }}
+                animate={{
+                  opacity: activeCard === index ? 1 : 0.3,
+                }}
+                className="ulilistSolutin"
+              >
+                {item.listItems?.map((listItem, listIndex) => (
+                  <li key={listIndex}>{listItem}</li>
+                ))}
+              </motion.ul>
             </div>
           ))}
           <div className="h-40" />
@@ -101,12 +125,16 @@ export const StickyScroll = ({
       <div
         style={{ background: backgroundGradient }}
         className={cn(
-          "hidden lg:block h-60 w-80 rounded-md bg-white sticky top-10 overflow-hidden",
+          "hidden lg:block  rounded-md bg-white sticky top-10 overflow-hidden",
           contentClassName
         )}
       >
         {content[activeCard].content ?? null}
       </div>
     </motion.div>
+          </Col>
+        </Row>
+      </Container>
+    </div>
   );
 };
