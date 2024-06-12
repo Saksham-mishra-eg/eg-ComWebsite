@@ -1,51 +1,61 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./PricingList.module.css";
 import Container from 'react-bootstrap/Container';
-import { Col, Row, Form, Modal } from "react-bootstrap";
-import React, { useContext } from 'react';
-import { PricingContext } from './PricingContext';
-import { useState } from 'react';
-import "./modal.css"
+import { Col, Row, Form } from "react-bootstrap";
+import React, { useState } from 'react';
+
 
 function PricingList() {
+    const [isUSD, setIsUSD] = useState(true);
+    const [isMonthly, setIsMonthly] = useState(true);
 
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-
-    const { isUSD, isMonthly, toggleCurrency, togglePlan } = useContext(PricingContext);
 
 
     const starter = {
-        USD: { monthly: 1400, yearly: 250 },
-        INR: { monthly: 100000, yearly: 20000 },
+        USD: {
+            monthly: 1400,
+            yearly: 250,
+        },
+        INR: {
+            monthly: 100000,
+            yearly: 20000,
+        },
     };
+
+    // const starter = {
+    //     USD: 1400,
+    //     INR: 100000,
+    // };
 
     const essential = {
-        USD: { monthly: 4000, yearly: 500 },
-        INR: { monthly: 300000, yearly: 37500 },
+        USD: {
+            monthly: 4000,
+            yearly: 500,
+        },
+        INR: {
+            monthly: 300000,
+            yearly: 37500,
+        },
     };
-
     const expert = {
-        USD: { monthly: 9000, yearly: 1200 },
-        INR: { monthly: 700000, yearly: 95000 },
+        USD: {
+            monthly: 9000,
+            yearly: 1200,
+        },
+        INR: {
+            monthly: 700000,
+            yearly: 95000,
+        },
+    };
+    
+    const handleCurrencyToggle = () => {
+        setIsUSD(!isUSD);
     };
 
-    const excelDownloadStarter = isMonthly ? "3,60,000 Points For Trade Data Excel Download" : "30,000 Points/ Month For Trade Data Excel Download";
-    const excelDownloadEssential = isMonthly ? "10,80,000 Points For Trade Data Excel Download" : "90,000 Points/ Month For Trade Data Excel Download";
-    const excelDownloadExpert = isMonthly ? "24,00,000 Points For Trade Data Excel Download" : "2,00,000 Points/ Month For Trade Data Excel Download";
+    const handlePlanToggle = () => {
+        setIsMonthly(!isMonthly);
+    };
 
-    const dataAccessStarter = isMonthly ? "Data Access Jan 2020 Onwards" : "3 Months Historical Data Acces";
-    const dataAccessEssential = isMonthly ? "Data Access Jan 2019 Onwards" : "3 Months Historical Data Acces";
-    const dataAccessExpert = isMonthly ? "Data Access Jan 2010 Onwards" : "3 Months Historical Data Acces";
-
-    const pontsContctStarter = isMonthly ? "5000 Points for Contact Information" : "300 Points for Contact Information";
-    const pontsContctEssential = isMonthly ? "10000 Points for Contact Information" : "600 Points for Contact Information";
-    const pontsContctExpert = isMonthly ? "30000 Points for Contact Information" : "1800 Points for Contact Information";
-
-    const userLicenceEssential = isMonthly ? "5 Users License" : "Single User License";
-    const userLicenceExpert = isMonthly ? "10 Users License" : "Single User License";
 
 
     return (
@@ -64,8 +74,9 @@ function PricingList() {
                                             type="switch"
                                             id="custom-switch"
                                             checked={isUSD}
-                                            onChange={toggleCurrency}
+                                            onChange={handleCurrencyToggle}
                                         />
+                                        {/* <Form.Check className={styles.radioBtnCr} type="switch" id="custom-switch" /> */}
                                     </Form>
                                     <span>USD</span>
                                 </div>
@@ -76,11 +87,10 @@ function PricingList() {
                                             className="radioBtnCr"
                                             type="switch"
                                             id="plan-switch"
-
                                             checked={isMonthly}
-                                            onChange={togglePlan}
+                                            onChange={handlePlanToggle}
                                         />
-
+                                        {/* <Form.Check className={styles.radioBtnCr} type="switch" id="custom-switch" /> */}
                                     </Form>
                                     <span>Annually <br />
                                         <small className={styles.prcngOff}>(Save 20%)</small>
@@ -97,7 +107,10 @@ function PricingList() {
                             <div class={styles.OPlanPrice}>
                                 <h3 class={styles.OPrice}>Starter</h3>
                                 <span class={styles.OCurrency}>
-                                    {isUSD ? `$${isMonthly ? starter.USD.monthly : starter.USD.yearly}` : `₹${isMonthly ? starter.INR.monthly : starter.INR.yearly}`}
+                                    {isUSD
+                                        ? `$${isMonthly ? starter.USD.monthly : starter.USD.yearly}`
+                                        : `₹${isMonthly ? starter.INR.monthly : starter.INR.yearly}`
+                                    }
                                 </span>
                                 <p class={styles.PeYers}>/Per Year</p>
                             </div>
@@ -110,7 +123,7 @@ function PricingList() {
                                 <div class={styles.OChoiceGroup}>
                                     <img src="right.png" alt="icon" />
                                     <p><b>11 Countries Detailed Data</b> Argentina, Chile, Colombia,
-                                        Ecuador, India, Mexico (Sea Mode)....<a className={styles.viewLLs} onClick={handleShow} >View All</a> </p>
+                                        Ecuador, India, Mexico (Sea Mode)....<a className={styles.viewLLs} href="/data-flow">View All</a> </p>
                                 </div>
                                 <div class={styles.OChoiceGroup}>
                                     <img src="right.png" alt="icon" />
@@ -122,7 +135,7 @@ function PricingList() {
                                 </div>
                                 <div class={styles.OChoiceGroup}>
                                     <img src="right.png" alt="icon" />
-                                    <p>{dataAccessStarter}</p>
+                                    <p>Data Access Jan 2020 Onwards</p>
                                 </div>
                                 <div class={styles.OChoiceGroup}>
                                     <img src="right.png" alt="icon" />
@@ -130,11 +143,11 @@ function PricingList() {
                                 </div>
                                 <div class={styles.OChoiceGroup}>
                                     <img src="right.png" alt="icon" />
-                                    <p>{excelDownloadStarter}</p>
+                                    <p>3,60,000 Points For Trade Data Excel Download</p>
                                 </div>
                                 <div class={styles.OChoiceGroup}>
                                     <img src="right.png" alt="icon" />
-                                    <h5>{pontsContctStarter}</h5>
+                                    <h5>5000 Points for Contact Information</h5>
                                 </div>
                                 <div class={styles.OChoiceGroup}>
                                     <img src="right.png" alt="icon" />
@@ -142,7 +155,7 @@ function PricingList() {
                                 </div>
                                 <div class={styles.OChoiceGroup}>
                                     <img src="right.png" alt="icon" />
-                                    <p>Basic Customer Support</p>
+                                    <p>3,60,000 Points For Trade Data Excel Download</p>
                                 </div>
                             </div>
                         </div>
@@ -151,7 +164,10 @@ function PricingList() {
                             <div class={styles.OPlanPrice}>
                                 <h3 class={styles.OPrice}>Essential</h3>
                                 <span class={styles.OCurrency}>
-                                    {isUSD ? `$${isMonthly ? essential.USD.monthly : essential.USD.yearly}` : `₹${isMonthly ? essential.INR.monthly : essential.INR.yearly}`}
+                                    {isUSD
+                                        ? `$${isMonthly ? essential.USD.monthly : essential.USD.yearly}`
+                                        : `₹${isMonthly ? essential.INR.monthly : essential.INR.yearly}`
+                                    }
                                 </span>
                                 <p class={styles.PeYers}>/Per Year</p>
                             </div>
@@ -175,7 +191,7 @@ function PricingList() {
                                 </div>
                                 <div class={styles.OChoiceGroup}>
                                     <img src="right.png" alt="icon" />
-                                    <h5>{dataAccessEssential}</h5>
+                                    <h5>Data Access Jan 2019 Onwards</h5>
                                 </div>
                                 <div class={styles.OChoiceGroup}>
                                     <img src="right.png" alt="icon" />
@@ -183,15 +199,15 @@ function PricingList() {
                                 </div>
                                 <div class={styles.OChoiceGroup}>
                                     <img src="right.png" alt="icon" />
-                                    <p>{excelDownloadEssential}</p>
+                                    <p>10,80,000 Points For Trade Data Excel Download</p>
                                 </div>
                                 <div class={styles.OChoiceGroup}>
                                     <img src="right.png" alt="icon" />
-                                    <h5>{pontsContctEssential}</h5>
+                                    <h5>10000 Points for Contact Information</h5>
                                 </div>
                                 <div class={styles.OChoiceGroup}>
                                     <img src="right.png" alt="icon" />
-                                    <h5>{userLicenceEssential}</h5>
+                                    <h5>5 Users License</h5>
                                 </div>
                                 <div class={styles.OChoiceGroup}>
                                     <img src="right.png" alt="icon" />
@@ -210,7 +226,10 @@ function PricingList() {
                             <div class={styles.OPlanPrice}>
                                 <h3 class={styles.OPrice}>Export</h3>
                                 <span class={styles.OCurrency}>
-                                    {isUSD ? `$${isMonthly ? expert.USD.monthly : expert.USD.yearly}` : `₹${isMonthly ? expert.INR.monthly : expert.INR.yearly}`}
+                                    {isUSD
+                                        ? `$${isMonthly ? expert.USD.monthly : expert.USD.yearly}`
+                                        : `₹${isMonthly ? expert.INR.monthly : expert.INR.yearly}`
+                                    }
                                 </span>
                                 <p class={styles.PeYers}>/Per Year</p>
                             </div>
@@ -234,7 +253,7 @@ function PricingList() {
                                 </div>
                                 <div class={styles.OChoiceGroup}>
                                     <img src="right.png" alt="icon" />
-                                    <h5>{dataAccessExpert}</h5>
+                                    <h5>Data Access Jan 2010 Onwards</h5>
                                 </div>
                                 <div class={styles.OChoiceGroup}>
                                     <img src="right.png" alt="icon" />
@@ -242,15 +261,15 @@ function PricingList() {
                                 </div>
                                 <div class={styles.OChoiceGroup}>
                                     <img src="right.png" alt="icon" />
-                                    <h5>{excelDownloadExpert}</h5>
+                                    <h5>24,00,000 Points For Trade Data Excel Download</h5>
                                 </div>
                                 <div class={styles.OChoiceGroup}>
                                     <img src="right.png" alt="icon" />
-                                    <h5>{pontsContctExpert}</h5>
+                                    <h5>30000 Points for Contact Information</h5>
                                 </div>
                                 <div class={styles.OChoiceGroup}>
                                     <img src="right.png" alt="icon" />
-                                    <h5>{userLicenceExpert}</h5>
+                                    <h5>10 Users License</h5>
                                 </div>
                                 <div class={styles.OChoiceGroup}>
                                     <img src="right.png" alt="icon" />
@@ -310,35 +329,15 @@ function PricingList() {
                                     <img src="right.png" alt="icon" />
                                     <p>Email, Chat and Phone Customer Support</p>
                                 </div>
+
                             </div>
                         </div>
                     </Col>
+
                 </Row>
 
             </Container>
-            <Modal show={show} onHide={handleClose}>
-                <Modal.Header closeButton className={styles.modalHeader}>
-                    <Modal.Title>11 Countries Detailed Data</Modal.Title>
-                </Modal.Header>
-                <Modal.Body className={styles.modalBodytxt}>
-                    <ul>
-                        <li>Argentina</li>
-                        <li>Chile</li>
-                        <li>Colombia</li>
-                        <li>Ecuador</li>
-                        <li>India</li>
-                        <li>Mexico (Sea Mode)</li>
-                        <li>Panama</li>
-                        <li>Paraguay</li>
-                        <li>Peru</li>
-                        <li>Uruguay</li>
-                        <li>Venezuela</li>
-                    </ul>
-                </Modal.Body>
-               
-            </Modal>
         </div>
-
     );
 }
 

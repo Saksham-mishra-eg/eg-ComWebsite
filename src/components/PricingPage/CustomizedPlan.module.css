@@ -158,10 +158,8 @@
 }
 
 .InputBxGrpup {
-    max-width: 100px;
+    width: 100%;
     min-width: 60px;
-    margin-right: 8px;
-    margin-left: 8px;
     display: inline-flex !important;
 }
 

@@ -1,31 +1,32 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./CustomizedPlan.module.css";
 import { Button, Card, CloseButton, Col, Container, Form, Nav, Row, Tab } from "react-bootstrap";
-import React, { useState } from 'react';
+import * as React from 'react';
+import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 
 
 
 function CustomizedPlan() {
 
-    const [count, setCount] = useState(3);
+    // const [count, setCount] = useState(3);
 
-    const handleUpArrowClick = () => {
-        setCount(count + 1);
-    };
+    // const handleUpArrowClick = () => {
+    //     setCount(count + 1);
+    // };
 
-    const handleDownArrowClick = () => {
-        setCount(count - 1);
-        // if (count > 0) {
-        //     setCount(count - 1);
-        // }
-    };
+    // const handleDownArrowClick = () => {
+    //     setCount(count - 1);
+    // };
 
-    const handleInputChange = (event) => {
-        const newCount = parseInt(event.target.value, 10);
-        if (!isNaN(newCount)) {
-            setCount(newCount);
-        }
-    };
+    // const handleInputChange = (event) => {
+    //     const newCount = parseInt(event.target.value, 10);
+    //     if (!isNaN(newCount)) {
+    //         setCount(newCount);
+    //     }
+    // };
 
     return (
         <div className={styles.CustmPlaand}>
@@ -221,29 +222,20 @@ function CustomizedPlan() {
                                     </Card.Body>
                                 </Card>
                                 <div className={styles.prodcth3lg}>
-                                    <h3>Your Seats</h3>
+                                    <h3>Select Date</h3>
                                 </div>
-                                <Card className={styles.ProducBodx}>
-                                    <Card.Body className={styles.cardBoddy}>
-                                        <CloseButton className={styles.CloseBodybtn} aria-label="Hide" />
-
-                                        <div className={styles.carbdTilusd}>
-                                            <Card.Title className={styles.CrdTitle}>Customized </Card.Title>
-                                            <div className={styles.InputBxGrpup}>
-                                                <input className={styles.inputIncDex} type="number" value={count} onChange={handleInputChange} />
-                                                <div className={styles.BntGourCld}>
-                                                    <button onClick={handleUpArrowClick} className={styles.updownBtn}> <img src="up.png" alt="Increase" /></button>
-                                                    <button onClick={handleDownArrowClick} className={styles.updownBtn}> <img src="down.png" alt="Decrease" /></button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <Card.Text className={styles.CrdTixt}>Includes 1 Core Seat</Card.Text>
-                                        <div className={styles.carbdTilusd}>
-                                            <Card.Text className={styles.CrdTixt}>Includes 1,000 marketing contacts</Card.Text>
-                                            <Card.Text className={styles.CrdTitle}>$0/mo </Card.Text>
-                                        </div>
-                                    </Card.Body>
-                                </Card>
+                               
+                                    <LocalizationProvider dateAdapter={AdapterDayjs}>
+                                        <DemoContainer components={['DatePicker', 'DatePicker']}>
+                                            <DatePicker label={'"to"'} openTo="year" />
+                                            <DatePicker
+                                                label={'"from"'}
+                                                openTo="month"
+                                                views={['year', 'month', 'day']}
+                                            />
+                                        </DemoContainer>
+                                    </LocalizationProvider>
+                                
                             </div>
                             <div className={styles.BillingMonthyly}>
                                 <h3>$9000 /mo</h3>

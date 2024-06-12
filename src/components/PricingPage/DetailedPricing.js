@@ -3,8 +3,43 @@ import styles from "./DetailedPricing.module.css";
 import Container from 'react-bootstrap/Container';
 import { Col, Row } from "react-bootstrap";
 import Table from 'react-bootstrap/Table';
+import React, { useContext } from 'react';
+import { PricingContext } from './PricingContext';
 
 function DetailedPricing() {
+    const { isUSD, isMonthly } = useContext(PricingContext);
+
+
+    const starter = {
+        USD: { monthly: 1400, yearly: 250 },
+        INR: { monthly: 100000, yearly: 20000 },
+    };
+
+    const essential = {
+        USD: { monthly: 4000, yearly: 500 },
+        INR: { monthly: 300000, yearly: 37500 },
+    };
+
+    const expert = {
+        USD: { monthly: 9000, yearly: 1200 },
+        INR: { monthly: 700000, yearly: 95000 },
+    };
+
+    const excelDownloadStarter = isMonthly ? "3,60,000 Points" : "30,000 Points/ Month";
+    const excelDownloadEssential = isMonthly ? "10,80,000 Points" : "90,000 Points/ Month";
+    const excelDownloadExpert = isMonthly ? "24,00,000 Points" : "2,00,000 Points/ Month";
+
+    const dataAccessStarter = isMonthly ? "Data Access Jan 2020 Onwards" : "3 Months Historical Data Acces";
+    const dataAccessEssential = isMonthly ? "Data Access Jan 2019 Onwards" : "3 Months Historical Data Acces";
+    const dataAccessExpert = isMonthly ? "Data Access Jan 2010 Onwards" : "3 Months Historical Data Acces";
+
+    const accountValidationStarter = isMonthly ? "1 Year" : "1 Month";
+    const accountValidationEssential = isMonthly ? "1 Year" : "1 Month";
+    const accountValidationExpert = isMonthly ? "1 Year" : "1 Month";
+
+    const employeeContctsStarter = isMonthly ? "5000 Points" : "300 Points";
+    const employeeContctsEssential = isMonthly ? "10000 Points" : "600 Points";
+    const employeeContctsExpert = isMonthly ? "30000 Points" : "1800 Points";
 
     return (
         <div className={styles.DetailedPricingBg} id="comparePlan">
@@ -28,11 +63,11 @@ function DetailedPricing() {
                                 </tr>
                             </thead>
                             <tbody className={styles.TbodyEnstial}>
-                                <tr>
+                            <tr>
                                     <th>Price</th>
-                                    <th>$1400</th>
-                                    <th>$4000</th>
-                                    <th>$9000</th>
+                                    <th>{isUSD ? `$${isMonthly ? starter.USD.monthly : starter.USD.yearly}` : `₹${isMonthly ? starter.INR.monthly : starter.INR.yearly}`}</th>
+                                    <th>{isUSD ? `$${isMonthly ? essential.USD.monthly : essential.USD.yearly}` : `₹${isMonthly ? essential.INR.monthly : essential.INR.yearly}`}</th>
+                                    <th>{isUSD ? `$${isMonthly ? expert.USD.monthly : expert.USD.yearly}` : `₹${isMonthly ? expert.INR.monthly : expert.INR.yearly}`}</th>
                                 </tr>
                                 <tr>
                                     <th>Countries Covered</th>
@@ -48,27 +83,27 @@ function DetailedPricing() {
                                 </tr>
                                 <tr>
                                     <th>Trade Data for Excel Download</th>
-                                    <td>3,60,000 Points</td>
-                                    <td>10,80,000 Points</td>
-                                    <td>24,00,000 Points</td>
+                                    <td>{excelDownloadStarter}</td>
+                                    <td>{excelDownloadEssential}</td>
+                                    <td>{excelDownloadExpert}</td>
                                 </tr>
                                 <tr>
                                     <th>Employee and Company Contact Information <small>(Email and Phone Number)</small> </th>
-                                    <td>5000 Points</td>
-                                    <td>10000 Points</td>
-                                    <td>30000 Points</td>
+                                    <td>{employeeContctsStarter}</td>
+                                    <td>{employeeContctsEssential}</td>
+                                    <td>{employeeContctsExpert}</td>
                                 </tr>
                                 <tr>
                                     <th>Historical Data Access</th>
-                                    <td>Jan 2020 Onwards</td>
-                                    <td>Jan 2019 Onwards</td>
-                                    <td>Jan 2010 Onwards</td>
+                                    <td>{dataAccessStarter}</td>
+                                    <td>{dataAccessEssential}</td>
+                                    <td>{dataAccessExpert}</td>
                                 </tr>
                                 <tr>
                                     <th>Account Validation</th>
-                                    <td>1 Year</td>
-                                    <td>1 Year</td>
-                                    <td>1 Year</td>
+                                    <td>{accountValidationStarter}</td>
+                                    <td>{accountValidationEssential}</td>
+                                    <td>{accountValidationExpert}</td>
                                 </tr>
                                 <tr>
                                     <th>Visualize & Charts</th>

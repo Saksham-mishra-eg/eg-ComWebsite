@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation, useNavigationType } from "react-router-dom";
 import Home from "./pages/Home";
 import Pricing from "./pages/Pricing";
 import DataFlow from "./pages/DataFlow";
@@ -20,8 +20,15 @@ function App() {
 }
 
 function AppContent() {
+  const action = useNavigationType();
   const location = useLocation();
   const pathname = location.pathname;
+
+  useEffect(() => {
+    if (action !== "POP") {
+      window.scrollTo(0, 0);
+    }
+  }, [action, pathname]);
 
   useEffect(() => {
     let title = "";

@@ -10,12 +10,15 @@ import DetailedPricing from "../components/PricingPage/DetailedPricing";
 import CustomizedPlan from "../components/PricingPage/CustomizedPlan";
 import NeedplanHelp from "../components/PricingPage/NeedplanHelp";
 import Faqs from "../components/PricingPage/Faqs";
-import Testimonials from "../components/PricingPage/Testimonials";
+// import Testimonials from "../components/PricingPage/Testimonials";
 import GetGlobalTrade from "../components/PricingPage/GetGlobalTrade";
+import { PricingProvider } from '../components/PricingPage/PricingContext';
 
 const Pricing = () => {
   return (
+ 
     <div className={styles.PricingPage}>
+      <PricingProvider>
       <Header />
       <PricingList />
       <CompareButton />
@@ -23,12 +26,13 @@ const Pricing = () => {
       <CustomizedPlan />
       <NeedplanHelp />
       <Faqs />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <GetGlobalTrade />
-
       <Footer />
       <FooterPrivacy />
+      </PricingProvider>
     </div>
+   
   );
 };
 

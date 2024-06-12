@@ -201,6 +201,7 @@
     color: #3984C7;
     font-size: 13px;
     text-decoration: none;
+    cursor: pointer;
     font-weight: 400;
     font-family: "Roboto", sans-serif;
 }
@@ -224,18 +225,39 @@
     transform: rotate(-45deg);
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
-@media screen and (max-width: 768px){
-    .PricingListPg{
+
+.modalHeader{
+    background-image: linear-gradient(to right, #1d60dc, #2c6ee8);
+    color: #fff;
+    padding: 14px 20px;
+}
+
+.modalBodytxt>ul>li {
+    list-style: circle;
+    width: 33%;
+    float: left;
+    color: #545454;
+    font-family: roboto, sans-serif;
+    font-size: 13px;
+    padding: 6px 0;
+    letter-spacing: .25px;
+}
+
+@media screen and (max-width: 768px) {
+    .PricingListPg {
         padding: 60px 0;
     }
-    .UsdInrBtn{
+
+    .UsdInrBtn {
         gap: 1rem;
         justify-content: space-around;
     }
-    .intToUd{
+
+    .intToUd {
         gap: 0.2rem;
     }
-    .OPlan{
+
+    .OPlan {
         min-width: 100%;
     }
 }
