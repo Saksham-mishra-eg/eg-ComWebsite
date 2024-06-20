@@ -4,6 +4,17 @@
     height: auto;
     background-color: #fff;
 }
+.PrinTblComnun{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto 3em;
+    padding: 0;
+}
 
 .PrcngEvry {
     font-family: "Roboto", sans-serif;
@@ -60,12 +71,12 @@
 
 
 .OPlan {
-    flex: 1 0 31%;
-    min-width: 300px;
+    flex: 0 1 260px;
+    min-width: 250px;
     height: auto;
     margin: 20px 10px;
     box-shadow: 3px 3px 3px 3px #dddddd;
-    max-width: 300px;
+    max-width: 250px;
     border-radius: 5px;
     overflow: hidden;
     position: relative;
@@ -259,5 +270,8 @@
 
     .OPlan {
         min-width: 100%;
+    }
+    .PrinTblComnun{
+        flex-wrap: wrap;
     }
 }

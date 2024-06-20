@@ -43,7 +43,7 @@ function Footer() {
                                     </li>
                                 </ul>
                             </div>
-                            <p>Copyright © 2021 Export Genius. All rights reserved</p>
+                            <p>Copyright © 2024 Export Genius. All rights reserved</p>
                         </div>
                     </Col>
                     <Col md={3}>

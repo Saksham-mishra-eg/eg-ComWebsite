@@ -6,7 +6,7 @@ import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
-
+import "./modal.css";
 
 
 function CustomizedPlan() {
@@ -224,18 +224,18 @@ function CustomizedPlan() {
                                 <div className={styles.prodcth3lg}>
                                     <h3>Select Date</h3>
                                 </div>
-                               
-                                    <LocalizationProvider dateAdapter={AdapterDayjs}>
-                                        <DemoContainer components={['DatePicker', 'DatePicker']}>
-                                            <DatePicker label={'"to"'} openTo="year" />
-                                            <DatePicker
-                                                label={'"from"'}
-                                                openTo="month"
-                                                views={['year', 'month', 'day']}
-                                            />
-                                        </DemoContainer>
-                                    </LocalizationProvider>
-                                
+
+                                <LocalizationProvider dateAdapter={AdapterDayjs}>
+                                    <DemoContainer components={['DatePicker', 'DatePicker']}>
+                                        <DatePicker label={'"to"'} openTo="year" />
+                                        <DatePicker
+                                            label={'"from"'}
+                                            openTo="month"
+                                            views={['year', 'month', 'day']}
+                                        />
+                                    </DemoContainer>
+                                </LocalizationProvider>
+
                             </div>
                             <div className={styles.BillingMonthyly}>
                                 <h3>$9000 /mo</h3>

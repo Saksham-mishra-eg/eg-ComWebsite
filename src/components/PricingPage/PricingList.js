@@ -92,7 +92,7 @@ function PricingList() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col>
+                    <div className={styles.PrinTblComnun}>
                         <div class={styles.OPlan}>
                             <div class={styles.OPlanPrice}>
                                 <h3 class={styles.OPrice}>Starter</h3>
@@ -312,7 +312,7 @@ function PricingList() {
                                 </div>
                             </div>
                         </div>
-                    </Col>
+                    </div>
                 </Row>
 
             </Container>
@@ -335,7 +335,7 @@ function PricingList() {
                         <li>Venezuela</li>
                     </ul>
                 </Modal.Body>
-               
+
             </Modal>
         </div>
 

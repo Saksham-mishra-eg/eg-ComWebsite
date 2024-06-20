@@ -49,7 +49,7 @@ function AboutFeatures() {
                         <div className={styles.tradeFeactu}>
                             <div className={styles.feactrde}>
                                 <img src="support.png" alt="support" />
-                                <h3>Comprehensive Support</h3>
+                                <h3>Complete Support</h3>
                                 <p>Stay tuned with the market’s latest trends. Get enriched data insights that will help you get a better idea of what’s happening in almost every industry.</p>
                             </div>
                         </div>

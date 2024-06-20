@@ -43,7 +43,7 @@ function AboutStats() {
                                 <div className={styles.yerinDustb}>
                                     <h2>10M+</h2>
                                     <p>Company’s and
-                                        Employee’s Contact </p>
+                                        Employee’s Contacts </p>
                                 </div>
                             </div>
                         </div>
@@ -63,7 +63,7 @@ function AboutStats() {
                                 <Col md={6}>
                                     <div className={styles.abouEgGns}>
                                         <h2>An Insider View of EG!</h2>
-                                        <p>Imagine having all the import and export data from the world on one dashboard. Impossible, right? We made this possible. Export Genius was made with an approach to collect raw data, store it in one place, and make it accessible to the world. The idea that started in 2012 has been continuously advancing and now boasts serving 20 K+ + clients across the world. We offer “in-depth” market analysis, insights, and trends that could help you stay ahead in the competitive global market.</p>
+                                        <p>Imagine having all the import and export data from the world on one dashboard. Impossible, right? We made this possible. Export Genius was made with an approach to collect raw data, store it in one place, and make it accessible to the world. The idea that started in 2012 has been continuously advancing and now boasts serving 20 K+ clients across the world. We offer “in-depth” market analysis, insights, and trends that could help you stay ahead in the competitive global market.</p>
                                     </div>
                                 </Col>
                             </Row>

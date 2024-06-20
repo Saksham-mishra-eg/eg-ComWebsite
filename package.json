@@ -18,6 +18,7 @@
     "@typescript-eslint/eslint-plugin": "^7.12.0",
     "@typescript-eslint/parser": "^7.12.0",
     "animate.css": "^4.1.1",
+    "axios": "^1.7.2",
     "bootstrap": "^5.3.3",
     "dayjs": "^1.11.11",
     "embla-carousel-react": "^8.0.4",

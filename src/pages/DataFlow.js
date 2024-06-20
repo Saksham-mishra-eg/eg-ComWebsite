@@ -4,7 +4,7 @@ import Header from "../components/HomePage/Header";
 
 import Footer from "../components/HomePage/Footer";
 import FooterPrivacy from "../components/HomePage/FooterPrivacy";
-
+import GetGlobalTrade from "../components/DataFlow/GetGlobalTrade";
 import DiscoverGlobaldata from "../components/DataFlow/DiscoverGlobaldata";
 import ExclusiveData from "../components/DataFlow/ExclusiveData";
 import GlobalTradeStats from "../components/DataFlow/GlobalTradeStats";
@@ -18,6 +18,8 @@ const DataFlow = () => {
       <GlobalTradeStats />
       <ExclusiveData />
       <TableDataCountry />
+      <GetGlobalTrade />
+    
       <Footer />
       <FooterPrivacy />
     </div>

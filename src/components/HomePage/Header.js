@@ -20,20 +20,21 @@ function Header() {
                             <NavDropdown.Item className={styles.navdropItemslnk} href="/platform">Trade Intelligence Platform</NavDropdown.Item>
                             <NavDropdown.Item className={styles.navdropItemslnk} href="api"> Trade Inteligence API  </NavDropdown.Item>
                         </NavDropdown>
-                        <NavDropdown className={styles.navLinsk} title="Data" id="collapsible-nav-dropdown">
+                        {/* <NavDropdown className={styles.navLinsk} title="Data" id="collapsible-nav-dropdown">
                             <NavDropdown.Item className={styles.navdropItemslnk} href="/data-flow">Data Availability</NavDropdown.Item>
                             <NavDropdown.Item className={styles.navdropItemslnk} href="/global-data">Countries Covered </NavDropdown.Item>
                             <NavDropdown.Item className={styles.navdropItemslnk} href="/download-sample">Download Samples</NavDropdown.Item>
                             <NavDropdown.Item className={styles.navdropItemslnk} href="/search-data">Search live Data</NavDropdown.Item>
-                        </NavDropdown>
+                        </NavDropdown> */}
+                        <Nav.Link className={styles.navLinsk} href="/data-flow">Data</Nav.Link>
                         <Nav.Link className={styles.navLinsk} href="/how-we-help">How We Help</Nav.Link>
                         <Nav.Link className={styles.navLinsk} href="/pricing">Pricing</Nav.Link>
                         <Nav.Link className={styles.navLinsk} href="#search-data">Search Data</Nav.Link>
 
                         <NavDropdown className={styles.navLinsk} title="Company" id="collapsible-nav-dropdown">
-                            <NavDropdown.Item className={styles.navdropItemslnk} href="/about-us">About US</NavDropdown.Item>
-                            <NavDropdown.Item className={styles.navdropItemslnk} href="/career-page"> Career </NavDropdown.Item>
-                            <NavDropdown.Item className={styles.navdropItemslnk} href="/client-testimonials">Clients & testimonial</NavDropdown.Item>
+                            <NavDropdown.Item className={styles.navdropItemslnk} href="/about-us">About Us</NavDropdown.Item>
+                            <NavDropdown.Item className={styles.navdropItemslnk} href="/career-page"> Careers </NavDropdown.Item>
+                            <NavDropdown.Item className={styles.navdropItemslnk} href="/client-testimonials">Clients & Testimonials</NavDropdown.Item>
                             <NavDropdown.Item className={styles.navdropItemslnk} href="/blog">Blog</NavDropdown.Item>
                             <NavDropdown.Item className={styles.navdropItemslnk} href="/faq">Faq</NavDropdown.Item>
                             <NavDropdown.Item className={styles.navdropItemslnk} href="/contact-us">Contact Us</NavDropdown.Item>
