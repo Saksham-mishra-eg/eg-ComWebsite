@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./DiscoverGlobaldata.module.css";
 import Container from 'react-bootstrap/Container';
-import { Col, Form, Row } from "react-bootstrap";
+import { Col,  Row } from "react-bootstrap";
 
 
 function DiscoverGlobaldata() {
@@ -18,7 +18,7 @@ function DiscoverGlobaldata() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col>
+                    {/* <Col>
                         <div className={styles.GlbSrchListForm}>
                             <Form.Select className={styles.glbSlctFormSrch} aria-label="Default select example">
                                 <option>Product/Hs code</option>
@@ -33,7 +33,7 @@ function DiscoverGlobaldata() {
                                 id="textBar" placeholder="Search Product, Hs Code"
                             />
                         </div>
-                    </Col>
+                    </Col> */}
                 </Row>
                 <Row>
                     <Col>

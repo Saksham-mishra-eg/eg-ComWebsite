@@ -10,6 +10,7 @@ import Platform from "./pages/Platform";
 import Testimonial from "./pages/Testimonial";
 import Career from "./pages/Career";
 import ContactUs from "./pages/ContactUs";
+import DataLicense from "./pages/DataLicense";
 
 function App() {
   return (
@@ -64,7 +65,7 @@ function AppContent() {
       <Route path="/" exact element={<Home />} />
       <Route path="/home" exact element={<Home />} />
       <Route path="/pricing" exact element={<Pricing />} />
-      <Route path="/data-flow" exact element={<DataFlow />} />
+      <Route path="/data" exact element={<DataFlow />} />
       <Route path="/about-us" exact element={<AboutUs />} />
       <Route path="/how-we-help" exact element={<HowWeHelp />} />
       <Route path="/faq" exact element={<Faq />} />
@@ -72,6 +73,7 @@ function AppContent() {
       <Route path="/career-page" exact element={<Career />} />
       <Route path="/contact-us" exact element={<ContactUs />} />
       <Route path="/client-testimonials" exact element={<Testimonial />} />
+      <Route path="/data-license" exact element={<DataLicense />} />
     </Routes>
   );
 }

@@ -26,19 +26,19 @@ function TradeOnlinePlatform() {
                         <Col>
                             <Nav variant="pill" className={styles.NavTabsFlex} direction="horizontal" gap={5} >
                                 <Nav.Item>
-                                    <Nav.Link eventKey="first" className={styles.finGobaTxt}>Find Global Importers & Exporters</Nav.Link>
+                                    <Nav.Link eventKey="first" className={styles.finGobaTxt}>Global Traders</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="second" className={styles.finGobaTxt}>Check Commodities Traded Price</Nav.Link>
+                                    <Nav.Link eventKey="second" className={styles.finGobaTxt}>Track Commodities</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="third" className={styles.finGobaTxt}>Personalized Dashboard</Nav.Link>
+                                    <Nav.Link eventKey="third" className={styles.finGobaTxt}>Custom Dashboard</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="fourth" className={styles.finGobaTxt}>Checkout Market Trends</Nav.Link>
+                                    <Nav.Link eventKey="fourth" className={styles.finGobaTxt}>Market Trends</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="five" className={styles.finGobaTxt}>Get Company and Employee Contacts</Nav.Link>
+                                    <Nav.Link eventKey="five" className={styles.finGobaTxt}>Contact Details</Nav.Link>
                                 </Nav.Item>
                             </Nav>
                         </Col>

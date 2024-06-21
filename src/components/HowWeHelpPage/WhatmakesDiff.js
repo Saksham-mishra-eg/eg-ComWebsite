@@ -21,7 +21,7 @@ function WhatmakesDiff() {
                             <div className={styles.WhatmakesDiffText}>
                                 <img src="report.png" alt="Data report" />
                                 <h3>Historical Data Available</h3>
-                                <p>Dive into the past of products. Explore the history of countries with our easy-to-use historical data dating back to 2012. Discover about economies, societies, and politics. Analyze trends and patterns to make smarter decisions. </p>
+                                <p>Explore the history of countries from 2012 & see how markets, global economies have changed. Analyze trends and patterns to make smarter decisions.</p>
                                 <a href="#readmore">Read more...</a>
                             </div>
                             <div className={styles.WhatmakesDiffText}>
@@ -33,26 +33,26 @@ function WhatmakesDiff() {
                             <div className={styles.WhatmakesDiffText}>
                                 <img src="data-visualizatios.png" alt="visualizatios" />
                                 <h3>Easy-On-Budget</h3>
-                                <p>With EG, Be Assured to have a one-dashboard that fits your trade data needs. What's even special? Our dashboard is relatively affordable! </p>
+                                <p>Be Assured to have a one-dashboard that fits your trade data needs. What's even special? Our dashboard is economical and affordable</p>
                                 <a href="#readmore">Read more...</a>
                             </div>
                             <div className={styles.WhatmakesDiffText}>
                                 <img src="access-control.png" alt="Data Access" />
                                 <h3>Personalized Dashboard </h3>
-                                <p>Get a customized view of the trade data. Use multiple filters like HS Code, Product Description, Buyer, Seller, Origin, Destination, etc.</p>
+                                <p>Get a customized view of data by using multiple filters like HS Code, Product Description, Buyer, Seller, Origin, Destination, etc.</p>
                                 <a href="#readmore">Read more...</a>
                             </div>
 
                             <div className={styles.WhatmakesDiffText}>
                                 <img src="compehensive.png" alt="Comprehensive" />
                                 <h3> Visually-Appealing Data</h3>
-                                <p>Discover organized and visually appealing global trade data analysis. Discover insights categorized by importer, exporter, HS Code, and product description. Uncover the intricacies of global trade with ease and clarity.</p>
+                                <p>Concise, organized data made on the basis of importer, exporter, HS Code, Product description. Discover the intricacies of global trade data with ease & clarity.</p>
                                 <a href="#readmore">Read more...</a>
                             </div>
                             <div className={styles.WhatmakesDiffText}>
                                 <img src="verrify.png" alt="Quality Data" />
                                 <h3>Add Country and Upgrade Plan</h3>
-                                <p>With Export Genius, you can effortlessly add any country to your coverage or upgrade your plan whenever you need. Whether you're seeking to explore new markets or access additional data insights, our flexible options ensure that you stay in control of your international trade journey. With Export Genius, the power to grow and adapt is always in your hands."</p>
+                                <p>Access to flexible custom options to stay in control of your international trade journey. View a specific country or upgrade your plan whenever you need. </p>
                                 <a href="#readmore">Read more...</a>
                             </div>
                         </div>

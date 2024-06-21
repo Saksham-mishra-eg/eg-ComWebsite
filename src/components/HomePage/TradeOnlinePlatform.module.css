@@ -27,6 +27,8 @@
 .TrdetamOnlineIMg {
     text-align: left;
     position: relative;
+    width: 90%;
+    margin-top: 40px;
 }
 
 .TrdetamOnlineIMg img {
@@ -43,7 +45,7 @@
 
 .finGobaTxt {
     color: #737373;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 500;
     /* border-top: 1px solid #000; */
     border-radius: 6px !important;
@@ -88,8 +90,9 @@
 
 .GlbDataImg p {
     color: #2D2E2E;
-    font-size: 16px;
-    line-height: 29px;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: justify;
 }
 
 .GlbDataImg img {

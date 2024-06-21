@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import "./nav.css"
 
 function Header() {
 
@@ -18,7 +19,8 @@ function Header() {
                     <Nav className="m-auto">
                         <NavDropdown className={styles.navLinsk} title="Products" id="collapsible-nav-dropdown">
                             <NavDropdown.Item className={styles.navdropItemslnk} href="/platform">Trade Intelligence Platform</NavDropdown.Item>
-                            <NavDropdown.Item className={styles.navdropItemslnk} href="api"> Trade Inteligence API  </NavDropdown.Item>
+                            <NavDropdown.Item className={styles.navdropItemslnk} href="/api"> Trade Inteligence API  </NavDropdown.Item>
+                            <NavDropdown.Item className={styles.navdropItemslnk} href="/data-license"> Data License  </NavDropdown.Item>
                         </NavDropdown>
                         {/* <NavDropdown className={styles.navLinsk} title="Data" id="collapsible-nav-dropdown">
                             <NavDropdown.Item className={styles.navdropItemslnk} href="/data-flow">Data Availability</NavDropdown.Item>
@@ -26,7 +28,7 @@ function Header() {
                             <NavDropdown.Item className={styles.navdropItemslnk} href="/download-sample">Download Samples</NavDropdown.Item>
                             <NavDropdown.Item className={styles.navdropItemslnk} href="/search-data">Search live Data</NavDropdown.Item>
                         </NavDropdown> */}
-                        <Nav.Link className={styles.navLinsk} href="/data-flow">Data</Nav.Link>
+                        <Nav.Link className={styles.navLinsk} href="/data">Data</Nav.Link>
                         <Nav.Link className={styles.navLinsk} href="/how-we-help">How We Help</Nav.Link>
                         <Nav.Link className={styles.navLinsk} href="/pricing">Pricing</Nav.Link>
                         <Nav.Link className={styles.navLinsk} href="#search-data">Search Data</Nav.Link>

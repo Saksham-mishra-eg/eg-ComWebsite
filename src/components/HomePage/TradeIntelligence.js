@@ -87,7 +87,8 @@ function TradeIntelligence() {
                             <Player
                                 autoplay
                                 loop
-                                src="https://lottie.host/f628bd7d-9ca5-4bfe-944f-e8ae6afed835/TdicbjfosJ.json"
+                                src="https://lottie.host/e8ec1817-c486-4326-b467-875ca88f3a45/LDRSBQUP4p.json"
+                                // src="https://lottie.host/f628bd7d-9ca5-4bfe-944f-e8ae6afed835/TdicbjfosJ.json"
                                 style={{}}
                             >
                                 {/* <Controls visible={true} buttons={['play', 'repeat', 'frame', 'debug']} /> */}

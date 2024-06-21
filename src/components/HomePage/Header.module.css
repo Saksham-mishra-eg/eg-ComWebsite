@@ -12,14 +12,14 @@
 
 .loingBtn {
     background-color: #3884C7;
-    color: #fff;
+    color: #fff!important;
     border-radius: 40px;
     padding: 9px 40px !important;
 }
 
 .TrlBtn {
     background-color: #478E48;
-    color: #fff;
+    color: #fff!important;
     border-radius: 40px;
     padding: 9px 40px !important;
 }

@@ -41,7 +41,7 @@ export const BoxReveal = ({
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: duration ? duration : 0.5, delay: 0.25 }}
+        transition={{ duration: duration ? duration : 0.5, delay: 0.32 }}
       >
         {children}
       </motion.div>
@@ -61,7 +61,7 @@ export const BoxReveal = ({
           left: 0,
           right: 0,
           zIndex: 20,
-          background: boxColor ? boxColor : "#5046e6",
+          // background: boxColor ? boxColor : "#5046e6",
         }}
       />
     </div>

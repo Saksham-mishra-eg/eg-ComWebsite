@@ -5,8 +5,6 @@ import { Col, Row } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 import { Player } from '@lottiefiles/react-lottie-player';
 
-
-
 function GetGlobalTrade() {
 
     const backgroundStyle = {

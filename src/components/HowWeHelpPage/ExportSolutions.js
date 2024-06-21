@@ -22,7 +22,6 @@ function ExportSolutions() {
                                 </h1>
                             </BoxReveal>
 
-
                             <BoxReveal boxColor={"#5046e6"} duration={0.5}>
                                 <div className="mt-[1.5rem]">
                                     <p>Access trade insights, explore new markets, and keep a check on your competitors with Export Genius.
@@ -60,10 +59,8 @@ function ExportSolutions() {
 
                                 </div>
 
-
                             </BoxReveal>
                         </div>
-
 
                     </Col>
                     <Col md={6}>
@@ -72,7 +69,7 @@ function ExportSolutions() {
                             <Player
                                 autoplay
                                 loop
-                                src="https://lottie.host/48321ee3-9023-4aab-a9bf-7b9420afdb6b/p5BatflLvh.json"
+                                src="https://lottie.host/12609784-569a-4ee5-8192-34e64505d155/NTsPoEmyfN.json"
                                 style={{}}
                             >
                                 {/* <Controls visible={true} buttons={['play', 'repeat', 'frame', 'debug']} /> */}

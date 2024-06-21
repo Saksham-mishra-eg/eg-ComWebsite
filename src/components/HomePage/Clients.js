@@ -35,7 +35,6 @@ function Clients() {
                                     <img src="clients/client9.png" alt="clients" />
                                     <img src="clients/client10.png" alt="clients" />
 
-                                 
 
                                     {/* Duplicate images for infinite scroll effect */}
                                     <img src="clients/client.jpg" alt="clients" />
