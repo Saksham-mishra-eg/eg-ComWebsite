@@ -1,32 +1,102 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./CustomizedPlan.module.css";
-import { Button, Card, CloseButton, Col, Container, Form, Nav, Row, Tab } from "react-bootstrap";
-import * as React from 'react';
-import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
-import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import { Button, Card, Col, Container, Form, Nav, Row, Tab } from "react-bootstrap";
+import React, { useEffect, useState } from 'react';
 import "./modal.css";
+import data from "./CountryPricing.json";
+import { startOfDay, endOfDay, addDays, subDays } from 'date-fns';
+import DateRangePicker from 'rsuite/DateRangePicker';
+
+// (Optional) Import component styles. If you are using Less, import the `index.less` file. 
+import 'rsuite/DateRangePicker/styles/index.css';
 
 
 function CustomizedPlan() {
 
-    // const [count, setCount] = useState(3);
 
-    // const handleUpArrowClick = () => {
-    //     setCount(count + 1);
-    // };
+   
+    const [aggregatedData, setAggregatedData] = useState({});
+    const [selectedCountries, setSelectedCountries] = useState([]);
+    const [allCountries, setAllCountries] = useState([]);
+    const [selectedPeriods, setSelectedPeriods] = useState({});
 
-    // const handleDownArrowClick = () => {
-    //     setCount(count - 1);
-    // };
+    const { combine, allowedMaxDays, beforeToday } = DateRangePicker;
 
-    // const handleInputChange = (event) => {
-    //     const newCount = parseInt(event.target.value, 10);
-    //     if (!isNaN(newCount)) {
-    //         setCount(newCount);
-    //     }
-    // };
+    useEffect(() => {
+
+        // Extract unique country names from data
+        const uniqueCountries = [...new Set(data.map(item => item.country_name))];
+        setAllCountries(uniqueCountries);
+
+        const aggregatePrices = () => {
+            const result = data.reduce((acc, curr) => {
+                const { country_name, price_per_year_in_USD } = curr;
+                if (!acc[country_name]) {
+                    acc[country_name] = 0;
+                }
+                acc[country_name] += price_per_year_in_USD;
+                return acc;
+            }, {});
+            setAggregatedData(result);
+        };
+
+        aggregatePrices();
+    }, []);
+
+    const handleCheckboxChange = (country) => {
+        setSelectedCountries(prevSelectedCountries =>
+            prevSelectedCountries.includes(country)
+                ? prevSelectedCountries.filter(c => c !== country)
+                : [...prevSelectedCountries, country]
+        );
+    };
+
+    const handlePeriodChange = (country, period) => {
+        setSelectedPeriods(prevSelectedPeriods => ({
+            ...prevSelectedPeriods,
+            [country]: period
+        }));
+    };
+
+    const calculatePrice = (country, period) => {
+        const annualPrice = aggregatedData[country] || 0;
+        switch (period) {
+            case "1":
+                return annualPrice / 12;
+            case "3":
+                return (annualPrice / 12) * 3;
+            case "6":
+                return (annualPrice / 12) * 6;
+            case "12":
+                return annualPrice;
+            default:
+                return annualPrice;
+        }
+    };
+
+    const calculateTotalPrice = () => {
+        return selectedCountries.reduce((total, country) => {
+            const period = selectedPeriods[country] || "12"; // Default to 1 year
+            return total + calculatePrice(country, period);
+        }, 0);
+    };
+
+
+    const Ranges = [
+        {
+          label: 'today',
+          value: [startOfDay(new Date()), endOfDay(new Date())]
+        },
+        {
+          label: 'yesterday',
+          value: [startOfDay(addDays(new Date(), -1)), endOfDay(addDays(new Date(), -1))]
+        },
+        {
+          label: 'last7Days',
+          value: [startOfDay(subDays(new Date(), 6)), endOfDay(new Date())]
+        }
+      ];
+
 
     return (
         <div className={styles.CustmPlaand}>
@@ -35,6 +105,12 @@ function CustomizedPlan() {
                     <Col>
                         <div className={styles.PricnOverw}>
                             <h2>Make your customized plan</h2>
+                            {/* {selectedCountries.map(country => (
+                                <div key={country}>
+                                        {country}
+                                    <p>{country} Total Price: {aggregatedData[country]}</p>
+                                </div>
+                            ))} */}
                         </div>
                     </Col>
                 </Row>
@@ -67,136 +143,96 @@ function CustomizedPlan() {
                                     </Col>
                                     <Col sm={9}>
                                         <Tab.Content>
-                                            <Tab.Pane eventKey="Asia">
+                                            <Tab.Pane eventKey="Asia" className={styles.tabpaneMarmg}>
                                                 <Row>
                                                     <Form className={styles.FormItemsBs}>
-                                                        <Form.Check className={styles.FormCheckbx}
-                                                            type="checkbox"
-                                                            id="inline-checkbox-1"
-                                                            label="Angola"
-                                                        />
-                                                        <Form.Check className={styles.FormCheckbx}
-                                                            type="checkbox"
-                                                            id="inline-checkbox-2"
-                                                            label="Ghana"
-                                                        />
-                                                        <Form.Check className={styles.FormCheckbx}
-                                                            type="checkbox"
-                                                            id="inline-checkbox-3"
-                                                            label="Sao Tome and Principe"
-                                                        />
-                                                        <Form.Check className={styles.FormCheckbx}
-                                                            type="checkbox"
-                                                            id="inline-checkbox-4"
-                                                            label="Botswana"
-                                                        />
-                                                        <Form.Check className={styles.FormCheckbx}
-                                                            type="checkbox"
-                                                            id="inline-checkbox-5"
-                                                            label="Kenya"
-                                                        />
-                                                        <Form.Check className={styles.FormCheckbx}
-                                                            type="checkbox"
-                                                            id="inline-checkbox-6"
-                                                            label="Senegal"
-                                                        />
-                                                        <Form.Check className={styles.FormCheckbx}
-                                                            type="checkbox"
-                                                            id="inline-checkbox-7"
-                                                            label="Burundi"
-                                                        />
-                                                        <Form.Check className={styles.FormCheckbx}
-                                                            type="checkbox"
-                                                            id="inline-checkbox-8"
-                                                            label="Lesotho"
-                                                        />
-                                                        <Form.Check className={styles.FormCheckbx}
-                                                            type="checkbox"
-                                                            id="inline-checkbox-9"
-                                                            label="Sierra Leone"
-                                                        />
-                                                        <Form.Check className={styles.FormCheckbx}
-                                                            type="checkbox"
-                                                            id="inline-checkbox-10"
-                                                            label="Cameroon"
-                                                        />
-                                                        <Form.Check className={styles.FormCheckbx}
-                                                            type="checkbox"
-                                                            id="inline-checkbox-11"
-                                                            label=" Liberia"
-                                                        />
-                                                        <Form.Check className={styles.FormCheckbx}
-                                                            type="checkbox"
-                                                            id="inline-checkbox-12"
-                                                            label="Tanzania"
-                                                        />
-                                                        <Form.Check className={styles.FormCheckbx}
-                                                            type="checkbox"
-                                                            id="inline-checkbox-13"
-                                                            label="Chad"
-                                                        />
-                                                        <Form.Check className={styles.FormCheckbx}
-                                                            type="checkbox"
-                                                            id="inline-checkbox-14"
-                                                            label=" Malawi"
-                                                        />
-                                                        <Form.Check className={styles.FormCheckbx}
-                                                            type="checkbox"
-                                                            id="inline-checkbox-15"
-                                                            label="Uganda"
-                                                        />
-                                                        <Form.Check className={styles.FormCheckbx}
-                                                            type="checkbox"
-                                                            id="inline-checkbox-16"
-                                                            label="Cote d Ivoire"
-                                                        />
-                                                        <Form.Check className={styles.FormCheckbx}
-                                                            type="checkbox"
-                                                            id="inline-checkbox-17"
-                                                            label="Namibia"
-                                                        />
-                                                        <Form.Check className={styles.FormCheckbx}
-                                                            type="checkbox"
-                                                            id="inline-checkbox-18"
-                                                            label="Zambia"
-                                                        />
-                                                        <Form.Check className={styles.FormCheckbx}
-                                                            type="checkbox"
-                                                            id="inline-checkbox-19"
-                                                            label="DR Congo"
-                                                        />
-                                                        <Form.Check className={styles.FormCheckbx}
-                                                            type="checkbox"
-                                                            id="inline-checkbox-20"
-                                                            label="Niger"
-                                                        />
-                                                        <Form.Check className={styles.FormCheckbx}
-                                                            type="checkbox"
-                                                            id="inline-checkbox-21"
-                                                            label="Zimbabwe"
-                                                        />
-                                                        <Form.Check className={styles.FormCheckbx}
-                                                            type="checkbox"
-                                                            id="inline-checkbox-22"
-                                                            label="Ethiopia"
-                                                        />
-                                                        <Form.Check className={styles.FormCheckbx}
-                                                            type="checkbox"
-                                                            id="inline-checkbox-23"
-                                                            label=" Nigeria"
-                                                        />
-                                                        <Form.Check className={styles.FormCheckbx}
-                                                            type="checkbox"
-                                                            id="inline-checkbox-24"
-                                                            label="Zimbabwe"
-                                                        />
+                                                        {['Bangladesh', 'China', 'Indonesia', 'Iran', 'Kazakhstan', 'Philippines', 'Singapore', 'Sri Lanka', 'Qatar', 'Uzbekistan', 'Vietnam', 'Taiwan', 'Turkey', 'Ukraine', 'Thailand', 'Japan'].map((country, index) => (
+                                                            // {/* {allCountries.map((country, index) => ( */}
+                                                            <Form.Check
+                                                                className={styles.FormCheckbx}
+                                                                type="checkbox"
+                                                                id={`inline-checkbox-${index + 1}`}
+                                                                label={country}
+                                                                onChange={() => handleCheckboxChange(country)}
+                                                                checked={selectedCountries.includes(country)}
+                                                                key={country}
+                                                            />
+                                                        ))}
                                                     </Form>
                                                 </Row>
                                             </Tab.Pane>
-                                            <Tab.Pane eventKey="Africa">Second tab content</Tab.Pane>
-                                            <Tab.Pane eventKey="America">First tab content</Tab.Pane>
-                                            <Tab.Pane eventKey="Europe">Second tab content</Tab.Pane>
-                                            <Tab.Pane eventKey="Oceania">Second tab content</Tab.Pane>
+                                            <Tab.Pane eventKey="Africa" className={styles.tabpaneMarmg}>
+                                                <Row>
+                                                    <Form className={styles.FormItemsBs}>
+                                                        {['Angola', 'Botswana', 'Burundi', 'Cameroon', 'Chad', 'DR Congo', 'Ethiopia', 'Ghana', 'Ivory Coast', 'Kenya', 'Lesotho', 'Liberia', 'Malawi', 'Namibia', 'Niger', 'Nigeria', 'Sao Tome', 'Senegal', 'Tanzania', 'Uganda', 'Zambia', 'Zimbabwe', 'Sierra Leone', 'South Africa'].map((country, index) => (
+                                                            // {allCountries.map((country, index) => (
+                                                            <Form.Check
+                                                                className={styles.FormCheckbx}
+                                                                type="checkbox"
+                                                                id={`inline-checkbox-2-${index + 1}`}
+                                                                label={country}
+                                                                onChange={() => handleCheckboxChange(country)}
+                                                                checked={selectedCountries.includes(country)}
+                                                                key={country}
+                                                            />
+                                                        ))}
+                                                    </Form>
+                                                </Row>
+                                            </Tab.Pane>
+                                            <Tab.Pane eventKey="America" className={styles.tabpaneMarmg}>
+                                                <Row>
+                                                    <Form className={styles.FormItemsBs}>
+                                                        {['Argentina', 'Bolivia', 'Brazil', 'Canada', 'Chile', 'Colombia', 'Rica', 'Ecuador', 'Guatemala', 'Guyana', 'Paraguay', 'Peru', 'Uruguay', 'Venezuela', 'Panama'].map((country, index) => (
+                                                            // {/* {allCountries.map((country, index) => ( */}
+                                                            <Form.Check
+                                                                className={styles.FormCheckbx}
+                                                                type="checkbox"
+                                                                id={`inline-checkbox-${index + 1}`}
+                                                                label={country}
+                                                                onChange={() => handleCheckboxChange(country)}
+                                                                checked={selectedCountries.includes(country)}
+                                                                key={country}
+                                                            />
+                                                        ))}
+                                                    </Form>
+                                                </Row>
+                                            </Tab.Pane>
+                                            <Tab.Pane eventKey="Europe" className={styles.tabpaneMarmg}>
+                                                <Row>
+                                                    <Form className={styles.FormItemsBs}>
+                                                        {['Kosovo', 'Turkey', 'Ukraine', 'Russia', 'Uzbekistan', 'Moldova', 'Austria', 'Belgium', 'Bulgaria', 'Croatia', 'Cyprus', 'Czech Republic', 'Denmark', 'Estonia', 'Finland', 'France', 'Germany', 'Greece', 'Hungary', 'Ireland', 'Italy', 'Latvia', 'Lithuania', 'Luxembourg', 'Malta', 'Netherlands', 'Poland', 'Portugal', 'Romania', 'Slovakia', 'Slovenia', 'Spain', 'Sweden', 'UK'].map((country, index) => (
+                                                            // {/* {allCountries.map((country, index) => ( */}
+                                                            <Form.Check
+                                                                className={styles.FormCheckbx}
+                                                                type="checkbox"
+                                                                id={`inline-checkbox-${index + 1}`}
+                                                                label={country}
+                                                                onChange={() => handleCheckboxChange(country)}
+                                                                checked={selectedCountries.includes(country)}
+                                                                key={country}
+                                                            />
+                                                        ))}
+                                                    </Form>
+                                                </Row>
+                                            </Tab.Pane>
+                                            <Tab.Pane eventKey="Oceania" className={styles.tabpaneMarmg}>
+                                                <Row>
+                                                    <Form className={styles.FormItemsBs}>
+                                                        {['Fiji', 'New Zealand'].map((country, index) => (
+                                                            // {/* {allCountries.map((country, index) => ( */}
+                                                            <Form.Check
+                                                                className={styles.FormCheckbx}
+                                                                type="checkbox"
+                                                                id={`inline-checkbox-${index + 1}`}
+                                                                label={country}
+                                                                onChange={() => handleCheckboxChange(country)}
+                                                                checked={selectedCountries.includes(country)}
+                                                                key={country}
+                                                            />
+                                                        ))}
+                                                    </Form>
+                                                </Row>
+                                            </Tab.Pane>
                                         </Tab.Content>
                                     </Col>
                                 </Row>
@@ -206,45 +242,70 @@ function CustomizedPlan() {
                     <Col md={4}>
                         <div className={styles.YourProducts}>
                             <div className={styles.prodcth3lg}>
-                                <h3>Your Products</h3>
+                                <h3>Selected Country</h3>
                             </div>
                             <div className={styles.YourProducts_box}>
                                 <Card className={styles.ProducBodx}>
                                     <Card.Body className={styles.cardBoddy}>
-                                        <CloseButton className={styles.CloseBodybtn} aria-label="Hide" />
+                                        {/* <CloseButton className={styles.CloseBodybtn} aria-label="Hide" /> */}
 
                                         <div className={styles.carbdTilusd}>
-                                            <Card.Title className={styles.CrdTitle}>Professional </Card.Title>
-                                            <Card.Text className={styles.CrdTitle}>$700/mo </Card.Text>
+                                            <Card.Title className={styles.CrdTitle}>Your Countries List </Card.Title>
+                                            {/* <Card.Text className={styles.CrdTitle}> </Card.Text> */}
                                         </div>
-                                        <Card.Text className={styles.CrdTixt}>Includes 1 Core Seat</Card.Text>
-                                        <Card.Text className={styles.CrdTixt}>Includes 1,000 marketing contacts</Card.Text>
+                                        <Card.Text className={styles.CrdTixt}>
+                                            {selectedCountries.map(country => (
+                                                <div className={styles.lsitContrNme} key={country}>
+                                                    <Row>
+                                                        <Col>
+                                                            <p>{country}</p>
+                                                        </Col>
+
+                                                        <Col>
+                                                            <Form.Select
+                                                                className={styles.onmoyrsSlect}
+                                                                aria-label="Default select example"
+                                                                onChange={(e) => handlePeriodChange(country, e.target.value)}
+                                                                value={selectedPeriods[country] || "12"}
+                                                            >
+                                                                <option value="1">1/mo</option>
+                                                                <option value="3">3/mo</option>
+                                                                <option value="6">6/mo</option>
+                                                                <option value="12">1/yr</option>
+                                                            </Form.Select>
+                                                        </Col>
+
+                                                        <Col>
+                                                            <h6>{calculatePrice(country, selectedPeriods[country] || "12").toFixed(2)}</h6>
+                                                        </Col>
+
+                                                        <Col md={12}>
+                                                            <p style={{ color: '#0082c1', fontSize: '13px', width: '100%', marginTop: '10px', marginBottom: '10px' }} >Includes all Data types and all Directions*</p>
+                                                        </Col>
+                                                    </Row>
+                                                </div>
+                                            ))}
+                                        </Card.Text>
+                                        {/* <Card.Text className={styles.CrdTixt}>Durations</Card.Text> */}
                                     </Card.Body>
                                 </Card>
                                 <div className={styles.prodcth3lg}>
                                     <h3>Select Date</h3>
                                 </div>
 
-                                <LocalizationProvider dateAdapter={AdapterDayjs}>
-                                    <DemoContainer components={['DatePicker', 'DatePicker']}>
-                                        <DatePicker label={'"to"'} openTo="year" />
-                                        <DatePicker
-                                            label={'"from"'}
-                                            openTo="month"
-                                            views={['year', 'month', 'day']}
-                                        />
-                                    </DemoContainer>
-                                </LocalizationProvider>
+                                <DateRangePicker />
 
                             </div>
                             <div className={styles.BillingMonthyly}>
-                                <h3>$9000 /mo</h3>
-                                <p>Billed Monthaly</p>
+                                {/* <h2>Total Price: {calculateTotalPrice().toFixed(2)}</h2> */}
+                                <h3>{calculateTotalPrice().toFixed(2)} /yrs</h3>
+                                {/* <h3>9000 /mo</h3> */}
+                                {/* <p>Billed Monthaly</p>
                                 <h6>Estimated cost to get started:</h6>
-                                <h4>$3,890*</h4>
-                                <Button className={styles.TaklSelsbn}>Talk to Sales</Button>
-                                <p> <a className={styles.viewPricebn} href="view">View Price Breakdown</a> </p>
-                                <p>  <a className={styles.viewPricebn} href="share"> <img src="share.png" alt="share this" /> ShareThis Price</a> </p>
+                                <h4>$3,890*</h4> */}
+                                <Button className={styles.TaklSelsbn}>Buy Now</Button>
+                                <p> <a className={styles.viewPricebn} href="view">Terms & Conditions</a> </p>
+                                <p>  <a className={styles.viewPricebn} href="share">Privacy Policy</a> </p>
                             </div>
                             <div className={styles.coushwoTxt}>
                                 <p>*Cost shown also includes required, one-time

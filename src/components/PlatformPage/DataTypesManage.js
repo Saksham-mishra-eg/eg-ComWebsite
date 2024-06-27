@@ -55,7 +55,7 @@ function DataTypesManage() {
                 <Row>
                     <Col md={12}>
                         <div className={styles.pltrtradeText}>
-                            <h2>Choose and View Extraordinary Results</h2>
+                            <h2>Data Type</h2>
                             <p>
                                 Select data type, and access essential data to get a bigger picture of the international market.
                             </p>

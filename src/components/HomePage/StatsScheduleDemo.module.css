@@ -1,0 +1,18 @@
+.StatsDemoSection{
+    width: 100%;
+    height: 100%;
+    background-color: #f4f7ff;
+    padding: 60px 0;
+    font-family: "Roboto", sans-serif;
+}
+.TextEnrichtrd{
+width: 30%;
+}
+.Iframdemobcs{
+width: 50%;
+}
+.briadbisemo{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}

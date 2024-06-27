@@ -70,6 +70,48 @@
     padding: 30px 0;
 }
 
+.FomrDentnormCrer {
+    margin: 30px 0;
+    width: 80%;
+    padding: 40px 40px 5px;
+    background: #fff;
+    border-radius: 6px;
+    font-family: "Roboto", sans-serif;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.aformareasent {
+    padding: 20px 0;
+}
+
+
+.formLaelCar {
+    font-size: 16px;
+    color: #171a31bb;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.formContrCaresd {
+    border-radius: 2px;
+    color: #A19D9D;
+    outline: none;
+    box-shadow: none;
+    border-color: #A19D9D;
+}
+
+.formContrCaresd:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #A19D9D;
+}
+
+.formLaelCarresm {
+    font-size: 16px;
+    color: #292929;
+    font-family: "Roboto", sans-serif;
+}
+
 @media screen and (max-width: 768px) {
     .CntsctBgColr {
         padding: 25px;

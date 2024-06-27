@@ -6,12 +6,13 @@ import TradeIntelligence from "../components/HomePage/TradeIntelligence";
 import TradedataMap from "../components/HomePage/TradedataMap";
 import Clients from "../components/HomePage/Clients";
 import EnrichTrade from "../components/HomePage/EnrichTrade";
-import Schedulebox from "../components/HomePage/ScheduleBox";
+// import Schedulebox from "../components/HomePage/ScheduleBox";
 import TradeOnlinePlatform from "../components/HomePage/TradeOnlinePlatform";
 // import GetNews from "../components/HomePage/GetNews";
 import GetGlobalTrade from "../components/HomePage/GetGlobalTrade";
 import Footer from "../components/HomePage/Footer";
 import FooterPrivacy from "../components/HomePage/FooterPrivacy";
+import StatsScheduleDemo from "../components/HomePage/StatsScheduleDemo";
 
 const Home = () => {
   return (
@@ -22,7 +23,8 @@ const Home = () => {
       <TradedataMap />
       <Clients />
       <EnrichTrade />
-      <Schedulebox />
+      {/* <Schedulebox /> */}
+      <StatsScheduleDemo />
       <TradeOnlinePlatform />
       {/* <GetNews /> */}
       <GetGlobalTrade />

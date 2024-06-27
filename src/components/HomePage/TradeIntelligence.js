@@ -16,7 +16,7 @@ function TradeIntelligence() {
                         <div className="h-full w-full max-w-[32rem] items-center justify-center overflow-hidden pt-8">
                             <BoxReveal boxColor={"#5046e6"} duration={0.5} >
                                 <h1 className={styles.howYOur}>
-                                Global Trade Insights That Gives You The Edge<span className="text-[#5046e6]"></span>
+                                    Global Trade Insights That Gives You The Edge<span className="text-[#5046e6]"></span>
                                 </h1>
                             </BoxReveal>
 
@@ -87,7 +87,7 @@ function TradeIntelligence() {
                             <Player
                                 autoplay
                                 loop
-                                src="https://lottie.host/e8ec1817-c486-4326-b467-875ca88f3a45/LDRSBQUP4p.json"
+                                src="https://lottie.host/f7d12853-6515-4149-aa1f-89b79edfa439/JfrbWvVka0.json"
                                 // src="https://lottie.host/f628bd7d-9ca5-4bfe-944f-e8ae6afed835/TdicbjfosJ.json"
                                 style={{}}
                             >

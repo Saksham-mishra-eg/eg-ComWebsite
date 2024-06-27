@@ -5,6 +5,9 @@
     padding: 60px 0;
     background-color: #fff;
 }
+.tabpaneMarmg{
+    margin-top: 0!important;
+}
 
 .PricnOverw {
     text-align: center;
@@ -121,12 +124,20 @@
     position: relative;
     padding: 25px 20px;
     cursor: pointer;
+    height: 450px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-top: 0;
 
 }
 
 .carbdTilusd {
-    display: flex;
-    justify-content: space-between;
+    display: block;
+    width: 100%;
+    padding: 20px 0 12px 0;
+    position: sticky;
+    top: 0px;
+    background: #f8f8f8;
 }
 
 .CloseBodybtn {
@@ -251,6 +262,35 @@
     color: #000;
     font-size: 12px;
     font-weight: 400;
+}
+
+.lsitContrNme{
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.lsitContrNme p{
+    margin-bottom: 0;
+    width: 100%;
+    color: #000;
+}
+.lsitContrNme h6{
+    font-weight: 500;
+    font-size: 14px;
+    width: 100%;
+    text-align: right;
+}
+
+.onmoyrsSlect{
+    text-align: center;
+    padding: 0 30px 0 0;
+    border: 0;
+    box-shadow: none;
+    outline: none;
+    font-size: 14px;
+    background-color: transparent;
+    width: 100%;
 }
 
 @media screen and (max-width: 768px) {

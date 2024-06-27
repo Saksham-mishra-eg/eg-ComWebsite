@@ -1,8 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import styles from "./WhatmakesDiff.module.css";
+import styles from "./BusinessNeeds.module.css";
 import { Col, Container, Row } from "react-bootstrap";
 
-function WhatmakesDiff() {
+function BusinessNeeds() {
 
     return (
         <div className={styles.WhatmakesDiffBG}>
@@ -10,7 +10,7 @@ function WhatmakesDiff() {
                 <Row>
                     <Col md={12}>
                         <div className={styles.Whtmakesoems}>
-                            <h2>What makes Export Genius Different from the rest?</h2>
+                            <h2>Why Your Business Needs This Data?</h2>
                             {/* <p>
                                 Gain instant access to our trade intelligence online platform and get valuable import-export data to turn information into powerful insights.
                             </p> */}
@@ -20,39 +20,39 @@ function WhatmakesDiff() {
                         <div className={styles.DirrderRest}>
                             <div className={styles.WhatmakesDiffText}>
                                 <img src="report.png" alt="Data report" />
-                                <h3>Historical Data Available</h3>
-                                <p>Explore the history of countries from 2012 & see how markets, global economies have changed. Analyze trends and patterns to make smarter decisions.</p>
+                                <h3>Customer Discovery</h3>
+                                <p>Get detailed information on the trade activities of global companies and discover potential importers and exporters for your product. With in-depth analysis of data, connect with the right customers.</p>
                                 {/* <a href="#readmore">Read more...</a> */}
                             </div>
                             <div className={styles.WhatmakesDiffText}>
                                 <img src="trends.png" alt="Quality Data" />
-                                <h3>Latest Trade Insights</h3>
-                                <p>With Export Genius, stay at the edge of the world. The EG dashboard features the latest market trends, trade insights of commodities, and export-import data.</p>
+                                <h3>Supply Chain Analysis</h3>
+                                <p>Find from where importers are buying goods and to whom exporters are selling goods. Assess policies and economic activities to spot inflation, market disruptions, and so on from supply chain analysis.</p>
                                 {/* <a href="#readmore">Read more...</a> */}
                             </div>
                             <div className={styles.WhatmakesDiffText}>
                                 <img src="data-visualizatios.png" alt="visualizatios" />
-                                <h3>Easy-On-Budget</h3>
-                                <p>Be Assured to have a one-dashboard that fits your trade data needs. What's even special? Our dashboard is economical and affordable</p>
+                                <h3>Strategic Decision-Making</h3>
+                                <p>Analyze import-export actions of companies, determine the price of commodities, and get a complete market overview with the help of our essential data to develop strategy-based business decisions.</p>
                                 {/* <a href="#readmore">Read more...</a> */}
                             </div>
                             <div className={styles.WhatmakesDiffText}>
                                 <img src="access-control.png" alt="Data Access" />
-                                <h3>Personalized Dashboard </h3>
-                                <p>Get a customized view of data by using multiple filters like HS Code, Product Description, Buyer, Seller, Origin, Destination, etc.</p>
+                                <h3>Risk Analysis</h3>
+                                <p>Reduce your risk in international trade by knowing companies trade history, commodities price fluctuations, country’s and commodities restrictions, customs Duty rates and other taxes impact on your business etc.</p>
                                 {/* <a href="#readmore">Read more...</a> */}
                             </div>
 
                             <div className={styles.WhatmakesDiffText}>
                                 <img src="compehensive.png" alt="Comprehensive" />
-                                <h3> Visually-Appealing Data</h3>
-                                <p>Concise, organized data made on the basis of importer, exporter, HS Code, Product description. Discover the intricacies of global trade data with ease & clarity.</p>
+                                <h3>Trade Developments</h3>
+                                <p>With the help of our import-export data, monitor what is happening in the global market to find profitable opportunities and manage risk.</p>
                                 {/* <a href="#readmore">Read more...</a> */}
                             </div>
                             <div className={styles.WhatmakesDiffText}>
                                 <img src="verrify.png" alt="Quality Data" />
-                                <h3>Add Country and Upgrade Plan</h3>
-                                <p>Access to flexible custom options to stay in control of your international trade journey. View a specific country or upgrade your plan whenever you need. </p>
+                                <h3>Market Intelligence</h3>
+                                <p>Gain useful Global market insights on importers, exporters, HS Codes, commodities, countries, and so on.</p>
                                 {/* <a href="#readmore">Read more...</a> */}
                             </div>
                         </div>
@@ -66,4 +66,4 @@ function WhatmakesDiff() {
 }
 
 
-export default WhatmakesDiff;
+export default BusinessNeeds;

@@ -91,23 +91,23 @@ function TradedataMap() {
                                                             <li className={styles.CstmDatat}><a href="/bangladesh-import" target="_blank">Bangladesh</a></li>
                                                             <li className={styles.StstDtDatat}><a href="china-import" target="_blank">China</a></li>
                                                             <li className={styles.StstDtDatat}>Hong Kong</li>
-                                                            <li className={styles.CstmDatat}><a href="/indonesia-import" target="_blank">Indonesia</a> </li>
+                                                            <li className={styles.CstmDatat}><a href="/indonesia-import" target="_blank">Indonesia</a></li>
                                                             <li className={styles.StstDtDatat}><a href="iran-import" target="_blank">Iran</a></li>
-                                                            <li className={styles.CstmDatat}><a href="/kazakhstan-import" target="_blank">Kazakhstan</a> </li>
+                                                            <li className={styles.CstmDatat}><a href="/kazakhstan-import" target="_blank">Kazakhstan</a></li>
                                                             <li className={styles.CstmDatat}><a href="/pakistan-import" target="_blank">Pakistan</a> </li>
-                                                            <li className={styles.CstmDatat}><a href="/philippines-import" target="_blank">Philippines</a> </li>
+                                                            <li className={styles.CstmDatat}><a href="/philippines-import" target="_blank">Philippines</a></li>
                                                             <li className={styles.CstmDatat}><a href="/russia-import" target="_blank">Russia</a> </li>
-                                                            <li className={styles.CstmDatat}><a href="/singapore-import" target="_blank">Singapore</a> </li>
+                                                            <li className={styles.CstmDatat}><a href="/singapore-import" target="_blank">Singapore</a></li>
                                                             <li className={styles.CstmDatat}><a href="/sri-lanka.php" target="_blank">Sri Lanka</a> </li>
                                                             <li className={styles.StstDtDatat}>Qatar</li>
-                                                            <li className={styles.CstmDatat}><a href="/uzbekistan-import" target="_blank">Uzbekistan</a> </li>
-                                                            <li className={styles.CstmDatat}><a href="/vietnam-import" target="_blank">Vietnam</a> </li>
+                                                            <li className={styles.CstmDatat}><a href="/uzbekistan-import" target="_blank">Uzbekistan</a></li>
+                                                            <li className={styles.CstmDatat}><a href="/vietnam-import" target="_blank">Vietnam</a></li>
                                                             <li className={styles.StstDtDatat}>Taiwan</li>
                                                             <li className={styles.CstmDatat}><a href="/turkey-import" target="_blank">Turkey</a></li>
                                                             <li className={styles.CstmDatat}><a href="/ukraine-import" target="_blank">Ukraine</a></li>
                                                             <li className={styles.CstmDatat}><a href="/thailand-import" target="_blank">Thailand</a></li>
                                                             <li className={styles.StstDtDatat}><a href="thailand-import" target="_blank">Thailand</a></li>
-                                                            <li className={styles.StstDtDatat}><a href="japan-import" target="_blank">Japan</a> </li>
+                                                            <li className={styles.StstDtDatat}><a href="japan-import" target="_blank">Japan</a></li>
 
                                                         </ul>
                                                         <ul className={styles.DtaYpe}>
@@ -131,35 +131,32 @@ function TradedataMap() {
                                                             <h3>Africa</h3>
                                                         </div>
                                                         <ul className={styles.UListCntnt}>
-                                                            <li className={styles.CstmDatat}><a href="/angola-import" target="_blank">Angola</a> </li>
-                                                            <li className={styles.CstmDatat}><a href="/botswana-import" target="_blank">Botswana</a> </li>
+                                                            <li className={styles.CstmDatat}><a href="/angola-import" target="_blank">Angola</a></li>
+                                                            <li className={styles.CstmDatat}><a href="/botswana-import" target="_blank">Botswana</a></li>
                                                             <li className={styles.CstmDatat}><a href="/burundi-import" target="_blank">Burundi</a></li>
                                                             <li className={styles.CstmDatat}>
                                                                 <a href="/cameroon-import" target="_blank">Cameroon</a></li>
                                                             <li className={styles.CstmDatat}>
                                                                 <a href="/chad-import" target="_blank">Chad</a></li>
-                                                            <li className={styles.CstmDatat}><a href="/dr-congo-import" target="_blank">DR Congo</a> </li>
-                                                            <li className={styles.CstmDatat}><a href="/ethiopia-import" target="_blank">Ethiopia</a> </li>
-                                                            <li className={styles.CstmDatat}><a href="/ghana-import" target="_blank">Ghana</a> </li>
-                                                            <li className={styles.CstmDatat}><a href="/ivory-coast-import" target="_blank">Ivory Coast</a> </li>
-                                                            <li className={styles.CstmDatat}><a href="/kenya-import" target="_blank">Kenya</a> </li>
-                                                            <li className={styles.CstmDatat}><a href="/lesotho-import" target="_blank">Lesotho</a> </li>
-                                                            <li className={styles.CstmDatat}><a href="/liberia-import" target="_blank">Liberia</a> </li>
-                                                            <li className={styles.CstmDatat}><a href="/malawi-import" target="_blank">Malawi</a> </li>
-                                                            <li className={styles.CstmDatat}><a href="/namibia-import" target="_blank">Namibia</a> </li>
-                                                            <li className={styles.CstmDatat}>
-                                                                <a href="/niger-import" target="_blank">
-                                                                    Niger</a>
-                                                            </li>
-                                                            <li className={styles.CstmDatat}><a href="/nigeria-import" target="_blank">Nigeria</a> </li>
+                                                            <li className={styles.CstmDatat}><a href="/dr-congo-import" target="_blank">DR Congo</a></li>
+                                                            <li className={styles.CstmDatat}><a href="/ethiopia-import" target="_blank">Ethiopia</a></li>
+                                                            <li className={styles.CstmDatat}><a href="/ghana-import" target="_blank">Ghana</a></li>
+                                                            <li className={styles.CstmDatat}><a href="/ivory-coast-import" target="_blank">Ivory Coast</a></li>
+                                                            <li className={styles.CstmDatat}><a href="/kenya-import" target="_blank">Kenya</a></li>
+                                                            <li className={styles.CstmDatat}><a href="/lesotho-import" target="_blank">Lesotho</a></li>
+                                                            <li className={styles.CstmDatat}><a href="/liberia-import" target="_blank">Liberia</a></li>
+                                                            <li className={styles.CstmDatat}><a href="/malawi-import" target="_blank">Malawi</a></li>
+                                                            <li className={styles.CstmDatat}><a href="/namibia-import" target="_blank">Namibia</a></li>
+                                                            <li className={styles.CstmDatat}> <a href="/niger-import" target="_blank">Niger</a></li>
+                                                            <li className={styles.CstmDatat}><a href="/nigeria-import" target="_blank">Nigeria</a></li>
                                                             <li className={styles.CstmDatat}><a href="/sao-tome-and-principe-import" target="_blank">Sao Tome</a></li>
                                                             <li className={styles.CstmDatat}><a href="/senegal-import" target="_blank">Senegal</a></li>
-                                                            <li className={styles.CstmDatat}><a href="/tanzania-import" target="_blank">Tanzania</a> </li>
-                                                            <li className={styles.CstmDatat}><a href="/uganda-import" target="_blank">Uganda</a> </li>
-                                                            <li className={styles.CstmDatat}><a href="/zambia-import" target="_blank">Zambia</a> </li>
-                                                            <li className={styles.CstmDatat}><a href="/zimbabwe-import" target="_blank">Zimbabwe</a> </li>
-                                                            <li className={styles.CstmDatat}><a href="/sierra-leone-import" target="_blank">Sierra Leone</a> </li>
-                                                            <li className={styles.StstDtDatat}><a href="/south-africa-import" target="_blank">South Africa</a> </li>
+                                                            <li className={styles.CstmDatat}><a href="/tanzania-import" target="_blank">Tanzania</a></li>
+                                                            <li className={styles.CstmDatat}><a href="/uganda-import" target="_blank">Uganda</a></li>
+                                                            <li className={styles.CstmDatat}><a href="/zambia-import" target="_blank">Zambia</a></li>
+                                                            <li className={styles.CstmDatat}><a href="/zimbabwe-import" target="_blank">Zimbabwe</a></li>
+                                                            <li className={styles.CstmDatat}><a href="/sierra-leone-import" target="_blank">Sierra Leone</a></li>
+                                                            <li className={styles.StstDtDatat}><a href="/south-africa-import" target="_blank">South Africa</a></li>
                                                         </ul>
                                                         <ul className={styles.DtaYpe}>
                                                             <li className={styles.CstmDt}>Detailed Customs</li>
@@ -184,14 +181,14 @@ function TradedataMap() {
                                                         <ul className={styles.UListCntnt}>
                                                             <li className={styles.CstmDatat}><a href="/argentina-import" target="_blank">Argentina</a> </li>
                                                             <li className={styles.CstmDatat}><a href="/bolivia-import" target="_blank">Bolivia</a> </li>
-                                                            <li className={styles.StstDtDatat}><a href="/brazil-import" target="_blank">Brazil</a></li>
+                                                            <li className={styles.StstDtDatat}><a href="/brazil-import" target="_blank">Brazil</a> </li>
                                                             <li className={styles.StstDtDatat}><a href="/canada-import" target="_blank">Canada</a> </li>
                                                             <li className={styles.CstmDatat}><a href="/chile-import" target="_blank">Chile</a> </li>
                                                             <li className={styles.CstmDatat}><a href="/colombia-import" target="_blank">Colombia</a> </li>
                                                             <li className={styles.CstmDatat}><a href="/costa-rica" target="_blank">Costa Rica</a> </li>
                                                             <li className={styles.CstmDatat}><a href="/ecuador-import" target="_blank">Ecuador</a> </li>
-                                                            <li className={styles.StstDtDatat}><a href="/guatemala-import" target="_blank">Guatemala</a></li>
-                                                            <li className={styles.CstmDatat}><a href="/guyana-import" target="_blank">Guyana</a></li>
+                                                            <li className={styles.StstDtDatat}><a href="/guatemala-import" target="_blank">Guatemala</a> </li>
+                                                            <li className={styles.CstmDatat}><a href="/guyana-import" target="_blank">Guyana</a> </li>
                                                             <li className={styles.CstmDatat}><a href="/paraguay-import" target="_blank">Paraguay</a> </li>
                                                             <li className={styles.CstmDatat}><a href="/peru-import" target="_blank">Peru</a> </li>
                                                             <li className={styles.CstmDatat}><a href="/uruguay-import" target="_blank">Uruguay</a> </li>
@@ -219,14 +216,14 @@ function TradedataMap() {
                                                             <h3>Europe</h3>
                                                         </div>
                                                         <ul className={styles.UListCntnt}>
-                                                            <li className={styles.CstmDatat}><a href="/kosovo-import" target="_blank">Kosovo</a></li>
-                                                            <li className={styles.CstmDatat}><a href="/turkey-import" target="_blank">Turkey</a></li>
-                                                            <li className={styles.CstmDatat}><a href="/ukraine-import" target="_blank">Ukraine</a></li>
+                                                            <li className={styles.CstmDatat}><a href="/kosovo-import" target="_blank">Kosovo</a> </li>
+                                                            <li className={styles.CstmDatat}><a href="/turkey-import" target="_blank">Turkey</a> </li>
+                                                            <li className={styles.CstmDatat}><a href="/ukraine-import" target="_blank">Ukraine</a> </li>
                                                             <li className={styles.CstmDatat}><a href="/russia-import" target="_blank">Russia</a> </li>
-                                                            <li className={styles.CstmDatat}><a href="/uzbekistan-import" target="_blank">Uzbekistan</a></li>
+                                                            <li className={styles.CstmDatat}><a href="/uzbekistan-import" target="_blank">Uzbekistan</a> </li>
                                                             <li className={styles.CstmDatat}><a href="/moldova-import" target="_blank">Moldova </a> </li>
                                                             <li className={styles.StstDtDatat}><a href="/austria-import" target="_blank">Austria</a> </li>
-                                                            <li className={styles.StstDtDatat}><a href="/belgium-import" target="_blank">Belgium </a></li>
+                                                            <li className={styles.StstDtDatat}><a href="/belgium-import" target="_blank">Belgium </a> </li>
                                                             <li className={styles.StstDtDatat}><a href="/bulgaria-import" target="_blank">Bulgaria</a> </li>
                                                             <li className={styles.StstDtDatat}><a href="/croatia-import" target="_blank">Croatia</a> </li>
                                                             <li className={styles.StstDtDatat}><a href="/cyprus-import" target="_blank">Cyprus</a> </li>
@@ -276,7 +273,7 @@ function TradedataMap() {
                                                         </div>
                                                         <ul className={styles.UListCntnt}>
                                                             <li className={styles.CstmDatat}><a href="/fiji-import" target="_blank">Fiji</a> </li>
-                                                            <li className={styles.StstDtDatat}><a href="/new-zealand-import" target="_blank">New Zealand</a></li>
+                                                            <li className={styles.StstDtDatat}><a href="/new-zealand-import" target="_blank">New Zealand</a> </li>
                                                         </ul>
                                                         <ul className={styles.DtaYpe}>
                                                             <li className={styles.CstmDt}>Detailed Customs</li>

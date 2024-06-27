@@ -7,6 +7,7 @@ import { PricingContext } from './PricingContext';
 import { useState } from 'react';
 import "./modal.css"
 
+
 function PricingList() {
 
     const [show, setShow] = useState(false);

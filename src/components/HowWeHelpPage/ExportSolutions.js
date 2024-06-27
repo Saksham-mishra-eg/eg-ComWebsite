@@ -69,7 +69,7 @@ function ExportSolutions() {
                             <Player
                                 autoplay
                                 loop
-                                src="https://lottie.host/12609784-569a-4ee5-8192-34e64505d155/NTsPoEmyfN.json"
+                                src="https://lottie.host/9a84e5f1-c863-4535-b64f-7c34bb2cd892/Uu2Q9VVgsr.json"
                                 style={{}}
                             >
                                 {/* <Controls visible={true} buttons={['play', 'repeat', 'frame', 'debug']} /> */}
