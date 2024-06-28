@@ -21,7 +21,12 @@ body {
   @tailwind utilities;
 }
 
-
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none!important;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

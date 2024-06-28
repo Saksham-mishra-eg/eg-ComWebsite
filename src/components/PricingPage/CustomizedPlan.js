@@ -7,20 +7,16 @@ import data from "./CountryPricing.json";
 import { startOfDay, endOfDay, addDays, subDays } from 'date-fns';
 import DateRangePicker from 'rsuite/DateRangePicker';
 
-// (Optional) Import component styles. If you are using Less, import the `index.less` file. 
-import 'rsuite/DateRangePicker/styles/index.css';
-
 
 function CustomizedPlan() {
 
 
-   
+
     const [aggregatedData, setAggregatedData] = useState({});
     const [selectedCountries, setSelectedCountries] = useState([]);
     const [allCountries, setAllCountries] = useState([]);
     const [selectedPeriods, setSelectedPeriods] = useState({});
 
-    const { combine, allowedMaxDays, beforeToday } = DateRangePicker;
 
     useEffect(() => {
 
@@ -84,18 +80,18 @@ function CustomizedPlan() {
 
     const Ranges = [
         {
-          label: 'today',
-          value: [startOfDay(new Date()), endOfDay(new Date())]
+            label: 'today',
+            value: [startOfDay(new Date()), endOfDay(new Date())]
         },
         {
-          label: 'yesterday',
-          value: [startOfDay(addDays(new Date(), -1)), endOfDay(addDays(new Date(), -1))]
+            label: 'yesterday',
+            value: [startOfDay(addDays(new Date(), -1)), endOfDay(addDays(new Date(), -1))]
         },
         {
-          label: 'last7Days',
-          value: [startOfDay(subDays(new Date(), 6)), endOfDay(new Date())]
+            label: 'last7Days',
+            value: [startOfDay(subDays(new Date(), 6)), endOfDay(new Date())]
         }
-      ];
+    ];
 
 
     return (
@@ -187,7 +183,7 @@ function CustomizedPlan() {
                                                             <Form.Check
                                                                 className={styles.FormCheckbx}
                                                                 type="checkbox"
-                                                                id={`inline-checkbox-${index + 1}`}
+                                                                id={`inline-checkbox-3-${index + 1}`}
                                                                 label={country}
                                                                 onChange={() => handleCheckboxChange(country)}
                                                                 checked={selectedCountries.includes(country)}
@@ -205,7 +201,7 @@ function CustomizedPlan() {
                                                             <Form.Check
                                                                 className={styles.FormCheckbx}
                                                                 type="checkbox"
-                                                                id={`inline-checkbox-${index + 1}`}
+                                                                id={`inline-checkbox-4-${index + 1}`}
                                                                 label={country}
                                                                 onChange={() => handleCheckboxChange(country)}
                                                                 checked={selectedCountries.includes(country)}
@@ -223,7 +219,7 @@ function CustomizedPlan() {
                                                             <Form.Check
                                                                 className={styles.FormCheckbx}
                                                                 type="checkbox"
-                                                                id={`inline-checkbox-${index + 1}`}
+                                                                id={`inline-checkbox-5-${index + 1}`}
                                                                 label={country}
                                                                 onChange={() => handleCheckboxChange(country)}
                                                                 checked={selectedCountries.includes(country)}
@@ -251,7 +247,9 @@ function CustomizedPlan() {
 
                                         <div className={styles.carbdTilusd}>
                                             <Card.Title className={styles.CrdTitle}>Your Countries List </Card.Title>
-                                            {/* <Card.Text className={styles.CrdTitle}> </Card.Text> */}
+                                            <Card.Text className={styles.CrdTitle}>
+                                                <DateRangePicker />
+                                            </Card.Text>
                                         </div>
                                         <Card.Text className={styles.CrdTixt}>
                                             {selectedCountries.map(country => (
@@ -289,11 +287,11 @@ function CustomizedPlan() {
                                         {/* <Card.Text className={styles.CrdTixt}>Durations</Card.Text> */}
                                     </Card.Body>
                                 </Card>
-                                <div className={styles.prodcth3lg}>
+                                {/* <div className={styles.prodcth3lg}>
                                     <h3>Select Date</h3>
-                                </div>
+                                </div> */}
 
-                                <DateRangePicker />
+                                {/* <DateRangePicker /> */}
 
                             </div>
                             <div className={styles.BillingMonthyly}>

@@ -74,7 +74,7 @@ function Footer() {
                                 <li><a href="/data">Data Availability</a></li>
                                 <li><a href="/pricing">Pricing</a></li>
                                 <li><a href="/how-we-help">How We Help</a></li>
-                                <li><a href="/blog">Blog</a></li>
+                                <li><a href="https://blog.exportgenius.com/">Blog</a></li>
                             </ul>
                         </div>
                     </Col>

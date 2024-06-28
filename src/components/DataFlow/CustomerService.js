@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export const ProductService = {
     getProductsData() {
-        return axios.get('http://localhost:3002/eg_data.data_availability1')
+        return axios.get('http://localhost:3003/eg_data.data_availability1')
             .then(response => response.data)
             .catch(error => {
                 console.error('Error fetching data from API:', error);

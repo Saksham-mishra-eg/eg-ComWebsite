@@ -26,6 +26,8 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    line-height: 120px;
 }
 
 .aboutHeader p {
