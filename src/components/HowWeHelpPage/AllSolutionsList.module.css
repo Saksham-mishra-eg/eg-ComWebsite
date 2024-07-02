@@ -32,7 +32,6 @@
     display: none;
 }
 
-.linActivetb {}
 
 .linActivetb .active {
     color: #000;
@@ -58,9 +57,11 @@ a.active {
 
 a:active {
     color: #3884C7 !important;
+    text-decoration: none;
 }
-
-
+a:focus{
+    text-decoration: none;
+}
 
 
 .imprSecoDesti {

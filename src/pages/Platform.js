@@ -13,7 +13,7 @@ import GetGlobalTrade from "../components/PlatformPage/GetGlobalTrade";
 
 const Pricing = () => {
   return (
-    <div className={styles.PricingPage}>
+    <div className={styles.PlatformPage}>
       <Header />
       <PlatformHeader />
       <ManageEndtoEnd />

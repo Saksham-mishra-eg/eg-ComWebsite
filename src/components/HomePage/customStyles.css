@@ -4,10 +4,15 @@
 }
 
 .nav-link.active {
-  color: #fff;
-  background: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
-  border-color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
+  color: #fff!important;
+  background: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1))!important;
+  border-color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1))!important;
 }
+/* .nav-link:hover{
+  color: #fff!important;
+  background: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1))!important;
+  border-color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1))!important;
+} */
 
 .slider {
   width: 100%;

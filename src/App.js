@@ -11,6 +11,7 @@ import Testimonial from "./pages/Testimonial";
 import Career from "./pages/Career";
 import ContactUs from "./pages/ContactUs";
 import DataLicense from "./pages/DataLicense";
+import TradeApi from "./pages/TradeApi";
 
 function App() {
   return (
@@ -74,6 +75,8 @@ function AppContent() {
       <Route path="/contact-us" exact element={<ContactUs />} />
       <Route path="/client-testimonials" exact element={<Testimonial />} />
       <Route path="/data-license" exact element={<DataLicense />} />
+      <Route path="/trade-api" exact element={<TradeApi />} />
+     
     </Routes>
   );
 }
