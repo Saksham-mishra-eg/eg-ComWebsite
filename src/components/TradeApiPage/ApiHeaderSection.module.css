@@ -6,11 +6,12 @@
     font-family: "Roboto", sans-serif;
 }
 
-.ApiGeGloblHead{
+.ApiGeGloblHead {
     font-family: "Roboto", sans-serif;
     padding-top: 20px;
 }
-.genSPi{
+
+.genSPi {
     color: #0a5e9e;
     font-size: 26px;
     font-weight: 600;
@@ -19,7 +20,8 @@
     border-bottom: 3px solid;
     display: inline;
 }
-.ApiGeGloblHead h1{
+
+.ApiGeGloblHead h1 {
     font-family: "Roboto", sans-serif;
     color: #171a31;
     font-size: 45px;
@@ -28,14 +30,15 @@
     line-height: 72px;
     margin-top: 15px;
 }
-.ApiGeGloblHead p{
+
+.ApiGeGloblHead p {
     color: #5d5f6f;
     font-size: 17px;
     line-height: 28px;
     margin-bottom: 30px;
 }
 
-.scheDemoBtn{
+.scheDemoBtn {
     padding: 8px 20px;
     margin-right: 15px;
     background: #0a5e9e;
@@ -53,7 +56,8 @@
     letter-spacing: 0.56px;
     transition: all 0.3s ease 0s;
 }
-.scheDemoBtn::before{
+
+.scheDemoBtn::before {
     content: "";
     border-top: 15px solid #0a5e9e;
     border-right: 15px solid transparent;
@@ -63,7 +67,8 @@
     left: -50%;
     transition: all 0.3s ease 0s;
 }
-.scheDemoBtn::after{
+
+.scheDemoBtn::after {
     content: "";
     border-bottom: 15px solid #0a5e9e;
     border-left: 15px solid transparent;
@@ -73,21 +78,24 @@
     right: -50%;
     transition: all 0.3s ease 0s;
 }
-.scheDemoBtn:hover{
+
+.scheDemoBtn:hover {
     border: none;
     border-top: 3px solid #0a5e9e;
     border-bottom: 3px solid #0a5e9e;
     background: #fff;
     color: #0a5e9e;
 }
-.scheDemoBtn:hover::before{
+
+.scheDemoBtn:hover::before {
     left: 0;
 }
-.scheDemoBtn:hover::after{
+
+.scheDemoBtn:hover::after {
     right: 0;
 }
 
-.LogonDemoBtn{
+.LogonDemoBtn {
     color: #fff;
     background-color: #444;
     font-family: "Roboto", sans-serif;
@@ -103,16 +111,18 @@
     z-index: 1;
     transition: all .3s ease-in-out;
 }
+
 .LogonDemoBtn:focus,
-.LogonDemoBtn:hover{
+.LogonDemoBtn:hover {
     color: #0a5e9e;
     background-color: transparent;
     border-radius: 0 15px;
     border-color: #0a5e9e;
-}   
-.LogonDemoBtn:before{
+}
+
+.LogonDemoBtn:before {
     content: "";
-    background: linear-gradient(to right bottom,#0a5e9e 50%,transparent 51%);
+    background: linear-gradient(to right bottom, #0a5e9e 50%, transparent 51%);
     width: 50%;
     height: 100%;
     opacity: 0;
@@ -122,19 +132,22 @@
     z-index: -1;
     transition: all 0.3s ease;
 }
+
 .LogonDemoBtn:focus:before,
-.LogonDemoBtn:hover:before{
+.LogonDemoBtn:hover:before {
     width: 25px;
     height: 25px;
     opacity: 1;
     left: -2px;
     top: -2px;
 }
-@media only screen and (max-width: 767px){
-   .ApiHeaderSectionPage{
-    padding-top: 10px;
-   }
-   .ApiGeGloblHead h1{
-line-height: 55px;
-   }
+
+@media only screen and (max-width: 767px) {
+    .ApiHeaderSectionPage {
+        padding-top: 10px;
+    }
+
+    .ApiGeGloblHead h1 {
+        line-height: 55px;
+    }
 }

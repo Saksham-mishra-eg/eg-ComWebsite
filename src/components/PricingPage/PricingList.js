@@ -164,7 +164,7 @@ function PricingList() {
                             <div class={styles.OChoices}>
                                 <div class={styles.OChoiceGroup}>
                                     <img src="right.png" alt="icon" />
-                                    <p><b>30 Countries Detailed Data</b> Argentina, Bangladesh, Bolivia, Botswana, Chile, Colombia....<a className={styles.viewLLs} href="/data-flow">View All</a> </p>
+                                    <p><b>30 Countries Detailed Data</b> Argentina, Bangladesh, Bolivia, Botswana, Chile, Colombia....<a className={styles.viewLLs} href="/data">View All</a> </p>
                                 </div>
                                 <div class={styles.OChoiceGroup}>
                                     <img src="right.png" alt="icon" />
@@ -223,7 +223,7 @@ function PricingList() {
                             <div class={styles.OChoices}>
                                 <div class={styles.OChoiceGroup}>
                                     <img src="right.png" alt="icon" />
-                                    <p><b>55 Countries Detailed Data</b> Angola, Argentina, Bangladesh, Bolivia, Botswana, Burundi ....<a className={styles.viewLLs} href="/data-flow">View All</a> </p>
+                                    <p><b>55 Countries Detailed Data</b> Angola, Argentina, Bangladesh, Bolivia, Botswana, Burundi ....<a className={styles.viewLLs} href="/data">View All</a> </p>
                                 </div>
                                 <div class={styles.OChoiceGroup}>
                                     <img src="right.png" alt="icon" />

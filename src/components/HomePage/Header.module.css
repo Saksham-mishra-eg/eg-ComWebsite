@@ -17,11 +17,21 @@
     padding: 9px 40px !important;
 }
 
+.loingBtn:hover {
+    background-color: #0e5b9f !important;
+    color: #fff !important;
+}
+
 .TrlBtn {
     background-color: #478E48;
     color: #fff !important;
     border-radius: 40px;
     padding: 9px 40px !important;
+}
+
+.TrlBtn:hover {
+    background-color: #1a761c !important;
+    color: #fff !important;
 }
 
 .navBrnNab {
@@ -44,10 +54,12 @@
     background-color: #0d6efd;
     color: #fff;
 }
-.svgImgNav{
+
+.svgImgNav {
     margin-right: 13px;
     fill: #212529;
 }
-.navdropItemslnk:hover .svgImgNav{
+
+.navdropItemslnk:hover .svgImgNav {
     fill: #fff;
 }

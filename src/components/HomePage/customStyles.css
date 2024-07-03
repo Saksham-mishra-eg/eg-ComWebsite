@@ -4,10 +4,11 @@
 }
 
 .nav-link.active {
-  color: #fff!important;
-  background: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1))!important;
-  border-color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1))!important;
+  color: #fff !important;
+  background: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1)) !important;
+  border-color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1)) !important;
 }
+
 /* .nav-link:hover{
   color: #fff!important;
   background: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1))!important;
@@ -32,7 +33,7 @@
   animation: scroll 25s linear infinite;
 }
 
-.tab-content>.tab-pane{
+.tab-content>.tab-pane {
   margin-top: 35px;
 }
 

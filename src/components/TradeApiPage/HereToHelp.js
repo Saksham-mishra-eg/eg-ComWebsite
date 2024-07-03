@@ -30,13 +30,11 @@ function HereToHelp() {
                                         <Form.Label className={styles.formLaelCar}>Work Email Id</Form.Label>
                                         <Form.Control className={styles.formContrCaresd} type="email" />
                                     </Form.Group>
-
                                     <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                                         <Form.Label>Message</Form.Label>
                                         <Form.Control className={styles.formContrCaresd} as="textarea" />
                                     </Form.Group>
                                     <Button className={styles.subtmBtinFrom} type="submit">Submit</Button>
-
                                 </Form>
                             </div>
                         </div>
