@@ -1,0 +1,2 @@
+Server is running on port \\.\pipe\052ea4bb-2401-436e-a524-b918b17da315
+Connected to the MySQL database.

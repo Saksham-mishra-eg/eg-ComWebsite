@@ -37,17 +37,57 @@ function AppContent() {
     let metaDescription = "";
 
     switch (pathname) {
-      case "/":
-        // title = "Global Trade Data | Import Export Data | Detailed Customs Data";
-        // metaDescription = "Export Genius is one of the top online import export data provider. Get global trade data online by country, HS code, importer-exporter and more shipment details.";
+      case "/about-us":
+        title = "About the Company";
+        metaDescription = "Export Genius is global leader in trade intelligence and committed to deliver quality import export trade data with complete shipment records and market insights.";
+        break;
+      case "/career-page":
+        title = "Careers - Join Export Genius";
+        metaDescription = "See all the updates on available job openings at Export Genius and become a working member of trade data intelligence platform.";
+        break;
+      case "/how-we-help":
+        title = "Trade Data for Every Global Business";
+        metaDescription = "Export Genius provides import export data solutions to global businesses and every industry with complete shipment records and essential market insights. ";
+        break;
+      case "/data":
+        title = "Export Genius - Global Import Export Trade Data of 190+ Countries";
+        metaDescription = "Export Genius provides import export trade data of global countries with importers and exporters, commodity information, and complete shipment details.";
+        break;
+      case "/faq":
+        title = "Export Genius Platform FAQs";
+        metaDescription = "We are a leading global trade data provider, offering full coverage of import and export business. Learn more about us from our FAQs and explore trade intelligence.";
+        break;
+      case "/data-license":
+        title = "Export Genius Data Licenses for Global Trade Data and Analysis";
+        metaDescription = "Access international trade data to gain supply chain insights and enhance market potential with Export Genius data licenses.";
+        break;
+      case "/trade-api":
+        title = "Export Genius Trade Intelligence API ";
+        metaDescription = "Export Genius Trade Intelligence API helps you access global trade data. With multiple APIs, you can instantly explore trade intelligence and supply chain analytics. ";
         break;
       case "/pricing":
-        // title = "Plans and Pricing - World Largest Trade Intelligence Data by Export Genius";
-        // metaDescription = "Plan and Pricing - Export Genius provides world largest trade intelligence data. Maximum number of data coverage help you to make worldwide business strategy by evaluating new buyers, suppliers, products and monitor competitors.";
+        title = "Plans and Pricing - Powerful Insights at Your Fingertips";
+        metaDescription = "Subscribe to Export Genius global trade intelligence platform and access industry-standard import export data with plans that suit your business.";
+        break;
+      case "/client-testimonials":
+        title = "Export Genius Clients and Testimonials";
+        metaDescription = "Export Genius has served over 20,000 clients worldwide and trust they are showing is incredible. See what our esteemed clients have to say about our platform and services.";
+        break;
+      case "/contact-us":
+        title = "Export Genius Contact";
+        metaDescription = "We aim to provide timely and best customer support. For any assistance, inquiries, technical support, or any other query, contact us on the given details.";
+        break;
+      case "/platform":
+        title = "Export Genius Powerful Global Trade Database";
+        metaDescription = "Export Genius provides essential data that powers your business with actual shipment records, company overviews, and contact information on global companies.  ";
+        break;
+      case "/home":
+        title = "Export Genius - Global Trade Intelligence Platform";
+        metaDescription = "Discover global buyers and suppliers, profitable markets, and competitive advantage, and empower your business with intelligence, compliance, and visibility.";
         break;
       default:
-        title = "Global Trade Data | Import Export Data | Detailed Customs Data";
-        metaDescription = "Global Trade Data | Import Export Data | Detailed Customs Data";
+        title = "Export Genius - Global Trade Intelligence Platform";
+        metaDescription = "Discover global buyers and suppliers, profitable markets, and competitive advantage, and empower your business with intelligence, compliance, and visibility.";
         break;
     }
 
@@ -76,7 +116,7 @@ function AppContent() {
       <Route path="/client-testimonials" exact element={<Testimonial />} />
       <Route path="/data-license" exact element={<DataLicense />} />
       <Route path="/trade-api" exact element={<TradeApi />} />
-     
+
     </Routes>
   );
 }

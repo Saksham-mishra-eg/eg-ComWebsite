@@ -17,7 +17,6 @@ function PricingList() {
 
     const { isUSD, isMonthly, toggleCurrency, togglePlan } = useContext(PricingContext);
 
-
     const starter = {
         USD: { monthly: 1400, yearly: 250 },
         INR: { monthly: 100000, yearly: 20000 },

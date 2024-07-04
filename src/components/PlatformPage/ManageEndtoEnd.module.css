@@ -58,6 +58,7 @@
     line-height: 179%;
     width: 100%;
     text-align: justify;
+    margin-bottom: 25px;
 }
 
 .Explormorebtn {
@@ -121,8 +122,6 @@
     .MangeEndtoend {
         padding: 60px 0;
     }
-
-    .boxtalbPanetd {}
 
     .inimgigh img {
         width: 100%;
