@@ -50,7 +50,7 @@ function Footer() {
                             <div className={styles.HedComFtr}>Product</div>
                             <ul className={styles.ForListTags}>
                                 <li><a href="/platform">Platform</a></li>
-                                <li><a href="/api-page">API</a></li>
+                                <li><a href="/trade-api">API</a></li>
                                 <li><a href="/data-license">Data License</a></li>
                                 <li><a href="/faq">FAQs</a></li>
                             </ul>

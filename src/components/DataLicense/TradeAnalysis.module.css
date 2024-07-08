@@ -57,7 +57,7 @@
 }
 
 .Explormorebtn:hover:before {
-    width: 50%;
+    width: 100%;
 }
 
 .tradeText {
@@ -81,6 +81,110 @@
     font-family: "Roboto", sans-serif;
     line-height: 33px;
     margin-bottom: 25px;
+}
+
+
+.FomrDentnormCrer {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 6px;
+    font-family: "Roboto", sans-serif;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+}
+
+
+.formLaelCar {
+    font-size: 16px;
+    color: #171a31bb;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.formContrCaresd {
+    border-radius: 2px;
+    color: #A19D9D;
+    outline: none;
+    box-shadow: none;
+    border-color: #A19D9D;
+}
+
+.formContrCaresd:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #A19D9D;
+}
+
+.formLaelCarresm {
+    font-size: 16px;
+    color: #292929;
+    font-family: "Roboto", sans-serif;
+}
+
+.modalHeader {
+    background-image: linear-gradient(to right, #1d60dc, #2c6ee8);
+    color: #fff;
+    padding: 14px 20px;
+}
+
+.subtmBtinFrom {
+    color: #fff;
+    background-color: #333;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    padding: 8px 22px 9px;
+    border: none;
+    border-radius: 0;
+    position: relative;
+    z-index: 1;
+    transition: all 0.4s ease 0s;
+}
+
+.subtmBtinFrom:focus {
+    color: #fff;
+}
+
+.subtmBtinFrom:hover {
+    color: #fff;
+    background: #333;
+    box-shadow: 0 0 10px -3px rgba(0, 0, 0, 0.5);
+}
+
+.subtmBtinFrom:before,
+.subtmBtinFrom:after {
+    content: '';
+    background-color: #154bbf;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: scaleX(0);
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: all 0.3s ease-in 0s;
+}
+
+.subtmBtinFrom:after {
+    background-color: #154bbf;
+    border-radius: 0;
+    transform: scaleX(1);
+}
+
+.subtmBtinFrom:hover:before {
+    border-radius: 0;
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+.subtmBtinFrom:hover:after {
+    border-radius: 50%;
+    opacity: 1;
+    transform: scaleX(0);
 }
 
 
