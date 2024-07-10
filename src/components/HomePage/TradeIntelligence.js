@@ -12,7 +12,6 @@ function TradeIntelligence() {
             <Container>
                 <Row>
                     <Col md={6}>
-
                         <div className="h-full w-full max-w-[32rem] items-center justify-center overflow-hidden pt-8">
                             <BoxReveal boxColor={"#5046e6"} duration={0.5} >
                                 <h1 className={styles.howYOur}>

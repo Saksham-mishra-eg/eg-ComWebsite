@@ -9,6 +9,15 @@ import { Player } from '@lottiefiles/react-lottie-player';
 
 function GetGlobalTrade() {
 
+
+    const handleChangeUrl = () => {
+        window.location.href = "contact-us";
+    }
+
+    const handleChangeLogin = () => {
+        window.location.href = "https://dashboard2.exportgenius.in";
+    }
+
     const backgroundStyle = {
         position: 'absolute',
         top: 0,
@@ -34,8 +43,8 @@ function GetGlobalTrade() {
                         <div className={styles.GeGlobl}>
                             <h2>DON’T WAIT, GET A DRILL OF OUR OG DASHBOARD.</h2>
                             <h3>TAKE THE FIRST MOVE AND REACH OUT TO US NOW!</h3>
-                            <Button className={styles.scheDemoBtn} variant="success">Schedule a Demo</Button>{' '}
-                            <Button className={styles.LogonDemoBtn} variant="primary">Login</Button>{' '}
+                            <Button className={styles.scheDemoBtn} variant="success" onClick={handleChangeUrl}>Schedule a Demo</Button>{' '}
+                            <Button className={styles.LogonDemoBtn} variant="primary" onClick={handleChangeLogin}>Login</Button>{' '}
                         </div>
 
                     </Col>

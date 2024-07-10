@@ -10,10 +10,15 @@ import "./modal.css"
 
 function PricingList() {
 
-    const [show, setShow] = useState(false);
+    const [showStarter, setShowStarter] = useState(false);
 
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    const handleCloseStarter = () => setShowStarter(false);
+    const handleShowStarter = () => setShowStarter(true);
+
+    const [showEssential, setShowEssential] = useState(false);
+
+    const handleCloseEssential = () => setShowEssential(false);
+    const handleShowEssential = () => setShowEssential(true);
 
     const { isUSD, isMonthly, toggleCurrency, togglePlan } = useContext(PricingContext);
 
@@ -110,7 +115,7 @@ function PricingList() {
                                 <div class={styles.OChoiceGroup}>
                                     <img src="right.png" alt="icon" />
                                     <p><b>11 Countries Detailed Data</b> Argentina, Chile, Colombia,
-                                        Ecuador, India, Mexico (Sea Mode)....<a className={styles.viewLLs} onClick={handleShow} >View All</a> </p>
+                                        Ecuador, India, Mexico (Sea Mode)....<a className={styles.viewLLs} onClick={handleShowStarter} >View All</a> </p>
                                 </div>
                                 <div class={styles.OChoiceGroup}>
                                     <img src="right.png" alt="icon" />
@@ -163,7 +168,7 @@ function PricingList() {
                             <div class={styles.OChoices}>
                                 <div class={styles.OChoiceGroup}>
                                     <img src="right.png" alt="icon" />
-                                    <p><b>30 Countries Detailed Data</b> Argentina, Bangladesh, Bolivia, Botswana, Chile, Colombia....<a className={styles.viewLLs} href="/data">View All</a> </p>
+                                    <p><b>30 Countries Detailed Data</b> Argentina, Bangladesh, Bolivia, Botswana, Chile, Colombia....<a className={styles.viewLLs} onClick={handleShowEssential}>View All</a> </p>
                                 </div>
                                 <div class={styles.OChoiceGroup}>
                                     <img src="right.png" alt="icon" />
@@ -316,7 +321,29 @@ function PricingList() {
                 </Row>
 
             </Container>
-            <Modal show={show} onHide={handleClose}>
+            <Modal show={showStarter} onHide={handleCloseStarter}>
+                <Modal.Header closeButton className={styles.modalHeader}>
+                    <Modal.Title>11 Countries Detailed Data</Modal.Title>
+                </Modal.Header>
+                <Modal.Body className={styles.modalBodytxt}>
+                    <ul>
+                        <li>Argentina</li>
+                        <li>Chile</li>
+                        <li>Colombia</li>
+                        <li>Ecuador</li>
+                        <li>India</li>
+                        <li>Mexico (Sea Mode)</li>
+                        <li>Panama</li>
+                        <li>Paraguay</li>
+                        <li>Peru</li>
+                        <li>Uruguay</li>
+                        <li>Venezuela</li>
+                    </ul>
+                </Modal.Body>
+
+            </Modal>
+
+            <Modal show={showEssential} onHide={handleCloseEssential}>
                 <Modal.Header closeButton className={styles.modalHeader}>
                     <Modal.Title>11 Countries Detailed Data</Modal.Title>
                 </Modal.Header>

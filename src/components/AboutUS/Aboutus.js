@@ -76,7 +76,8 @@ function Aboutus() {
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton className={styles.modalHeader}>
                     <Modal.Title>
-                        Get an Inside View of the Dashboard!</Modal.Title>
+                        Export Genius Offering Global Data
+                    </Modal.Title>
                 </Modal.Header>
                 <Modal.Body className={styles.modalBodytxt}>
                     <div className={styles.FomrDentnormCrer}>

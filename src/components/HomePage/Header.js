@@ -65,8 +65,8 @@ function Header() {
                         </NavDropdown>
                     </Nav>
                     <Nav className={styles.navBrnNab}>
-                        <Nav.Link href="#login" className={styles.loingBtn} >Login</Nav.Link>
-                        <Nav.Link eventKey={2} href="#freetrial" className={styles.TrlBtn} > Free Trial </Nav.Link>
+                        <Nav.Link href="https://dashboard2.exportgenius.in" className={styles.loingBtn} >Login</Nav.Link>
+                        <Nav.Link eventKey={2} href="contact-us" className={styles.TrlBtn} > Free Trial </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

@@ -61,7 +61,7 @@ function TradeAnalysis() {
                                 Do your Trade Analysis with Global Import and Export Trade Data
                             </h1>
                             <p>Leverage the power of Global Trade data with extensive market insights for better decision-making.</p>
-                            <Button className={styles.Explormorebtn}  onClick={handleShow}>Request a quote</Button>
+                            <Button className={styles.Explormorebtn} onClick={handleShow}>Request a quote</Button>
                         </div>
                     </Col>
                     <Col md={6}>

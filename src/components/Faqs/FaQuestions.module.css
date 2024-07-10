@@ -69,7 +69,7 @@
 }
 
 .bodytextColssp ul {
-    /* list-style: none; */
+    list-style: disc;
 }
 
 .bodytextColssp ul li {
