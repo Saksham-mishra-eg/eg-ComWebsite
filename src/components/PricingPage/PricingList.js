@@ -20,6 +20,11 @@ function PricingList() {
     const handleCloseEssential = () => setShowEssential(false);
     const handleShowEssential = () => setShowEssential(true);
 
+    const [showExpert, setShowExpert] = useState(false);
+
+    const handleCloseExpert = () => setShowExpert(false);
+    const handleShowExpert = () => setShowExpert(true);
+
     const { isUSD, isMonthly, toggleCurrency, togglePlan } = useContext(PricingContext);
 
     const starter = {
@@ -227,7 +232,7 @@ function PricingList() {
                             <div class={styles.OChoices}>
                                 <div class={styles.OChoiceGroup}>
                                     <img src="right.png" alt="icon" />
-                                    <p><b>55 Countries Detailed Data</b> Angola, Argentina, Bangladesh, Bolivia, Botswana, Burundi ....<a className={styles.viewLLs} href="/data">View All</a> </p>
+                                    <p><b>55 Countries Detailed Data</b> Angola, Argentina, Bangladesh, Bolivia, Botswana, Burundi ....<a className={styles.viewLLs} onClick={handleShowExpert}>View All</a> </p>
                                 </div>
                                 <div class={styles.OChoiceGroup}>
                                     <img src="right.png" alt="icon" />
@@ -350,16 +355,101 @@ function PricingList() {
                 <Modal.Body className={styles.modalBodytxt}>
                     <ul>
                         <li>Argentina</li>
+                        <li>Bangladesh</li>
+                        <li>Bolivia</li>
+                        <li>Botswana</li>
                         <li>Chile</li>
                         <li>Colombia</li>
+                        <li>Cote d Ivoire</li>
                         <li>Ecuador</li>
+                        <li>Ethiopia</li>
+                        <li>Fiji</li>
+                        <li>Guatemala</li>
+                        <li>Guyana</li>
                         <li>India</li>
+                        <li>Indonesia</li>
+                        <li>Kenya</li>
+                        <li>Lesotho</li>
+                        <li>Mexico (All Modes)</li>
                         <li>Mexico (Sea Mode)</li>
+                        <li>Namibia</li>
+                        <li>Pakistan</li>
                         <li>Panama</li>
                         <li>Paraguay</li>
                         <li>Peru</li>
+                        <li>Philippines</li>
+                        <li>Russia</li>
+                        <li>Sri Lanka</li>
+                        <li>Uganda</li>
                         <li>Uruguay</li>
                         <li>Venezuela</li>
+                        <li>Vietnam</li>
+                    </ul>
+                </Modal.Body>
+
+            </Modal>
+
+            <Modal show={showExpert} onHide={handleCloseExpert}>
+                <Modal.Header closeButton className={styles.modalHeader}>
+                    <Modal.Title>11 Countries Detailed Data</Modal.Title>
+                </Modal.Header>
+                <Modal.Body className={styles.modalBodytxt}>
+                    <ul>
+                        <li>Angola</li>
+                        <li>Argentina</li>
+                        <li>Bangladesh</li>
+                        <li>Bolivia</li>
+                        <li>Botswana</li>
+                        <li>Burundi</li>
+                        <li>Cameroon</li>
+                        <li>Chad</li>
+                        <li>Chile</li>
+                        <li>Colombia</li>
+                        <li>Costa Rica</li>
+                        <li>Cote d Ivoire</li>
+                        <li>DR Congo</li>
+                        <li>Ecuador</li>
+                        <li>Ethiopia</li>
+                        <li>Fiji</li>
+                        <li>Ghana</li>
+                        <li>Guatemala</li>
+                        <li>Guyana</li>
+                        <li>India</li>
+                        <li>India(Weekly)</li>
+                        <li>Indonesia</li>
+                        <li>Kazakhstan</li>
+                        <li>Kenya</li>
+                        <li>Kosovo</li>
+                        <li>Lesotho</li>
+                        <li>Liberia</li>
+                        <li>Malawi</li>
+                        <li>Mexico (All Modes)</li>
+                        <li>Mexico (Sea Mode)</li>
+                        <li>Moldova</li>
+                        <li>Namibia</li>
+                        <li>Nicaragua</li>
+                        <li>Niger</li>
+                        <li>Nigeria</li>
+                        <li>Pakistan</li>
+                        <li>Panama</li>
+                        <li>Paraguay</li>
+                        <li>Peru</li>
+                        <li>Philippines</li>
+                        <li>Russia</li>
+                        <li>Sao Tome and Príncipe</li>
+                        <li>Senegal</li>
+                        <li>Sierra Leone</li>
+                        <li>Singapore</li>
+                        <li>Sri Lanka</li>
+                        <li>Tanzania</li>
+                        <li>Uganda</li>
+                        <li>Ukraine</li>
+                        <li>Uruguay</li>
+                        <li>Uzbekistan</li>
+                        <li>Venezuela</li>
+                        <li>Vietnam</li>
+                        <li>Zambia</li>
+                        <li>Zimbabwe</li>
                     </ul>
                 </Modal.Body>
 
