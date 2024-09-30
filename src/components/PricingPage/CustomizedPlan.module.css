@@ -243,8 +243,13 @@
     padding: 20px;
     font-size: 16px;
     border-radius: 0;
+    color: #fff;
     font-weight: 500;
     margin: 20px 0;
+}
+.TaklSelsbn:hover{
+    color: #fff;
+    background-color: #176db7;
 }
 
 .viewPricebn {

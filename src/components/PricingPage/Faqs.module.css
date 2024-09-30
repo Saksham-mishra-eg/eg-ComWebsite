@@ -10,6 +10,15 @@
     width: 100%;
 }
 
+.ulliSFaiPric {
+    list-style-type: disc;
+    margin-top: 1rem;
+}
+
+.ulliSFaiPric li {
+    margin-bottom: 10px;
+}
+
 .faqheading h2 {
     font-size: 40px;
     font-weight: 700;

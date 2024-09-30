@@ -104,7 +104,7 @@ function AppContent() {
   return (
     <Routes>
       <Route path="/" exact element={<Home />} />
-      <Route path="/home" exact element={<Home />} />
+      <Route path="/" exact element={<Home />} />
       <Route path="/pricing" exact element={<Pricing />} />
       <Route path="/data" exact element={<DataFlow />} />
       <Route path="/about-us" exact element={<AboutUs />} />

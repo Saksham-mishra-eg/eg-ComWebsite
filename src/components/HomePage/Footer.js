@@ -62,7 +62,7 @@ function Footer() {
                             <ul className={styles.ForListTags}>
                                 <li><a href="/about-us">About Us</a></li>
                                 <li><a href="/career-page">Careers</a></li>
-                                <li><a href="/client-testimonials">Clients & Testimonials</a></li>
+                                {/* <li><a href="/client-testimonials">Clients & Testimonials</a></li> */}
                                 <li><a href="/contact-us">Contact Us</a></li>
                             </ul>
                         </div>

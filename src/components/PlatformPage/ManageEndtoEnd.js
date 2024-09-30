@@ -131,7 +131,7 @@ function ManageEndtoEnd() {
                                             </Col>
                                             <Col md={9}>
                                                 <div className={styles.inimgigh}>
-                                                    <img src="comprehensive.png" alt="comprehensive" />
+                                                    <img src="company-analysis.png" alt="company-analysis" />
                                                 </div>
                                             </Col>
                                         </Row>

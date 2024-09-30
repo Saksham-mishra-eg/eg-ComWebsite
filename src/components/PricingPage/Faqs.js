@@ -23,7 +23,7 @@ function Faqs() {
                                 <Accordion.Item eventKey="0" className={styles.acronItems}>
                                     <Accordion.Header className={styles.Acroheader} > <button className={styles.acnrAtivebtn}>What Exactly is Export Genius?</button> </Accordion.Header>
                                     <Accordion.Body className={styles.acrBodyares}>
-                                        Export Genius offers an Intelligent AI-powered Trade Intelligence dashboard featuring extensive import and export data from 195+ countries. With a decade of industry expertise under our belt, we have served 20K+ clients from around the world. Get detailed global trade insights, enabling importers, exporters, and businesses to access invaluable data on products, markets, and more.
+                                        Export Genius offers an Intelligent AI-powered Trade Intelligence dashboard featuring extensive import and export data from 190+ countries. With a decade of industry expertise under our belt, we have served 20K+ clients from around the world. Get detailed global trade insights, enabling importers, exporters, and businesses to access invaluable data on products, markets, and more.
                                     </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="1" className={styles.acronItems}>
@@ -42,7 +42,7 @@ function Faqs() {
                                     <Accordion.Header className={styles.Acroheader} ><button className={styles.acnrAtivebtn}>What data types are provided in Export Genius? </button></Accordion.Header>
                                     <Accordion.Body className={styles.acrBodyares}>
                                         We provide 7 types of import-export data <b>– Detailed Data, Statistical Data, Transit Data, Bill of Lading Data, Cargo BL Data, Suez Canal BL Data, and Mirror Data.</b>
-                                        <ul className="mt-3">
+                                        <ul className={styles.ulliSFaiPric}>
                                             <li> <b>Detailed Data</b> covering complete customs-based data with Importer & Exporter Details along with other shipment information.</li>
                                             <li> <b>Statistical Data</b> showcasing information such as Quantity, Country, Price, etc. </li>
                                             <li> <b>Transit Data</b> covers information on import-export shipments, which pass through different customs territories.</li>

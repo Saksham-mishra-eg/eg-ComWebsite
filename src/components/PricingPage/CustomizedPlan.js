@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./CustomizedPlan.module.css";
-import { Button, Card, Col, Container, Form, Nav, Row, Tab } from "react-bootstrap";
+import {  Card, Col, Container, Form, Nav, Row, Tab } from "react-bootstrap";
 import React, { useEffect, useState } from 'react';
 import "./modal.css";
 import data from "./CountryPricing.json";
@@ -248,7 +248,7 @@ function CustomizedPlan() {
                                         <div className={styles.carbdTilusd}>
                                             <Card.Title className={styles.CrdTitle}>Your Countries List </Card.Title>
                                             <Card.Text className={styles.CrdTitle}>
-                                                <DateRangePicker />
+                                                {/* <DateRangePicker /> */}
                                             </Card.Text>
                                         </div>
                                         <Card.Text className={styles.CrdTixt}>
@@ -301,15 +301,15 @@ function CustomizedPlan() {
                                 {/* <p>Billed Monthaly</p>
                                 <h6>Estimated cost to get started:</h6>
                                 <h4>$3,890*</h4> */}
-                                <Button className={styles.TaklSelsbn}>Buy Now</Button>
+                                <a type="button" href="https://exportgenius.com/contact-us" className={styles.TaklSelsbn}>Buy Now</a>
                                 <p> <a className={styles.viewPricebn} href="view">Terms & Conditions</a> </p>
                                 <p>  <a className={styles.viewPricebn} href="share">Privacy Policy</a> </p>
                             </div>
                             <div className={styles.coushwoTxt}>
-                                <p>*Cost shown also includes required, one-time
+                                {/* <p>*Cost shown also includes required, one-time
                                     <b> Professional Onboarding </b>
                                     for a fee of $3,000. <a href="learnmore"> Learn More <img src="url.png" alt="learn more" /> </a>
-                                </p>
+                                </p> */}
                             </div>
 
 

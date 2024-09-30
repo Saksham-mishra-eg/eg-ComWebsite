@@ -24,7 +24,7 @@ function GlobalTradeStats() {
                                         <img src="trade-data.png" alt="countries" />
                                     </div>
                                     <div className={styles.listofTrade}>
-                                        <h3>195+</h3>
+                                        <h3>190+</h3>
                                         <h4>Countries</h4>
                                         <p>Import Export Trade Data</p>
                                     </div>

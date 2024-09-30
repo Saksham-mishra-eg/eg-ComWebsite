@@ -19,7 +19,7 @@ const Career = () => {
       <CareerweMarch />
       <WhyWork />
       <OurCulture />
-      <WeAreeg />
+      {/* <WeAreeg /> */}
       <CurrentOpening />
       {/* <Possitions /> */}
       <GetGlobalTrade />

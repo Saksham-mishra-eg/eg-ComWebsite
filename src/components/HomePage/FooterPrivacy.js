@@ -8,13 +8,14 @@ function FooterPrivacy() {
 
     return (
 
-            <div className={styles.CopyrighFrt}>
+        // <div className={styles.CopyrighFrt}>
+        <div className={styles.CopyrighFrttttt}>
                 <Container fluid>
                     <Row>
                         <Col>
-                        <div className={styles.CopyrighForLinst}>
+                        {/* <div className={styles.CopyrighForLinst}>
                             <a href="#">TERMS & CONDITIONS</a> | <a href="#">Cancelation policy</a> | <a href="#">Refund policy</a> | <a href="#">Privacy policy</a> 
-                        </div>
+                        </div> */}
                         </Col>
                     </Row>
                 </Container>
