@@ -11,7 +11,7 @@ function Header() {
     return (
         <Navbar className={styles.navBrndBg} bg="light" data-bs-theme="light" collapseOnSelect expand="lg" >
             <Container>
-                <Navbar.Brand href="/" className={styles.headerImageIcon} >
+                <Navbar.Brand href="https://www.exportgenius.com" className={styles.headerImageIcon} >
                     <img src="eg-logo.png" alt="eg logo" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
