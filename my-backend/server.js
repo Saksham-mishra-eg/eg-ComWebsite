@@ -5,7 +5,7 @@ const cors = require('cors');
 const app = express();
 const port = process.env.PORT;
 
-const allowedOrigins = ['https://exportgenius.com'];
+const allowedOrigins = ['https://exportgenius.com', 'https://www.exportgenius.com'];
 
 app.use(cors({
   origin: function (origin, callback) {
