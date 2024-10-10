@@ -1,22 +1,18 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./CustomizedPlan.module.css";
-import {  Card, Col, Container, Form, Nav, Row, Tab } from "react-bootstrap";
+import { Card, Col, Container, Form, Nav, Row, Tab } from "react-bootstrap";
 import React, { useEffect, useState } from 'react';
 import "./modal.css";
 import data from "./CountryPricing.json";
 import { startOfDay, endOfDay, addDays, subDays } from 'date-fns';
 import DateRangePicker from 'rsuite/DateRangePicker';
 
-
 function CustomizedPlan() {
-
-
 
     const [aggregatedData, setAggregatedData] = useState({});
     const [selectedCountries, setSelectedCountries] = useState([]);
     const [allCountries, setAllCountries] = useState([]);
     const [selectedPeriods, setSelectedPeriods] = useState({});
-
 
     useEffect(() => {
 
@@ -258,7 +254,6 @@ function CustomizedPlan() {
                                                         <Col>
                                                             <p>{country}</p>
                                                         </Col>
-
                                                         <Col>
                                                             <Form.Select
                                                                 className={styles.onmoyrsSlect}
@@ -290,7 +285,6 @@ function CustomizedPlan() {
                                 {/* <div className={styles.prodcth3lg}>
                                     <h3>Select Date</h3>
                                 </div> */}
-
                                 {/* <DateRangePicker /> */}
 
                             </div>
@@ -301,7 +295,7 @@ function CustomizedPlan() {
                                 {/* <p>Billed Monthaly</p>
                                 <h6>Estimated cost to get started:</h6>
                                 <h4>$3,890*</h4> */}
-                                <a type="button" href="https://exportgenius.com/contact-us" className={styles.TaklSelsbn}>Buy Now</a>
+                                <a type="button" href="https://www.exportgenius.com/contact-us" className={styles.TaklSelsbn}>Buy Now</a>
                                 <p> <a className={styles.viewPricebn} href="view">Terms & Conditions</a> </p>
                                 <p>  <a className={styles.viewPricebn} href="share">Privacy Policy</a> </p>
                             </div>
@@ -311,8 +305,6 @@ function CustomizedPlan() {
                                     for a fee of $3,000. <a href="learnmore"> Learn More <img src="url.png" alt="learn more" /> </a>
                                 </p> */}
                             </div>
-
-
                         </div>
                     </Col>
                 </Row>

@@ -29,7 +29,7 @@ function Faqs() {
                                 <Accordion.Item eventKey="1" className={styles.acronItems}>
                                     <Accordion.Header className={styles.Acroheader} ><button className={styles.acnrAtivebtn}> How many countries are covered in the Dashboard? </button></Accordion.Header>
                                     <Accordion.Body className={styles.acrBodyares}>
-                                        Export Genius offers 190+ countries offers import-export data including Customs Data from 55+ countries, In addition to this, we offer  30+ Countries’ Exclusive Data - Angola, Bangladesh, Bolivia, Brazil, Burundi, Cameroon, Chad, Costa Rica, DR Congo, Ghana, Guatemala, Guyana, Iran, Kosovo, Liberia, Malawi, Mexico, Nicaragua, Niger, Nigeria, Sao Tome and Príncipe, Sierra Leone, Senegal, Singapore, Tanzania, Turkey, Thailand, Uzbekistan, Zimbabwe, Fiji, and Zambia. Check  <a href="#data">data availability</a> .
+                                        Export Genius offers 190+ countries offers import-export data including Customs Data from 55+ countries, In addition to this, we offer  30+ Countries’ Exclusive Data - Angola, Bangladesh, Bolivia, Brazil, Burundi, Cameroon, Chad, Costa Rica, DR Congo, Ghana, Guatemala, Guyana, Iran, Kosovo, Liberia, Malawi, Mexico, Nicaragua, Niger, Nigeria, Sao Tome and Príncipe, Sierra Leone, Senegal, Singapore, Tanzania, Turkey, Thailand, Uzbekistan, Zimbabwe, Fiji, and Zambia. Check  <a href="/data">data availability</a> .
                                     </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="2" className={styles.acronItems}>

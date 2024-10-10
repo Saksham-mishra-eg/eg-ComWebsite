@@ -18,7 +18,6 @@ const ContactUs = () => {
       <CustomerSupport />
       <TrustedClient />
       <GetGlobalTrade />
-
       <Footer />
       <FooterPrivacy />
     </div>

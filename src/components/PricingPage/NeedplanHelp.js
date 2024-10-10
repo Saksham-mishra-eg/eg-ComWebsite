@@ -21,7 +21,9 @@ function NeedplanHelp() {
                         <div className={styles.ChooseplanBoxex}>
                             <div className={styles.choseneed}>
                                 <img src="phone-icon.png" alt="phone" />
-                                <a href="#phone">+91 8003 8003 57</a>
+                                <a href="tel:+918003800357">+91 8003 8003 57</a>
+                                <a href="tel:+911147048012">+91 11-47048012</a>
+                                <a href="tel:+911147048013">+91 11-47048013</a>
                             </div>
                             <div className={styles.choseneed}>
                                 <img src="chat-icon.png" alt="chat" />
@@ -37,7 +39,7 @@ function NeedplanHelp() {
                             </div>
                             <div className={styles.choseneed}>
                                 <img src="qr.png" alt="qr code" />
-                                <p>+91-9319-157-357
+                                <p>+91-8003-8003-57
                                     Scan QR code & get in
                                     touch with us
                                 </p>

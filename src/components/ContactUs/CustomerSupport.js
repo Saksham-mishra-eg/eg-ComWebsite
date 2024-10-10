@@ -49,28 +49,28 @@ function CustomerSupport() {
                                             <div className={styles.tabpNecenflex}>
                                                 <div className={styles.EmailImgeicn}>
                                                     <a href="mailto:info@exportgenius.in">
-                                                    <img src="email.png" alt="email" />
+                                                        <img src="email.png" alt="email" />
                                                         <h5>support@exportgenius.in</h5>
                                                     </a>
                                                 </div>
                                                 <div className={styles.EmailImgeicn}>
                                                     <a href="https://exportgenius.zohobookings.in/#/customer/exportgenius?Name=Jitendra+Kumar&amp;Email=jitendra.seo%40exportgenius.in&amp;Contact Number=%2b1234656875" target="_blank">
-                                                    <img src="live-chat.png" alt="email" />
+                                                        <img src="live-chat.png" alt="email" />
                                                         <h5>Live Chat</h5>
                                                     </a>
                                                 </div>
                                                 <div className={styles.EmailImgeicn}>
-                                                    <a href="tell:+919319157357">
-                                                    <img src="phone-call.png" alt="email" />
-                                                    <h5>+91-9319-157-357</h5>
+                                                    <a href="tell:+918003800357">
+                                                        <img src="phone-call.png" alt="email" />
+                                                        <h5>+91 8003 8003 57</h5>
                                                     </a>
                                                 </div>
                                                 <div className={styles.EmailImgeicn}>
-                                                    <a href="https://wa.me/9319157357" target="_blank">
-                                                    <img src="qrscan.png" alt="email" />
-                                                    <h5>+91-9319-157-357</h5>
-                                                    <p>Scan QR code & get in
-                                                        touch with us</p>
+                                                    <a href="https://wa.me/8003800357" target="_blank">
+                                                        <img src="qrscan.png" alt="email" />
+                                                        <h5 className="mb-0">+91 8003 8003 57</h5>
+                                                        <p>Scan QR code & get in
+                                                            touch with us</p>
                                                     </a>
                                                 </div>
                                             </div>
