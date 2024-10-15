@@ -1,11 +1,53 @@
+import React, { useState } from "react"
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./TradeIntelligence.module.css";
 import Container from 'react-bootstrap/Container';
-import { Col, Form, Row } from "react-bootstrap";
+import { Button, Col, Form, Row } from "react-bootstrap";
 import { Player } from '@lottiefiles/react-lottie-player';
 import BoxReveal from "../HowWeHelpPage/box-reveal";
 
 function TradeIntelligence() {
+    const [email, setEmail] = useState("")
+
+
+    // @ts-ignore
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+
+        const apiPayload = {
+            firstName: "Home Page",
+            lastName: "Query",
+            countryCode: "91", // Assuming India as a default country code
+            contactNumber: "0000000000",
+            workEmail: email || "example@example.com",
+            message: "Market Intelligence Inquiry Home Page",
+            url: window.location.href || "https://dummyurl.com",
+        }
+
+        try {
+            const response = await fetch(
+                "https://fjgjyxhtdds.marketinsidedata.com/api/send-email-eg",
+                {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(apiPayload),
+                }
+            )
+
+            const result = await response.json()
+
+            if (response.ok) {
+                alert("Form submitted successfully!")
+            } else {
+                alert("Form submission failed!")
+            }
+        } catch (error) {
+            console.error("Form submission error:", error)
+            alert("There was an error submitting the form. Please try again.")
+        }
+    }
 
     return (
         <div className={styles.onlinePlatform}>
@@ -38,14 +80,20 @@ function TradeIntelligence() {
 
                                     <Row>
 
-                                        <Col sm="7">
-                                            <Form.Control className={styles.frokDemo} column sm="2" type="text" placeholder="Enter Your Email" />
-                                        </Col>
-                                        <Col sm="4">
-                                            <div className={styles.devidt}>
-                                                <a href="#freetrails" className={styles.TrlBtn} > Free Trial</a>
-                                            </div>
-                                        </Col>
+                                        <form onSubmit={handleSubmit} className={styles.formFlext}>
+                                            <Form.Control className={styles.frokDemo} value={email}
+                                                onChange={(e) => setEmail(e.target.value)}
+                                                required
+                                                column sm="2" type="text" placeholder="Enter Your Email" />
+                                            <Button
+                                                type="submit"
+                                                className={styles.TrlBtn}
+                                            >
+                                                Submit
+                                            </Button>
+                                            {/* <a href="#freetrails" className={styles.TrlBtn} > Free Trial</a> */}
+                                        </form>
+
 
                                     </Row>
                                     <div className={styles.captImg}>
@@ -59,26 +107,6 @@ function TradeIntelligence() {
                             </BoxReveal>
                         </div>
 
-                        {/* <div className={styles.tradeText}>
-                            <h1>Global Trade Insights That Gives You The Edge</h1>
-                            <h3>ACTIONABLE INSIGHTS & INFORMATION</h3>
-                            <p>Discover the world of import and export data by using our AI-Powered Intelligent Trade database.</p>
-                            <Row>
-
-                                <Col ms="12">
-                                    <div className={styles.linanchdem}>
-                                        <Form.Control className={styles.frokDemo} column sm="2" type="text" placeholder="Enter Your Email" />
-                                        <a href="#freetrails" className={styles.TrlBtn} > Free Trial</a>
-                                    </div>
-                                </Col>
-
-                            </Row>
-                            <div className={styles.captImg}>
-                                <img src="capterra.png" alt="captera" />
-                                <img src="g2.png" alt="g2" />
-                        <img src="iso.png" alt="iso" />
-                    </div>
-                </div> */}
                     </Col>
                     <Col md={6}>
                         <div className={styles.tradeBg}>

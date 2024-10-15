@@ -31,31 +31,18 @@
     margin-bottom: 25px;
 }
 
-
-/* .tradeText h1 {
-    color: #171A31;
-    font-size: 55px;
-    font-weight: 600;
-    font-family: "Roboto", sans-serif;
-    margin-bottom: 15px;
-}
-
-.tradeText h3 {
-    color: #ffffff;
-    background-color: #66B167;
-    font-size: 20px;
-    font-weight: 500;
-    border-radius: 10px;
-    padding: 7px 55px;
-    font-family: "Roboto", sans-serif;
-    margin-bottom: 15px;
-    text-align: center;
-} */
-
 .tradeText p {
     color: #171a31b0;
     font-size: 16px;
     font-family: "Roboto", sans-serif;
+}
+
+.formFlext {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 0;
+    gap: 1rem;
 }
 
 .TrlBtn {
@@ -73,6 +60,8 @@
     border-color: #CACACA;
     border-radius: 100px;
     padding: 10px 25px;
+    width: 300px;
+    margin-left: 15px;
 }
 
 .captImg {

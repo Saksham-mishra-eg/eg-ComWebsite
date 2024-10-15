@@ -29,7 +29,7 @@ function ContactIframe() {
     } = useForm({
         resolver: zodResolver(formSchema),
     })
- 
+
 
     const onSubmit = async (data) => {
         setSubmitting(true)
@@ -151,6 +151,7 @@ function ContactIframe() {
                                                 </p>
                                             )}
                                         </Form.Group>
+                                        <Form.Label className={styles.formLaelCar}>Phone Number</Form.Label>
                                         <Controller
                                             name="phoneNumber"
                                             control={control}
@@ -162,7 +163,7 @@ function ContactIframe() {
                                                     inputStyle={{ width: "100%", height: 48 }}
                                                     dropdownClass="absolute z-50"
                                                     dropdownStyle={{ width: "30vw", minWidth: 300 }}
-                                                    containerClass="relative h-[48px]"
+                                                    containerClass="relative h-[48px] mb-3"
                                                 />
                                             )}
                                         />
@@ -183,7 +184,7 @@ function ContactIframe() {
                                         <Form.Group className="mb-3" controlId="formGroupEmail">
                                             <Form.Label className={styles.formLaelCar}>Work Email Id</Form.Label>
                                             <Form.Control
-                                              {...register("email")}
+                                                {...register("email")}
                                                 className={styles.formContrCaresd}
                                                 name="email"
                                                 type="email"
@@ -196,7 +197,7 @@ function ContactIframe() {
                                             )}
                                         </Form.Group>
                                         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                                            <Form.Label>Message</Form.Label>
+                                            <Form.Label className={styles.formLaelCar}>Message</Form.Label>
                                             <Form.Control
                                                 className={styles.formContrCaresd}
                                                 {...register("feedback")}

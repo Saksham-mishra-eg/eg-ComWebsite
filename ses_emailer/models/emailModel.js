@@ -10,7 +10,7 @@ const sendEmailMi = async (
     url,
     ip
   ) => {
-    const fullContactNumber = `${countryCode} ${contactNumber}`;
+    // const fullContactNumber = `${countryCode} ${contactNumber}`;
     const params = {
       Source: "no-reply@marketinsidedata.com", // senders Email
       Destination: {
@@ -84,7 +84,8 @@ const sendEmailMi = async (
                       <div class="child-content">
                         <p class="text"><strong>First Name:</strong> ${firstName}</p>
                         <p class="text"><strong>Last Name:</strong> ${lastName}</p>
-                        <p class="text"><strong>Contact Number:</strong> ${fullContactNumber}</p>
+                        <p class="text"><strong>Company Name:</strong> ${countryCode}</p>
+                        <p class="text"><strong>Contact Number:</strong> ${contactNumber}</p>
                         <p class="text"><strong>Work Email:</strong> ${workEmail}</p>
                         <p class="text"><strong>Message:</strong> ${message}</p>
                         <p class="text"><strong>URL:</strong> ${url}</p>
@@ -105,7 +106,8 @@ const sendEmailMi = async (
             Data: `
               First Name: ${firstName}\n
               Last Name: ${lastName}\n
-              Contact Number: ${fullContactNumber}\n
+               Company Name: ${countryCode}\n
+              Contact Number: ${contactNumber}\n
               Work Email: ${workEmail}\n
               URL: ${url}\n
               IP Address: ${ip}\n
@@ -229,7 +231,7 @@ const sendEmailEg = async (
     const params = {
       Source: "no-reply@exportgenius.in", // sender's Email
      Destination: {
-        ToAddresses: ["info@exportgenius.in" , "enquiryform2.eg@exportgenius.in"], // Fixed recipient email
+        ToAddresses: ["info@exportgenius.in" , "quickenquiry.eg@gmail.com"], // Fixed recipient email
       },
       Message: {
         Subject: {
