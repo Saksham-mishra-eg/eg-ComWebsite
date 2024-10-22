@@ -12,6 +12,7 @@ import Career from "./pages/Career";
 import ContactUs from "./pages/ContactUs";
 import DataLicense from "./pages/DataLicense";
 import TradeApi from "./pages/TradeApi";
+import ThankYouPage from "./pages/ThankYouPage";
 
 function App() {
   return (
@@ -116,7 +117,7 @@ function AppContent() {
       <Route path="/client-testimonials" exact element={<Testimonial />} />
       <Route path="/data-license" exact element={<DataLicense />} />
       <Route path="/trade-api" exact element={<TradeApi />} />
-
+      <Route path='/thankyou' exact element={<ThankYouPage/>} />
     </Routes>
   );
 }

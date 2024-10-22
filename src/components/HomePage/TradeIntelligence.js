@@ -5,53 +5,22 @@ import Container from 'react-bootstrap/Container';
 import { Button, Col, Form, Row } from "react-bootstrap";
 import { Player } from '@lottiefiles/react-lottie-player';
 import BoxReveal from "../HowWeHelpPage/box-reveal";
+import EmailFormDialog from "../EmailForm/EmailFormDialog";
 
 function TradeIntelligence() {
     const [email, setEmail] = useState("")
-
+    const [isOpen, setIsOpen] = React.useState(false);
 
     // @ts-ignore
     const handleSubmit = async (e) => {
         e.preventDefault()
-
-        const apiPayload = {
-            firstName: "Home Page",
-            lastName: "Query",
-            countryCode: "91", // Assuming India as a default country code
-            contactNumber: "0000000000",
-            workEmail: email || "example@example.com",
-            message: "Market Intelligence Inquiry Home Page",
-            url: window.location.href || "https://dummyurl.com",
-        }
-
-        try {
-            const response = await fetch(
-                "https://fjgjyxhtdds.marketinsidedata.com/api/send-email-eg",
-                {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify(apiPayload),
-                }
-            )
-
-            const result = await response.json()
-
-            if (response.ok) {
-                alert("Form submitted successfully!")
-            } else {
-                alert("Form submission failed!")
-            }
-        } catch (error) {
-            console.error("Form submission error:", error)
-            alert("There was an error submitting the form. Please try again.")
-        }
+       setIsOpen(true)
     }
 
     return (
         <div className={styles.onlinePlatform}>
             <Container>
+                {email && isOpen && <EmailFormDialog isOpen={isOpen} setIsOpen={setIsOpen} initialEmail={email} center={false}/>}
                 <Row>
                     <Col md={6}>
                         <div className="h-full w-full max-w-[32rem] items-center justify-center overflow-hidden pt-8">

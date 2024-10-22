@@ -13,6 +13,7 @@ import GetGlobalTrade from "../components/HomePage/GetGlobalTrade";
 import Footer from "../components/HomePage/Footer";
 import FooterPrivacy from "../components/HomePage/FooterPrivacy";
 import StatsScheduleDemo from "../components/HomePage/StatsScheduleDemo";
+import FloatingContactButton from "../components/EmailForm/FloatingContactButton";
 
 const Home = () => {
   return (
@@ -30,6 +31,7 @@ const Home = () => {
       <GetGlobalTrade />
       <Footer />
       <FooterPrivacy />
+<FloatingContactButton/>
     </div>
   );
 };
