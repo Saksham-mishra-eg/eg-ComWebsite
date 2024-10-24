@@ -31,7 +31,7 @@ function LeverageApi() {
 
     const formRef = useRef(null);
     const [submitStatus, setSubmitStatus] = useState(null);
-
+    const [currentTabTitle, setCurrentTabTitle] = useState('')
     const url = window.location.href
 
     const handleSubmit = async (e) => {
@@ -50,13 +50,13 @@ function LeverageApi() {
             countryCode: form.countryCode.value,
             contactNumber: form.contactNumber.value,
             workEmail: form.workEmail.value,
-            message: form.message.value,
+            message: `${currentTabTitle} - ${form.message.value}`,
             url: url
         };
 
         try {
             console.log('Form Data:', formData);
-            const response = await axios.post('http://localhost:4000/api/send-email-eg', formData);
+            const response = await axios.post('https://fjgjyxhtdds.marketinsidedata.com/api/send-email-eg', formData);
             console.log('Response:', response);
             setSubmitStatus({ success: true, message: 'Email sent successfully!' });
             form.reset();
@@ -134,7 +134,10 @@ function LeverageApi() {
 
                                                         </div>
                                                     </div>
-                                                    <Button className={styles.scheDemoBtn} variant="success" onClick={handleShow}>Contact Our Expert</Button>{' '}
+                                                    <Button className={styles.scheDemoBtn} variant="success" onClick={() => {
+                                                        setCurrentTabTitle('Global Trade Data API')
+                                                        handleShow();
+                                                    }}>Contact Our Expert</Button>{' '}
                                                     <Button className={styles.LogonDemoBtn} variant="primary" onClick={handleChangeUrl}>Book A Meeting</Button>{' '}
                                                 </div>
                                             </Tab.Pane>
@@ -174,7 +177,10 @@ function LeverageApi() {
 
                                                         </div>
                                                     </div>
-                                                    <Button className={styles.scheDemoBtn} variant="success" onClick={handleShow}>Contact Our Expert</Button>{' '}
+                                                    <Button className={styles.scheDemoBtn} variant="success" onClick={() => {
+                                                        setCurrentTabTitle('Trend By and Total By API')
+                                                        handleShow();
+                                                    }}>Contact Our Expert</Button>{' '}
                                                     <Button className={styles.LogonDemoBtn} variant="primary" onClick={handleChangeUrl}>Book A Meeting</Button>{' '}
                                                 </div>
                                             </Tab.Pane>
@@ -195,7 +201,10 @@ function LeverageApi() {
 
                                                         </div>
                                                     </div>
-                                                    <Button className={styles.scheDemoBtn} variant="success" onClick={handleShow}>Contact Our Expert</Button>{' '}
+                                                    <Button className={styles.scheDemoBtn} variant="success" onClick={() => {
+                                                        setCurrentTabTitle('Importer and Exporter Search API')
+                                                        handleShow();
+                                                    }}>Contact Our Expert</Button>{' '}
                                                     <Button className={styles.LogonDemoBtn} variant="primary" onClick={handleChangeUrl}>Book A Meeting</Button>{' '}
                                                 </div>
                                             </Tab.Pane>
@@ -216,7 +225,10 @@ function LeverageApi() {
 
                                                         </div>
                                                     </div>
-                                                    <Button className={styles.scheDemoBtn} variant="success" onClick={handleShow}>Contact Our Expert</Button>{' '}
+                                                    <Button className={styles.scheDemoBtn} variant="success" onClick={() => {
+                                                        setCurrentTabTitle('Company Lookup API')
+                                                        handleShow();
+                                                    }}>Contact Our Expert</Button>{' '}
                                                     <Button className={styles.LogonDemoBtn} variant="primary" onClick={handleChangeUrl}>Book A Meeting</Button>{' '}
                                                 </div>
                                             </Tab.Pane>
@@ -237,7 +249,10 @@ function LeverageApi() {
 
                                                         </div>
                                                     </div>
-                                                    <Button className={styles.scheDemoBtn} variant="success" onClick={handleShow}>Contact Our Expert</Button>{' '}
+                                                    <Button className={styles.scheDemoBtn} variant="success" onClick={() => {
+                                                        setCurrentTabTitle('Company Profile API')
+                                                        handleShow();
+                                                    }}>Contact Our Expert</Button>{' '}
                                                     <Button className={styles.LogonDemoBtn} variant="primary" onClick={handleChangeUrl}>Book A Meeting</Button>{' '}
                                                 </div>
                                             </Tab.Pane>
@@ -258,7 +273,10 @@ function LeverageApi() {
 
                                                         </div>
                                                     </div>
-                                                    <Button className={styles.scheDemoBtn} variant="success" onClick={handleShow}>Contact Our Expert</Button>{' '}
+                                                    <Button className={styles.scheDemoBtn} variant="success" onClick={() => {
+                                                        setCurrentTabTitle('Trade Partners API')
+                                                        handleShow();
+                                                    }}>Contact Our Expert</Button>{' '}
                                                     <Button className={styles.LogonDemoBtn} variant="primary" onClick={handleChangeUrl}>Book A Meeting</Button>{' '}
                                                 </div>
                                             </Tab.Pane>
@@ -279,7 +297,10 @@ function LeverageApi() {
 
                                                         </div>
                                                     </div>
-                                                    <Button className={styles.scheDemoBtn} variant="success" onClick={handleShow}>Contact Our Expert</Button>{' '}
+                                                    <Button className={styles.scheDemoBtn} variant="success" onClick={() => {
+                                                        setCurrentTabTitle('HS Code Search API')
+                                                        handleShow();
+                                                    }}>Contact Our Expert</Button>{' '}
                                                     <Button className={styles.LogonDemoBtn} variant="primary" onClick={handleChangeUrl}>Book A Meeting</Button>{' '}
                                                 </div>
                                             </Tab.Pane>

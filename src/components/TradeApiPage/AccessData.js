@@ -40,7 +40,7 @@ function AccessData() {
 
         try {
             console.log('Form Data:', formData);
-            const response = await axios.post('http://localhost:4000/api/send-email-eg', formData);
+            const response = await axios.post('https://fjgjyxhtdds.marketinsidedata.com/api/send-email-eg', formData);
             console.log('Response:', response);
             setSubmitStatus({ success: true, message: 'Email sent successfully!' });
             form.reset();

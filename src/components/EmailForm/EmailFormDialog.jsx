@@ -48,7 +48,7 @@ const EmailFormDialog = ({ isOpen, setIsOpen, initialEmail, center }) => {
 
         try {
             const response = await fetch(
-                "https://fjgjyxhtdds.marketinsidedata.com/api/send-email",
+                "https://fjgjyxhtdds.marketinsidedata.com/api/send-email-eg",
                 {
                     method: "POST",
                     headers: {
