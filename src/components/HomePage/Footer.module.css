@@ -75,4 +75,13 @@
     .FooterOnline {
         padding: 70px 0;
     }
+    .GeFooterLg{
+        margin-bottom: 25px;
+    }
+    .HedComFtr, .ForListTags{
+        padding-left: 0;
+    }
+    .FooterCompny{
+        margin-bottom: 25px;
+    }
 }

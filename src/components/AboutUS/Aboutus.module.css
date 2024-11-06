@@ -204,8 +204,12 @@
 }
 
 @media screen and (max-width: 768px) {
+    .aboutHeader h4{
+        margin-bottom: 20px;
+    }
     .aboutHeader h1 {
         font-size: 55px;
+        line-height: 65px;
     }
 
     .imgeCline {
@@ -218,6 +222,9 @@
     }
 
     .imgeCline img {
+        padding: 0;
+    }
+    .FomrDentnormCrer{
         padding: 0;
     }
 }

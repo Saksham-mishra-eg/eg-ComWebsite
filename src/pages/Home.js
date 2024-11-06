@@ -31,7 +31,7 @@ const Home = () => {
       <GetGlobalTrade />
       <Footer />
       <FooterPrivacy />
-<FloatingContactButton/>
+      <FloatingContactButton />
     </div>
   );
 };

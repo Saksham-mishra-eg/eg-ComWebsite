@@ -42,3 +42,9 @@
     font-family: "Roboto", sans-serif;
     font-weight: 400;
 }
+
+@media screen and (max-width: 768px) {
+    .TbodyEnstial tr th {
+        font-size: 14px;
+    }
+}

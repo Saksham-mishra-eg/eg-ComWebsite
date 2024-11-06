@@ -317,4 +317,10 @@
     .YourProducts {
         margin-top: 30px;
     }
+    .PricnOverw h2{
+        line-height: 40px;
+    }
+    .PricnOverw{
+        padding-bottom: 0;
+    }
 }

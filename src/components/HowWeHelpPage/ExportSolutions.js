@@ -15,24 +15,23 @@ function ExportSolutions() {
             <Container>
                 <Row>
                     <Col md={6}>
-                        <div className="h-full w-full max-w-[32rem] items-center justify-center overflow-hidden pt-8">
+                        <div className="h-full w-full max-w-[32rem] items-center justify-center overflow-hidden">
                             <BoxReveal boxColor={"#5046e6"} duration={0.5} >
                                 <h1 className={styles.howYOur}>
-                                    How You Can Make the Most from our OG Dashboard?<span className="text-[#5046e6]"></span>
+                                    How You Can Make the Most from our EG Dashboard?<span className="text-[#5046e6]"></span>
                                 </h1>
                             </BoxReveal>
 
                             <BoxReveal boxColor={"#5046e6"} duration={0.5}>
                                 <div className="mt-[1.5rem]">
-                                    <p>Access trade insights, explore new markets, and keep a check on your competitors with Export Genius.
+                                    <p className={styles.paratRadetx}>Access trade insights, explore new markets, and keep a check on your competitors with Export Genius.
                                     </p>
                                 </div>
                             </BoxReveal>
                             <BoxReveal boxColor={"#5046e6"} duration={0.5}>
-                                <h2 className="mt-[.5rem] text-[1rem]">
-                                    {" "}
+                                <h4 className="mt-[.5rem] text-[1rem]">
                                     <span className={styles.actnIsht}>ACTIONABLE INSIGHTS & INFORMATION</span>
-                                </h2>
+                                </h4>
                             </BoxReveal>
 
                             <BoxReveal boxColor={"#5046e6"} duration={0.5}>

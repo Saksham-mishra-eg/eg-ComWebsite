@@ -24,12 +24,12 @@ function FounderDirecter() {
                     <Col md={6}>
                         <div className={styles.Fondimer}>
                             <div className={styles.directImge}>
-                                <img src='ankur.png' alt='Founder' />
+                                <img src='ankur.jpg' alt='Founder' />
                                 <h3>aNKUR GUPTA</h3>
                                 <h6>Founder</h6>
                             </div>
                             <div className={styles.directImge}>
-                                <img src='aashita.png' alt='Founder' />
+                                <img src='aashita.jpg' alt='Director' />
                                 <h3>aASHITA GUPTA</h3>
                                 <h6>Director</h6>
                             </div>

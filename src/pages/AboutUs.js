@@ -14,8 +14,6 @@ import OurJourney from "../components/AboutUS/OurJourney";
 import FounderDirecter from "../components/AboutUS/FounderDirecter";
 import GetGlobalTrade from "../components/AboutUS/GetGlobalTrade";
 
-
-
 const DataFlow = () => {
   return (
     <div className={styles.DataFlowPage}>

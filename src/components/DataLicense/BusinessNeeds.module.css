@@ -77,9 +77,17 @@
         padding: 60px 0;
     }
     .WhatmakesDiffText{
-        width: 46%;
+        width: 47%;
+        margin: 5px 5px 30px 5px;
+        padding: 20px 10px;
     }
     .Whtmakesoems h2{
         font-size: 45px;
+    }
+    .WhatmakesDiffText img{
+        height: 44px;
+    }
+    .WhatmakesDiffText h3{
+        line-height: 28px;
     }
 }

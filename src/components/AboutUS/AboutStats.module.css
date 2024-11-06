@@ -76,8 +76,13 @@
     .lsitofststs {
         padding: 15px;
         flex-wrap: wrap;
-        width: 41%;
+        width: 45%;
         margin: 5px;
+        height: 215px;
+    }
+
+    .AboutStatsBg {
+        padding-top: 20px;
     }
 
     .yerinDustb {
@@ -86,8 +91,8 @@
 
     .StatsOFabout {
         flex-wrap: wrap;
-        justify-content: space-evenly;
-        height: fit-content;
+        justify-content: flex-start;
+        height: 100%;
         border: 0;
     }
 

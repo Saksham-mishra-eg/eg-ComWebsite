@@ -21,6 +21,7 @@
     font-weight: 600;
     font-family: "Roboto", sans-serif;
     margin-bottom: 15px;
+    padding-top: 2rem;
 }
 
 .actnIsht {
@@ -115,11 +116,21 @@
     }
 
     .frokDemo {
-        width: 64%;
+        width: 100%;
+        margin-left: 0;
     }
 
     .TrlBtn {
         font-size: 14px;
+    }
+
+    .howYOur {
+        padding-top: 0;
+        font-size: 48px;
+    }
+
+    .formFlext {
+        flex-direction: column;
     }
 
 }

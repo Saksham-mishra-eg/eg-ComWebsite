@@ -186,6 +186,8 @@
     .wantSee img {
         width: 58px;
         height: 58px;
-
+    }
+    .FomrDentnormCrer{
+        width: 100%;
     }
 }

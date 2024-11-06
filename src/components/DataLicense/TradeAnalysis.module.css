@@ -200,12 +200,14 @@
 
     .tradeText h1 {
         font-size: 45px;
+        line-height: 54px;
     }
 
     .tradeText h3 {
         padding: 6px 20px;
     }
-
-
+    .tradeBg{
+        margin-top: 25px;
+    }
 
 }

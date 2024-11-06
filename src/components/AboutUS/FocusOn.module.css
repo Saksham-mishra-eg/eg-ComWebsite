@@ -52,4 +52,8 @@
     .FocuOnd h2 {
         font-size: 45px;
     }
+    .foncImg{
+        width: 100%;
+        margin-top: 22px;
+    }
 }

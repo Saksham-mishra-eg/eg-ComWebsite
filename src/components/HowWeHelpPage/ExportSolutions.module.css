@@ -9,6 +9,10 @@
     text-align: center;
 }
 
+.paratRadetx {
+    margin-bottom: 15px;
+}
+
 .tradeText {
     text-align: left;
     margin-top: 30px;
@@ -21,6 +25,7 @@
     font-weight: 600;
     font-family: "Roboto", sans-serif;
     margin-bottom: 15px;
+    padding-top: 2rem;
 }
 
 .actnIsht {
@@ -64,7 +69,11 @@
 @media screen and (max-width: 768px) {
     .tradeText {
         width: 100%;
-        margin: 0;
+    }
+
+    .howYOur {
+        padding-top: 0;
+        font-size: 48px;
     }
 
     .tradeText h1 {

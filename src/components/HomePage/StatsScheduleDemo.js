@@ -23,7 +23,7 @@ function StatsScheduleDemo() {
                                     width="100%"
                                     height="560"
                                     frameBorder="0"
-                                    style={{ maxHeight: 'none', overflow: 'hidden', height: '100%' }}
+                                    style={{ maxHeight: 'none', overflow: 'hidden', height: '450px' }}
                                 ></iframe>
                                 <script src="https://embed.acuityscheduling.com/js/embed.js" type="text/javascript"></script>
                             </div>

@@ -39,7 +39,7 @@ function GlobalTradeStats() {
                                     <div className={styles.listofTrade}>
                                         <h3>55+</h3>
                                         <h4>Countries</h4>
-                                        <p>Exclusive Data</p>
+                                        <p>Detailed Customs Data</p>
                                     </div>
                                 </li>
                                 <li>
@@ -49,7 +49,7 @@ function GlobalTradeStats() {
                                     <div className={styles.listofTrade}>
                                         <h3>30+</h3>
                                         <h4>Countries</h4>
-                                        <p>Detailed Custom Data</p>
+                                        <p>Exclusive Data</p>
                                     </div>
                                 </li>
                                 <li>

@@ -45,3 +45,26 @@
     font-weight: 300;
     line-height: 30px;
 }
+
+@media screen and (max-width: 768px) {
+
+    .FocuOndJrny {
+        box-shadow: none;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        background: no-repeat;
+    }
+
+    .FocuOndJrny h2 {
+        font-size: 42px;
+    }
+
+    .FocuOndJrny p {
+        display: none;
+    }
+
+    .ourJurneyBoxtd {
+        margin-top: 0;
+    }
+}

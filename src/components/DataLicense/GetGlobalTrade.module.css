@@ -72,4 +72,10 @@
         left: 0;
         top: 0;
     }
+    .scheDemoBtn{
+        margin-bottom: 15px;
+    }
+    .LogonDemoBtn{
+        margin-bottom: 15px;
+    }
 }

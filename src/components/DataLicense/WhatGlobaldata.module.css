@@ -24,3 +24,9 @@
     line-height: 35px;
     width: 100%;
 }
+@media screen and (max-width: 768px){
+    .Glbatrade{
+        padding: 0;
+        margin-top: 30px;
+    }
+}

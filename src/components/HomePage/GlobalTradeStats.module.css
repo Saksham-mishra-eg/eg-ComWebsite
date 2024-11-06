@@ -83,8 +83,8 @@
     }
 
     .lsitofTradedata li {
-        width: 50%;
-        gap: 0.8rem;
+        width: 100%;
+        gap: 1.8rem;
         padding: 25px 6px;
         justify-content: flex-start;
     }

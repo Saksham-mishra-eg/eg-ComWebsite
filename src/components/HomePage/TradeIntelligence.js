@@ -14,16 +14,16 @@ function TradeIntelligence() {
     // @ts-ignore
     const handleSubmit = async (e) => {
         e.preventDefault()
-       setIsOpen(true)
+        setIsOpen(true)
     }
 
     return (
         <div className={styles.onlinePlatform}>
             <Container>
-                {email && isOpen && <EmailFormDialog isOpen={isOpen} setIsOpen={setIsOpen} initialEmail={email} center={false}/>}
+                {email && isOpen && <EmailFormDialog isOpen={isOpen} setIsOpen={setIsOpen} initialEmail={email} center={false} />}
                 <Row>
                     <Col md={6}>
-                        <div className="h-full w-full max-w-[32rem] items-center justify-center overflow-hidden pt-8">
+                        <div className="h-full w-full max-w-[32rem] items-center justify-center overflow-hidde">
                             <BoxReveal boxColor={"#5046e6"} duration={0.5} >
                                 <h1 className={styles.howYOur}>
                                     Global Trade Insights That Gives You The Edge<span className="text-[#5046e6]"></span>
@@ -31,14 +31,14 @@ function TradeIntelligence() {
                             </BoxReveal>
 
                             <BoxReveal boxColor={"#5046e6"} duration={0.5}>
-                                <h2 className="mt-[.5rem] text-[1rem]">
+                                <h4 className="mt-[.5rem] text-[1rem]">
                                     {" "}
                                     <span className={styles.actnIsht}>ACTIONABLE INSIGHTS & INFORMATION</span>
-                                </h2>
+                                </h4>
                             </BoxReveal>
 
                             <BoxReveal boxColor={"#5046e6"} duration={0.5}>
-                                <div className="mt-[1.5rem]">
+                                <div className="md:mt-[1.5rem] mt-0 lg:mt-[1.5rem]">
                                     <p>Discover the world of import and export data by using our AI-Powered Intelligent Trade database.</p>
                                 </div>
                             </BoxReveal>
@@ -46,36 +46,31 @@ function TradeIntelligence() {
                             <BoxReveal boxColor={"#5046e6"} duration={0.5}>
 
                                 <div className={styles.tradeText}>
-
                                     <Row>
-
-                                        <form onSubmit={handleSubmit} className={styles.formFlext}>
-                                            <Form.Control className={styles.frokDemo} value={email}
-                                                onChange={(e) => setEmail(e.target.value)}
-                                                required
-                                                column sm="2" type="text" placeholder="Enter Your Email" />
-                                            <Button
-                                                type="submit"
-                                                className={styles.TrlBtn}
-                                            >
-                                                Submit
-                                            </Button>
-                                            {/* <a href="#freetrails" className={styles.TrlBtn} > Free Trial</a> */}
-                                        </form>
-
-
+                                        <Col>
+                                            <form onSubmit={handleSubmit} className={styles.formFlext}>
+                                                <Form.Control className={styles.frokDemo} value={email}
+                                                    onChange={(e) => setEmail(e.target.value)}
+                                                    required
+                                                    column sm="2" type="text" placeholder="Enter Your Email" />
+                                                <Button
+                                                    type="submit"
+                                                    className={styles.TrlBtn}
+                                                >
+                                                    Submit
+                                                </Button>
+                                                {/* <a href="#freetrails" className={styles.TrlBtn} > Free Trial</a> */}
+                                            </form>
+                                        </Col>
                                     </Row>
                                     <div className={styles.captImg}>
                                         {/* <img src="capterra.png" alt="capterra" />
                                          <img src="g2.png" alt="g2" /> */}
                                         <img src="iso.png" alt="iso" />
                                     </div>
-
                                 </div>
-
                             </BoxReveal>
                         </div>
-
                     </Col>
                     <Col md={6}>
                         <div className={styles.tradeBg}>
