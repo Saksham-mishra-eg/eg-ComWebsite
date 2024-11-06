@@ -174,7 +174,7 @@
 
 @media screen and (max-width: 768px) {
     .CntsctBgColr {
-        padding: 25px;
+        padding: 15px;
         margin: 0;
     }
 
@@ -187,7 +187,14 @@
         width: 58px;
         height: 58px;
     }
-    .FomrDentnormCrer{
+
+    .FomrDentnormCrer {
         width: 100%;
+        padding: 20px 15px 5px;
+        margin-top: 0;
+    }
+
+    .IframeAreassectn {
+        padding-bottom: 10px;
     }
 }

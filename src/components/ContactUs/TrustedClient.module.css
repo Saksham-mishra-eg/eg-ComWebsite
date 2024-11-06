@@ -46,11 +46,17 @@
         padding: 0;
     }
 }
-@media screen and (max-width: 992px){
-    .clientIcnimgTru{
-        justify-content: center;
+
+@media screen and (max-width: 992px) {
+    .clientIcnimgTru {
+        justify-content: space-evenly;
     }
-    .imgClinEn{
+
+    .imgClinEn {
         width: auto;
+    }
+
+    .imgClinEn img {
+        height: 110px;
     }
 }

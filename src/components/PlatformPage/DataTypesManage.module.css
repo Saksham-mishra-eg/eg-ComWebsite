@@ -85,3 +85,9 @@
     width: 100%;
     margin: 20px 0;
 }
+
+@media screen and (max-width: 768px) {
+    .DnownSample {
+        margin-bottom: 15px;
+    }
+}
