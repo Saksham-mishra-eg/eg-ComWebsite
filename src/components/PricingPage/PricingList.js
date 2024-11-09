@@ -42,6 +42,10 @@ function PricingList() {
         INR: { monthly: 700000, yearly: 95000 },
     };
 
+    const startermnthyrs = isMonthly ?  "Per Year" : "Per Month";
+    const essentialmnthyrs = isMonthly ? "Per Year" : "Per Month";
+    const expertmnthyrs = isMonthly ? "Per Year" : "Per Month";
+
     const excelDownloadStarter = isMonthly ? "3,60,000 Points For Trade Data Excel Download" : "30,000 Points/ Month For Trade Data Excel Download";
     const excelDownloadEssential = isMonthly ? "10,80,000 Points For Trade Data Excel Download" : "90,000 Points/ Month For Trade Data Excel Download";
     const excelDownloadExpert = isMonthly ? "24,00,000 Points For Trade Data Excel Download" : "2,00,000 Points/ Month For Trade Data Excel Download";
@@ -109,7 +113,7 @@ function PricingList() {
                                 <span class={styles.OCurrency}>
                                     {isUSD ? `$${isMonthly ? starter.USD.monthly : starter.USD.yearly}` : `₹${isMonthly ? starter.INR.monthly : starter.INR.yearly}`}
                                 </span>
-                                <p class={styles.PeYers}>/Per Year</p>
+                                <p class={styles.PeYers}>/{startermnthyrs} </p>
                             </div>
                             <div class={styles.Aplytnttl}>
                                 <button class={styles.AplyOBtn}>Apply Now</button>
@@ -163,7 +167,7 @@ function PricingList() {
                                 <span class={styles.OCurrency}>
                                     {isUSD ? `$${isMonthly ? essential.USD.monthly : essential.USD.yearly}` : `₹${isMonthly ? essential.INR.monthly : essential.INR.yearly}`}
                                 </span>
-                                <p class={styles.PeYers}>/Per Year</p>
+                                <p class={styles.PeYers}>/{essentialmnthyrs}</p>
                             </div>
                             <div class={styles.Aplytnttl}>
                                 <button class={styles.AplyOBtn}>Apply Now</button>
@@ -222,7 +226,7 @@ function PricingList() {
                                 <span class={styles.OCurrency}>
                                     {isUSD ? `$${isMonthly ? expert.USD.monthly : expert.USD.yearly}` : `₹${isMonthly ? expert.INR.monthly : expert.INR.yearly}`}
                                 </span>
-                                <p class={styles.PeYers}>/Per Year</p>
+                                <p class={styles.PeYers}>/{expertmnthyrs} </p>
                             </div>
                             <div class={styles.Aplytnttl}>
                                 <button class={styles.AplyOBtn}>Apply Now</button>

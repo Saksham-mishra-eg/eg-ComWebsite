@@ -28,15 +28,15 @@ function AboutStats() {
                             <div className={styles.lsitofststs}>
                                 <div className={styles.yerinDustb}>
                                     <h2>55+</h2>
-                                    <p>Countries
-                                        Exclusive Data</p>
+                                    <p>Countries Detailed
+                                        Custom Data
+                                    </p>
                                 </div>
                             </div>
                             <div className={styles.lsitofststs}>
                                 <div className={styles.yerinDustb}>
                                     <h2>30+</h2>
-                                    <p>Countries Detailed
-                                        Custom Data</p>
+                                    <p>Countries Exclusive Data</p>
                                 </div>
                             </div>
                             <div className={styles.lsitofststs}>
