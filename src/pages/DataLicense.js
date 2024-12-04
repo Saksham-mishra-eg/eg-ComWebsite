@@ -11,10 +11,9 @@ import Clients from "../components/HomePage/Clients";
 import CountriCoverd from "../components/DataLicense/CountriCoverd";
 import GetGlobalTrade from "../components/DataLicense/GetGlobalTrade";
 
-
-const DataFlow = () => {
+const DataLicense = () => {
   return (
-    <div className={styles.DataFlowPage}>
+    <div className={styles.DataLicensePage}>
       <Header />
       <TradeAnalysis />
       <WhatGlobaldata />
@@ -22,11 +21,10 @@ const DataFlow = () => {
       <Clients />
       <CountriCoverd />
       <GetGlobalTrade />
-
       <Footer />
       <FooterPrivacy />
     </div>
   );
 };
 
-export default DataFlow;
+export default DataLicense;

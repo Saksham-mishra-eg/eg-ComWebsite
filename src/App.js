@@ -13,6 +13,10 @@ import ContactUs from "./pages/ContactUs";
 import DataLicense from "./pages/DataLicense";
 import TradeApi from "./pages/TradeApi";
 import ThankYouPage from "./pages/ThankYouPage";
+import CancelPolicy from "./pages/CancelPolicy";
+import RefundPolicy from "./pages/RefundPolicy";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsandCoditions from "./pages/TermsandCoditions";
 
 function App() {
   return (
@@ -86,6 +90,22 @@ function AppContent() {
         title = "Export Genius - Global Trade Intelligence Platform";
         metaDescription = "Discover global buyers and suppliers, profitable markets, and competitive advantage, and empower your business with intelligence, compliance, and visibility.";
         break;
+      case "/cancelation-policy":
+        title = "Cancel Export Genius Subscription";
+        metaDescription = "Cancel Export Genius Subscription";
+        break;
+      case "/refund-policy":
+        title = "Refund Policy";
+        metaDescription = "100% Money Back Guarantee – No Questions Asked!!";
+        break;
+      case "/privacy-policy":
+        title = "Privacy Policy";
+        metaDescription = "Privacy Policy";
+        break;
+      case "/terms-and-conditions":
+        title = "Terms and Conditions";
+        metaDescription = "Terms and Conditions";
+        break;
       default:
         title = "Export Genius - Global Trade Intelligence Platform";
         metaDescription = "Discover global buyers and suppliers, profitable markets, and competitive advantage, and empower your business with intelligence, compliance, and visibility.";
@@ -117,7 +137,11 @@ function AppContent() {
       <Route path="/client-testimonials" exact element={<Testimonial />} />
       <Route path="/data-license" exact element={<DataLicense />} />
       <Route path="/trade-api" exact element={<TradeApi />} />
-      <Route path='/thankyou' exact element={<ThankYouPage/>} />
+      <Route path='/thankyou' exact element={<ThankYouPage />} />
+      <Route path="/cancelation-policy" exact element={<CancelPolicy />} />
+      <Route path="/refund-policy" exact element={<RefundPolicy />} />
+      <Route path="/privacy-policy" exact element={<PrivacyPolicy />} />
+      <Route path="/terms-and-conditions" exact element={<TermsandCoditions />} />
     </Routes>
   );
 }
