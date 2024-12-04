@@ -7,7 +7,6 @@ import { PricingContext } from './PricingContext';
 import { useState } from 'react';
 import "./modal.css"
 
-
 function PricingList() {
 
     const [showStarter, setShowStarter] = useState(false);
@@ -60,7 +59,6 @@ function PricingList() {
 
     const userLicenceEssential = isMonthly ? "5 Users License" : "Single User License";
     const userLicenceExpert = isMonthly ? "10 Users License" : "Single User License";
-
 
     return (
         <div className={styles.PricingListPg}>
@@ -215,14 +213,13 @@ function PricingList() {
                             </div>
                         </div>
 
-
                         <div class={styles.OPlan}>
                             <div className={styles.OHighlight}>
                                 <p className={styles.OHighlightText}>Most Popular</p>
                             </div>
 
                             <div class={styles.OPlanPrice}>
-                                <h3 class={styles.OPrice}>Export</h3>
+                                <h3 class={styles.OPrice}>Expert</h3>
                                 <span class={styles.OCurrency}>
                                     {isUSD ? `$${isMonthly ? expert.USD.monthly : expert.USD.yearly}` : `₹${isMonthly ? expert.INR.monthly : expert.INR.yearly}`}
                                 </span>
@@ -273,7 +270,6 @@ function PricingList() {
 
                             </div>
                         </div>
-
 
                         <div class={styles.OPlan}>
                             <div class={styles.OPlanPrice}>
