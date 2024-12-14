@@ -3,7 +3,6 @@ import styles from "./Footer.module.css";
 import Container from 'react-bootstrap/Container';
 import { Col, Row } from "react-bootstrap";
 
-
 function Footer() {
 
     return (
@@ -12,31 +11,33 @@ function Footer() {
                 <Row>
                     <Col md={3}>
                         <div className={styles.GeFooterLg}>
-                            <img src="footer-logo.png" alt="Footer Logo" />
+                          <a href="https://www.exportgenius.com/">
+                          <img src="footer-logo.png" alt="Footer Logo" />
+                          </a>
                             <div className={styles.SocilIncs}>
                                 <ul className={styles.SociLisstss}>
                                     <li>
-                                        <a href="www.facebook.com">
+                                        <a href="https://www.facebook.com/exportgenius">
                                             <img src="fb.png" alt="Facebook" />
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="www.linkedin.com">
+                                        <a href="https://www.linkedin.com/company/export-genius">
                                             <img src="ld.png" alt="Linkedin" />
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="www.youtube.com">
+                                        <a href="https://www.youtube.com/channel/UCESozaA6z4e0nQxyVqS8I1A">
                                             <img src="yt.png" alt="Youtube" />
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="www.twitter.com">
+                                        <a href="https://twitter.com/exportgenius">
                                             <img src="tw.png" alt="Twitter" />
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="web.skype.com">
+                                        <a href="skype:exportgeniusindia">
                                             <img src="sk.png" alt="Skype" />
                                         </a>
                                     </li>

@@ -52,9 +52,6 @@
     width: 100%;
     transition: 800ms ease all; 
 } 
-@media only screen and (max-width: 767px){
-    .Explormorebtn{ margin-bottom: 30px; }
-}
 
 .tradeText {
     text-align: left;
@@ -67,6 +64,7 @@
     font-size: 40px;
     font-weight: 600;
     margin-bottom: 25px;
+    line-height: 44px;
 }
 
 .tradeText p {
@@ -98,4 +96,13 @@
 .countrContinetn li a{
     color: #666;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 767px){
+    .Explormorebtn{ 
+        margin-bottom: 30px;
+        text-align: center;
+        width: 100%;
+        display: block;
+     }
 }

@@ -1,11 +1,9 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import styles from "./GetGlobalTrade.module.css";
+import styles from "../HomePage/GetGlobalTrade.module.css"
 import Container from 'react-bootstrap/Container';
 import { Col, Row } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 import { Player } from '@lottiefiles/react-lottie-player';
-
-
 
 function GetGlobalTrade() {
 
@@ -46,7 +44,6 @@ function GetGlobalTrade() {
                             <Button className={styles.scheDemoBtn} variant="success" onClick={handleChangeUrl} >Schedule a Demo</Button>{' '}
                             <Button className={styles.LogonDemoBtn} variant="primary" onClick={handleChangeLogin} >Login</Button>{' '}
                         </div>
-
                     </Col>
                 </Row>
             </Container>

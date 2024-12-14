@@ -25,6 +25,7 @@ function ContactIframe() {
         register,
         handleSubmit,
         control,
+        reset, // Import reset function
         formState: { errors },
     } = useForm({
         resolver: zodResolver(formSchema),
@@ -37,12 +38,14 @@ function ContactIframe() {
             const apiPayload = {
                 firstName: data.firstName,
                 lastName: data.lastName,
-                countryCode: data.phoneNumber.slice(0, 2),
-                contactNumber: data.phoneNumber.slice(2),
+                companyName: data.companyName,
+                countryCode: data.companyName,
+                // countryCode: data.phoneNumber.slice(0, 2),
+                // contactNumber: data.phoneNumber.slice(2),
+                contactNumber: data.phoneNumber,
                 workEmail: data.email,
                 message: data.feedback,
                 url: window.location.href,
-                companyName: data.companyName,
             }
             const response = await fetch(
                 "https://fjgjyxhtdds.marketinsidedata.com/api/send-email-eg",
@@ -56,9 +59,11 @@ function ContactIframe() {
             )
             const result = await response.json()
             if (response.ok) {
-                alert("Form submitted successfully!")
+                alert("Form submitted successfully!");
+                reset();
             } else {
-                alert("Form submission failed!")
+                const errorDetail = result?.message || "Submission failed";
+                alert(`Form submission failed: ${errorDetail}`);
             }
         } catch (error) {
             console.error("Form submission error:", error)

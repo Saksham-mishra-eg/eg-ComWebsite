@@ -8,8 +8,7 @@ import LeverageApi from "../components/TradeApiPage/LeverageApi";
 import AccessData from "../components/TradeApiPage/AccessData";
 import GlobalTradeStats from "../components/TradeApiPage/GlobalTradeStats";
 import HereToHelp from "../components/TradeApiPage/HereToHelp";
-import GetGlobalTrade from "../components/DataLicense/GetGlobalTrade";
-
+import GetGlobalTrade from "../components/TradeApiPage/GetGlobalTrade";
 
 const TradeApi = () => {
     return (
@@ -21,7 +20,6 @@ const TradeApi = () => {
             <GlobalTradeStats />
             <HereToHelp />
             <GetGlobalTrade />
-
             <Footer />
             <FooterPrivacy />
         </div>

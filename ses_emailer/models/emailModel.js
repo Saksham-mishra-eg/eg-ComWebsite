@@ -1,30 +1,30 @@
 const AWS_SES = require('../config/awsConfig');
 
 const sendEmailMi = async (
-    firstName,
-    lastName,
-    countryCode,
-    contactNumber,
-    workEmail,
-    message,
-    url,
-    ip
-  ) => {
-    // const fullContactNumber = `${countryCode} ${contactNumber}`;
-    const params = {
-      Source: "no-reply@marketinsidedata.com", // senders Email
-      Destination: {
-        ToAddresses: ["info@marketinsidedata.com" , "webenquiry@marketinsidedata.com"], // Fixed recipient email
+  firstName,
+  lastName,
+  countryCode,
+  contactNumber,
+  workEmail,
+  message,
+  url,
+  ip
+) => {
+  const fullContactNumber = `${countryCode} ${contactNumber}`;
+  const params = {
+    Source: "no-reply@marketinsidedata.com", // senders Email
+    Destination: {
+      ToAddresses: ["info@marketinsidedata.com", "webenquiry@marketinsidedata.com"], // Fixed recipient email
+    },
+    Message: {
+      Subject: {
+        Charset: "UTF-8",
+        Data: "New Contact Us Form Submission",
       },
-      Message: {
-        Subject: {
+      Body: {
+        Html: {
           Charset: "UTF-8",
-          Data: "New Contact Us Form Submission",
-        },
-        Body: {
-          Html: {
-            Charset: "UTF-8",
-            Data: `
+          Data: `
               <!DOCTYPE html>
               <html>
                 <head>
@@ -84,8 +84,7 @@ const sendEmailMi = async (
                       <div class="child-content">
                         <p class="text"><strong>First Name:</strong> ${firstName}</p>
                         <p class="text"><strong>Last Name:</strong> ${lastName}</p>
-                        <p class="text"><strong>Company Name:</strong> ${countryCode}</p>
-                        <p class="text"><strong>Contact Number:</strong> ${contactNumber}</p>
+                        <p class="text"><strong>Contact Number:</strong> ${fullContactNumber}</p>
                         <p class="text"><strong>Work Email:</strong> ${workEmail}</p>
                         <p class="text"><strong>Message:</strong> ${message}</p>
                         <p class="text"><strong>URL:</strong> ${url}</p>
@@ -100,50 +99,49 @@ const sendEmailMi = async (
                 </body>
               </html>
             `,
-          },
-          Text: {
-            Charset: "UTF-8",
-            Data: `
+        },
+        Text: {
+          Charset: "UTF-8",
+          Data: `
               First Name: ${firstName}\n
               Last Name: ${lastName}\n
-               Company Name: ${countryCode}\n
-              Contact Number: ${contactNumber}\n
+              Contact Number: ${fullContactNumber}\n
               Work Email: ${workEmail}\n
               URL: ${url}\n
               IP Address: ${ip}\n
               Message:\n
               ${message}
             `,
-          },
         },
       },
-    };
-  
-    try {
-      const res = await AWS_SES.sendEmail(params).promise();
-      console.log("Email has been sent", res);
-      return res;
-    } catch (error) {
-      console.error("Error sending email:", error.message);
-      throw error;
-    }
+    },
   };
 
+  try {
+    const res = await AWS_SES.sendEmail(params).promise();
+    console.log("Email has been sent", res);
+    return res;
+  } catch (error) {
+    console.error("Error sending email:", error.message);
+    throw error;
+  }
+};
+
 const sendThankYouEmailMi = async (firstName, lastName, workEmail) => {
-    const params = {
-        Source: 'no-reply@marketinsidedata.com', // senders Email
-        Destination: {
-            ToAddresses: [workEmail], // Send to the user's email
-        },
-        Message: {
-            Subject: {
-                Charset: 'UTF-8',
-                Data: 'Thank You for Contacting Us',
-            },
-            Body: {
-                Html: {
-                    Charset: 'UTF-8',
-                    Data: `
+  const params = {
+    Source: 'no-reply@marketinsidedata.com', // senders Email
+    Destination: {
+      ToAddresses: [workEmail], // Send to the user's email
+    },
+    Message: {
+      Subject: {
+        Charset: 'UTF-8',
+        Data: 'Thank You for Contacting Us',
+      },
+      Body: {
+        Html: {
+          Charset: 'UTF-8',
+          Data: `
                         <!DOCTYPE html>
                         <html>
                         <head>
@@ -160,7 +158,7 @@ const sendThankYouEmailMi = async (firstName, lastName, workEmail) => {
                                     border-radius: 10px;
                                 }
                                 .header {
-                                    background-color: #4CAF50;
+                                    background-color: #FB923C;
                                     color: white;
                                     padding: 10px;
                                     text-align: center;
@@ -183,34 +181,34 @@ const sendThankYouEmailMi = async (firstName, lastName, workEmail) => {
                                     <p>Dear ${firstName} ${lastName},</p>
                                     <p>Thank you for reaching out to us. We have received your message and will get back to you shortly.</p>
                                     <p>Best regards,</p>
-                                    <p>Export Genius Team</p>
+                                    <p>Market Inside Team</p>
                                 </div>
                             </div>
                         </body>
                         </html>
                     `,
-                },
-                Text: {
-                    Charset: 'UTF-8',
-                    Data: `
+        },
+        Text: {
+          Charset: 'UTF-8',
+          Data: `
                         Dear ${firstName} ${lastName},\n
                         Thank you for reaching out to us. We have received your message and will get back to you shortly.\n
                         Best regards,\n
                         Export Genius Team
                     `,
-                },
-            },
         },
-    };
+      },
+    },
+  };
 
-    try {
-        const res = await AWS_SES.sendEmail(params).promise();
-        console.log('Thank You email has been sent', res);
-        return res;
-    } catch (error) {
-        console.error('Error sending Thank You email:', error.message);
-        throw error;
-    }
+  try {
+    const res = await AWS_SES.sendEmail(params).promise();
+    console.log('Thank You email has been sent', res);
+    return res;
+  } catch (error) {
+    console.error('Error sending Thank You email:', error.message);
+    throw error;
+  }
 };
 
 
@@ -218,30 +216,30 @@ const sendThankYouEmailMi = async (firstName, lastName, workEmail) => {
 
 
 const sendEmailEg = async (
-    firstName,
-    lastName,
-    countryCode,
-    contactNumber,
-    workEmail,
-    message,
-    url,
-    ip
-  ) => {
-    const fullContactNumber = `${countryCode} ${contactNumber}`;
-    const params = {
-      Source: "no-reply@exportgenius.in", // sender's Email
-     Destination: {
-        ToAddresses: ["info@exportgenius.in" , "quickenquiry.eg@gmail.com"], // Fixed recipient email
+  firstName,
+  lastName,
+  companyName,
+  contactNumber,
+  workEmail,
+  message,
+  url,
+  ip
+) => {
+  // const fullContactNumber = `${countryCode} ${contactNumber}`;
+  const params = {
+    Source: "info@exportgenius.in", // senders Email
+    Destination: {
+      ToAddresses: ["enquiryform.eg@exportgenius.in", "quickenquiry.eg@gmail.com"], // Fixed recipient email
+    },
+    Message: {
+      Subject: {
+        Charset: "UTF-8",
+        Data: "New Contact Us Form Submission",
       },
-      Message: {
-        Subject: {
+      Body: {
+        Html: {
           Charset: "UTF-8",
-          Data: "New Contact Us Form Submission",
-        },
-        Body: {
-          Html: {
-            Charset: "UTF-8",
-            Data: `
+          Data: `
               <!DOCTYPE html>
               <html>
                 <head>
@@ -305,7 +303,8 @@ const sendEmailEg = async (
                       <div class="child-content">
                         <p class="text"><strong>First Name:</strong> ${firstName}</p>
                         <p class="text"><strong>Last Name:</strong> ${lastName}</p>
-                        <p class="text"><strong>Contact Number:</strong> ${fullContactNumber}</p>
+                        <p class="text"><strong>Company Name:</strong> ${companyName}</p>
+                        <p class="text"><strong>Contact Number:</strong> ${contactNumber}</p>
                         <p class="text"><strong>Work Email:</strong> ${workEmail}</p>
                         <p class="text"><strong>Message:</strong> ${message}</p>
                         <p class="text"><strong>URL:</strong> ${url}</p>
@@ -314,56 +313,57 @@ const sendEmailEg = async (
   
                       <p class="para-bottom">
                         If you have any query, contact our support team at
-                        <a href="mailto:info@exportgenius.in">info@exportgenius.in</a>
+                        <a href="mailto:info@exportgenius.com">info@exportgenius.com</a>
                       </p>
                     </div>
                   </div>
                 </body>
               </html>
             `,
-          },
-          Text: {
-            Charset: "UTF-8",
-            Data: `
+        },
+        Text: {
+          Charset: "UTF-8",
+          Data: `
               First Name: ${firstName}\n
               Last Name: ${lastName}\n
-              Contact Number: ${fullContactNumber}\n
+              Contact Name: ${companyName}\n
+              Contact Number: ${contactNumber}\n
               Work Email: ${workEmail}\n
               URL: ${url}\n
               IP Address: ${ip}\n
               Message:\n
               ${message}
             `,
-          },
         },
       },
-    };
-  
-    try {
-      const res = await AWS_SES.sendEmail(params).promise();
-      console.log("Email has been sent", res);
-      return res;
-    } catch (error) {
-      console.error("Error sending email:", error.message);
-      throw error;
-    }
+    },
   };
-  
-  const sendThankYouEmailEg = async (firstName, lastName, workEmail) => {
-    const params = {
-      Source: "no-reply@exportgenius.in", // sender's Email
-      Destination: {
-        ToAddresses: [workEmail], // Send to the user's email
+
+  try {
+    const res = await AWS_SES.sendEmail(params).promise();
+    console.log("Email has been sent", res);
+    return res;
+  } catch (error) {
+    console.error("Error sending email:", error.message);
+    throw error;
+  }
+};
+
+const sendThankYouEmailEg = async (firstName, lastName, workEmail) => {
+  const params = {
+    Source: "quickenquiry.eg@gmail.com", // sender's Email
+    Destination: {
+      ToAddresses: [workEmail], // Send to the user's email
+    },
+    Message: {
+      Subject: {
+        Charset: "UTF-8",
+        Data: "Thank You for Contacting Us",
       },
-      Message: {
-        Subject: {
+      Body: {
+        Html: {
           Charset: "UTF-8",
-          Data: "Thank You for Contacting Us",
-        },
-        Body: {
-          Html: {
-            Charset: "UTF-8",
-            Data: `
+          Data: `
               <!DOCTYPE html>
               <html>
                 <head>
@@ -421,39 +421,39 @@ const sendEmailEg = async (
                     </div>
                     <p class="para-bottom">
                       If you have any query, contact our support team at
-                      <a href="mailto:info@exportgenius.in">info@exportgenius.in</a>
+                      <a href="mailto:info@exportgenius.com">info@exportgenius.com</a>
                     </p>
                   </div>
                 </body>
               </html>
             `,
-          },
-          Text: {
-            Charset: "UTF-8",
-            Data: `
+        },
+        Text: {
+          Charset: "UTF-8",
+          Data: `
               Dear ${firstName} ${lastName},\n
               Thank you for reaching out to us. We have received your message and will get back to you shortly.\n
               Best regards,\n
               Export Genius Team
             `,
-          },
         },
       },
-    };
-  
-    try {
-      const res = await AWS_SES.sendEmail(params).promise();
-      console.log("Thank You email has been sent", res);
-      return res;
-    } catch (error) {
-      console.error("Error sending Thank You email:", error.message);
-      throw error;
-    }
+    },
   };
-  
+
+  try {
+    const res = await AWS_SES.sendEmail(params).promise();
+    console.log("Thank You email has been sent", res);
+    return res;
+  } catch (error) {
+    console.error("Error sending Thank You email:", error.message);
+    throw error;
+  }
+};
+
 module.exports = {
-    sendEmailMi,
-    sendThankYouEmailMi,
-    sendEmailEg,
-    sendThankYouEmailEg
+  sendEmailMi,
+  sendThankYouEmailMi,
+  sendEmailEg,
+  sendThankYouEmailEg
 };

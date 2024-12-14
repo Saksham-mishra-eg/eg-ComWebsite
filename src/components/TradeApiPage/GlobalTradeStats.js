@@ -3,7 +3,6 @@ import styles from "./GlobalTradeStats.module.css";
 import Container from 'react-bootstrap/Container';
 import { Col, Row } from "react-bootstrap";
 
-
 function GlobalTradeStats() {
 
     return (

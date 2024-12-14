@@ -1,14 +1,11 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import styles from "./GetGlobalTrade.module.css";
+import styles from "../HomePage/GetGlobalTrade.module.css"
 import Container from 'react-bootstrap/Container';
 import { Col, Row } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 import { Player } from '@lottiefiles/react-lottie-player';
 
-
-
 function GetGlobalTrade() {
-
 
     const handleChangeUrl = () => {
         window.location.href = "contact-us";
@@ -34,7 +31,7 @@ function GetGlobalTrade() {
                     autoplay
                     loop
                     src="/bgjason.json" // Local path to the JSON file
-                    style={{ width: '100%', height: '100%' }}
+                    style={{ width: '100%', height: "auto" }}
                 />
             </div>
             <Container>

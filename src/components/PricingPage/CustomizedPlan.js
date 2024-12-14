@@ -174,7 +174,7 @@ function CustomizedPlan() {
                                             <Tab.Pane eventKey="America" className={styles.tabpaneMarmg}>
                                                 <Row>
                                                     <Form className={styles.FormItemsBs}>
-                                                        {['Argentina', 'Bolivia', 'Brazil', 'Canada', 'Chile', 'Colombia', 'Rica', 'Ecuador', 'Guatemala', 'Guyana', 'Paraguay', 'Peru', 'Uruguay', 'Venezuela', 'Panama'].map((country, index) => (
+                                                        {['Argentina', 'Bolivia', 'Brazil', 'Canada', 'Chile', 'Colombia', 'Costa Rica', 'Ecuador', 'Guatemala', 'Guyana', 'Paraguay', 'Peru', 'Uruguay', 'Venezuela', 'Panama'].map((country, index) => (
                                                             // {/* {allCountries.map((country, index) => ( */}
                                                             <Form.Check
                                                                 className={styles.FormCheckbx}
@@ -192,7 +192,7 @@ function CustomizedPlan() {
                                             <Tab.Pane eventKey="Europe" className={styles.tabpaneMarmg}>
                                                 <Row>
                                                     <Form className={styles.FormItemsBs}>
-                                                        {['Kosovo', 'Turkey', 'Ukraine', 'Russia', 'Uzbekistan', 'Moldova', 'Austria', 'Belgium', 'Bulgaria', 'Croatia', 'Cyprus', 'Czech Republic', 'Denmark', 'Estonia', 'Finland', 'France', 'Germany', 'Greece', 'Hungary', 'Ireland', 'Italy', 'Latvia', 'Lithuania', 'Luxembourg', 'Malta', 'Netherlands', 'Poland', 'Portugal', 'Romania', 'Slovakia', 'Slovenia', 'Spain', 'Sweden', 'UK'].map((country, index) => (
+                                                        {['Kosovo', 'Turkey', 'Ukraine', 'Russia', 'Uzbekistan', 'Moldova', 'Austria', 'Belgium', 'Bulgaria', 'Croatia', 'Cyprus', 'Czechia', 'Denmark', 'Estonia', 'Finland', 'France', 'Germany', 'Greece', 'Hungary', 'Ireland', 'Italy', 'Latvia', 'Lithuania', 'Luxembourg', 'Malta', 'Netherlands', 'Poland', 'Portugal', 'Romania', 'Slovakia', 'Slovenia', 'Spain', 'Sweden', 'United Kingdom'].map((country, index) => (
                                                             // {/* {allCountries.map((country, index) => ( */}
                                                             <Form.Check
                                                                 className={styles.FormCheckbx}
@@ -296,8 +296,8 @@ function CustomizedPlan() {
                                 <h6>Estimated cost to get started:</h6>
                                 <h4>$3,890*</h4> */}
                                 <a type="button" href="https://www.exportgenius.com/contact-us" className={styles.TaklSelsbn}>Buy Now</a>
-                                <p> <a className={styles.viewPricebn} href="view">Terms & Conditions</a> </p>
-                                <p>  <a className={styles.viewPricebn} href="share">Privacy Policy</a> </p>
+                                <p> <a className={styles.viewPricebn} href="/terms-and-conditions">Terms & Conditions</a> </p>
+                                <p>  <a className={styles.viewPricebn} href="/privacy-policy">Privacy Policy</a> </p>
                             </div>
                             <div className={styles.coushwoTxt}>
                                 {/* <p>*Cost shown also includes required, one-time

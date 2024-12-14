@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import styles from "../HomePage/GetGlobalTrade.module.css";
+import styles from "../HomePage/GetGlobalTrade.module.css"
 import Container from 'react-bootstrap/Container';
 import { Col, Row } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
@@ -14,7 +14,6 @@ function GetGlobalTrade() {
     const handleChangeLogin = () => {
         window.location.href = "https://dashboard2.exportgenius.in";
     }
-
 
     const backgroundStyle = {
         position: 'absolute',
@@ -39,11 +38,12 @@ function GetGlobalTrade() {
                 <Row>
                     <Col md={12}>
                         <div className={styles.GeGlobl}>
-                            <h2>Let us Connect Over Coffee.</h2>
-                            <h3>Initiate the Conversation now- Drop in your mail here.</h3>
+                            <h2>DON’T WAIT, GET A DRILL OF OUR EG DASHBOARD.</h2>
+                            <h3>TAKE THE FIRST MOVE AND REACH OUT TO US NOW!</h3>
                             <Button className={styles.scheDemoBtn} variant="success" onClick={handleChangeUrl}>Schedule a Demo</Button>{' '}
                             <Button className={styles.LogonDemoBtn} variant="primary" onClick={handleChangeLogin}>Login</Button>{' '}
                         </div>
+
                     </Col>
                 </Row>
             </Container>
