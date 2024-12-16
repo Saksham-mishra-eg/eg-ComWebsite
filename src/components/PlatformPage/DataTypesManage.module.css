@@ -17,6 +17,7 @@
     font-size: 40px;
     font-weight: 600;
     color: #000;
+    margin-bottom: 13px;
 }
 
 .tabofMatrial {
@@ -48,6 +49,8 @@
     color: #3884C7;
     margin-bottom: 15px;
     text-decoration: none;
+    margin-top: 15px;
+    display: block;
 }
 
 .inetleInstigh h3 {

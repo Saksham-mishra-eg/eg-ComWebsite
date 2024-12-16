@@ -9,8 +9,6 @@ const HorizontalTimelines = () => {
     // Values should be only date
     const VALUES = ["2016", "2017", "2018", "2019", "2020", "2021", "2022"];
 
-
-
     // Description array corresponding to values
     const description = [
         "Explore detailed Customs Data, Statistical Data, Mirror Data, Bill of Lading Data, ",

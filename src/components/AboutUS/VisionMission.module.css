@@ -54,6 +54,8 @@
 
 .visonbx img {
     margin-bottom: 30px;
+    height: 50px;
+    width: 50px;
 }
 
 @media screen and (max-width: 768px) {

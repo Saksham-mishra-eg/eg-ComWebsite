@@ -6,6 +6,9 @@ import styles from "./Becomebetter.module.css";
 
 function Becomebetter() {
 
+  const handleChangeCareer = () =>{
+    window.location.href = "career-page";
+  }
 
   return (
     <div className={styles.BecomebetterBg}>
@@ -15,7 +18,7 @@ function Becomebetter() {
             <div className={styles.FocuOnFeaturs}>
               <h2>Together We Are Better</h2>
               <p>We have a close knit family of professionals who work on the collective effort of supporting our clients and helping them in informed decisions that drive success in the global market. Our experts hail from diverse backgrounds attributing to the company's endeavors. </p>
-              <button className={styles.aPllyNowbtn}>Apply Now</button>
+              <button className={styles.aPllyNowbtn} onClick={handleChangeCareer} >Apply Now</button>
               <br />
               <br />
               <img src='company-peoples.png' width={`${100}%`} alt='company peoples' />

@@ -2,7 +2,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./VisionMission.module.css";
 import { Col, Container, Row } from "react-bootstrap";
 
-
 function VisionMission() {
 
     return (
@@ -31,10 +30,8 @@ function VisionMission() {
                         </div>
                     </Col>
                 </Row>
-
             </Container>
         </div>
-
     );
 }
 

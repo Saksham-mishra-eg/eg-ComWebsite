@@ -48,19 +48,19 @@ function CurrentOpening() {
                             <Row className="mb-3">
                                 <Form.Group as={Col} md="6" sm="6" controlId="validationCustom01">
                                     <Form.Select className={styles.fonrSelectEgOption} aria-label="Default select example">
-                                        <option>All offices...</option>
-                                        <option>One</option>
-                                        <option>Two</option>
-                                        <option>Three</option>
+                                        <option>All Offices</option>
+                                        <option>Delhi</option>
+                                        <option>Gurgaon</option>
+                                        <option>Noida</option>
                                     </Form.Select>
                                 </Form.Group>
 
                                 <Form.Group as={Col} md="6" sm="6" controlId="validationCustom01">
                                     <Form.Select className={styles.fonrSelectEgOption} aria-label="Default select example">
-                                        <option>All departments...</option>
-                                        <option>One</option>
-                                        <option>Two</option>
-                                        <option>Three</option>
+                                        <option>All Departments...</option>
+                                        <option>IT</option>
+                                        <option>Marketing</option>
+                                        <option>Sales</option>
                                     </Form.Select>
                                 </Form.Group>
                             </Row>
@@ -87,12 +87,12 @@ function CurrentOpening() {
                                 </Card>
                                 <Card className={styles.acrndCardcrr}>
                                     <Card.Header className={styles.careheaderAcrnd}>
-                                        <ContextAwareToggle eventKey="1">Business Development Representative</ContextAwareToggle>
+                                        <ContextAwareToggle eventKey="1">Software Development Representative</ContextAwareToggle>
                                     </Card.Header>
                                     <Accordion.Collapse eventKey="1">
                                         <Card.Body>
                                             <div className={styles.carbodyAcrnd}>
-                                                <p> <span>Sales, team</span> </p>
+                                                <p> <span>IT, team</span> </p>
                                                 <p>Export genius is growing and therefore seeking a talented Business Development Representative to join our exceptional team.</p>
                                                 <p> <a href="#fillpost">Fill post <img src="fillarow.png" alt="fill post" /> </a> </p>
                                             </div>
@@ -115,12 +115,12 @@ function CurrentOpening() {
                                 </Card>
                                 <Card className={styles.acrndCardcrr}>
                                     <Card.Header className={styles.careheaderAcrnd}>
-                                        <ContextAwareToggle eventKey="3">Business Development Representative</ContextAwareToggle>
+                                        <ContextAwareToggle eventKey="3">Software Development Representative</ContextAwareToggle>
                                     </Card.Header>
                                     <Accordion.Collapse eventKey="3">
                                         <Card.Body>
                                             <div className={styles.carbodyAcrnd}>
-                                                <p> <span>Sales, team</span> </p>
+                                                <p> <span>IT, team</span> </p>
                                                 <p>Export genius is growing and therefore seeking a talented Business Development Representative to join our exceptional team.</p>
                                                 <p> <a href="#fillpost">Fill post <img src="fillarow.png" alt="fill post" /> </a> </p>
                                             </div>
@@ -143,12 +143,12 @@ function CurrentOpening() {
                                 </Card>
                                 <Card className={styles.acrndCardcrr}>
                                     <Card.Header className={styles.careheaderAcrnd}>
-                                        <ContextAwareToggle eventKey="5">Business Development Representative</ContextAwareToggle>
+                                        <ContextAwareToggle eventKey="5">Software Development Representative</ContextAwareToggle>
                                     </Card.Header>
                                     <Accordion.Collapse eventKey="5">
                                         <Card.Body>
                                             <div className={styles.carbodyAcrnd}>
-                                                <p> <span>Sales, team</span> </p>
+                                                <p> <span>IT, team</span> </p>
                                                 <p>Export genius is growing and therefore seeking a talented Business Development Representative to join our exceptional team.</p>
                                                 <p> <a href="#fillpost">Fill post <img src="fillarow.png" alt="fill post" /> </a> </p>
                                             </div>
