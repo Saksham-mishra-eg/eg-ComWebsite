@@ -553,7 +553,7 @@
         "price_per_year_in_USD":250.0
     },
     {
-        "country_name":"Cote d Ivoire",
+        "country_name":"Ivory Coast",
         "data_type":"Suez Canal BL",
         "direction":"Export",
         "eg_download_point":1,
@@ -1057,7 +1057,7 @@
         "price_per_year_in_USD":250.0
     },
     {
-        "country_name":"Cote d Ivoire",
+        "country_name":"Ivory Coast",
         "data_type":"Suez Canal BL",
         "direction":"Import",
         "eg_download_point":1,
@@ -2555,7 +2555,7 @@
         "price_per_year_in_USD":500.0
     },
     {
-        "country_name":"Cote d Ivoire",
+        "country_name":"Ivory Coast",
         "data_type":"Detailed",
         "direction":"Export",
         "eg_download_point":10,
@@ -3829,7 +3829,7 @@
         "price_per_year_in_USD":500.0
     },
     {
-        "country_name":"Cote d Ivoire",
+        "country_name":"Ivory Coast",
         "data_type":"Detailed",
         "direction":"Import",
         "eg_download_point":10,
@@ -6944,7 +6944,7 @@
         "price_per_year_in_USD":500.0
     },
     {
-        "country_name":"Cote d Ivoire",
+        "country_name":"Ivory Coast",
         "data_type":"Cargo",
         "direction":"Import",
         "eg_download_point":50,
@@ -9870,14 +9870,14 @@
         "price_per_year_in_USD":250.0
     },
     {
-        "country_name":"Cote d Ivoire",
+        "country_name":"Ivory Coast",
         "data_type":"Transit",
         "direction":"Export",
         "eg_download_point":10,
         "price_per_year_in_USD":250.0
     },
     {
-        "country_name":"Cote d Ivoire",
+        "country_name":"Ivory Coast",
         "data_type":"Transit",
         "direction":"Import",
         "eg_download_point":10,
@@ -10262,7 +10262,7 @@
         "price_per_year_in_USD":500.0
     },
     {
-        "country_name":"Cote d Ivoire",
+        "country_name":"Ivory Coast",
         "data_type":"Cargo",
         "direction":"Export",
         "eg_download_point":50,

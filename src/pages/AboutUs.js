@@ -24,8 +24,8 @@ const DataFlow = () => {
       <AboutFeatures />
       <FocusOn />
       <Becomebetter />
-      <br /><br /><br /><br /><br />
-      <OurJourney />
+      {/* <br /><br /><br /><br /><br /> */}
+      {/* <OurJourney /> */}
       <FounderDirecter />
       <GetGlobalTrade />
       {/* <HorizontalTimelines /> */}

@@ -5,8 +5,7 @@ import { Button, Col, Form, Row } from "react-bootstrap";
 import Accordion from 'react-bootstrap/Accordion';
 import { useAccordionButton } from 'react-bootstrap/AccordionButton';
 import Card from 'react-bootstrap/Card';
-
-
+import { useState, useMemo } from "react";
 
 function ContextAwareToggle({ children, eventKey, callback }) {
     // const { activeEventKey } = useContext(AccordionContext);
@@ -29,8 +28,55 @@ function ContextAwareToggle({ children, eventKey, callback }) {
     );
 }
 
-
 function CurrentOpening() {
+
+    const [selectedJobTitle, setSelectedJobTitle] = useState("Business Development Representative");
+
+    const handleJobSelection = (title) => {
+        setSelectedJobTitle(title);
+    };
+
+    const [show, setShow] = useState("All")
+
+    const handleOption = (event) => {
+        setShow(event.target.value);
+    };
+
+    const cardsData = [
+        {
+            id: 0,
+            department: "Sales",
+            title: "Business Development Representative",
+            description: "Export genius is growing and therefore seeking a talented Business Development Representative to join our exceptional team.",
+        },
+        {
+            id: 1,
+            department: "IT",
+            title: "Software Development Representative",
+            description: "Export genius is growing and therefore seeking a talented Software Development Representative to join our exceptional team.",
+        },
+        {
+            id: 2,
+            department: "Marketing",
+            title: "Marketing Representative",
+            description: "Export genius is growing and therefore seeking a talented Marketing Representative to join our exceptional team.",
+        },
+        {
+            id: 3,
+            department: "Sales",
+            title: "Senior Sales Representative",
+            description: "Export genius is growing and therefore seeking a talented Senior Sales Representative to join our exceptional team.",
+        },
+    ];
+
+    const filteredCards = useMemo(() => {
+        return show === "All" ? cardsData : cardsData.filter(card => card.department === show);
+    }, [show, cardsData]);
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        // Process form data
+    };
 
     return (
         <div className={styles.CurrentOpeningBg}>
@@ -46,21 +92,25 @@ function CurrentOpening() {
                     <Col md={12}>
                         <Form noValidate className={styles.fonrSelectEg} >
                             <Row className="mb-3">
-                                <Form.Group as={Col} md="6" sm="6" controlId="validationCustom01">
+                                {/* <Form.Group as={Col} md="6" sm="6" controlId="validationCustom01">
                                     <Form.Select className={styles.fonrSelectEgOption} aria-label="Default select example">
                                         <option>All Offices</option>
                                         <option>Delhi</option>
                                         <option>Gurgaon</option>
                                         <option>Noida</option>
                                     </Form.Select>
-                                </Form.Group>
+                                </Form.Group> */}
 
                                 <Form.Group as={Col} md="6" sm="6" controlId="validationCustom01">
-                                    <Form.Select className={styles.fonrSelectEgOption} aria-label="Default select example">
-                                        <option>All Departments...</option>
-                                        <option>IT</option>
-                                        <option>Marketing</option>
-                                        <option>Sales</option>
+                                    <Form.Select
+                                        className={styles.fonrSelectEgOption}
+                                        aria-label="Select department"
+                                        onChange={handleOption}
+                                    >
+                                        <option value="All">All Departments...</option>
+                                        <option value="IT">IT</option>
+                                        <option value="Marketing">Marketing</option>
+                                        <option value="Sales">Sales</option>
                                     </Form.Select>
                                 </Form.Group>
                             </Row>
@@ -71,90 +121,28 @@ function CurrentOpening() {
                     <Col md={6}>
                         <div className={styles.acordionFormCrer}>
                             <Accordion defaultActiveKey="0">
-                                <Card className={styles.acrndCardcrr}>
-                                    <Card.Header className={styles.careheaderAcrnd}>
-                                        <ContextAwareToggle eventKey="0">Business Development Representative</ContextAwareToggle>
-                                    </Card.Header>
-                                    <Accordion.Collapse eventKey="0">
-                                        <Card.Body>
-                                            <div className={styles.carbodyAcrnd}>
-                                                <p> <span>Sales, team</span> </p>
-                                                <p>Export genius is growing and therefore seeking a talented Business Development Representative to join our exceptional team.</p>
-                                                <p> <a href="#fillpost">Fill post <img src="fillarow.png" alt="fill post" /> </a> </p>
-                                            </div>
-                                        </Card.Body>
-                                    </Accordion.Collapse>
-                                </Card>
-                                <Card className={styles.acrndCardcrr}>
-                                    <Card.Header className={styles.careheaderAcrnd}>
-                                        <ContextAwareToggle eventKey="1">Software Development Representative</ContextAwareToggle>
-                                    </Card.Header>
-                                    <Accordion.Collapse eventKey="1">
-                                        <Card.Body>
-                                            <div className={styles.carbodyAcrnd}>
-                                                <p> <span>IT, team</span> </p>
-                                                <p>Export genius is growing and therefore seeking a talented Business Development Representative to join our exceptional team.</p>
-                                                <p> <a href="#fillpost">Fill post <img src="fillarow.png" alt="fill post" /> </a> </p>
-                                            </div>
-                                        </Card.Body>
-                                    </Accordion.Collapse>
-                                </Card>
-                                <Card className={styles.acrndCardcrr}>
-                                    <Card.Header className={styles.careheaderAcrnd}>
-                                        <ContextAwareToggle eventKey="2">Business Development Representative</ContextAwareToggle>
-                                    </Card.Header>
-                                    <Accordion.Collapse eventKey="2">
-                                        <Card.Body>
-                                            <div className={styles.carbodyAcrnd}>
-                                                <p> <span>Sales, team</span> </p>
-                                                <p>Export genius is growing and therefore seeking a talented Business Development Representative to join our exceptional team.</p>
-                                                <p> <a href="#fillpost">Fill post <img src="fillarow.png" alt="fill post" /> </a> </p>
-                                            </div>
-                                        </Card.Body>
-                                    </Accordion.Collapse>
-                                </Card>
-                                <Card className={styles.acrndCardcrr}>
-                                    <Card.Header className={styles.careheaderAcrnd}>
-                                        <ContextAwareToggle eventKey="3">Software Development Representative</ContextAwareToggle>
-                                    </Card.Header>
-                                    <Accordion.Collapse eventKey="3">
-                                        <Card.Body>
-                                            <div className={styles.carbodyAcrnd}>
-                                                <p> <span>IT, team</span> </p>
-                                                <p>Export genius is growing and therefore seeking a talented Business Development Representative to join our exceptional team.</p>
-                                                <p> <a href="#fillpost">Fill post <img src="fillarow.png" alt="fill post" /> </a> </p>
-                                            </div>
-                                        </Card.Body>
-                                    </Accordion.Collapse>
-                                </Card>
-                                <Card className={styles.acrndCardcrr}>
-                                    <Card.Header className={styles.careheaderAcrnd}>
-                                        <ContextAwareToggle eventKey="4">Business Development Representative</ContextAwareToggle>
-                                    </Card.Header>
-                                    <Accordion.Collapse eventKey="4">
-                                        <Card.Body>
-                                            <div className={styles.carbodyAcrnd}>
-                                                <p> <span>Sales, team</span> </p>
-                                                <p>Export genius is growing and therefore seeking a talented Business Development Representative to join our exceptional team.</p>
-                                                <p> <a href="#fillpost">Fill post <img src="fillarow.png" alt="fill post" /> </a> </p>
-                                            </div>
-                                        </Card.Body>
-                                    </Accordion.Collapse>
-                                </Card>
-                                <Card className={styles.acrndCardcrr}>
-                                    <Card.Header className={styles.careheaderAcrnd}>
-                                        <ContextAwareToggle eventKey="5">Software Development Representative</ContextAwareToggle>
-                                    </Card.Header>
-                                    <Accordion.Collapse eventKey="5">
-                                        <Card.Body>
-                                            <div className={styles.carbodyAcrnd}>
-                                                <p> <span>IT, team</span> </p>
-                                                <p>Export genius is growing and therefore seeking a talented Business Development Representative to join our exceptional team.</p>
-                                                <p> <a href="#fillpost">Fill post <img src="fillarow.png" alt="fill post" /> </a> </p>
-                                            </div>
-                                        </Card.Body>
-                                    </Accordion.Collapse>
-                                </Card>
+                                {filteredCards.map(card => (
+                                    <Card key={card.id} className={styles.acrndCardcrr}>
+                                        <Card.Header className={styles.careheaderAcrnd}>
+                                            <ContextAwareToggle eventKey={String(card.id)}>
+                                                {card.title}
+                                            </ContextAwareToggle>
+                                        </Card.Header>
+                                        <Accordion.Collapse eventKey={String(card.id)}>
+                                            <Card.Body>
+                                                <div className={styles.carbodyAcrnd}>
+                                                    <p> <span>{card.department}, team</span> </p>
+                                                    <p>{card.description}</p>
+                                                    <p>
+                                                        <a href="#fillpost" onClick={() => handleJobSelection(card.title)}>
+                                                            Fill post <img src="fillarow.png" alt="fill post" />
+                                                        </a>
+                                                    </p>
+                                                </div>
+                                            </Card.Body>
+                                        </Accordion.Collapse>
+                                    </Card>
+                                ))}
                             </Accordion>
                         </div>
                     </Col>
@@ -164,8 +152,8 @@ function CurrentOpening() {
                                 <h3>Apply for this position</h3>
                             </div>
                             <div className={styles.aformareasent}>
-                                <h4>Business Development Representative</h4>
-                                <Form>
+                                <h4>{selectedJobTitle}</h4>
+                                <Form onSubmit={handleSubmit}>
                                     <Form.Group className="mb-3" controlId="formGroupFname">
                                         <Form.Label className={styles.formLaelCar}>Full Name</Form.Label>
                                         <Form.Control className={styles.formContrCaresd} type="name" />
