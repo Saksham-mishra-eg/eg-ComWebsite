@@ -100,7 +100,7 @@ function CurrentOpening() {
                                         <option>Noida</option>
                                     </Form.Select>
                                 </Form.Group> */}
-
+                                <Col md={3} sm={3}></Col>
                                 <Form.Group as={Col} md="6" sm="6" controlId="validationCustom01">
                                     <Form.Select
                                         className={styles.fonrSelectEgOption}
@@ -113,6 +113,7 @@ function CurrentOpening() {
                                         <option value="Sales">Sales</option>
                                     </Form.Select>
                                 </Form.Group>
+                                <Col md={3} sm={3}></Col>
                             </Row>
                         </Form>
                     </Col>

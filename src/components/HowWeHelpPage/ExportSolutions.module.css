@@ -57,6 +57,16 @@
     border-color: #CACACA;
     border-radius: 100px;
     padding: 10px 25px;
+    width: 300px;
+    margin-left: 15px;
+}
+
+.formFlext {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 0;
+    gap: 1rem;
 }
 
 .captImg {
@@ -103,5 +113,12 @@
     }
     .TrlBtn{
         width: 100%;
+    }
+    .formFlext {
+        flex-direction: column;
+    }
+    .frokDemo{
+        width: 100%;
+        margin-left: 0;
     }
 }

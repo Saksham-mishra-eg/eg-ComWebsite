@@ -5,7 +5,7 @@ import { Col, Row, Form, Modal } from "react-bootstrap";
 import React, { useContext } from 'react';
 import { PricingContext } from './PricingContext';
 import { useState } from 'react';
-import "./modal.css"
+import "./modal.css";
 
 function PricingList() {
 

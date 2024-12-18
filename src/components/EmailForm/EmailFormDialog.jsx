@@ -25,10 +25,10 @@ const EmailFormDialog = ({ isOpen, setIsOpen, initialEmail, center }) => {
         defaultValues: {
             firstName: "",
             lastName: "",
-            countryCode: "1",
+            conpanyName: "",
+            countryCode: "",
             contactNumber: "",
             workEmail: initialEmail || '',
-            companyName: "",
             message: "",
             url: typeof window !== 'undefined' ? window.location?.href : "https://dummyurl.com",
         }
@@ -40,7 +40,8 @@ const EmailFormDialog = ({ isOpen, setIsOpen, initialEmail, center }) => {
             ...data,
             firstName: data.firstName || "Home Page",
             lastName: data.lastName || "Query",
-            countryCode: data.countryCode,
+            companyName: data.companyName,
+            countryCode: data.companyName,
             contactNumber: data.contactNumber,
             workEmail: data.workEmail || initialEmail,
             message: data.message || "Market Intelligence Inquiry Home Page",

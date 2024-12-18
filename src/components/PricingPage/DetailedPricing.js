@@ -1,14 +1,27 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./DetailedPricing.module.css";
-import Container from 'react-bootstrap/Container';
-import { Col, Row } from "react-bootstrap";
+import { Col, Container, Row, Modal } from "react-bootstrap";
 import Table from 'react-bootstrap/Table';
 import React, { useContext } from 'react';
 import { PricingContext } from './PricingContext';
+import { useState } from 'react';
+import "./modal.css";
 
 function DetailedPricing() {
-    const { isUSD, isMonthly } = useContext(PricingContext);
 
+    const [showStarter, setShowStarter] = useState(false);
+    const handleCloseStarter = () => setShowStarter(false);
+    const handleShowStarter = () => setShowStarter(true);
+
+    const [showEssential, setShowEssential] = useState(false);
+    const handleCloseEssential = () => setShowEssential(false);
+    const handleShowEssential = () => setShowEssential(true);
+
+    const [showExpert, setShowExpert] = useState(false);
+    const handleCloseExpert = () => setShowExpert(false);
+    const handleShowExpert = () => setShowExpert(true);
+
+    const { isUSD, isMonthly } = useContext(PricingContext);
 
     const starter = {
         USD: { monthly: 1400, yearly: 250 },
@@ -63,7 +76,7 @@ function DetailedPricing() {
                                 </tr>
                             </thead>
                             <tbody className={styles.TbodyEnstial}>
-                            <tr>
+                                <tr>
                                     <th>Price</th>
                                     <th>{isUSD ? `$${isMonthly ? starter.USD.monthly : starter.USD.yearly}` : `₹${isMonthly ? starter.INR.monthly : starter.INR.yearly}`}</th>
                                     <th>{isUSD ? `$${isMonthly ? essential.USD.monthly : essential.USD.yearly}` : `₹${isMonthly ? essential.INR.monthly : essential.INR.yearly}`}</th>
@@ -71,9 +84,9 @@ function DetailedPricing() {
                                 </tr>
                                 <tr>
                                     <th>Countries Covered</th>
-                                    <td>India, Mexico (Sea Mode), Argentina, Chile, Colombia, Ecuador, Paraguay, Peru, Uruguay and Venezuela... <a href="viewall">View All</a> </td>
-                                    <td>Starter Plan All Countries + Bangladesh, Bolivia, Botswana, Cote d Ivoire, Ethiopia... <a href="viewall">View All</a></td>
-                                    <td>Starter & Essential Plan All Countries + Angola, Cameroon, Chad, DR Congo, Ghana, <a href="viewall">View All</a> </td>
+                                    <td>India, Mexico (Sea Mode), Argentina, Chile, Colombia, Ecuador, Paraguay, Peru, Uruguay and ... <a className={styles.viewLLs} onClick={handleShowStarter}>View All</a> </td>
+                                    <td>Starter Plan All Countries + Bangladesh, Bolivia, Botswana, Cote d Ivoire, Ethiopia... <a className={styles.viewLLs} onClick={handleShowEssential}>View All</a></td>
+                                    <td>Starter & Essential Plan All Countries + Angola, Cameroon, Chad, DR Congo, Ghana, <a className={styles.viewLLs} onClick={handleShowExpert}>View All</a> </td>
                                 </tr>
                                 <tr>
                                     <th>Advanced Searches</th>
@@ -164,6 +177,106 @@ function DetailedPricing() {
                     </Col>
                 </Row>
             </Container>
+
+            <Modal show={showStarter} onHide={handleCloseStarter}>
+                <Modal.Header closeButton className={styles.modalHeader}>
+                    <Modal.Title>Starter</Modal.Title>
+                </Modal.Header>
+                <Modal.Body className={styles.modalBodytxt}>
+                    <ul className={styles.liWithfull}>
+                        <li>Venezuela Countries Detailed Customs Data</li>
+                    </ul>
+                    <ul className={styles.liWithfull}>
+                        <li> USA Country Bill of Lading Data</li>
+                    </ul>
+                    <ul className={styles.liWithfull}>
+                        <li> 109 Countries Suez Canal BL Data</li>
+                    </ul>
+                    <ul className={styles.liWithfull}>
+                        <li>28 European Countries Stastical Data</li>
+                    </ul>
+                </Modal.Body>
+            </Modal>
+
+            <Modal show={showEssential} onHide={handleCloseEssential}>
+                <Modal.Header closeButton className={styles.modalHeader}>
+                    <Modal.Title>Essential</Modal.Title>
+                </Modal.Header>
+                <Modal.Body className={styles.modalBodytxt}>
+                    <ul>
+                        <li>Guyana</li>
+                        <li>Indonesia</li>
+                        <li>Kenya</li>
+                        <li>Lesotho</li>
+                        <li>Mexico (All Modes)</li>
+                        <li>Namibia</li>
+                        <li>Pakistan</li>
+                        <li>Philippines</li>
+                        <li>Sri Lanka</li>
+                        <li>Uganda</li>
+                        <li>Russia</li>
+                        <li>Vietnam</li>
+                    </ul>
+                </Modal.Body>
+            </Modal>
+
+            <Modal show={showExpert} onHide={handleCloseExpert}>
+                <Modal.Header closeButton className={styles.modalHeader}>
+                    <Modal.Title>Expert</Modal.Title>
+                </Modal.Header>
+                <Modal.Body className={styles.modalBodytxt}>
+                    <ul>
+                        <li> <strong>Detailed Custom Data</strong> </li>
+                    </ul>
+                    <ul>
+                        <li>India(Weekly)</li>
+                        <li>Kazakhstan</li>
+                        <li>Liberia</li>
+                        <li>Malawi</li>
+                        <li>Niger</li>
+                        <li>Nigeria</li>
+                        <li>Ukraine</li>
+                        <li>Senegal</li>
+                        <li>Singapore</li>
+                        <li>Tanzania</li>
+                        <li>Uzbekistan</li>
+                        <li>Zambia</li>
+                        <li>Zimbabwe</li>
+                        <li>Costa Rica</li>
+                        <li>Kosovo</li>
+                        <li>Sao Tome and Príncipe</li>
+                        <li>Sierra Leone</li>
+                        <li>Moldova</li>
+                    </ul>
+                    <ul>
+                        <li> <strong>Statistical Data</strong> </li>
+                    </ul>
+                    <ul>
+                        <li>Mauritius</li>
+                        <li>Canada</li>
+                        <li>Hong Kong</li>
+                        <li>Iran</li>
+                        <li>Qatar</li>
+                        <li>New Zealand</li>
+                        <li>Japan</li>
+                        <li>South Africa</li>
+                        <li>Guatemala</li>
+                        <li>Taiwan</li>
+                        <li>Thailand</li>
+                        <li>Brazil </li>
+                        <li>China</li>
+                    </ul>
+                    <ul className={styles.liWithfull}>
+                        <li> <strong>Brazil and USA Bill of Lading Data</strong> </li>
+                    </ul>
+                    <ul className={styles.liWithfull}>
+                        <li><strong>185 Countries Mirror Data</strong></li>
+                    </ul>
+                    <ul className={styles.liWithfull}>
+                        <li><strong>192 Countries Transit Data</strong> </li>
+                    </ul>
+                </Modal.Body>
+            </Modal>
         </div>
     );
 }

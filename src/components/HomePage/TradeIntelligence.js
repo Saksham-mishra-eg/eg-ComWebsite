@@ -8,10 +8,10 @@ import BoxReveal from "../HowWeHelpPage/box-reveal";
 import EmailFormDialog from "../EmailForm/EmailFormDialog";
 
 function TradeIntelligence() {
+    
     const [email, setEmail] = useState("")
     const [isOpen, setIsOpen] = React.useState(false);
 
-    // @ts-ignore
     const handleSubmit = async (e) => {
         e.preventDefault()
         setIsOpen(true)
@@ -44,7 +44,6 @@ function TradeIntelligence() {
                             </BoxReveal>
 
                             <BoxReveal boxColor={"#5046e6"} duration={0.5}>
-
                                 <div className={styles.tradeText}>
                                     <Row>
                                         <Col>

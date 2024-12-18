@@ -28,9 +28,9 @@ function CustomerSupport() {
                                     <Nav.Item className={styles.navItemClsmdn}>
                                         <Nav.Link eventKey="first"> <img className={styles.supporIncsImg} src="cus-support.png" alt="support" /> Support Center </Nav.Link>
                                     </Nav.Item>
-                                    <Nav.Item className={styles.navItemClsmdn}>
+                                    {/* <Nav.Item className={styles.navItemClsmdn}>
                                         <Nav.Link eventKey="second"> <img className={styles.supporIncsImg} src="ticket.png" alt="ticket" /> Ticket Mangement</Nav.Link>
-                                    </Nav.Item>
+                                    </Nav.Item> */}
                                     <Nav.Item className={styles.navItemClsmdn}>
                                         <Nav.Link eventKey="third"> <img className={styles.supporIncsImg} src="schedule.png" alt="demo" /> Schedule demo</Nav.Link>
                                     </Nav.Item>
@@ -76,7 +76,7 @@ function CustomerSupport() {
                                             </div>
                                         </div>
                                     </Tab.Pane>
-                                    <Tab.Pane eventKey="second">
+                                    {/* <Tab.Pane eventKey="second">
                                         <div className={styles.tabPaneCenter}>
                                             <h3>Ticket Mangement Center</h3>
                                             <div className={styles.tabpNecenflex}>
@@ -86,10 +86,9 @@ function CustomerSupport() {
                                                         <span>Create New Ticket</span>
                                                     </a>
                                                 </div>
-
                                             </div>
                                         </div>
-                                    </Tab.Pane>
+                                    </Tab.Pane> */}
                                     <Tab.Pane eventKey="third">
                                         <div className={styles.tabPaneCenter}>
                                             <h3>Schedule Demo Center</h3>

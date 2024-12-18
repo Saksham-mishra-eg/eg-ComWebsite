@@ -54,6 +54,26 @@ function DataTypesManage() {
         window.location.href = "data";
     }
 
+    const handleDownloadDetailed = () =>{
+        window.location.href = "sample/customs-data-samples.xlsx";
+    }
+
+    const handleDownloadStatistical = () =>{
+        window.location.href = "sample/statistical-data-samples.xlsx";
+    }
+
+    const handleDownloadMirror = () =>{
+        window.location.href = "sample/mirror-data-samples.xlsx";
+    }
+
+    const handleDownloadBillofldng = () =>{
+        window.location.href = "sample/bill-of-lading-data-samples.xlsx";
+    }
+
+    const handleDownloadSuezcanal = () =>{
+        window.location.href = "sample/suez-canal-dill-of-lading-data-samples.xlsx";
+    }
+
     return (
         <div className={styles.DataTypeManagerBg}>
             <Container>
@@ -61,9 +81,7 @@ function DataTypesManage() {
                     <Col md={12}>
                         <div className={styles.pltrtradeText}>
                             <h2>Data Type</h2>
-                            <p>
-                                Select data type, and access essential data to get a bigger picture of the international market.
-                            </p>
+                            <p> Select data type, and access essential data to get a bigger picture of the international market.</p>
                         </div>
                     </Col>
                 </Row>
@@ -75,10 +93,10 @@ function DataTypesManage() {
                                     <Tabs sx={{ "--Tabs-spacing": "37px", "--Tab-indicatorThickness": "3px", "--Tab-indicatorSize": "120px", "--Tab-indicatorRadius": "-15px" }} value={value} onChange={handleChange} aria-label="basic tabs example">
                                         <Tab className={styles.tabofMatrial} label="Detailed Data" {...a11yProps(0)} />
                                         <Tab className={styles.tabofMatrial} label="Statistical Data" {...a11yProps(1)} />
-                                        <Tab className={styles.tabofMatrial} label="Transit Data" {...a11yProps(2)} />
+                                        <Tab className={styles.tabofMatrial} label="Mirror Data" {...a11yProps(2)} />
                                         <Tab className={styles.tabofMatrial} label="Bill of Lading Data" {...a11yProps(3)} />
                                         <Tab className={styles.tabofMatrial} label="Suez Canal BL Data" {...a11yProps(4)} />
-                                        <Tab className={styles.tabofMatrial} label="Mirror Data" {...a11yProps(5)} />
+                                        <Tab className={styles.tabofMatrial} label="Transit Data" {...a11yProps(5)} />
                                         <Tab className={styles.tabofMatrial} label="Cargo BL Data" {...a11yProps(6)} />
                                     </Tabs>
                                 </Box>
@@ -97,7 +115,7 @@ function DataTypesManage() {
                                                     <img src="image100.png" alt="comprehensive" />
                                                 </div>
                                                 <div className={styles.dataAvailSamle}>
-                                                    <Button className={styles.DnownSample} >Download Sample</Button>
+                                                    <Button className={styles.DnownSample} onClick={handleDownloadDetailed} >Download Sample</Button>
                                                     <Button className={styles.DnownSample} onClick={handleChangeData} >Data Availability</Button>{' '}
                                                 </div>
                                             </Col>
@@ -119,14 +137,14 @@ function DataTypesManage() {
                                                     <img src="comprehensive.png" alt="comprehensive" />
                                                 </div>
                                                 <div className={styles.dataAvailSamle}>
-                                                    <Button className={styles.DnownSample} >Download Sample</Button>
+                                                    <Button className={styles.DnownSample} onClick={handleDownloadStatistical} >Download Sample</Button>
                                                     <Button className={styles.DnownSample} >Data Availability</Button>
                                                 </div>
                                             </Col>
                                         </Row>
                                     </div>
                                 </CustomTabPanel>
-                                <CustomTabPanel value={value} index={2}>
+                                <CustomTabPanel value={value} index={5}>
                                     <div className={styles.comprHendTbs}>
                                         <Row>
                                             <Col md={3}>
@@ -141,7 +159,7 @@ function DataTypesManage() {
                                                     <img src="image100.png" alt="comprehensive" />
                                                 </div>
                                                 <div className={styles.dataAvailSamle}>
-                                                    <Button className={styles.DnownSample} >Download Sample</Button>
+                                                    {/* <Button className={styles.DnownSample} >Download Sample</Button> */}
                                                     <Button className={styles.DnownSample} >Data Availability</Button>
                                                 </div>
                                             </Col>
@@ -164,7 +182,7 @@ function DataTypesManage() {
                                                     <img src="comprehensive.png" alt="comprehensive" />
                                                 </div>
                                                 <div className={styles.dataAvailSamle}>
-                                                    <Button className={styles.DnownSample} >Download Sample</Button>
+                                                    <Button className={styles.DnownSample} onClick={handleDownloadBillofldng} >Download Sample</Button>
                                                     <Button className={styles.DnownSample} onClick={handleChangeData} >Data Availability</Button>{' '}
                                                 </div>
                                             </Col>
@@ -186,14 +204,14 @@ function DataTypesManage() {
                                                     <img src="comprehensive.png" alt="comprehensive" />
                                                 </div>
                                                 <div className={styles.dataAvailSamle}>
-                                                    <Button className={styles.DnownSample} >Download Sample</Button>
+                                                    <Button className={styles.DnownSample}  onClick={handleDownloadSuezcanal} >Download Sample</Button>
                                                     <Button className={styles.DnownSample} onClick={handleChangeData} >Data Availability</Button>{' '}
                                                 </div>
                                             </Col>
                                         </Row>
                                     </div>
                                 </CustomTabPanel>
-                                <CustomTabPanel value={value} index={5}>
+                                <CustomTabPanel value={value} index={2}>
                                     <div className={styles.comprHendTbs}>
                                         <Row>
                                             <Col md={3}>
@@ -208,7 +226,7 @@ function DataTypesManage() {
                                                     <img src="comprehensive.png" alt="comprehensive" />
                                                 </div>
                                                 <div className={styles.dataAvailSamle}>
-                                                    <Button className={styles.DnownSample} >Download Sample</Button>
+                                                    <Button className={styles.DnownSample} onClick={handleDownloadMirror} >Download Sample</Button>
                                                     <Button className={styles.DnownSample} onClick={handleChangeData} >Data Availability</Button>{' '}
                                                 </div>
                                             </Col>
@@ -230,7 +248,7 @@ function DataTypesManage() {
                                                     <img src="comprehensive.png" alt="comprehensive" />
                                                 </div>
                                                 <div className={styles.dataAvailSamle}>
-                                                    <Button className={styles.DnownSample} >Download Sample</Button>
+                                                    {/* <Button className={styles.DnownSample} >Download Sample</Button> */}
                                                     <Button className={styles.DnownSample} onClick={handleChangeData} >Data Availability</Button>{' '}
                                                 </div>
                                             </Col>

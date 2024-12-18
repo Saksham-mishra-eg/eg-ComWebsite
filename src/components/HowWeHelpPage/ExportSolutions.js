@@ -1,18 +1,26 @@
-"use client";
+
+import React, { useState } from "react"
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./ExportSolutions.module.css";
-import Container from 'react-bootstrap/Container';
-import { Col, Form, Row } from "react-bootstrap";
+import { Container, Button, Col, Form, Row } from "react-bootstrap";
 import { Player } from '@lottiefiles/react-lottie-player';
-
 import BoxReveal from "./box-reveal";
-// import { Button } from "@/components/ui/button";
+import EmailFormDialog from "../EmailForm/EmailFormDialog";
 
 function ExportSolutions() {
+
+     const [email, setEmail] = useState("")
+        const [isOpen, setIsOpen] = React.useState(false);
+    
+        const handleSubmit = async (e) => {
+            e.preventDefault()
+            setIsOpen(true)
+        }
 
     return (
         <div className={styles.ExportSolutionsBG}>
             <Container>
+            {email && isOpen && <EmailFormDialog isOpen={isOpen} setIsOpen={setIsOpen} initialEmail={email} center={false} />}
                 <Row>
                     <Col md={6}>
                         <div className="h-full w-full max-w-[32rem] items-center justify-center overflow-hidden">
@@ -36,26 +44,29 @@ function ExportSolutions() {
 
                             <BoxReveal boxColor={"#5046e6"} duration={0.5}>
 
-                                <div className={styles.tradeText}>
-
+                            <div className={styles.tradeText}>
                                     <Row>
-
-                                        <Col sm="7">
-                                            <Form.Control className={styles.frokDemo} column sm="2" type="text" placeholder="Enter Your Email" />
+                                        <Col>
+                                            <form onSubmit={handleSubmit} className={styles.formFlext}>
+                                                <Form.Control className={styles.frokDemo} value={email}
+                                                    onChange={(e) => setEmail(e.target.value)}
+                                                    required
+                                                    column sm="2" type="text" placeholder="Enter Your Email" />
+                                                <Button
+                                                    type="submit"
+                                                    className={styles.TrlBtn}
+                                                >
+                                                    Submit
+                                                </Button>
+                                                {/* <a href="#freetrails" className={styles.TrlBtn} > Free Trial</a> */}
+                                            </form>
                                         </Col>
-                                        <Col sm="4">
-                                            <div className={styles.devidt}>
-                                                <a href="#freetrails" className={styles.TrlBtn} > Free Trial</a>
-                                            </div>
-                                        </Col>
-
                                     </Row>
                                     <div className={styles.captImg}>
                                         {/* <img src="capterra.png" alt="capterra" />
                                          <img src="g2.png" alt="g2" /> */}
                                         <img src="iso.png" alt="iso" />
                                     </div>
-
                                 </div>
 
                             </BoxReveal>
