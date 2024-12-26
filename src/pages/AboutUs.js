@@ -1,7 +1,7 @@
 
 import styles from "./Pricing.module.css";
 import Header from "../components/HomePage/Header";
-
+import FloatingContactButton from "../components/EmailForm/FloatingContactButton";
 import Footer from "../components/HomePage/Footer";
 import FooterPrivacy from "../components/HomePage/FooterPrivacy";
 import Aboutus from "../components/AboutUS/Aboutus";
@@ -32,6 +32,7 @@ const DataFlow = () => {
 
       <Footer />
       <FooterPrivacy />
+      <FloatingContactButton />
     </div>
   );
 };

@@ -9,6 +9,7 @@ import AccessData from "../components/TradeApiPage/AccessData";
 import GlobalTradeStats from "../components/TradeApiPage/GlobalTradeStats";
 import HereToHelp from "../components/TradeApiPage/HereToHelp";
 import GetGlobalTrade from "../components/TradeApiPage/GetGlobalTrade";
+import FloatingButton from "../components/EmailForm/FloatingContactButton";
 
 const TradeApi = () => {
     return (
@@ -22,6 +23,7 @@ const TradeApi = () => {
             <GetGlobalTrade />
             <Footer />
             <FooterPrivacy />
+            <FloatingButton />
         </div>
     );
 }

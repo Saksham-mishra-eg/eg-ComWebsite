@@ -12,6 +12,11 @@
     padding: 20px 0;
 }
 
+.Cntctdmscn{
+    width: 100%;
+    display: block;
+}
+
 .CusomerSuproHead h2 {
     font-size: 40px;
     font-weight: 600;

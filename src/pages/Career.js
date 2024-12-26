@@ -10,6 +10,7 @@ import WeAreeg from "../components/Careers/WeAreeg";
 import CurrentOpening from "../components/Careers/CurrentOpening";
 // import Possitions from "../components/Careers/Possitions";
 import GetGlobalTrade from "../components/Careers/GetGlobalTrade";
+import FloatingButton from "../components/EmailForm/FloatingContactButton";
 
 
 const Career = () => {
@@ -26,6 +27,7 @@ const Career = () => {
 
       <Footer />
       <FooterPrivacy />
+      <FloatingButton />
     </div>
   );
 };

@@ -8,6 +8,7 @@ import TestiClientImg from "../components/Testimonials/TestiClientImg";
 import Clients from "../components/HomePage/Clients";
 import CommentTestimonial from "../components/Testimonials/CommentTestimonial";
 import GetGlobalTrade from "../components/Testimonials/GetGlobalTrade";
+import FloatingButton from "../components/EmailForm/FloatingContactButton";
 
 
 
@@ -21,6 +22,7 @@ const Testimonial = () => {
       <GetGlobalTrade />
       <Footer />
       <FooterPrivacy />
+      <FloatingButton />
     </div>
   );
 };

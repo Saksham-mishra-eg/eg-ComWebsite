@@ -9,6 +9,7 @@ import Datatypebg from "../components/PlatformPage/DatatypeBg";
 import DataTypesManage from "../components/PlatformPage/DataTypesManage";
 // import SearchList from "../components/PlatformPage/SearchList";
 import GetGlobalTrade from "../components/PlatformPage/GetGlobalTrade";
+import FloatingButton from "../components/EmailForm/FloatingContactButton";
 
 
 const Pricing = () => {
@@ -26,6 +27,7 @@ const Pricing = () => {
       <GetGlobalTrade />
       <Footer />
       <FooterPrivacy />
+      <FloatingButton />
     </div>
   );
 };

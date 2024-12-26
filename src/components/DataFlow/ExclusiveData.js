@@ -60,6 +60,9 @@ function ExclusiveData() {
                                 <li>
                                     <a href="#drcongo">DR Congo</a>
                                 </li>
+                                <li>
+                                    <a href="#drcongo"></a>
+                                </li>
                             </ul>
                             </Marquee>
                         </div>

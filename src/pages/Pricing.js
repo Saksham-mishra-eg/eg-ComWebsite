@@ -13,6 +13,7 @@ import Faqs from "../components/PricingPage/Faqs";
 // import Testimonials from "../components/PricingPage/Testimonials";
 import GetGlobalTrade from "../components/PricingPage/GetGlobalTrade";
 import { PricingProvider } from '../components/PricingPage/PricingContext';
+import FloatingButton from "../components/EmailForm/FloatingContactButton";
 
 const Pricing = () => {
   return (
@@ -31,6 +32,7 @@ const Pricing = () => {
       <Footer />
       <FooterPrivacy />
       </PricingProvider>
+      <FloatingButton />
     </div>
    
   );

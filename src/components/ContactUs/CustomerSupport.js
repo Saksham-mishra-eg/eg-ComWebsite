@@ -8,69 +8,6 @@ import React, { useEffect } from 'react';
 
 function CustomerSupport() {
 
-    const loadZohoScript = () => {
-        if (document.getElementById('zsiqscript')) {
-            console.log("Zoho script already loaded");
-            return;
-        }
-
-        const script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.id = 'zsiqscript';
-        script.defer = true;
-        script.src = 'https://salesiq.zoho.in/widget';
-
-        script.onload = () => {
-            console.log("Zoho script loaded");
-
-            const $zoho = window.$zoho || {};
-            $zoho.salesiq = $zoho.salesiq || {
-                widgetcode: '717628a61e699ae0e43918d0fc6157f2e80eef239a9017a9d4732e39ad0babd554f6510e158408eac7e891895a00696d',
-                values: {},
-                ready: function () { },
-            };
-
-            $zoho.salesiq.afterReady = function () {
-                console.log("Zoho SalesIQ fully initialized");
-            };
-        };
-
-        script.onerror = () => {
-            console.error("Zoho script failed to load");
-        };
-
-        document.getElementsByTagName('head')[0].appendChild(script);
-    };
-
-    const startLiveChat = () => {
-        console.log("Attempting to start live chat...");
-        if (window.$zoho && window.$zoho.salesiq && window.$zoho.salesiq.chat) {
-            console.log("Zoho Live Chat is ready");
-            window.$zoho.salesiq.chat.start();
-        } else {
-            console.error("Zoho Live Chat is not ready. Retrying...");
-        }
-    };
-
-
-
-    const retryLiveChatStart = (retries = 5) => {
-        const $zoho = window.$zoho || {};
-        if ($zoho.salesiq && $zoho.salesiq.afterReady) {
-            $zoho.salesiq.afterReady(() => {
-                console.log("Starting Zoho Live Chat from afterReady...");
-                startLiveChat();
-            });
-        } else if (retries > 0) {
-            console.warn(`Retrying Live Chat Start (${retries} attempts left)`);
-            setTimeout(() => retryLiveChatStart(retries - 1), 1000); // Retry every second
-        } else {
-            console.error("Failed to start Zoho Live Chat after multiple attempts.");
-        }
-    };
-
-
-
     return (
 
         <div className={styles.CustomerSupportBg}>
@@ -117,17 +54,13 @@ function CustomerSupport() {
                                                     </a>
                                                 </div>
                                                 <div className={styles.EmailImgeicn}>
-                                                    <a role="button" onClick={() => {
-                                                        console.log("Live Chat clicked");
-                                                        loadZohoScript();
-                                                        retryLiveChatStart();
-                                                    }}>
+                                                    <a role="button" onClick={() => (window)?.$zoho?.salesiq?.chat?.start()}>
                                                         <img src="live-chat.png" alt="Live Chat" />
                                                         <h5>Live Chat</h5>
                                                     </a>
                                                 </div>
                                                 <div className={styles.EmailImgeicn}>
-                                                    <a href="tell:+918003800357">
+                                                    <a href="tel:+918003800357">
                                                         <img src="phone-call.png" alt="email" />
                                                         <h5>+91 8003 8003 57</h5>
                                                     </a>
@@ -162,10 +95,17 @@ function CustomerSupport() {
                                             <div className={styles.tabpNecenflex}>
 
                                                 <div className={styles.EmailImgTiketn}>
-                                                    <a href="https://exportgenius.zohobookings.in/#/customer/exportgenius?Name=Jitendra+Kumar&amp;Email=jitendra.seo%40exportgenius.in&amp;Contact Number=%2b1234656875" target="_blank" className={styles.scheDemoTnt}>
-                                                        <img src="calendar-icon.png" alt="email" />
-                                                        <h5>Schedule Demo</h5>
-                                                    </a>
+                                                    <div className={styles.Cntctdmscn}>
+                                                        <iframe
+                                                            src="https://app.squarespacescheduling.com/schedule.php?owner=24269515"
+                                                            title="Schedule Appointment"
+                                                            width="100%"
+                                                            height="500"
+                                                            frameBorder="0"
+                                                            style={{ maxHeight: 'none', overflow: 'hidden', height: '360px' }}
+                                                        ></iframe>
+                                                        <script src="https://embed.acuityscheduling.com/js/embed.js" type="text/javascript"></script>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

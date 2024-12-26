@@ -34,7 +34,24 @@
     rel="stylesheet">
 
   <script id="zsiqscript" src="https://salesiq.zoho.in/widget" defer></script>
+  <script type="text/javascript"
+    id="zsiqchat">var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq || { widgetcode: "717628a61e699ae0e43918d0fc6157f2e80eef239a9017a9d4732e39ad0babd554f6510e158408eac7e891895a00696d", values: {}, ready: function () { } }; var d = document; s = d.createElement("script"); s.type = "text/javascript"; s.id = "zsiqscript"; s.defer = true; s.src = "https://salesiq.zoho.in/widget"; t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(s, t);</script>
+  <script>
+    $zoho.salesiq.ready = function (embedinfo) {
+      $zoho.salesiq.chat.logo("https://www.exportgenius.in/images/logo.png");
+      $zoho.salesiq.visitor.getGeoDetails();
+    }
 
+    $zoho.salesiq.afterReady = function (info) {
+      console.log("info.Country = " + info.Country);
+      if (info.Country == "INDIA" || info.Country == "CHINA" || info.Country == "PAKISTAN" || info.Country == "BANGLADESH" || info.Country == "NIGERIA" || info.Country == "GHANA" || info.Country == "IRAN" || info.Country == "UGANDA" || info.Country == "TANZANIA" || info.Country == "NEPAL" || info.Country == "KENYA") {
+        $zoho.salesiq.tracking.off();
+      }
+      else {
+        $zoho.salesiq.tracking.on();
+      }
+    }
+  </script>
 
 </head>
 

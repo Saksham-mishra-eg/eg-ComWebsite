@@ -8,6 +8,7 @@ import ContactIframe from "../components/ContactUs/ContactIframe";
 import CustomerSupport from "../components/ContactUs/CustomerSupport";
 import TrustedClient from "../components/ContactUs/TrustedClient";
 import GetGlobalTrade from "../components/ContactUs/GetGlobalTrade"
+import FloatingButton from "../components/EmailForm/FloatingContactButton";
 
 
 const ContactUs = () => {
@@ -20,6 +21,7 @@ const ContactUs = () => {
       <GetGlobalTrade />
       <Footer />
       <FooterPrivacy />
+      <FloatingButton />
     </div>
   );
 };

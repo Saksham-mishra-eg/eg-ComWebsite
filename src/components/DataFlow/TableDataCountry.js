@@ -10,16 +10,14 @@ import { IconField } from 'primereact/iconfield';
 import { InputIcon } from 'primereact/inputicon'
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-
 import "./flag.css"
-
 import { ProductService } from './CustomerService';
-
 
 function TableDataCountry() {
 
     const [products, setProducts] = useState([]);
     const [globalFilterValue, setGlobalFilterValue] = useState('');
+    const [globalFilter, setGlobalFilter] = useState("");
 
     const [data, setData] = useState([]);
 
@@ -37,7 +35,6 @@ function TableDataCountry() {
     const dataAvailabilityBodyTemplate = (rowData) => {
         return `${formatDate(rowData.data_from)} to ${formatDate(rowData.data_till)}`;
     };
-
 
     const paginatorLeft = <Button type="button" icon="pi pi-refresh" text />;
     const paginatorRight = <Button type="button" icon="pi pi-download" text />;
@@ -87,7 +84,6 @@ function TableDataCountry() {
         </div>
     );
 
-
     const header = renderHeader();
 
     return (
@@ -96,7 +92,19 @@ function TableDataCountry() {
                 <Row>
                     <Col>
                         <div className="card tblCard">
-                            <DataTable value={products} scrollable scrollHeight="400px" paginator rows={5} rowsPerPageOptions={[5, 10, 25, 50]} globalFilterFields={['continent', 'country', 'data_type', 'direction']} filters={filters} tableStyle={{ minWidth: '50rem' }}
+                            <div className="d-flex gap-2 align-items-center mb-3 py-3 ml-3">
+                                <h5>Search:</h5>
+                                <span className="p-input-icon-left">
+                                    <i className="pi pi-search" />
+                                    <InputText
+                                        className={styles.searchProductGlobl}
+                                        value={globalFilter}
+                                        onChange={(e) => setGlobalFilter(e.target.value)}
+                                        placeholder="Search..."
+                                    />
+                                </span>
+                            </div>
+                            <DataTable value={products} scrollable scrollHeight="400px" paginator rows={5} rowsPerPageOptions={[5, 10, 25, 50]} globalFilter={globalFilter} globalFilterFields={['continent', 'country', 'data_type', 'direction']} filters={filters} tableStyle={{ minWidth: '50rem' }}
                                 paginatorTemplate="RowsPerPageDropdown FirstPageLink PrevPageLink CurrentPageReport NextPageLink LastPageLink"
                                 currentPageReportTemplate="{first} to {last} of {totalRecords}" paginatorLeft={paginatorLeft} paginatorRight={paginatorRight}>
                                 <Column field="continent" header="Continent" sortable ></Column>
@@ -113,7 +121,6 @@ function TableDataCountry() {
                 </Row>
             </Container>
         </div>
-
     );
 }
 

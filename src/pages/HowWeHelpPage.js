@@ -12,6 +12,7 @@ import GlobalTradeStats from "../components/HowWeHelpPage/GlobalTradeStats";
 import WhatmakesDiff from "../components/HowWeHelpPage/WhatmakesDiff";
 import GetGlobalTrade from "../components/HowWeHelpPage/GetGlobalTrade";
 import SideImage from "../components/HowWeHelpPage/SlideImage"
+import FloatingButton from "../components/EmailForm/FloatingContactButton";
 
 
 
@@ -30,6 +31,7 @@ const DataFlow = () => {
 
       <Footer />
       <FooterPrivacy />
+      <FloatingButton />
     </div>
   );
 };

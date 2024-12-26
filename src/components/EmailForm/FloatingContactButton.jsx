@@ -13,7 +13,7 @@ const FloatingButton = () => {
 
     return (
         <>
-            <div className="fixed bottom-10 right-0 z-[49]">
+            <div className="fixed bottom-[45%] right-0 z-[49]">
                 <button
                     className="bg-[#3884C7] text-[20px] text-white p-3 rounded-l-md flex items-center"
                     onClick={() => setIsOpen(!isOpen)}

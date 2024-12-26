@@ -10,6 +10,7 @@ import BusinessNeeds from "../components/DataLicense/BusinessNeeds";
 import Clients from "../components/HomePage/Clients";
 import CountriCoverd from "../components/DataLicense/CountriCoverd";
 import GetGlobalTrade from "../components/DataLicense/GetGlobalTrade";
+import FloatingButton from "../components/EmailForm/FloatingContactButton";
 
 const DataLicense = () => {
   return (
@@ -23,6 +24,7 @@ const DataLicense = () => {
       <GetGlobalTrade />
       <Footer />
       <FooterPrivacy />
+      <FloatingButton />
     </div>
   );
 };

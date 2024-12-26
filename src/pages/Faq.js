@@ -8,6 +8,7 @@ import FaqHeader from "../components/Faqs/FaqHeader";
 import FaQuestions from "../components/Faqs/FaQuestions";
 import FaqPlanPricing from "../components/Faqs/FaqPlanPricing";
 import GetGlobalTrade from "../components/Faqs/GetGlobalTrade";
+import FloatingButton from "../components/EmailForm/FloatingContactButton";
 
 
 const DataFlow = () => {
@@ -21,6 +22,7 @@ const DataFlow = () => {
 
       <Footer />
       <FooterPrivacy />
+      <FloatingButton />
     </div>
   );
 };

@@ -20,7 +20,7 @@ const formSchema = z.object({
 })
 
 function ContactIframe() {
-     const navigate = useNavigate();
+    const navigate = useNavigate();
     const [submitting, setSubmitting] = useState(false)
 
     const {

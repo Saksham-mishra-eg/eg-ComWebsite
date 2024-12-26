@@ -9,6 +9,7 @@ import DiscoverGlobaldata from "../components/DataFlow/DiscoverGlobaldata";
 import ExclusiveData from "../components/DataFlow/ExclusiveData";
 import GlobalTradeStats from "../components/DataFlow/GlobalTradeStats";
 import TableDataCountry from "../components/DataFlow/TableDataCountry";
+import FloatingButton from "../components/EmailForm/FloatingContactButton";
 
 const DataFlow = () => {
   return (
@@ -22,6 +23,7 @@ const DataFlow = () => {
     
       <Footer />
       <FooterPrivacy />
+      <FloatingButton />
     </div>
   );
 };
