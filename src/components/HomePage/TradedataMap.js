@@ -55,19 +55,19 @@ function TradedataMap() {
                                             direction="horizontal"
                                             gap={5}
                                         >
-                                            <Nav.Item>
+                                            <Nav.Item className={styles.navClassWidth}>
                                                 <Nav.Link className={styles.tabsCntnt} eventKey="Asia">Asia</Nav.Link>
                                             </Nav.Item>
-                                            <Nav.Item>
+                                            <Nav.Item className={styles.navClassWidth}>
                                                 <Nav.Link className={styles.tabsCntnt} eventKey="Africa">Africa</Nav.Link>
                                             </Nav.Item>
-                                            <Nav.Item>
+                                            <Nav.Item className={styles.navClassWidth}>
                                                 <Nav.Link className={styles.tabsCntnt} eventKey="America">America</Nav.Link>
                                             </Nav.Item>
-                                            <Nav.Item>
+                                            <Nav.Item className={styles.navClassWidth}>
                                                 <Nav.Link className={styles.tabsCntnt} eventKey="Europe">Europe</Nav.Link>
                                             </Nav.Item>
-                                            <Nav.Item>
+                                            <Nav.Item className={styles.navClassWidth}>
                                                 <Nav.Link className={styles.tabsCntnt} eventKey="Oceania">Oceania</Nav.Link>
                                             </Nav.Item>
                                         </Nav>

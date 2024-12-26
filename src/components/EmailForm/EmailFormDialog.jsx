@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import { Modal, Button } from 'rsuite'; // Keep only relevant imports from rsuite
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 import { FaSync } from "react-icons/fa";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 
@@ -97,31 +97,29 @@ const EmailFormDialog = ({ isOpen, setIsOpen, initialEmail, center }) => {
 
                 <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-2.5 mt-4">
                     <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
-                    <fieldset className="flex flex-col gap-1">
-                        <label>First Name</label>
-                        <input
-                            type="text"
-                            {...register("firstName", { required: "First name is required" })}
-                            className={`border-gray-200 rounded-lg border px-4 py-2.5 transition-all focus:border-orange-500 focus:ring-2 focus:ring-orange-500 focus:ring-opacity-20 ${
-                                errors.firstName ? "border-red-500" : ""
-                            }`}
-                            disabled={loading}
-                        />
-                        {errors.firstName && <span className="text-red-500">{errors.firstName.message}</span>}
-                    </fieldset>
+                        <fieldset className="flex flex-col gap-1">
+                            <label>First Name</label>
+                            <input
+                                type="text"
+                                {...register("firstName", { required: "First name is required" })}
+                                className={`border-gray-200 rounded-lg border px-4 py-2.5 transition-all focus:border-orange-500 focus:ring-2 focus:ring-orange-500 focus:ring-opacity-20 ${errors.firstName ? "border-red-500" : ""
+                                    }`}
+                                disabled={loading}
+                            />
+                            {errors.firstName && <span className="text-red-500">{errors.firstName.message}</span>}
+                        </fieldset>
 
-                    <fieldset className="flex flex-col gap-1">
-                        <label>Last Name</label>
-                        <input
-                            type="text"
-                            {...register("lastName", {required: "Last name is required"})}
-                            className={`border-gray-200 rounded-lg border px-4 py-2.5 transition-all focus:border-orange-500 focus:ring-2 focus:ring-orange-500 focus:ring-opacity-20 ${
-                                errors.lastName ? "border-red-500" : ""
-                            }`}
-                            disabled={loading}
-                        />
-                        {errors.lastName && <span className="text-red-500">{errors.lastName.message}</span>}
-                    </fieldset>
+                        <fieldset className="flex flex-col gap-1">
+                            <label>Last Name</label>
+                            <input
+                                type="text"
+                                {...register("lastName", { required: "Last name is required" })}
+                                className={`border-gray-200 rounded-lg border px-4 py-2.5 transition-all focus:border-orange-500 focus:ring-2 focus:ring-orange-500 focus:ring-opacity-20 ${errors.lastName ? "border-red-500" : ""
+                                    }`}
+                                disabled={loading}
+                            />
+                            {errors.lastName && <span className="text-red-500">{errors.lastName.message}</span>}
+                        </fieldset>
                     </div>
                     <fieldset className="flex flex-col gap-1">
                         <label>Email</label>
@@ -134,9 +132,8 @@ const EmailFormDialog = ({ isOpen, setIsOpen, initialEmail, center }) => {
                                     message: "Please enter a valid email",
                                 },
                             })}
-                            className={`border-gray-200 rounded-lg border px-4 py-2.5 transition-all focus:border-orange-500 focus:ring-2 focus:ring-orange-500 focus:ring-opacity-20 ${
-                                errors.workEmail ? "border-red-500" : ""
-                            }`}
+                            className={`border-gray-200 rounded-lg border px-4 py-2.5 transition-all focus:border-orange-500 focus:ring-2 focus:ring-orange-500 focus:ring-opacity-20 ${errors.workEmail ? "border-red-500" : ""
+                                }`}
                             disabled={loading}
                         />
                         {errors.workEmail && <span className="text-red-500">{errors.workEmail.message}</span>}
@@ -148,9 +145,8 @@ const EmailFormDialog = ({ isOpen, setIsOpen, initialEmail, center }) => {
                             country={"us"}
                             value={watch("contactNumber")}
                             onChange={handlePhoneChange}
-                            inputClass={`w-full !h-[42px] !text-base rounded-lg border border-gray-200 py-2.5 transition-all focus:border-orange-500 focus:ring-2 focus:ring-orange-500 focus:ring-opacity-20 ${
-                                errors.contactNumber ? "!border-red-500" : ""
-                            }`}
+                            inputClass={`w-full !h-[42px] !text-base rounded-lg border border-gray-200 py-2.5 transition-all focus:border-orange-500 focus:ring-2 focus:ring-orange-500 focus:ring-opacity-20 ${errors.contactNumber ? "!border-red-500" : ""
+                                }`}
                             inputProps={{
                                 name: "contactNumber",
                                 required: true,
@@ -165,10 +161,9 @@ const EmailFormDialog = ({ isOpen, setIsOpen, initialEmail, center }) => {
                         <label>Company Name</label>
                         <input
                             type="text"
-                            {...register("companyName", {required: "Company name is required"})}
-                            className={`border-gray-200 rounded-lg border px-4 py-2.5 transition-all focus:border-orange-500 focus:ring-2 focus:ring-orange-500 focus:ring-opacity-20 ${
-                                errors.companyName ? "border-red-500" : ""
-                            }`}
+                            {...register("companyName", { required: "Company name is required" })}
+                            className={`border-gray-200 rounded-lg border px-4 py-2.5 transition-all focus:border-orange-500 focus:ring-2 focus:ring-orange-500 focus:ring-opacity-20 ${errors.companyName ? "border-red-500" : ""
+                                }`}
                             disabled={loading}
                         />
                         {errors.companyName && <span className="text-red-500">{errors.companyName.message}</span>}
@@ -184,9 +179,8 @@ const EmailFormDialog = ({ isOpen, setIsOpen, initialEmail, center }) => {
                                     message: "Message must be at least 10 characters",
                                 },
                             })}
-                            className={`border-gray-200 min-h-[100px] rounded-lg border px-4 py-2.5 transition-all focus:border-orange-500 focus:ring-2 focus:ring-orange-500 focus:ring-opacity-20 ${
-                                errors.message ? "border-red-500" : ""
-                            }`}
+                            className={`border-gray-200 min-h-[100px] rounded-lg border px-4 py-2.5 transition-all focus:border-orange-500 focus:ring-2 focus:ring-orange-500 focus:ring-opacity-20 ${errors.message ? "border-red-500" : ""
+                                }`}
                             rows={5}
                             disabled={loading}
                         />
@@ -194,7 +188,7 @@ const EmailFormDialog = ({ isOpen, setIsOpen, initialEmail, center }) => {
                     </fieldset>
 
                     <div>
-                    <Button appearance="primary" type="submit" loading={loading} disabled={loading}>
+                        <Button appearance="primary" type="submit" loading={loading} disabled={loading}>
                             {loading ? <FaSync className="animate-spin" /> : "Submit"}
                         </Button>
                     </div>

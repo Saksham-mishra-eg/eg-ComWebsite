@@ -7,6 +7,7 @@ import PhoneInput from 'react-phone-input-2';
 import { Controller, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import 'react-phone-input-2/lib/style.css';
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import * as z from "zod";
 
 const formSchema = z.object({
@@ -18,9 +19,10 @@ const formSchema = z.object({
     feedback: z.string().min(1, { message: "Message is required" }),
 })
 
-
 function ContactIframe() {
+     const navigate = useNavigate();
     const [submitting, setSubmitting] = useState(false)
+
     const {
         register,
         handleSubmit,
@@ -58,6 +60,9 @@ function ContactIframe() {
             )
             const result = await response.json()
             if (response.ok) {
+                navigate('/thankyou');
+                reset();
+                setSubmitting(false)
                 alert("Form submitted successfully!");
                 reset();
             } else {

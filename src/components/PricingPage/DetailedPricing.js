@@ -266,13 +266,13 @@ function DetailedPricing() {
                         <li>Brazil </li>
                         <li>China</li>
                     </ul>
-                    <ul className={styles.liWithfull}>
+                    <ul className={styles.liWithHalf}>
                         <li> <strong>Brazil and USA Bill of Lading Data</strong> </li>
                     </ul>
-                    <ul className={styles.liWithfull}>
+                    <ul className={styles.liWithHalf}>
                         <li><strong>185 Countries Mirror Data</strong></li>
                     </ul>
-                    <ul className={styles.liWithfull}>
+                    <ul className={styles.liWithHalf}>
                         <li><strong>192 Countries Transit Data</strong> </li>
                     </ul>
                 </Modal.Body>

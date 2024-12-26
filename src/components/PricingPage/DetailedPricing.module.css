@@ -11,7 +11,8 @@
     width: 100%;
     padding-bottom: 40px;
 }
-.viewLLs{
+
+.viewLLs {
     cursor: pointer;
     color: darkslateblue;
     font-weight: 500;
@@ -48,7 +49,7 @@
     font-weight: 400;
 }
 
-.modalBodytxt p{
+.modalBodytxt p {
     text-align: center;
     line-height: 35px;
     color: #444444;
@@ -56,12 +57,13 @@
     font-weight: 500;
 }
 
-.modalHeader{
+.modalHeader {
     background-image: linear-gradient(to right, #1d60dc, #2c6ee8);
     color: #fff;
     padding: 14px 20px;
 }
-.modalBodytxt ul{
+
+.modalBodytxt ul {
     display: inline-block;
     width: 100%;
 }
@@ -77,12 +79,28 @@
     letter-spacing: .25px;
 }
 
-.liWithfull li{
-    width: 100%!important;
+.liWithfull li {
+    width: 100% !important;
+}
+
+.liWithHalf {
+    width: 50% !important;
+}
+
+.liWithHalf li {
+    width: 100% !important;
 }
 
 @media screen and (max-width: 768px) {
     .TbodyEnstial tr th {
         font-size: 14px;
+    }
+
+    .modalBodytxt>ul>li {
+        width: 50%;
+    }
+
+    .modalBodytxt>ul {
+        padding-left: 1rem;
     }
 }

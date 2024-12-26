@@ -165,5 +165,8 @@
     .DtaYpe {
         padding-left: 2em;
     }
+    .navClassWidth{
+        width: 46%;
+    }
 
 }

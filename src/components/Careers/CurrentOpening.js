@@ -6,6 +6,21 @@ import Accordion from 'react-bootstrap/Accordion';
 import { useAccordionButton } from 'react-bootstrap/AccordionButton';
 import Card from 'react-bootstrap/Card';
 import { useState, useMemo } from "react";
+import { Controller, useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import 'react-phone-input-2/lib/style.css';
+import * as z from "zod";
+
+const formSchema = z.object({
+    firstName: z.string().min(1, { message: "First name is required" }),
+    lastName: z.string().min(1, { message: "Last name is required" }),
+    email: z.string().email({ message: "Invalid email address" }),
+    phoneNumber: z.string().min(1, { message: "Phone number is required" }),
+    file: z
+        .instanceof(File, { message: "File is required and must be valid" })
+        .or(z.string().min(1, { message: "File is required" })), // Compatibility for RHF file handling
+});
+
 
 function ContextAwareToggle({ children, eventKey, callback }) {
     // const { activeEventKey } = useContext(AccordionContext);
@@ -29,6 +44,73 @@ function ContextAwareToggle({ children, eventKey, callback }) {
 }
 
 function CurrentOpening() {
+
+    const [submitting, setSubmitting] = useState(false)
+    const {
+        register,
+        handleSubmit,
+        control,
+        reset, // Import reset function
+        formState: { errors },
+    } = useForm({
+        resolver: zodResolver(formSchema),
+    })
+   
+    const onSubmit = async (data) => {
+
+        const fileName = data.file.name;
+        console.log(fileName);
+
+        setSubmitting(true);
+        try {
+            const apiPayload = {
+                firstName: data.firstName,
+                lastName: data.lastName,
+                countryCode:  "+91", // If countryCode is optional
+                contactNumber: data.phoneNumber,
+                companyName: "career",
+                workEmail: data.email,
+                message:  "No message provided.",
+                url:  window.location.href,
+                file: fileName,
+            }
+
+            console.log("Submitting form data:", data); // Debug log
+
+            const response = await fetch(
+                "https://fjgjyxhtdds.marketinsidedata.com/api/send-email-eg",
+                {
+                    method: "POST",
+                    mode: "no-cors",
+                    body: JSON.stringify(apiPayload),
+                }
+            );
+            console.log("API Response Status:", response.status);
+
+            let result;
+            if (response.ok) {
+                try {
+                    result = await response.json();
+                    console.log("Parsed result:", result);
+                    alert("Form submitted successfully!");
+                    reset();
+                } catch (error) {
+                    console.error("Error parsing JSON response:", error);
+                    alert("Form submitted, but response could not be parsed.");
+                }
+            } else {
+                console.error("HTTP error status:", response.status);
+                const errorText = await response.text();
+                alert(`Submission failed: ${errorText}`);
+            }
+        } catch (error) {
+            console.error("Form submission error:", error)
+            alert("There was an error submitting the form. Please try again.")
+        } finally {
+            setSubmitting(false)
+        }
+    }
+
 
     const [selectedJobTitle, setSelectedJobTitle] = useState("Business Development Representative");
 
@@ -73,10 +155,6 @@ function CurrentOpening() {
         return show === "All" ? cardsData : cardsData.filter(card => card.department === show);
     }, [show, cardsData]);
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        // Process form data
-    };
 
     return (
         <div className={styles.CurrentOpeningBg}>
@@ -154,39 +232,109 @@ function CurrentOpening() {
                             </div>
                             <div className={styles.aformareasent}>
                                 <h4>{selectedJobTitle}</h4>
-                                <Form onSubmit={handleSubmit}>
+                                <Form onSubmit={handleSubmit(onSubmit)} className={styles.modalFormhndl}>
                                     <Form.Group className="mb-3" controlId="formGroupFname">
-                                        <Form.Label className={styles.formLaelCar}>Full Name</Form.Label>
-                                        <Form.Control className={styles.formContrCaresd} type="name" />
+                                        <Form.Label className={styles.formLaelCar}>First Name</Form.Label>
+                                        <Form.Control
+                                            className={styles.formContrCaresd}
+                                            {...register("firstName")}
+                                            name="firstName"
+                                            type="text"
+                                            required
+                                        />
+                                        {errors.firstName && (
+                                            <p className="mt-1 text-xs text-red-500">
+                                                {errors.firstName.message}
+                                            </p>
+                                        )}
                                     </Form.Group>
                                     <Form.Group className="mb-3" controlId="formGroupLname">
                                         <Form.Label className={styles.formLaelCar}>Last Name</Form.Label>
-                                        <Form.Control className={styles.formContrCaresd} type="name" />
+                                        <Form.Control
+                                            className={styles.formContrCaresd}
+                                            {...register("lastName")}
+                                            name="lastName"
+                                            type="text"
+                                            required
+                                        />
+                                        {errors.lastName && (
+                                            <p className="mt-1 text-xs text-red-500">
+                                                {errors.lastName.message}
+                                            </p>
+                                        )}
                                     </Form.Group>
                                     <Form.Group className="mb-3" controlId="formGroupEmail">
                                         <Form.Label className={styles.formLaelCar}>Email</Form.Label>
-                                        <Form.Control className={styles.formContrCaresd} type="email" />
+                                        <Form.Control
+                                            {...register("email")}
+                                            className={styles.formContrCaresd}
+                                            name="email"
+                                            type="email"
+                                            required
+                                        />
+                                        {errors.email && (
+                                            <p className="mt-1 text-xs text-red-500">
+                                                {errors.email.message}
+                                            </p>
+                                        )}
                                     </Form.Group>
 
                                     <Form.Group className="mb-3" controlId="formGroupPhone">
                                         <Form.Label className={styles.formLaelCar}>Phone</Form.Label>
-                                        <Form.Control className={styles.formContrCaresd} type="number" />
+                                        <Form.Control
+                                            {...register("phoneNumber")}
+                                            className={styles.formContrCaresd}
+                                            name="phoneNumber"
+                                            type="phoneNumber"
+                                            required
+                                        />
+                                        {errors.email && (
+                                            <p className="mt-1 text-xs text-red-500">
+                                                {errors.email.message}
+                                            </p>
+                                        )}
                                     </Form.Group>
                                     <Form.Group className="mb-3" controlId="formGroupResume">
                                         <Form.Label className={styles.formLaelCarresm}>Resume</Form.Label>
-                                        <div className={styles.inputFielAtacth}>
-                                            <Form.Control plaintext defaultValue="" className={styles.atacthresumeUpld} type="file" />
-                                            <span>Attach resume</span>
-                                        </div>
+                                        <Controller
+                                            name="file"
+                                            control={control}
+                                            // defaultValue={null}
+                                            rules={{ required: "File is required" }}
+                                            render={({ field }) => (
+                                                <div className={styles.inputFielAtacth}>
+                                                    <Form.Control
+                                                        type="file"
+                                                        onChange={(e) => field.onChange(e.target.files[0])} // Pass the file object
+                                                        className={styles.atacthresumeUpld}
+                                                    />
+                                                    <span>Attach resume</span>
+                                                </div>
+                                            )}
+                                        />
+                                        {errors.file && (
+                                            <p className="mt-1 text-xs text-red-500">
+                                                {errors.file.message}
+                                            </p>
+                                        )}
                                     </Form.Group>
-                                    <Form.Group className="mb-4" controlId="formGroupPortfolio">
+                                    {/* <Form.Group className="mb-4" controlId="formGroupPortfolio">
                                         <Form.Label className={styles.formLaelCarresm}>Portfolio</Form.Label>
                                         <div className={styles.inputFielAtacth}>
                                             <Form.Control plaintext defaultValue="" className={styles.atacthresumeUpld} type="file" />
                                             <span>Attach Portfolio</span>
                                         </div>
-                                    </Form.Group>
-                                    <Button className={styles.subtmBtinFrom} type="submit">Submit</Button>
+                                    </Form.Group> */}
+                                    <button
+                                        type="submit"
+                                        className={`mt-4 w-full rounded-md px-6 py-3 text-sm font-bold uppercase text-white ${submitting
+                                            ? "cursor-not-allowed bg-black"
+                                            : "bg-dark hover:bg-blue-600"
+                                            } shadow-md transition-colors duration-300 hover:shadow-lg`}
+                                        disabled={submitting}
+                                    >
+                                        {submitting ? "Submitting..." : "Submit"}
+                                    </button>
 
                                 </Form>
                             </div>

@@ -17,6 +17,7 @@ import CancelPolicy from "./pages/CancelPolicy";
 import RefundPolicy from "./pages/RefundPolicy";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsandCoditions from "./pages/TermsandCoditions";
+import PageNotFound from "./pages/404Page";
 
 function App() {
   return (
@@ -106,6 +107,10 @@ function AppContent() {
         title = "Terms and Conditions";
         metaDescription = "Terms and Conditions";
         break;
+        case "*":
+        title = "404";
+        metaDescription = "Page not found";
+        break;
       default:
         title = "Export Genius - Global Trade Intelligence Platform";
         metaDescription = "Discover global buyers and suppliers, profitable markets, and competitive advantage, and empower your business with intelligence, compliance, and visibility.";
@@ -125,7 +130,10 @@ function AppContent() {
   return (
     <Routes>
       <Route path="/" exact element={<Home />} />
-      <Route path="/" exact element={<Home />} />
+      <Route
+        path="*"
+        element={<PageNotFound />}
+      />
       <Route path="/pricing" exact element={<Pricing />} />
       <Route path="/data" exact element={<DataFlow />} />
       <Route path="/about-us" exact element={<AboutUs />} />

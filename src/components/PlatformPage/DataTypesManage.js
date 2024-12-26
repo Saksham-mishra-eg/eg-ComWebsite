@@ -112,7 +112,7 @@ function DataTypesManage() {
                                             </Col>
                                             <Col md={9}>
                                                 <div className={styles.inimgigh}>
-                                                    <img src="image100.png" alt="comprehensive" />
+                                                    <img src="detailed-data.png" alt="detailed-data" />
                                                 </div>
                                                 <div className={styles.dataAvailSamle}>
                                                     <Button className={styles.DnownSample} onClick={handleDownloadDetailed} >Download Sample</Button>
@@ -134,7 +134,7 @@ function DataTypesManage() {
                                             </Col>
                                             <Col md={9}>
                                                 <div className={styles.inimgigh}>
-                                                    <img src="comprehensive.png" alt="comprehensive" />
+                                                    <img src="statical-data.png" alt="statical-data" />
                                                 </div>
                                                 <div className={styles.dataAvailSamle}>
                                                     <Button className={styles.DnownSample} onClick={handleDownloadStatistical} >Download Sample</Button>
@@ -156,7 +156,7 @@ function DataTypesManage() {
                                             </Col>
                                             <Col md={9}>
                                                 <div className={styles.inimgigh}>
-                                                    <img src="image100.png" alt="comprehensive" />
+                                                    <img src="transit-data.png" alt="transit-data" />
                                                 </div>
                                                 <div className={styles.dataAvailSamle}>
                                                     {/* <Button className={styles.DnownSample} >Download Sample</Button> */}
@@ -179,7 +179,7 @@ function DataTypesManage() {
                                             </Col>
                                             <Col md={9}>
                                                 <div className={styles.inimgigh}>
-                                                    <img src="comprehensive.png" alt="comprehensive" />
+                                                    <img src="bill-of-lading.png" alt="bill-of-lading" />
                                                 </div>
                                                 <div className={styles.dataAvailSamle}>
                                                     <Button className={styles.DnownSample} onClick={handleDownloadBillofldng} >Download Sample</Button>
@@ -201,7 +201,7 @@ function DataTypesManage() {
                                             </Col>
                                             <Col md={9}>
                                                 <div className={styles.inimgigh}>
-                                                    <img src="comprehensive.png" alt="comprehensive" />
+                                                    <img src="suez-canal-bill-of-lading.png" alt="suez-canal-bill-of-lading" />
                                                 </div>
                                                 <div className={styles.dataAvailSamle}>
                                                     <Button className={styles.DnownSample}  onClick={handleDownloadSuezcanal} >Download Sample</Button>
@@ -223,7 +223,7 @@ function DataTypesManage() {
                                             </Col>
                                             <Col md={9}>
                                                 <div className={styles.inimgigh}>
-                                                    <img src="comprehensive.png" alt="comprehensive" />
+                                                    <img src="mirror-data.png" alt="mirror-data" />
                                                 </div>
                                                 <div className={styles.dataAvailSamle}>
                                                     <Button className={styles.DnownSample} onClick={handleDownloadMirror} >Download Sample</Button>
@@ -245,7 +245,7 @@ function DataTypesManage() {
                                             </Col>
                                             <Col md={9}>
                                                 <div className={styles.inimgigh}>
-                                                    <img src="comprehensive.png" alt="comprehensive" />
+                                                    <img src="cargo-bl-data.png" alt="cargo-bl-data" />
                                                 </div>
                                                 <div className={styles.dataAvailSamle}>
                                                     {/* <Button className={styles.DnownSample} >Download Sample</Button> */}
@@ -261,7 +261,7 @@ function DataTypesManage() {
                 </Row>
             </Container>
         </div>
-    );
+    )
 }
 
 export default DataTypesManage;
